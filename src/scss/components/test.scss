@@ -1,0 +1,21 @@
+// .container {
+//   @include flex-center(column, center, center);
+//   height: 100vh;
+// }
+// .heading {
+//   @include font-style('Arial', 24px, bold, 1.8, #222);
+// }
+// .container {
+//   width: 100%;
+
+//   @include responsive(tablet) {
+//     width: 80%;
+//   }
+
+//   @include responsive(mobile) {
+//     width: 100%;
+//   }
+// }
+// .button {
+//   @include button-style(#28a745, #fff, 12px 24px, 8px);
+// }
