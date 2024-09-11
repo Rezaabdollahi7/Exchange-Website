@@ -1,96 +1,18 @@
-/* Reset styles */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 7 | @import "./layout/rezaTest";
+ *   |         ^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src\scss\rezaMain.scss 7:9  @import
+ *   src\scss\main.scss 1:9      root stylesheet */
 
-html, body {
-  height: 100%;
-  font-family: sans-serif;
-  font-size: 100%;
-  line-height: 1.5;
-  color: #333;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #fff;
-}
-
-img,
-picture,
-video,
-canvas {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  max-width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 7 \2502  @import \"./layout/rezaTest\";\a   \2502          ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\scss\\rezaMain.scss 7:9  @import\a   src\\scss\\main.scss 1:9      root stylesheet";
 }
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-:focus {
-  outline: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-}
-
-hr {
-  border: none;
-  height: 1px;
-  background-color: #e1e1e1;
-}
-
-/* Custom resets */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote::before, blockquote::after,
-q::before, q::after {
-  content: "";
-  content: none;
-}
-
-/* Mixin for flexbox centering */
-/* Mixin for button styles */
-/* Mixin for responsive breakpoints */
-body {
-  font-size: 3rem;
-}
-
-/*# sourceMappingURL=main.css.map */
