@@ -9,7 +9,6 @@
 
 html, body {
   height: 100%;
-  font-family: sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #333;
@@ -86,92 +85,123 @@ q::before, q::after {
   content: none;
 }
 
-/* Mixin for flexbox centering */
-/* Mixin for button styles */
-/* Mixin for responsive breakpoints */
-/* Mixin for flexbox centering */
-/* Mixin for button styles */
-/* Mixin for responsive breakpoints */
-.footer {
-  background-color: #141416;
-  padding: 40px 0;
-  color: #f0f0f0;
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
-.footer .footer-logo img {
-  width: 63px;
-  height: 22px;
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
 }
-.footer .footer-links ul li a {
-  font-weight: 600;
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
 }
-.footer .footer-contact ul li a {
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Light.ttf") format("truetype");
   font-weight: 300;
+  font-style: normal;
 }
-.footer h5 {
-  font-size: 16px;
-  color: #9e9e9e;
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
 }
-.footer ul li {
-  margin-bottom: 10px;
-}
-.footer ul a {
-  color: #9e9e9e;
-}
-.footer ul a:hover {
-  color: #ffffff;
-}
-.footer .footer-contact h5,
-.footer .footer-newsletter h5 {
-  color: #e6e8ec;
-  font-weight: 500;
-}
-.footer .footer-newsletter p {
-  color: #e6e8ec;
-  font-size: 15px;
-}
-.footer .newsletter-form {
-  display: flex;
-}
-.footer .newsletter-form input {
-  flex-grow: 1;
-  padding: 10px 8px 10px 20px;
-  border: 1.78px solid #757575;
-  background-color: transparent;
-  color: #f0f0f0;
-  border-radius: 80px;
-}
-.footer .newsletter-form button {
-  background-color: #006fff;
-  border: none;
-  padding: 3.56px;
-  border-radius: 88.89px;
-  position: absolute;
-  cursor: pointer;
-  top: 17%;
-  left: 85%;
-}
-.footer .social-container {
-  margin-top: 2rem;
-}
-.footer .social-icons a {
-  margin: 0 10px;
-}
-.footer .social-icons a img {
-  width: 20px;
-  height: 20px;
-}
-.footer .footer-newsletter p {
-  margin-top: 44px;
-}
-.footer .social-container p {
-  color: #9e9e9e;
-  font-size: 14px;
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Regular.ttf") format("truetype");
   font-weight: 400;
-  line-height: 17.78px;
+  font-style: normal;
 }
-.footer hr {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+body, * {
+  font-family: "DMSans" !important;
+}
+
+/* Mixin for flexbox centering */
+/* Mixin for button styles */
+/* Mixin for responsive breakpoints */
+body {
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */
