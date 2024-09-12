@@ -200,6 +200,14 @@ body, * {
 /* Mixin for flexbox centering */
 /* Mixin for button styles */
 /* Mixin for responsive breakpoints */
+.container-full {
+  width: 100% !important;
+}
+
+.container-full {
+  width: 100% !important;
+}
+
 /* Mixin for flexbox centering */
 /* Mixin for button styles */
 /* Mixin for responsive breakpoints */
@@ -283,6 +291,110 @@ body, * {
 .footer hr {
   margin: 0;
   padding: 0;
+}
+
+#crypto-section {
+  color: #ffffff;
+  background-color: #f7f9fc;
+  position: relative;
+}
+#crypto-section .section-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #23262f;
+}
+#crypto-section .section-subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: rgba(19, 21, 26, 0.6980392157);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 50px;
+  width: 80%;
+}
+#crypto-section .crypto-card {
+  background-color: #1d263b;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+#crypto-section .crypto-card img {
+  width: 161.21px;
+  height: auto;
+}
+#crypto-section .crypto-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+#crypto-section .crypto-card .card-text {
+  font-size: 16px;
+  margin-bottom: 1.25rem;
+  color: #e0e0e0 !important;
+  line-height: 25.19px;
+  font-weight: 400;
+}
+#crypto-section .crypto-card .btn {
+  background-color: transparent;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 90px;
+  border: 2px 0px 0px 0px;
+  border-color: #e6e8ec;
+}
+#crypto-section .crypto-card .Exchange-btn {
+  background: #006fff;
+  border: none;
+}
+#crypto-section .contact-us-btn {
+  width: 214px;
+  height: 54px;
+  background: #006fff;
+  box-shadow: 0px 4px 18.5px 0px rgba(12, 97, 236, 0.3411764706);
+  border-radius: 30px;
+  padding: 15px 50px;
+  font-weight: 500;
+  z-index: 10;
+  cursor: pointer;
+}
+#crypto-section .contact-us-btn-wrapper {
+  margin-top: 5rem;
+  z-index: 10;
+  position: relative;
+}
+#crypto-section .myback {
+  width: 100%;
+  height: 31rem;
+  background-color: #121530;
+  margin-top: -26rem;
+}
+#crypto-section .inside-myback {
+  width: 100%;
+  height: 31rem;
+  z-index: 1;
+  position: absolute;
+  background: linear-gradient(90deg, rgba(40, 71, 122, 0.27) 0%, rgba(12, 98, 236, 0.126) 53.09%, rgba(255, 138, 155, 0.27) 125.29%);
+}
+@media screen and (max-width: 500px) {
+  #crypto-section .myback {
+    height: 62rem;
+    margin-top: -59rem;
+  }
+  #crypto-section .inside-myback {
+    height: 62rem;
+  }
+  #crypto-section .section-title {
+    font-size: 26px;
+  }
+  #crypto-section .section-subtitle {
+    font-size: 1rem;
+    width: 95%;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
