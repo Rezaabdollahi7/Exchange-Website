@@ -405,7 +405,7 @@ body, * {
   background-color: #f7f9fc;
   padding: 6rem 0;
 }
-#support .support-tittle {
+#support .support-title {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -454,7 +454,7 @@ body, * {
     width: 85px;
     height: 50px;
   }
-  #support .support-tittle {
+  #support .support-title {
     font-size: 26px;
   }
   #support .btn-container a {
@@ -471,13 +471,13 @@ body, * {
 #InternationalCoverege {
   padding: 6rem 0;
 }
-#InternationalCoverege .International-tittle {
+#InternationalCoverege .International-title {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #23262f;
 }
-#InternationalCoverege .International-sub-tittle {
+#InternationalCoverege .International-sub-title {
   color: rgba(19, 21, 26, 0.6980392157);
   font-size: 22px;
   font-weight: 600;
@@ -502,11 +502,99 @@ body, * {
   #InternationalCoverege .item img {
     width: 80%;
   }
-  #InternationalCoverege .International-tittle {
+  #InternationalCoverege .International-title {
     font-size: 26px;
   }
-  #InternationalCoverege .International-sub-tittle {
+  #InternationalCoverege .International-sub-title {
     font-size: 18px;
+  }
+}
+
+#getCryptoMarketWatch {
+  margin-top: 2rem;
+}
+#getCryptoMarketWatch .CryptoMarket-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+#getCryptoMarketWatch .CryptoMarket-sub-title {
+  color: #b4c0de;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 500;
+}
+#getCryptoMarketWatch .CryptoMarket-card {
+  background-color: #1d263b;
+  border-radius: 24px;
+  padding: 30px;
+}
+#getCryptoMarketWatch .CryptoMarket-card .card-title {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+}
+#getCryptoMarketWatch .CryptoMarket-card .card-text {
+  color: #e0e0e0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+}
+#getCryptoMarketWatch .CryptoMarket-card .card-img-wrapper {
+  width: 96px;
+  height: 98px;
+  background-color: #006fff;
+}
+#getCryptoMarketWatch .CryptoMarket-card .card-img-wrapper img {
+  width: 40px;
+  height: 40px;
+}
+#getCryptoMarketWatch .btn-container a {
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 10px 40px;
+  color: white;
+}
+#getCryptoMarketWatch .btn-container .first {
+  background: #006fff;
+  box-shadow: 0px 4px 18.5px 0px rgba(12, 97, 236, 0.3411764706);
+}
+#getCryptoMarketWatch .btn-container .second {
+  background: #3b414e;
+}
+@media screen and (max-width: 500px) {
+  #getCryptoMarketWatch .CryptoMarket-title {
+    font-size: 28px;
+  }
+  #getCryptoMarketWatch .CryptoMarket-sub-title {
+    font-size: 18px;
+  }
+  #getCryptoMarketWatch .card-title {
+    font-size: 28px !important;
+  }
+  #getCryptoMarketWatch .card-text {
+    font-size: 18px !important;
+  }
+  #getCryptoMarketWatch .CryptoMarket-card {
+    padding: 25px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  #getCryptoMarketWatch .btn-container a {
+    padding: 10px 30px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #getCryptoMarketWatch .card-text {
+    height: 6rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  #getCryptoMarketWatch .card-title {
+    font-size: 36px !important;
   }
 }
 

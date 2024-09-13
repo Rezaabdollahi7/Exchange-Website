@@ -4,13 +4,13 @@ export function getSupporting() {
         <div class="container ">
             <div class="row">
                 <div class="col-12 support-titles-container d-flex justify-content-center align-items-center flex-column">
-                    <h2 class="support-tittle text-center">
+                    <h2 class="support-title text-center">
                         <p> Supporting the forefront of </p>
                         <p class="web3"> Web3 projects </p>
                     </h2>
                 </div>
             </div>
-            <!-- end of tittles -->
+            <!-- end of titles -->
 
             <!-- first row -->
             <div class="row col-12 gap-4 mx-auto d-flex justify-content-center mt-3">
