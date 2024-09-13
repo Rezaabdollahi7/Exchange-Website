@@ -598,4 +598,111 @@ body, * {
   }
 }
 
+header {
+  background: rgb(17, 20, 43);
+  background: linear-gradient(135deg, rgb(17, 20, 43) 0%, rgb(22, 35, 72) 43%, rgb(22, 30, 61) 100%);
+  padding-top: 6rem;
+}
+header .header-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: center;
+  background: linear-gradient(103.39deg, #ffbe16 14.89%, #ff8a9b 95.69%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+header .header-sub-title {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 71.04px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+header .header-text {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: center;
+  color: #b4c0de;
+  width: 80%;
+  margin: 0 auto;
+}
+header .btn-container a {
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 10px 40px;
+  color: white;
+}
+header .btn-container .first {
+  background: #006fff;
+  box-shadow: 0px 4px 18.5px 0px rgba(12, 97, 236, 0.3411764706);
+}
+header .btn-container .second {
+  background: #3b414e;
+}
+header img {
+  width: 990px;
+  height: 77%;
+}
+header .blured-section {
+  position: absolute;
+  top: 68%;
+  padding: 5rem 0;
+  background: rgba(24, 36, 71, 0.5058823529);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+}
+header .blured-section p {
+  color: white;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  text-align: center;
+}
+header .blured-section span {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.4px;
+  text-align: center;
+  color: #9e9e9e;
+}
+header .bit-img {
+  width: 151px;
+  height: 152.32px;
+  top: 62%;
+  left: 9%;
+  z-index: 0;
+}
+@media screen and (max-width: 400px) {
+  header .btn-container a {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .header-sub-title {
+    font-size: 22px;
+    line-height: 40px;
+    width: 80%;
+  }
+  header .header-text {
+    font-size: 16px;
+    text-align: justify;
+  }
+  header .blured-section p {
+    font-size: 32px;
+  }
+  header .blured-section p {
+    font-size: 32px;
+  }
+  header .blured-section span {
+    font-size: 18px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
