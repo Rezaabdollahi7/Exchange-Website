@@ -262,12 +262,16 @@ body, * {
 .footer .newsletter-form button {
   background-color: #006fff;
   border: none;
-  padding: 3.56px;
-  border-radius: 88.89px;
+  padding: 7.56px;
+  border-radius: 100%;
   position: absolute;
   cursor: pointer;
-  top: 17%;
-  left: 85%;
+  top: 13%;
+  left: 87%;
+}
+.footer .newsletter-form button img {
+  width: 18px;
+  height: 18px;
 }
 .footer .social-container {
   margin-top: 2rem;

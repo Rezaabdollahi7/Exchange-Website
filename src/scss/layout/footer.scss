@@ -20,7 +20,6 @@ $footer-link-hover: #ffffff;
     font-weight: 600;
   }
 
-
   .footer-contact ul li a {
     font-weight: 300;
   }
@@ -68,12 +67,17 @@ $footer-link-hover: #ffffff;
     button {
       background-color: #006fff;
       border: none;
-      padding: 3.56px;
-      border-radius: 88.89px;
+      padding: 7.56px;
+      border-radius: 100%;
       position: absolute;
       cursor: pointer;
-      top: 17%;
-      left: 85%;
+      top: 13%;
+      left: 87%;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
     }
   }
   .social-container {
