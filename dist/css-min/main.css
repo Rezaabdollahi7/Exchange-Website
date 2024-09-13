@@ -468,4 +468,46 @@ body, * {
   }
 }
 
+#InternationalCoverege {
+  padding: 6rem 0;
+}
+#InternationalCoverege .International-tittle {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #23262f;
+}
+#InternationalCoverege .International-sub-tittle {
+  color: rgba(19, 21, 26, 0.6980392157);
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  width: 80%;
+}
+#InternationalCoverege .item {
+  box-shadow: 0px 8px 53.11px 0px rgba(142, 153, 177, 0.11);
+  width: 14%;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+@media screen and (max-width: 500px) {
+  #InternationalCoverege .item {
+    width: 27%;
+    height: 50px;
+  }
+  #InternationalCoverege .item img {
+    width: 80%;
+  }
+  #InternationalCoverege .International-tittle {
+    font-size: 26px;
+  }
+  #InternationalCoverege .International-sub-tittle {
+    font-size: 18px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
