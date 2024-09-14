@@ -5,6 +5,7 @@ import { getCryptoTrader } from './components/cryptoTrader.js';
 import { getSupporting } from './components/supporting.js';
 import { getInternationalCoverege } from './components/internationalCoverage.js';
 import { getCryptoMarketWatch } from './components/cryptoMarketWatch.js';
+import { getNavbar } from './components/navbar.js';
 
 
 
@@ -12,6 +13,7 @@ import { getCryptoMarketWatch } from './components/cryptoMarketWatch.js';
 
 document.addEventListener('DOMContentLoaded', function () {
 
+    document.body.insertAdjacentHTML('beforeend', getNavbar());
     document.body.insertAdjacentHTML('beforeend', getHeader());
     document.body.insertAdjacentHTML('beforeend', getCryptoMarketWatch());
     document.body.insertAdjacentHTML('beforeend', getInternationalCoverege());

@@ -1,0 +1,118 @@
+// Variables
+$primary-color: #007bff;
+$nav-text-color: #bdbdbd;
+$nav-logo-size: 40px;
+$btn-bg-color: #006fff;
+$btn-text-color: #ffffff;
+$dropdown-link-hower: #007bff;
+
+.navbar {
+  padding: 30px 20px;
+  //   ! change it
+  background: rgb(17, 20, 43);
+  background: linear-gradient(
+    135deg,
+    rgba(17, 20, 43, 1) 0%,
+    rgba(22, 35, 72, 1) 43%,
+    rgba(22, 30, 61, 1) 100%
+  );
+  .navbar-nav {
+    border-bottom: 1px #bdbdbd1b solid;
+    padding: 1rem 3rem;
+    gap: 4rem;
+  }
+
+  .navbar-logo {
+    width: 107px;
+    height: 37px;
+  }
+
+  .nav-link {
+    color: $nav-text-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 0.25px;
+    text-align: left;
+
+    &:hover {
+      color: lighten($nav-text-color, 20%);
+    }
+  }
+
+  .btn-price {
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    width: 164px;
+    height: 54px;
+    padding: 15px 46px 15px 46px;
+    background-color: $btn-bg-color;
+    box-shadow: 0px 4px 18.5px 0px #0c61ec57;
+
+    &:hover {
+      background-color: darken($btn-bg-color, 10%);
+    }
+  }
+
+  .dropdown-menu {
+    background: transparent;
+    border: none;
+
+    .dropdown-item {
+      color: white;
+
+      &:hover {
+        background-color: darken($dropdown-link-hower, 10%);
+        cursor: pointer;
+        border-radius: 2px;
+      }
+    }
+  }
+  .dropdown-toggle::after {
+    vertical-align: 1px !important;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+  @media screen and (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+    }
+
+    .btn-price {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .btn-price {
+      padding: 0.4rem 1.2rem;
+    }
+    .navbar-nav {
+      padding: 1rem;
+      gap: 1rem !important;
+    }
+    .nav-item {
+      .nav-link {
+        text-align: center;
+      }
+    }
+    .navbar .navbar-logo {
+      width: 87px;
+      height: 37.11px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .dropdown-menu {
+      background: rgb(43 62 117 / 88%) !important;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    }
+  }
+}
