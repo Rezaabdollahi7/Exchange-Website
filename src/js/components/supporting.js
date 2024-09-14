@@ -1,5 +1,4 @@
-export function getSupporting() {
-    return `
+const getSupporting = `
     <section id="support" class="position-relative container-full">
         <div class="container ">
             <div class="row">
@@ -90,5 +89,4 @@ export function getSupporting() {
         </div>
     </section>
         `
-        ;
-}
+export { getSupporting }

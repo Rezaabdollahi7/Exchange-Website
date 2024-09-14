@@ -7,7 +7,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-size: 100%;
   line-height: 1.5;
@@ -41,7 +42,8 @@ a {
   color: inherit;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -60,7 +62,12 @@ button {
   outline: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
 }
 
@@ -71,16 +78,29 @@ hr {
 }
 
 /* Custom resets */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
   display: block;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote::before, blockquote::after,
-q::before, q::after {
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
   content: "";
   content: none;
 }
@@ -193,7 +213,8 @@ q::before, q::after {
   font-weight: 900;
   font-style: italic;
 }
-body, * {
+body,
+* {
   font-family: "DMSans" !important;
 }
 
@@ -469,6 +490,7 @@ body, * {
 }
 
 #InternationalCoverege {
+  background-color: white;
   padding: 6rem 0;
 }
 #InternationalCoverege .International-title {
@@ -511,12 +533,14 @@ body, * {
 }
 
 #getCryptoMarketWatch {
-  margin-top: 2rem;
+  margin-top: -9rem;
+  padding-bottom: 16rem;
 }
 #getCryptoMarketWatch .CryptoMarket-title {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 #getCryptoMarketWatch .CryptoMarket-sub-title {
   color: #b4c0de;
@@ -598,9 +622,12 @@ body, * {
   }
 }
 
+@media screen and (max-width: 500px) {
+  #getCryptoMarketWatch {
+    margin-top: 5rem !important;
+  }
+}
 header {
-  background: rgb(17, 20, 43);
-  background: linear-gradient(135deg, rgb(17, 20, 43) 0%, rgb(22, 35, 72) 43%, rgb(22, 30, 61) 100%);
   padding-top: 6rem;
 }
 header .header-title {
@@ -705,51 +732,143 @@ header .bit-img {
   }
 }
 
-.comment_container {
-  margin: 40px 80px 0;
+.navbar {
+  padding: 30px 20px;
 }
-.comment_container .comment-pagination {
+.navbar .navbar-nav {
+  border-bottom: 1px rgba(189, 189, 189, 0.1058823529) solid;
+  padding: 1rem 3rem;
+  gap: 4rem;
+}
+.navbar .navbar-logo {
+  width: 107px;
+  height: 37px;
+}
+.navbar .nav-link {
+  color: #bdbdbd;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  letter-spacing: 0.25px;
+  text-align: left;
+}
+.navbar .nav-link:hover {
+  color: #f0f0f0;
+}
+.navbar .btn-price {
+  border: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  width: 164px;
+  height: 54px;
+  padding: 15px 46px 15px 46px;
+  background-color: #006fff;
+  box-shadow: 0px 4px 18.5px 0px rgba(12, 97, 236, 0.3411764706);
+}
+.navbar .btn-price:hover {
+  background-color: #0059cc;
+}
+.navbar .dropdown-menu {
+  background: transparent;
+  border: none;
+}
+.navbar .dropdown-menu .dropdown-item {
+  color: white;
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #0062cc;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.navbar .dropdown-toggle::after {
+  vertical-align: 1px !important;
+}
+.navbar .navbar-toggler {
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .navbar .nav-link {
+    font-size: 0.9rem;
+  }
+  .navbar .btn-price {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar .btn-price {
+    padding: 0.4rem 1.2rem;
+  }
+  .navbar .navbar-nav {
+    padding: 1rem;
+    gap: 1rem !important;
+  }
+  .navbar .nav-item .nav-link {
+    text-align: center;
+  }
+  .navbar .navbar .navbar-logo {
+    width: 87px;
+    height: 37.11px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar .dropdown-menu {
+    background: rgba(43, 62, 117, 0.88) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+.comment_container-fluid {
+  width: 100%;
+  background: #f7f9fc;
+  padding-bottom: 4rem;
+}
+.comment_container-fluid .comment_container {
+  margin: -14rem 80px 0;
+}
+.comment_container-fluid .comment_container .comment-pagination {
   margin-top: 50px;
 }
-.comment_container .swiper-pagination-bullet {
+.comment_container-fluid .comment_container .swiper-pagination-bullet {
   margin: 0 1.5px !important;
-  background: #8E99B1;
+  background: #8e99b1;
 }
-.comment_container .swiper-pagination-bullet-active {
-  background: #1E273B;
+.comment_container-fluid .comment_container .swiper-pagination-bullet-active {
+  background: #1e273b;
 }
-.comment_container .swiper-prev, .comment_container .swiper-next {
+.comment_container-fluid .comment_container .swiper-prev,
+.comment_container-fluid .comment_container .swiper-next {
   width: 40px;
   height: 40px;
   padding: 6px;
-  border: 2px solid #E6E8EC;
+  border: 2px solid #e6e8ec;
 }
-.comment_container .swiper-prev {
-  background: #E6E8EC;
+.comment_container-fluid .comment_container .swiper-prev {
+  background: #e6e8ec;
 }
-
-.swiper_comment .comment_obj {
-  background-color: #1E273B;
+.comment_container-fluid .swiper_comment .comment_obj {
+  background-color: #1e273b;
   padding: 30px;
   column-gap: 20px;
   border-radius: 24px;
   min-height: 100%;
   height: 257px;
 }
-.swiper_comment .comment_obj .author_name {
+.comment_container-fluid .swiper_comment .comment_obj .author_name {
   font-size: 22px;
 }
-.swiper_comment .comment_obj .author_spec {
-  color: #8E99B1;
+.comment_container-fluid .swiper_comment .comment_obj .author_spec {
+  color: #8e99b1;
   font-size: 14px;
   margin-bottom: 15px;
   margin-top: -2px;
 }
-.swiper_comment .comment_obj .comment_text {
-  color: #E0E0E0;
+.comment_container-fluid .swiper_comment .comment_obj .comment_text {
+  color: #e0e0e0;
   font-size: 16px;
   line-height: 25px;
-  overflow: scroll;
 }
 
 @media screen and (max-width: 1208px) {
@@ -776,6 +895,9 @@ header .bit-img {
   }
   .author_spec {
     font-size: 12px !important;
+  }
+  .comment_text {
+    overflow-y: scroll;
   }
 }
 

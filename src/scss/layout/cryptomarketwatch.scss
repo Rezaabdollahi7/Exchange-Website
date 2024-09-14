@@ -1,10 +1,19 @@
 #getCryptoMarketWatch {
-  margin-top: 2rem;
+  // background: rgb(20, 27, 57);
+  // background: linear-gradient(
+  //   135deg,
+  //   rgba(20, 27, 57, 1) 0%,
+  //   rgba(20, 22, 46, 1) 43%,
+  //   rgba(17, 13, 29, 1) 100%
+  // );
+  margin-top: -9rem;
+  padding-bottom: 16rem;
+
   .CryptoMarket-title {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 1rem;
-    // color: #FFFFFF;
+    color: #ffffff;
   }
   .CryptoMarket-sub-title {
     color: #b4c0de;
@@ -92,4 +101,10 @@
       font-size: 36px !important;
     }
   }
+
 }
+  @media screen and (max-width: 500px) {
+    #getCryptoMarketWatch {
+      margin-top: 5rem !important;
+    }
+  }

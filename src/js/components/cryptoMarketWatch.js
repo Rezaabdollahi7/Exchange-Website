@@ -1,5 +1,6 @@
-export function getCryptoMarketWatch() {
-    return `
+
+const getCryptoMarketWatch =
+    `
     <section id="getCryptoMarketWatch" class="position-relative container-full">
         <div class="container ">
             <div class="row">
@@ -68,5 +69,5 @@ export function getCryptoMarketWatch() {
      
     </section>
         `
-        ;
-}
+
+export { getCryptoMarketWatch }

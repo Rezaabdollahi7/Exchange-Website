@@ -1,5 +1,6 @@
-export function getCryptoTrader() {
-    return `
+
+
+const getCryptoTrader = `
       <section id="crypto-section" class=" text-center">
         <div class="container py-5">
             <h2 class="section-title ">Become a crypto trader in <br /> seconds</h2>
@@ -49,5 +50,5 @@ export function getCryptoTrader() {
         </div>
     </section>
            `
-        ;
-}
+
+export { getCryptoTrader }

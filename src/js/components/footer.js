@@ -1,5 +1,6 @@
-export function getFooter() {
-    return `
+
+
+const getFooter = `
       <footer class="footer px-3">
         <div class="container">
             <div class="row mt-4">
@@ -72,5 +73,5 @@ export function getFooter() {
             </div>
         </div>
     </footer>
-    `;
-}
+    `
+export { getFooter }

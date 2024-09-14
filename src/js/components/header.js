@@ -1,5 +1,6 @@
-export function getHeader() {
-    return `
+
+
+const getHeader = `
            <header class="flex flex-column justify-content-center align-items-center pt-5 position-relative">
         <div class="container">
             <div class="row">
@@ -55,5 +56,6 @@ export function getHeader() {
             </div>
         </div>
     </header>
-    `;
-}
+    `
+
+export { getHeader }

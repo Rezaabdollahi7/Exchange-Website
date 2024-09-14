@@ -1,5 +1,5 @@
-export function getInternationalCoverege() {
-    return `
+
+const getInternationalCoverege = `
         <section id="InternationalCoverege" class="position-relative container-full">
         <div class="container ">
             <div class="row">
@@ -39,5 +39,4 @@ export function getInternationalCoverege() {
         </div>
     </section>
            `
-        ;
-}
+export { getInternationalCoverege }
