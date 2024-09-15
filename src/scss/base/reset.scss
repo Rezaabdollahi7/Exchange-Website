@@ -239,13 +239,8 @@ body,
 * {
   font-family: $font-family !important;
 }
-// body {
-//   background: rgb(20, 27, 57);
-//   background: linear-gradient(
-//     135deg,
-//     rgba(20, 27, 57, 1) 0%,
-//     rgba(20, 22, 46, 1) 43%,
-//     rgba(17, 13, 29, 1) 100%
-//   );
-//   min-height: 100vh !important;
-// }
+.background{
+  background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+}
+// #110D1D
+// #152247

@@ -218,6 +218,10 @@ body,
   font-family: "DMSans" !important;
 }
 
+.background {
+  background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+}
+
 /* Mixin for flexbox centering */
 /* Mixin for button styles */
 /* Mixin for responsive breakpoints */
@@ -533,7 +537,7 @@ body,
 }
 
 #getCryptoMarketWatch {
-  margin-top: -9rem;
+  margin-top: -11rem;
   padding-bottom: 16rem;
 }
 #getCryptoMarketWatch .CryptoMarket-title {
