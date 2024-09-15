@@ -5,7 +5,8 @@ $comment_bg: #1e273b;
   padding-bottom: 4rem;
 
   .comment_container {
-    margin: -14rem 80px 0;
+    margin: -14rem  0;
+    max-width: 1119px !important;
     .comment-pagination {
       margin-top: 50px;
     }
@@ -63,11 +64,11 @@ $comment_bg: #1e273b;
     font-size: 14px !important;
   }
 }
-@media screen and (max-width: 510px) {
-  .comment_container {
-    margin: 0 20px !important;
-  }
-}
+// @media screen and (max-width: 510px) {
+//   .comment_container {
+//     margin: 0 20px !important;
+//   }
+// }
 @media screen and (max-width: 404px) {
   .comment_text {
     font-size: 12px !important;

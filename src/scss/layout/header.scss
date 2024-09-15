@@ -50,7 +50,10 @@ header {
       background: #3b414e;
     }
   }
-
+  .ex-img {
+    margin-right: auto;
+    margin-left: auto;
+  }
   img {
     width: 990px;
     height: 77%;
@@ -87,31 +90,163 @@ header {
     z-index: 0;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 412px) {
     .btn-container {
-      a {
-        padding: 10px 30px;
-      }
+      flex-direction: column !important;
     }
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 486px) {
     .header-sub-title {
+      font-size: 26px;
+      line-height: 50px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .header-text {
       font-size: 22px;
       line-height: 40px;
       width: 80%;
     }
-    .header-text {
-      font-size: 16px;
-      text-align: justify;
+  }
+
+  @media screen and (min-width: 522px) {
+    .header-sub-title {
+      font-size: 40px !important;
+      text-align: center;
+      width: 80%;
     }
-    .blured-section p {
-      font-size: 32px;
+  }
+  @media screen and (min-width: 900px) {
+    .header-sub-title {
+      font-size: 64px !important;
     }
-    .blured-section p {
-      font-size: 32px;
+  }
+  // end of header texts responsive
+
+  // @media screen and (max-width:400px) {
+
+  // }
+
+  @media screen and (max-width: 700px) {
+    .blured-section {
+      padding: 1rem 0;
+      top: 90%;
+
+      p {
+        font-size: 23px;
+        margin-bottom: 0 !important;
+        line-height: 45px;
+      }
+      span {
+        font-size: 17px;
+      }
     }
-    .blured-section span {
-      font-size: 18px;
+    .bit-img {
+      width: 60px;
+      height: 59px;
+      top: 87%;
+      left: -1%;
+    }
+    .ex-img {
+      height: 90%;
+    }
+  }
+  @media screen and (max-width: 601px) {
+    .blured-section {
+      p {
+        font-size: 29px;
+        margin-bottom: 0 !important;
+        line-height: 45px;
+      }
+      span {
+        font-size: 19px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 761px) {
+    .blured-section {
+      padding: 2rem 0;
+      top: 76%;
+      p {
+        font-size: 33px !important;
+      }
+      span {
+        font-size: 19px !important;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .blured-section {
+      top: 74% !important;
+      padding: 4rem 0 !important;
+      p {
+        font-size: 54px !important;
+        font-weight: 700;
+        line-height: 67.2px;
+        text-align: center;
+      }
+      span {
+        font-size: 30px !important;
+        font-weight: 500;
+        line-height: 38.4px;
+        text-align: center;
+      }
+    }
+    .ex-img img {
+      width: 990px;
+      height: 86%;
+      margin: 0 auto;
+    }
+    .bit-img {
+      width: 100px;
+      height: 100px;
+      top: 72% !important;
+      left: 7% !important;
+    }
+    .header-sub-title {
+      width: 70%;
+    }
+  }
+
+   @media screen and (min-width: 1250px) {
+    .blured-section {
+      top: 75% !important;
+      padding: 4rem 0 !important;
+      p {
+        font-size: 54px !important;
+        font-weight: 700;
+        line-height: 67.2px;
+        text-align: center;
+      }
+      span {
+        font-size: 30px !important;
+        font-weight: 500;
+        line-height: 38.4px;
+        text-align: center;
+      }
+    }
+    .ex-img img {
+      width: 990px;
+      height: 86%;
+      margin: 0 auto;
+    }
+    .bit-img {
+      width: 100px;
+      height: 100px;
+      top: 70% !important;
+      left: 12% !important;
+    }
+    .header-sub-title {
+      width: 70%;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    .bit-img {
+      width: 100px;
+      height: 100px;
+      top: 70% !important;
+      left: 18% !important;
     }
   }
 }

@@ -28,7 +28,7 @@
   .CryptoMarket-card {
     background-color: #1d263b;
     border-radius: 24px;
-    padding: 30px;
+    padding: 1rem 2rem 3rem 2rem;
     .card-title {
       color: white;
       font-size: 40px;
@@ -75,7 +75,7 @@
       font-size: 18px;
     }
     .card-title {
-      font-size: 28px !important;
+      font-size: 26px !important;
     }
     .card-text {
       font-size: 18px !important;
@@ -101,10 +101,49 @@
       font-size: 36px !important;
     }
   }
-
 }
-  @media screen and (max-width: 500px) {
-    #getCryptoMarketWatch {
-      margin-top: 5rem !important;
+@media screen and (max-width: 700px) {
+  #getCryptoMarketWatch {
+    margin-top: 20rem;
+
+    .CryptoMarket-card {
+      width: 100%;
     }
   }
+}
+
+@media screen and (max-width: 600px) {
+  #getCryptoMarketWatch .CryptoMarket-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #getCryptoMarketWatch .CryptoMarket-card .card-title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 761px) {
+  #getCryptoMarketWatch {
+    margin-top: -3rem;
+
+    .CryptoMarket-card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #getCryptoMarketWatch {
+    margin-top: 3rem;
+  }
+  #getCryptoMarketWatch .card-title {
+    font-size: 31px !important;
+  }
+  .card-text{
+    font-weight: 400;
+    font-size: 20px;
+  }
+}

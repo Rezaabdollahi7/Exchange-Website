@@ -6,19 +6,19 @@ const getHeader = `
             <div class="row">
                 <h6 class="header-title">Unlock, Experience, Digitize Wealth!</h6>
                 <h2 class="header-sub-title mt-3">In the world of advanced and innovative crypto</h2>
-                <p class="header-text mt-2">Experience a new era of interoperability and unlock the full potential of
+                <p class="header-text mt-4 mt-md-3">Experience a new era of interoperability and unlock the full potential of
                     decentralized technologies.
                     Join us on this
                     transformative journey towards a connected future!</p>
 
-                <div class="row mt-4 mb-4">
-                    <div class="btn-container my-4 d-flex justify-content-center align-items-center gap-4">
+                <div class="container mt-4 mb-4">
+                    <div class="btn-container my-4 d-flex  justify-content-center align-items-center gap-4">
                         <a class="first" href="#">Lunch app →</a>
                         <a class="second" href="#">How to use</a>
                     </div>
                 </div>
 
-                <div class="row mt-5 z-2">
+                <div class="container ex-img  mt-5 z-2">
                     <img src="./src/assets/Home_assets/exchange-preview.svg" alt="">
                 </div>
 
@@ -27,9 +27,9 @@ const getHeader = `
 
         <img class="position-absolute bit-img" src="./src/assets/Home_assets/bitcoin_backg.png" alt="">
         <div class="blured-section  container-full z-3 ">
-            <div class="row flex justify-content-center align-items-center col-12">
+            <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center col-12">
 
-                <div class="item-wrapper flex flex-column align-items-center justify-content-center col-4 z-2">
+                <div class="item-wrapper flex flex-column align-items-center justify-content-center col-12 col-md-4 z-2">
                     <p class="text-center">
                         150+
                     </p>
@@ -37,7 +37,7 @@ const getHeader = `
                         Users worldwide
                     </span>
                 </div>
-                <div class="item-wrapper flex flex-column align-items-center justify-content-center col-4 z-3">
+                <div class="item-wrapper flex flex-column align-items-center justify-content-center col-12 col-md-4 z-3 mt-4 mt-md-0">
                     <p class="text-center">
                         280+
                     </p>
@@ -45,7 +45,7 @@ const getHeader = `
                         Countries are supported
                     </span>
                 </div>
-                <div class="item-wrapper flex flex-column align-items-center justify-content-center col-4 z-3 ">
+                <div class="item-wrapper flex flex-column align-items-center justify-content-center col-12 col-md-4 z-3 mt-4 mt-md-0 ">
                     <p class="text-center">
                         100+
                     </p>

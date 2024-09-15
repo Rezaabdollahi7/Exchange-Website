@@ -2,7 +2,7 @@ const comment_part = `
     <div class="comment_container-fluid d-flex justify-content-center  align-items-center">
 
         <div class="comment_container overflow-hidden position-relative d-flex flex-column align-items-center">
-            <div class="swiper-buttons d-flex flex-row-reverse gap-3 mb-4 align-self-end">
+            <div class="swiper-buttons d-flex flex-row-reverse gap-3 mb-4 me-4  align-self-end">
                 <div class="swiper-next d-flex justify-content-center align-items-center rounded-pill bg-white">
                     <img src="./src/assets/Home_assets/arrow-right.svg" alt="right-arrow-key" class="w-100 h-100">
                 </div>

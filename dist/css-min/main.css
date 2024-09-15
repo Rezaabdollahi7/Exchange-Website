@@ -1,234 +1,3 @@
-/* Reset styles */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  height: 100%;
-  font-size: 100%;
-  line-height: 1.5;
-  color: #333;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #fff;
-}
-
-img,
-picture,
-video,
-canvas {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-:focus {
-  outline: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-}
-
-hr {
-  border: none;
-  height: 1px;
-  background-color: #e1e1e1;
-}
-
-/* Custom resets */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section {
-  display: block;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: "";
-  content: none;
-}
-
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-ThinItalic.ttf") format("truetype");
-  font-weight: 100;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-ExtraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-ExtraLightItalic.ttf") format("truetype");
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-SemiBoldItalic.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-BoldItalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-ExtraBoldItalic.ttf") format("truetype");
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-  src: url("../../src/assets/fonts/DMSans-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-body,
-* {
-  font-family: "DMSans" !important;
-}
-
-.background {
-  background: radial-gradient(at 60% 35%, #243a77, #110D1D);
-}
-
-/* Mixin for flexbox centering */
-/* Mixin for button styles */
-/* Mixin for responsive breakpoints */
-.container-full {
-  width: 100% !important;
-}
-
 .container-full {
   width: 100% !important;
 }
@@ -495,7 +264,7 @@ body,
 
 #InternationalCoverege {
   background-color: white;
-  padding: 6rem 0;
+  padding: 8rem 0;
 }
 #InternationalCoverege .International-title {
   font-size: 48px;
@@ -557,7 +326,7 @@ body,
 #getCryptoMarketWatch .CryptoMarket-card {
   background-color: #1d263b;
   border-radius: 24px;
-  padding: 30px;
+  padding: 1rem 2rem 3rem 2rem;
 }
 #getCryptoMarketWatch .CryptoMarket-card .card-title {
   color: white;
@@ -601,7 +370,7 @@ body,
     font-size: 18px;
   }
   #getCryptoMarketWatch .card-title {
-    font-size: 28px !important;
+    font-size: 26px !important;
   }
   #getCryptoMarketWatch .card-text {
     font-size: 18px !important;
@@ -626,9 +395,44 @@ body,
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   #getCryptoMarketWatch {
-    margin-top: 5rem !important;
+    margin-top: 20rem;
+  }
+  #getCryptoMarketWatch .CryptoMarket-card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #getCryptoMarketWatch .CryptoMarket-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  #getCryptoMarketWatch .CryptoMarket-card .card-title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 761px) {
+  #getCryptoMarketWatch {
+    margin-top: -3rem;
+  }
+  #getCryptoMarketWatch .CryptoMarket-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #getCryptoMarketWatch {
+    margin-top: 3rem;
+  }
+  #getCryptoMarketWatch .card-title {
+    font-size: 31px !important;
+  }
+  .card-text {
+    font-weight: 400;
+    font-size: 20px;
   }
 }
 header {
@@ -675,6 +479,10 @@ header .btn-container .first {
 header .btn-container .second {
   background: #3b414e;
 }
+header .ex-img {
+  margin-right: auto;
+  margin-left: auto;
+}
 header img {
   width: 990px;
   height: 77%;
@@ -710,29 +518,151 @@ header .bit-img {
   left: 9%;
   z-index: 0;
 }
-@media screen and (max-width: 400px) {
-  header .btn-container a {
-    padding: 10px 30px;
+@media screen and (max-width: 412px) {
+  header .btn-container {
+    flex-direction: column !important;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 486px) {
   header .header-sub-title {
+    font-size: 26px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .header-text {
     font-size: 22px;
     line-height: 40px;
     width: 80%;
   }
-  header .header-text {
-    font-size: 16px;
-    text-align: justify;
+}
+@media screen and (min-width: 522px) {
+  header .header-sub-title {
+    font-size: 40px !important;
+    text-align: center;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 900px) {
+  header .header-sub-title {
+    font-size: 64px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  header .blured-section {
+    padding: 1rem 0;
+    top: 90%;
   }
   header .blured-section p {
-    font-size: 32px;
-  }
-  header .blured-section p {
-    font-size: 32px;
+    font-size: 23px;
+    margin-bottom: 0 !important;
+    line-height: 45px;
   }
   header .blured-section span {
-    font-size: 18px;
+    font-size: 17px;
+  }
+  header .bit-img {
+    width: 60px;
+    height: 59px;
+    top: 87%;
+    left: -1%;
+  }
+  header .ex-img {
+    height: 90%;
+  }
+}
+@media screen and (max-width: 601px) {
+  header .blured-section p {
+    font-size: 29px;
+    margin-bottom: 0 !important;
+    line-height: 45px;
+  }
+  header .blured-section span {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 761px) {
+  header .blured-section {
+    padding: 2rem 0;
+    top: 76%;
+  }
+  header .blured-section p {
+    font-size: 33px !important;
+  }
+  header .blured-section span {
+    font-size: 19px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .blured-section {
+    top: 74% !important;
+    padding: 4rem 0 !important;
+  }
+  header .blured-section p {
+    font-size: 54px !important;
+    font-weight: 700;
+    line-height: 67.2px;
+    text-align: center;
+  }
+  header .blured-section span {
+    font-size: 30px !important;
+    font-weight: 500;
+    line-height: 38.4px;
+    text-align: center;
+  }
+  header .ex-img img {
+    width: 990px;
+    height: 86%;
+    margin: 0 auto;
+  }
+  header .bit-img {
+    width: 100px;
+    height: 100px;
+    top: 72% !important;
+    left: 7% !important;
+  }
+  header .header-sub-title {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1250px) {
+  header .blured-section {
+    top: 75% !important;
+    padding: 4rem 0 !important;
+  }
+  header .blured-section p {
+    font-size: 54px !important;
+    font-weight: 700;
+    line-height: 67.2px;
+    text-align: center;
+  }
+  header .blured-section span {
+    font-size: 30px !important;
+    font-weight: 500;
+    line-height: 38.4px;
+    text-align: center;
+  }
+  header .ex-img img {
+    width: 990px;
+    height: 86%;
+    margin: 0 auto;
+  }
+  header .bit-img {
+    width: 100px;
+    height: 100px;
+    top: 70% !important;
+    left: 12% !important;
+  }
+  header .header-sub-title {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header .bit-img {
+    width: 100px;
+    height: 100px;
+    top: 70% !important;
+    left: 18% !important;
   }
 }
 
@@ -830,7 +760,8 @@ header .bit-img {
   padding-bottom: 4rem;
 }
 .comment_container-fluid .comment_container {
-  margin: -14rem 80px 0;
+  margin: -14rem 0;
+  max-width: 1119px !important;
 }
 .comment_container-fluid .comment_container .comment-pagination {
   margin-top: 50px;
@@ -885,11 +816,6 @@ header .bit-img {
     font-size: 14px !important;
   }
 }
-@media screen and (max-width: 510px) {
-  .comment_container {
-    margin: 0 20px !important;
-  }
-}
 @media screen and (max-width: 404px) {
   .comment_text {
     font-size: 12px !important;
@@ -903,6 +829,236 @@ header .bit-img {
   .comment_text {
     overflow-y: scroll;
   }
+}
+/* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #333;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+
+/* Custom resets */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../src/assets/fonts/DMSans-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+body,
+* {
+  font-family: "DMSans" !important;
+}
+
+.background {
+  background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+}
+
+/* Mixin for flexbox centering */
+/* Mixin for button styles */
+/* Mixin for responsive breakpoints */
+.container-full {
+  width: 100% !important;
 }
 
 /*# sourceMappingURL=main.css.map */
