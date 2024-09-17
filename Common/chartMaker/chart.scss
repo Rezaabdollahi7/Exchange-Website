@@ -1,0 +1,13 @@
+@mixin colorPicker($color){
+    filter: drop-shadow(0 0 8px $color);
+}
+
+.apexcharts-canvas.increase{
+    @include colorPicker(#00ff00);
+}
+.apexcharts-canvas.decrease{
+    @include colorPicker(#ff0000);
+}
+.apexcharts-canvas.equal{
+    @include colorPicker(#ffff00);
+}
