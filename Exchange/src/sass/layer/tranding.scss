@@ -1,0 +1,47 @@
+#tranding {
+  h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+  }
+
+  .card-item {
+    border-radius: 30px;
+    background: #0e1a32;
+    padding: 1rem 1.25rem;
+
+    .coin-icon {
+      width: 45.19px;
+      height: 45.19px;
+      border: 1.01px 0px 0px 0px;
+    }
+    .coin-complate-name {
+      color: #fff;
+      font-size: 16.17px;
+      font-weight: 700;
+      line-height: 21.06px;
+      text-align: left;
+      margin-bottom: 0;
+    }
+    .coin-name {
+      color: #9a9cb8;
+    }
+
+    .green-percent {
+      color: #20d691;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 19.6px;
+      letter-spacing: 0.2530120015144348px;
+    }
+    .red-percent {
+      color: #FF3E46;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 19.6px;
+      letter-spacing: 0.2530120015144348px;
+    }
+  }
+}

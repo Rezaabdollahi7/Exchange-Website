@@ -309,4 +309,47 @@ body {
   }
 }
 
+#tranding h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: left;
+}
+#tranding .card-item {
+  border-radius: 30px;
+  background: #0e1a32;
+  padding: 1rem 1.25rem;
+}
+#tranding .card-item .coin-icon {
+  width: 45.19px;
+  height: 45.19px;
+  border: 1.01px 0px 0px 0px;
+}
+#tranding .card-item .coin-complate-name {
+  color: #fff;
+  font-size: 16.17px;
+  font-weight: 700;
+  line-height: 21.06px;
+  text-align: left;
+  margin-bottom: 0;
+}
+#tranding .card-item .coin-name {
+  color: #9a9cb8;
+}
+#tranding .card-item .green-percent {
+  color: #20d691;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  letter-spacing: 0.2530120015px;
+}
+#tranding .card-item .red-percent {
+  color: #FF3E46;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  letter-spacing: 0.2530120015px;
+}
+
 /*# sourceMappingURL=main.css.map */
