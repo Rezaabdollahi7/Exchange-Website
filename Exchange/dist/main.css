@@ -357,4 +357,48 @@ body {
   letter-spacing: 0.2530120015px;
 }
 
+#Transaction {
+  padding: 30px 20px;
+}
+#Transaction h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: left;
+}
+#Transaction .wallet-container {
+  width: 99%;
+  height: 430px;
+  border-radius: 30px;
+  background: #0e1a32;
+  margin: 0 auto;
+}
+#Transaction .wallet-container .wallet-img {
+  width: 100px;
+  height: 100px;
+}
+#Transaction .wallet-container .wallet-text {
+  font-size: 21.12px;
+  font-weight: 500;
+  line-height: 27.5px;
+  text-align: left;
+  color: #C1C8D5;
+}
+#Transaction .wallet-container .wallet-link {
+  font-size: 21.12px;
+  font-weight: 700;
+  line-height: 27.5px;
+  text-align: left;
+  color: #006FFF;
+}
+@media screen and (max-width: 550px) {
+  #Transaction .wallet-text, #Transaction .wallet-link {
+    font-size: 16px !important;
+  }
+  #Transaction h3 {
+    font-size: 27px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
