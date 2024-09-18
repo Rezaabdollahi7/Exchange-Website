@@ -494,4 +494,184 @@ body {
   padding: 0;
 }
 
+#exchange {
+  padding: 30px 20px;
+}
+#exchange h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: left;
+}
+#exchange .main-row {
+  width: 99%;
+  margin: 0 auto;
+}
+#exchange .left-container {
+  padding: 30px 31px 30px 31px;
+  border-radius: 31px;
+  background-color: #0e1a32;
+}
+#exchange .left-container .coins-container {
+  background-color: #1b3254;
+  width: 100%;
+  height: 118.64px;
+  border-radius: 25.28px;
+}
+#exchange .left-container .coins-container img {
+  width: 40px;
+  height: 40px;
+}
+#exchange .left-container .coins-container .coin-name .coin-symbol {
+  font-family: DM Sans;
+  font-size: 16.43px;
+  font-weight: 300;
+  line-height: 21.39px;
+  text-align: left;
+  color: #a4a8ab;
+}
+#exchange .left-container .coins-container .coin-name .coin-amount {
+  font-family: DM Sans;
+  font-size: 20.22px;
+  font-weight: 600;
+  line-height: 26.33px;
+  text-align: left;
+  color: #fff;
+}
+#exchange .left-container .coins-container .coin-price .coin-value {
+  font-family: DM Sans;
+  font-size: 18.6px;
+  font-weight: 700;
+  line-height: 24.21px;
+  text-align: right;
+  color: #fff;
+}
+#exchange .left-container .coins-container .coin-price .coin-total {
+  font-family: DM Sans;
+  font-size: 15.17px;
+  font-weight: 400;
+  line-height: 19.75px;
+  text-align: right;
+  color: #fff;
+}
+#exchange .left-container .connect-wallet-btn {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.83px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  background-color: #006fff;
+  box-shadow: 0px 3.1px 14.34px 0px rgba(12, 97, 236, 0.3411764706);
+  padding: 23.25px 38.75px;
+  border-radius: 23.25px;
+}
+#exchange .left-container .swap-container {
+  top: 23%;
+}
+#exchange .left-container .more-info-container .more-icon {
+  width: 24.8px;
+  height: 24.8px;
+}
+#exchange .left-container .more-items hr {
+  background-color: #9e9e9e;
+}
+#exchange .left-container .more-items .left-precent {
+  font-family: DM Sans;
+  font-size: 12.4px;
+  font-weight: 700;
+  line-height: 16.14px;
+  text-align: right;
+  color: white;
+}
+#exchange .left-container .more-items .right-text {
+  font-family: DM Sans;
+  font-size: 12.4px;
+  font-weight: 500;
+  line-height: 16.14px;
+  text-align: left;
+  color: white;
+}
+#exchange .left-container .more-items .positive-bg {
+  color: #0caf60;
+}
+#exchange .left-container .more-text {
+  font-family: DM Sans;
+  font-size: 21.12px;
+  font-weight: 700;
+  line-height: 27.5px;
+  text-align: left;
+  color: white !important;
+}
+#exchange .right-container .small-icon {
+  width: 30px;
+}
+#exchange .right-container .sortable img {
+  width: 20px;
+  height: 20px;
+}
+#exchange .right-container .top-img-container {
+  background-color: #1b3254;
+  border-radius: 30px 30px 0 0;
+  padding: 2.25rem 0;
+}
+#exchange .right-container .table-responsive {
+  background-color: #0e1a32;
+  padding: 0 2rem;
+  width: 100%;
+  border-radius: 0 0 30px 30px;
+}
+#exchange .right-container .table {
+  --bs-table-bg: transparent;
+  --bs-table-striped-bg: transparent;
+}
+#exchange .right-container .table th {
+  font-family: DM Sans;
+  font-size: 16.38px;
+  font-weight: 700;
+  line-height: 15.17px;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid gray;
+  color: white;
+}
+#exchange .right-container .table tbody .comname {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.83px;
+  text-align: left;
+  color: white;
+}
+#exchange .right-container .table tbody .nickname {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.62px;
+  text-align: left;
+  color: #a4a8ab;
+}
+#exchange .right-container .table tbody tr {
+  height: 78px;
+  vertical-align: middle;
+}
+#exchange .right-container .table tbody td {
+  color: white;
+  padding: 23px 0;
+}
+#exchange .right-container .text-green {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.21px;
+  text-align: right;
+  color: #26a17b !important;
+}
+@media screen and (max-width: 500px) {
+  #exchange .table {
+    width: 700px !important;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
