@@ -1,0 +1,53 @@
+html{
+    font-size: 62.5% !important; //this makes each rem to be 10px when the font size of browser has been set to 16px
+}
+body{
+    background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+}
+main{
+    max-width: 430px;
+    padding: 36px 25px;
+    background: linear-gradient(to bottom, $background_from, $background_to);
+}
+
+nav.mini-nav{
+    margin-bottom: 30px;
+
+    .setting-around{
+        padding: 15px;
+        background-color: $button_gray;
+        cursor: pointer;
+    }
+}
+
+.wallet-container{
+    position: relative;
+    background-color: #FFFFFF0D;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 21px;
+    z-index: 1;
+    #wallet-redirector{
+        padding: 15px 46px 15px 46px;
+        border: 1px solid #FFFFFF24;
+        backdrop-filter: blur(3px);
+        border-radius: 21px;
+        z-index: 1;
+    }
+    #wallet-address{
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 170px;
+    }
+    .bottom-line{
+        display: block;
+        width: 60%;
+        height: 7px;
+        border-radius: 120px;
+        background-color: $main_blue;
+        bottom: -3px;
+        z-index: -1;
+    }
+}
