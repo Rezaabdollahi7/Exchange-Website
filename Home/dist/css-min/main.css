@@ -830,6 +830,114 @@ header .bit-img {
     overflow-y: scroll;
   }
 }
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
 /* Reset styles */
 *,
 *::before,
@@ -937,186 +1045,6 @@ q::after {
   content: none;
 }
 
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-Thin.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-Thin.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-ThinItalic.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-ThinItalic.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 100;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-ExtraLight.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-ExtraLight.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-ExtraLightItalic.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-ExtraLightItalic.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-Light.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-Light.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-LightItalic.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-LightItalic.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-Regular.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-Regular.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-Italic.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-Italic.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-Medium.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-Medium.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-MediumItalic.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-MediumItalic.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-SemiBold.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-SemiBold.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-SemiBoldItalic.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-SemiBoldItalic.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-Bold.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-Bold.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-BoldItalic.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-BoldItalic.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-ExtraBold.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-ExtraBold.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-ExtraBoldItalic.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-ExtraBoldItalic.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-Black.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-Black.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DMSans";
-<<<<<<< HEAD:dist/css-min/main.css
-  src: url("../../src/assets/fonts/DMSans-BlackItalic.ttf") format("truetype");
-=======
-  src: url("../../../../Common/fonts/DMSans-BlackItalic.ttf") format("truetype");
->>>>>>> main:Home/dist/css-min/main.css
-  font-weight: 900;
-  font-style: italic;
-}
 body,
 * {
   font-family: "DMSans" !important;
