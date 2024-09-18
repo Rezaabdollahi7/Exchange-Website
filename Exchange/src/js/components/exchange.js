@@ -12,16 +12,16 @@ const exchange = `
 
                 <div class="exchange-setting-icons-container d-flex justify-content-end align-items-center w-100">
                 <a href="#"  >
-                      <img src="./assets/icons/History-Icon.svg" alt="" class="coin-icon">
+                      <img src="./assets/icons/History-Icon.svg" alt="History-Icon" class="exchange-coin-icon">
                  </a>
                    <a href="#" class="ms-2" >
-                      <img src="./assets/icons/Settings-Icon.svg" alt="" class="coin-icon">
+                      <img src="./assets/icons/Settings-Icon.svg" alt="Settings-Icon" class="exchange-coin-icon">
                  </a>
                 </div>
 
                 <div class="coins-container d-flex justify-content-around align-items-center mt-4">
                     <div class="coin-details d-flex align-items-center">
-                        <img src="./assets/icons/theter.svg" alt="" class="coin-icon">
+                        <img src="./assets/icons/theter.svg" alt="theter" class="exchange-coin-icon">
                         <div class="coin-name d-flex flex-column ms-3">
                             <span class="coin-symbol">USDT</span>
                             <span class="coin-amount mt-2">1000</span>
@@ -33,13 +33,13 @@ const exchange = `
                     </div>
                 </div>
 
-                <div class="swap-container position-absolute ">
-                    <img src="./assets/swap-icon.svg" alt="">
-                </div>
+                <a href="#" class="swap-container position-absolute ">
+                    <img src="./assets/swap-icon.svg" alt="swap-icon">
+                </a>
 
                 <div class="coins-container d-flex justify-content-around align-items-center mt-3">
                     <div class="coin-details d-flex align-items-center">
-                        <img src="./assets/icons/etherium.svg" alt="" class="coin-icon">
+                        <img src="./assets/icons/etherium.svg" alt="etherium" class="exchange-coin-icon">
                         <div class="coin-name d-flex flex-column ms-3">
                             <span class="coin-symbol">ETH</span>
                             <span class="coin-amount mt-2">0.4329</span>
@@ -55,10 +55,10 @@ const exchange = `
                     Connect Wallet
                 </button>
 
-                <div class="more-info-contaner d-flex flex-column w-100 mt-5">
+                <div class="more-info-container d-flex flex-column w-100 mt-5">
                     <div class="more-title d-flex justify-content-between w-100">
                         <h4 class="more-text">More information</h4>
-                        <img class="more-icon" src="./assets/icons/Arrow.svg" alt="">
+                        <img class="more-icon" src="./assets/icons/Arrow.svg" alt="Arrow-icon">
                     </div>
 
                     <ul class="more-items w-100 p-0 mt-2">
@@ -91,18 +91,18 @@ const exchange = `
             <!-- Right Section (4 columns) -->
             <div class="col-lg-9 right-container">
                 <div class="top-img-container d-flex justify-content-center align-items-center">
-                    <img src="./assets/Network.svg" alt="">
+                    <img src="./assets/Network.svg" alt="exchange-icon">
                 </div>
 
                 <div class="table-responsive pt-4">
                     <table class="table table-borderless table-striped text-light">
                         <thead>
-                            <tr>
+                            <tr class="main-tr">
                                 <th class="d-flex align-items-center sortable">
                                     <span>
                                         Exchange
                                     </span>
-                                    <img class="ms-2" src="./assets/icons/Line.svg" alt="">
+                                    <img class="ms-2" src="./assets/icons/Line.svg" alt="sort-icon">
                                 </th>
 
                                 <th>QUOTE</th>
@@ -116,7 +116,7 @@ const exchange = `
 
                             <tr class="my-4 ">
                                 <td class="d-flex  align-items-center">
-                                    <img src="./assets/icons/paraswap.svg" alt="USDT" class="small-icon">
+                                    <img src="./assets/icons/paraswap.svg" alt="paraswap" class="small-icon">
                                     <div class="coin-name-container d-flex flex-column ms-3">
                                         <span class="comname">Paraswap</span>
                                         <span class="nickname mt-1">DEX | INSTANT</span>
@@ -130,7 +130,7 @@ const exchange = `
 
                             <tr>
                                 <td class="d-flex  align-items-center">
-                                    <img src="./assets/icons/btc.svg" alt="USDT" class="small-icon">
+                                    <img src="./assets/icons/btc.svg" alt="btc" class="small-icon">
                                     <div class="coin-name-container d-flex flex-column ms-3">
                                         <span class="comname">Bitcoin</span>
                                         <span class="nickname mt-1">BTC</span>
@@ -145,7 +145,7 @@ const exchange = `
 
                             <tr>
                                 <td class="d-flex  align-items-center">
-                                    <img src="./assets/icons/tron-noborder.svg" alt="USDT" class="small-icon">
+                                    <img src="./assets/icons/tron-noborder.svg" alt="tron" class="small-icon">
                                     <div class="coin-name-container d-flex flex-column ms-3">
                                         <span class="comname">Tron</span>
                                         <span class="nickname mt-1">TRX</span>
@@ -161,7 +161,7 @@ const exchange = `
 
                             <tr>
                                 <td class="d-flex  align-items-center">
-                                    <img src="./assets/icons/bnb.svg" alt="USDT" class="small-icon">
+                                    <img src="./assets/icons/bnb.svg" alt="bnb" class="small-icon">
                                     <div class="coin-name-container d-flex flex-column ms-3">
                                         <span class="comname">Binance</span>
                                         <span class="nickname mt-1">BNB</span>
@@ -176,7 +176,7 @@ const exchange = `
 
                             <tr>
                                 <td class="d-flex  align-items-center">
-                                    <img src="./assets/icons/polygon.svg" alt="USDT" class="small-icon">
+                                    <img src="./assets/icons/polygon.svg" alt="polygon" class="small-icon">
                                     <div class="coin-name-container d-flex flex-column ms-3">
                                         <span class="comname">Polygon</span>
                                         <span class="nickname mt-1">MATIC</span>

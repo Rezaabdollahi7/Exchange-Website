@@ -361,7 +361,7 @@ body {
   padding: 30px 20px;
 }
 #Transaction h3 {
-  color: white;
+  color: #ffffff;
   font-size: 32px;
   font-weight: 700;
   line-height: 38.4px;
@@ -371,7 +371,7 @@ body {
   width: 99%;
   height: 430px;
   border-radius: 30px;
-  background: #0e1a32;
+  background-color: #0e1a32;
   margin: 0 auto;
 }
 #Transaction .wallet-container .wallet-img {
@@ -383,17 +383,18 @@ body {
   font-weight: 500;
   line-height: 27.5px;
   text-align: left;
-  color: #C1C8D5;
+  color: #c1c8d5;
 }
 #Transaction .wallet-container .wallet-link {
   font-size: 21.12px;
   font-weight: 700;
   line-height: 27.5px;
   text-align: left;
-  color: #006FFF;
+  color: #006fff;
 }
 @media screen and (max-width: 550px) {
-  #Transaction .wallet-text, #Transaction .wallet-link {
+  #Transaction .wallet-text,
+  #Transaction .wallet-link {
     font-size: 16px !important;
   }
   #Transaction h3 {
@@ -498,7 +499,7 @@ body {
   padding: 30px 20px;
 }
 #exchange h3 {
-  color: white;
+  color: #ffffff;
   font-size: 32px;
   font-weight: 700;
   line-height: 38.4px;
@@ -509,7 +510,7 @@ body {
   margin: 0 auto;
 }
 #exchange .left-container {
-  padding: 30px 31px 30px 31px;
+  padding: 30px;
   border-radius: 31px;
   background-color: #0e1a32;
 }
@@ -518,58 +519,73 @@ body {
   width: 100%;
   height: 118.64px;
   border-radius: 25.28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 #exchange .left-container .coins-container img {
   width: 40px;
   height: 40px;
 }
-#exchange .left-container .coins-container .coin-name .coin-symbol {
+#exchange .left-container .coins-container .coin-name,
+#exchange .left-container .coins-container .coin-price {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+#exchange .left-container .coins-container .coin-name > *,
+#exchange .left-container .coins-container .coin-price > * {
   font-family: DM Sans;
+  line-height: 1.6;
+}
+#exchange .left-container .coins-container .coin-symbol {
   font-size: 16.43px;
   font-weight: 300;
-  line-height: 21.39px;
-  text-align: left;
   color: #a4a8ab;
 }
-#exchange .left-container .coins-container .coin-name .coin-amount {
-  font-family: DM Sans;
-  font-size: 20.22px;
+#exchange .left-container .coins-container .coin-amount,
+#exchange .left-container .coins-container .coin-value {
+  font-size: 18px;
   font-weight: 600;
-  line-height: 26.33px;
-  text-align: left;
-  color: #fff;
 }
-#exchange .left-container .coins-container .coin-price .coin-value {
-  font-family: DM Sans;
-  font-size: 18.6px;
-  font-weight: 700;
-  line-height: 24.21px;
-  text-align: right;
-  color: #fff;
-}
-#exchange .left-container .coins-container .coin-price .coin-total {
-  font-family: DM Sans;
+#exchange .left-container .coins-container .coin-total {
   font-size: 15.17px;
   font-weight: 400;
-  line-height: 19.75px;
-  text-align: right;
-  color: #fff;
 }
 #exchange .left-container .connect-wallet-btn {
+  width: 100%;
+  padding: 23.25px 38.75px;
+  background-color: #006fff;
+  border-radius: 23.25px;
   font-family: DM Sans;
   font-size: 16px;
   font-weight: 700;
-  line-height: 20.83px;
+  color: #ffffff;
   text-align: center;
-  color: white;
-  width: 100%;
-  background-color: #006fff;
-  box-shadow: 0px 3.1px 14.34px 0px rgba(12, 97, 236, 0.3411764706);
-  padding: 23.25px 38.75px;
-  border-radius: 23.25px;
+  box-shadow: 0px 3.1px 14.34px rgba(12, 97, 236, 0.34);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+#exchange .left-container .connect-wallet-btn:hover {
+  background-color: #0056cc;
+  box-shadow: 0px 6px 18px rgba(12, 97, 236, 0.5);
+  transform: translateY(-2px);
+}
+#exchange .left-container .connect-wallet-btn:active {
+  background-color: #0041a8;
+  box-shadow: 0px 2px 8px rgba(12, 97, 236, 0.2);
+  transform: translateY(0);
 }
 #exchange .left-container .swap-container {
   top: 23%;
+  position: absolute;
+}
+#exchange .left-container .swap-container img {
+  transition: transform 0.5s ease-in-out;
+}
+#exchange .left-container .swap-container img:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
 }
 #exchange .left-container .more-info-container .more-icon {
   width: 24.8px;
@@ -578,32 +594,33 @@ body {
 #exchange .left-container .more-items hr {
   background-color: #9e9e9e;
 }
-#exchange .left-container .more-items .left-precent {
-  font-family: DM Sans;
-  font-size: 12.4px;
-  font-weight: 700;
-  line-height: 16.14px;
-  text-align: right;
-  color: white;
-}
+#exchange .left-container .more-items .left-precent,
 #exchange .left-container .more-items .right-text {
-  font-family: DM Sans;
   font-size: 12.4px;
-  font-weight: 500;
   line-height: 16.14px;
-  text-align: left;
-  color: white;
+  font-family: DM Sans;
+  color: #ffffff;
 }
 #exchange .left-container .more-items .positive-bg {
   color: #0caf60;
 }
 #exchange .left-container .more-text {
-  font-family: DM Sans;
   font-size: 21.12px;
   font-weight: 700;
-  line-height: 27.5px;
-  text-align: left;
-  color: white !important;
+  color: #ffffff;
+}
+#exchange .left-container .exchange-setting-icons-container a {
+  display: inline-block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+#exchange .left-container .exchange-setting-icons-container a:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+}
+#exchange .left-container .exchange-setting-icons-container a .exchange-coin-icon {
+  width: 24px;
+  height: 24px;
+  transition: fill 0.3s ease;
 }
 #exchange .right-container .small-icon {
   width: 30px;
@@ -620,52 +637,42 @@ body {
 #exchange .right-container .table-responsive {
   background-color: #0e1a32;
   padding: 0 2rem;
-  width: 100%;
   border-radius: 0 0 30px 30px;
 }
 #exchange .right-container .table {
   --bs-table-bg: transparent;
   --bs-table-striped-bg: transparent;
 }
-#exchange .right-container .table th {
+#exchange .right-container .table th,
+#exchange .right-container .table td {
   font-family: DM Sans;
-  font-size: 16.38px;
-  font-weight: 700;
-  line-height: 15.17px;
+  color: #ffffff;
   padding-bottom: 1.75rem;
-  border-bottom: 1px solid gray;
-  color: white;
-}
-#exchange .right-container .table tbody .comname {
-  font-family: DM Sans;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20.83px;
   text-align: left;
-  color: white;
-}
-#exchange .right-container .table tbody .nickname {
-  font-family: DM Sans;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15.62px;
-  text-align: left;
-  color: #a4a8ab;
 }
 #exchange .right-container .table tbody tr {
   height: 78px;
   vertical-align: middle;
 }
-#exchange .right-container .table tbody td {
-  color: white;
-  padding: 23px 0;
+#exchange .right-container .table tbody tr .comname,
+#exchange .right-container .table tbody tr .nickname {
+  display: block;
 }
-#exchange .right-container .text-green {
-  font-family: DM Sans;
+#exchange .right-container .table tbody tr .comname {
+  font-size: 16px;
+  font-weight: 700;
+}
+#exchange .right-container .table tbody tr .nickname {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a4a8ab;
+}
+#exchange .right-container .table .main-tr {
+  border-bottom: 1px solid gray;
+}
+#exchange .right-container .table .text-green {
   font-size: 16px;
   font-weight: 500;
-  line-height: 18.21px;
-  text-align: right;
   color: #26a17b !important;
 }
 @media screen and (max-width: 500px) {
