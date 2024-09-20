@@ -245,7 +245,7 @@ nav.mini-nav .setting-around {
   cursor: pointer;
 }
 
-.wallet-container {
+.wallet-address {
   position: relative;
   background-color: rgba(255, 255, 255, 0.0509803922);
   font-size: 1.6rem;
@@ -253,21 +253,21 @@ nav.mini-nav .setting-around {
   border-radius: 21px;
   z-index: 1;
 }
-.wallet-container #wallet-redirector {
+.wallet-address #wallet-redirector {
   padding: 15px 46px 15px 46px;
   border: 1px solid rgba(255, 255, 255, 0.1411764706);
   backdrop-filter: blur(3px);
   border-radius: 21px;
   z-index: 1;
 }
-.wallet-container #wallet-address {
+.wallet-address #wallet-address {
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 170px;
 }
-.wallet-container .bottom-line {
+.wallet-address .bottom-line {
   display: block;
   width: 60%;
   height: 7px;
@@ -275,6 +275,23 @@ nav.mini-nav .setting-around {
   background-color: #006FFF;
   bottom: -3px;
   z-index: -1;
+}
+
+.wallet-details span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: #848586;
+}
+.wallet-details .wallet-balance #balance {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 3.2rem;
+}
+.wallet-details .wallet-balance #balance-status {
+  font-size: 1.4rem;
+  color: #20D691;
 }
 
 /*# sourceMappingURL=main.css.map */
