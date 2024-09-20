@@ -21,6 +21,8 @@ function nftClick(){
     nft.classList.remove('inactive');
 }
 
-chartContainers.forEach(container => {
-    chart('bitcoin', [-20,30,-290,20,50,12,56,90,90], 'auto', 2, container)
+const data = [[-20,0,30,-134,80], [-20,30,-290,140,50,12,56,90,43], [-20,30,320,230,50,12,56,90,11], [-20,90,10,45,36,-87,9], [-20,90,10,45,-36,87,9], [-20,30,-290,20,50,12,56,90,90]]
+
+chartContainers.forEach((container, index) => {
+    chart('bitcoin', data[index], 'auto', 2, container)
 })
