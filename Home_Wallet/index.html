@@ -51,10 +51,10 @@
             </div>
         </div>
         <div class="control-segment p-1">
-            <button type="button" id="cryptoBtn" class="btn btn-toggle active" onclick="cryptoClick()">Crypto</button>
-            <button type="button" id="nftBtn" class="btn btn-toggle inactive" onclick="nftClick()">NFT <span class="badge rounded-pill" id="badge">2</span></button>
+            <button type="button" id="cryptoBtn" class="btn btn-toggle active">Crypto</button>
+            <button type="button" id="nftBtn" class="btn btn-toggle inactive">NFT <span class="badge rounded-pill" id="badge">2</span></button>
         </div>
-        <div class="coins-section">
+        <div class="coins-section d-flex flex-column gap-2 mt-5">
             <div class="coin d-flex justify-content-between">
                 <div class="coin_details d-flex flex-row gap-4 align-items-center">
                     <img src="assets/Bitcoin.svg" alt="bitcoin" width="40px" height="40px">
@@ -66,8 +66,88 @@
                 <div class="coin_status d-flex flex-row gap-4 align-items-center">
                     <div class="chartCont"></div>
                     <div class="coinWorth d-flex flex-column gap-2">
-                        <span id="coinPrice" class="text-white fw-bold">$20,788</span>
-                        <span id="coinStatus" class="up">+0,25%</span>
+                        <span class="coinPrice text-white fw-bold">$20,788</span>
+                        <span class="coinStatus up">+0,25%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin d-flex justify-content-between">
+                <div class="coin_details d-flex flex-row gap-4 align-items-center">
+                    <img src="assets/Ethereum.svg" alt="ethereum" width="40px" height="40px">
+                    <div class="coin_details_text d-flex flex-column gap-2">
+                        <span class="coin-name text-white fw-bold">Ethereum</span>
+                        <abbr title="Ethereum" class="">ETH</abbr>
+                    </div>
+                </div>
+                <div class="coin_status d-flex flex-row gap-4 align-items-center">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth d-flex flex-column gap-2">
+                        <span class="coinPrice text-white fw-bold">$20,788</span>
+                        <span class="coinStatus down">-0,25%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin d-flex justify-content-between">
+                <div class="coin_details d-flex flex-row gap-4 align-items-center">
+                    <img src="assets/XRPsvg.svg" alt="XRP" width="40px" height="40px">
+                    <div class="coin_details_text d-flex flex-column gap-2">
+                        <span class="coin-name text-white fw-bold">XRP</span>
+                        <abbr title="XRP" class="">XRP</abbr>
+                    </div>
+                </div>
+                <div class="coin_status d-flex flex-row gap-4 align-items-center">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth d-flex flex-column gap-2">
+                        <span class="coinPrice text-white fw-bold">$20,788</span>
+                        <span class="coinStatus down">-0,25%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin d-flex justify-content-between">
+                <div class="coin_details d-flex flex-row gap-4 align-items-center">
+                    <img src="assets/BNB.svg" alt="BNB" width="40px" height="40px">
+                    <div class="coin_details_text d-flex flex-column gap-2">
+                        <span class="coin-name text-white fw-bold">Binance</span>
+                        <abbr title="Binance" class="">BNB</abbr>
+                    </div>
+                </div>
+                <div class="coin_status d-flex flex-row gap-4 align-items-center">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth d-flex flex-column gap-2">
+                        <span class="coinPrice text-white fw-bold">$20,788</span>
+                        <span class="coinStatus down">-0,25%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin d-flex justify-content-between">
+                <div class="coin_details d-flex flex-row gap-4 align-items-center">
+                    <img src="assets/Dash.svg" alt="Dash" width="40px" height="40px">
+                    <div class="coin_details_text d-flex flex-column gap-2">
+                        <span class="coin-name text-white fw-bold">Dash</span>
+                        <abbr title="Dash" class="">XRP</abbr>
+                    </div>
+                </div>
+                <div class="coin_status d-flex flex-row gap-4 align-items-center">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth d-flex flex-column gap-2">
+                        <span class="coinPrice text-white fw-bold">$20,788</span>
+                        <span class="coinStatus down">-0,25%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin d-flex justify-content-between">
+                <div class="coin_details d-flex flex-row gap-4 align-items-center">
+                    <img src="assets/Litecoin.svg" alt="Litecoin" width="40px" height="40px">
+                    <div class="coin_details_text d-flex flex-column gap-2">
+                        <span class="coin-name text-white fw-bold">Litecoin</span>
+                        <abbr title="Litecoin" class="">LTC</abbr>
+                    </div>
+                </div>
+                <div class="coin_status d-flex flex-row gap-4 align-items-center">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth d-flex flex-column gap-2">
+                        <span class="coinPrice text-white fw-bold">$20,788</span>
+                        <span class="coinStatus down">-0,25%</span>
                     </div>
                 </div>
             </div>

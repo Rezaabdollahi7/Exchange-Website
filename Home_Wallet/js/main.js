@@ -4,6 +4,9 @@ const crypto = document.querySelector('#cryptoBtn');
 const nft = document.querySelector('#nftBtn');
 const chartContainers = document.querySelectorAll('.chartCont');
 
+crypto.addEventListener('click', cryptoClick);
+nft.addEventListener('click', nftClick);
+
 function cryptoClick(){
     crypto.classList.add('active');
     crypto.classList.remove('inactive');

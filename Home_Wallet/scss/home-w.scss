@@ -2,9 +2,11 @@
 
 html{
     font-size: 62.5% !important; //this makes each rem to be 10px when the font size of browser has been set to 16px
+    height: auto !important;
 }
 body{
     background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+    height: auto !important;
 }
 main{
     max-width: 430px;
@@ -131,7 +133,7 @@ nav.mini-nav{
 
 .coin{
     height: 64px;
-    border: 1px solid red ;
+
     .coin_details_text{
         .coin-name{
             font-size: 1.4rem;
@@ -145,16 +147,19 @@ nav.mini-nav{
         }
     }
     .coinWorth{
-        #coinPrice{
+        .coinPrice{
             font-size: 1.4rem;
             line-height: 1.9rem;
         }
-        #coinStatus{
+        .coinStatus{
             font-size: 1.2rem;
             text-align: right;
         }
-        #coinStatus.up{
+        .coinStatus.up{
             color: $success-green;
+        }
+        .coinStatus.down{
+            color: $fail-red;
         }
     }
     .chartCont{
