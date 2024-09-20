@@ -1,13 +1,18 @@
 @mixin colorPicker($color){
     filter: drop-shadow(0 0 8px $color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.apexcharts-canvas.increase{
-    @include colorPicker(#00ff00);
-}
-.apexcharts-canvas.decrease{
-    @include colorPicker(#ff0000);
-}
-.apexcharts-canvas.equal{
-    @include colorPicker(#ffff00);
-}
+// .apexcharts-canvas.increase{
+//     @include colorPicker(#00ff00);
+// }
+// .apexcharts-canvas.decrease{
+//     @include colorPicker(#ff0000);
+// }
+// .apexcharts-canvas.equal{
+//     @include colorPicker(#ffff00);
+// }
+
+// ! if you are using it add each class' color in its own style file by using colorPicker mixin.

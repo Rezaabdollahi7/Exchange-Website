@@ -222,6 +222,18 @@ body,
   background: radial-gradient(at 60% 35%, #243a77, #110D1D);
 }
 
+.apexcharts-canvas.increase {
+  filter: drop-shadow(0 0 8px #00ff00);
+}
+
+.apexcharts-canvas.decrease {
+  filter: drop-shadow(0 0 8px #ff0000);
+}
+
+.apexcharts-canvas.equal {
+  filter: drop-shadow(0 0 8px #ffff00);
+}
+
 html {
   font-size: 62.5% !important;
 }
@@ -292,6 +304,103 @@ nav.mini-nav .setting-around {
 .wallet-details .wallet-balance #balance-status {
   font-size: 1.4rem;
   color: #20D691;
+}
+
+.interaction-btns .wallet-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 57px;
+  height: 57px;
+  border: 1px solid rgba(255, 255, 255, 0.031372549);
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  border-radius: 100%;
+  border-top: 1px solid rgba(0, 110, 255, 0.2784313725);
+  backdrop-filter: blur(3px);
+}
+.interaction-btns .interBtn_container span {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.control-segment {
+  background-color: #26272B;
+  border-radius: 25px;
+  height: 60px;
+  margin-top: 40px;
+}
+.control-segment .btn-toggle {
+  width: calc(50% - 2px);
+  height: 100%;
+  border-radius: 25px;
+  border: none !important;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.control-segment .btn-toggle .badge {
+  background-color: #E4761B;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.control-segment .btn-toggle.active {
+  background-color: #006FFF;
+  color: #fff;
+  font-weight: 700;
+}
+.control-segment .btn-toggle.inactive {
+  color: #848586;
+  font-weight: 500;
+}
+
+.coin {
+  height: 64px;
+  border: 1px solid red;
+}
+.coin .coin_details_text .coin-name {
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+.coin .coin_details_text abbr {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none !important;
+  color: #848586;
+}
+.coin .coinWorth #coinPrice {
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+.coin .coinWorth #coinStatus {
+  font-size: 1.2rem;
+  text-align: right;
+}
+.coin .coinWorth #coinStatus.up {
+  color: #20D691;
+}
+.coin .chartCont {
+  width: 70px;
+}
+.coin .apexcharts-canvas.increase {
+  filter: drop-shadow(0 0 8px #20D691);
+}
+.coin .apexcharts-canvas.decrease {
+  filter: drop-shadow(0 0 8px #F65556);
+}
+.coin .apexcharts-canvas.equal {
+  filter: drop-shadow(0 0 8px #ccd911);
+}
+
+.apexcharts-canvas.increase {
+  filter: drop-shadow(0 0 8px #00ff00);
+}
+
+.apexcharts-canvas.decrease {
+  filter: drop-shadow(0 0 8px #ff0000);
+}
+
+.apexcharts-canvas.equal {
+  filter: drop-shadow(0 0 8px #ffff00);
 }
 
 /*# sourceMappingURL=main.css.map */
