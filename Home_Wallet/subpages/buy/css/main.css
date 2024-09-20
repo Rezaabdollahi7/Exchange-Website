@@ -218,10 +218,6 @@ body,
   font-family: "DMSans" !important;
 }
 
-.background {
-  background: radial-gradient(at 60% 35%, #243a77, #110D1D);
-}
-
 html {
   font-size: 62.5% !important;
   height: auto !important;
