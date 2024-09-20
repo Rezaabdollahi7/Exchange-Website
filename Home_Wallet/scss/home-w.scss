@@ -1,3 +1,5 @@
+@import "../../Common/chartMaker/chart.scss";
+
 html{
     font-size: 62.5% !important; //this makes each rem to be 10px when the font size of browser has been set to 16px
 }
@@ -57,7 +59,7 @@ nav.mini-nav{
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 2rem;
-        color: #848586;
+        color: $small-title;
     }
     
     .wallet-balance{
@@ -71,5 +73,101 @@ nav.mini-nav{
             font-size: 1.4rem;
             color: $success-green;
         }
+    }
+}
+
+.interaction-btns{
+    .wallet-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 57px;
+        height: 57px;
+        border: 1px solid #ffffff08;
+        background-color: #ffffff0d;
+        border-radius: 100%;
+        border-top: 1px solid #006eff47;
+        backdrop-filter: blur(3px);
+    }
+    .interBtn_container{
+        span{
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+    }
+}
+.control-segment{
+    background-color: #26272B;
+    border-radius: 25px;
+    height: 60px;
+    margin-top: 40px;
+
+    .btn-toggle{
+        width: calc(50% - 2px);
+        height: 100%;
+        border-radius: 25px;
+        border: none !important;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+
+        .badge{
+            background-color: #E4761B;
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-left: 5px;
+        }
+    }
+    .btn-toggle.active{
+        background-color: $main_blue;
+        color: #fff;
+        font-weight: 700;
+    }
+    .btn-toggle.inactive{
+        color: $small-title;
+        font-weight: 500;
+    }
+
+}
+
+.coin{
+    height: 64px;
+    border: 1px solid red ;
+    .coin_details_text{
+        .coin-name{
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+        }
+        abbr{
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-decoration: none !important;
+            color: $small-title;
+        }
+    }
+    .coinWorth{
+        #coinPrice{
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+        }
+        #coinStatus{
+            font-size: 1.2rem;
+            text-align: right;
+        }
+        #coinStatus.up{
+            color: $success-green;
+        }
+    }
+    .chartCont{
+        width: 70px;
+    }
+
+    .apexcharts-canvas.increase{
+        @include colorPicker($success-green);
+    }
+    .apexcharts-canvas.decrease{
+        @include colorPicker($fail-red);
+    }
+    .apexcharts-canvas.equal{
+        @include colorPicker(#ccd911);
     }
 }
