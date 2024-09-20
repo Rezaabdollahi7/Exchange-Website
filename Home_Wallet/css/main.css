@@ -222,24 +222,14 @@ body,
   background: radial-gradient(at 60% 35%, #243a77, #110D1D);
 }
 
-.apexcharts-canvas.increase {
-  filter: drop-shadow(0 0 8px #00ff00);
-}
-
-.apexcharts-canvas.decrease {
-  filter: drop-shadow(0 0 8px #ff0000);
-}
-
-.apexcharts-canvas.equal {
-  filter: drop-shadow(0 0 8px #ffff00);
-}
-
 html {
   font-size: 62.5% !important;
+  height: auto !important;
 }
 
 body {
   background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+  height: auto !important;
 }
 
 main {
@@ -355,7 +345,6 @@ nav.mini-nav .setting-around {
 
 .coin {
   height: 64px;
-  border: 1px solid red;
 }
 .coin .coin_details_text .coin-name {
   font-size: 1.4rem;
@@ -367,40 +356,40 @@ nav.mini-nav .setting-around {
   text-decoration: none !important;
   color: #848586;
 }
-.coin .coinWorth #coinPrice {
+.coin .coinWorth .coinPrice {
   font-size: 1.4rem;
   line-height: 1.9rem;
 }
-.coin .coinWorth #coinStatus {
+.coin .coinWorth .coinStatus {
   font-size: 1.2rem;
   text-align: right;
 }
-.coin .coinWorth #coinStatus.up {
+.coin .coinWorth .coinStatus.up {
   color: #20D691;
+}
+.coin .coinWorth .coinStatus.down {
+  color: #F65556;
 }
 .coin .chartCont {
   width: 70px;
 }
 .coin .apexcharts-canvas.increase {
   filter: drop-shadow(0 0 8px #20D691);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .coin .apexcharts-canvas.decrease {
   filter: drop-shadow(0 0 8px #F65556);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .coin .apexcharts-canvas.equal {
   filter: drop-shadow(0 0 8px #ccd911);
-}
-
-.apexcharts-canvas.increase {
-  filter: drop-shadow(0 0 8px #00ff00);
-}
-
-.apexcharts-canvas.decrease {
-  filter: drop-shadow(0 0 8px #ff0000);
-}
-
-.apexcharts-canvas.equal {
-  filter: drop-shadow(0 0 8px #ffff00);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
