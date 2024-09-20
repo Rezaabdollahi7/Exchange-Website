@@ -293,7 +293,12 @@ nav.mini-nav .setting-around {
 }
 .wallet-details .wallet-balance #balance-status {
   font-size: 1.4rem;
+}
+.wallet-details .wallet-balance #balance-status.up {
   color: #20D691;
+}
+.wallet-details .wallet-balance #balance-status.down {
+  color: #F65556;
 }
 
 .interaction-btns .wallet-btn {
@@ -390,6 +395,14 @@ nav.mini-nav .setting-around {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#balance-status i {
+  font-family: "Font Awesome 6 Free" !important;
+  margin-right: 5px;
+}
+#balance-status i.fa-caret-up {
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=main.css.map */
