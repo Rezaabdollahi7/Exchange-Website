@@ -218,6 +218,10 @@ body,
   font-family: "DMSans" !important;
 }
 
+.background {
+  background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+}
+
 html {
   font-size: 62.5% !important;
   height: auto !important;
@@ -225,13 +229,16 @@ html {
 
 body {
   background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+  background-repeat: no-repeat;
   height: auto !important;
+  min-height: 100vh !important;
 }
 
 main {
   max-width: 430px;
   padding: 30px 25px;
   background: linear-gradient(to bottom, #15151C, #110D1D);
+  background-repeat: no-repeat;
 }
 
 nav.mini-nav {
