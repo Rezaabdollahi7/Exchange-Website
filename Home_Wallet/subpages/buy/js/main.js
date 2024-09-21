@@ -3,6 +3,9 @@ const amountInput = document.querySelector("#walletInput");
 const inputIcon = document.querySelector("#wallet-icon");
 const quickSelect = document.querySelectorAll(".select-btn");
 const dollarSign = document.querySelector(".dollar-sign");
+const currencyBtn = document.querySelector("#currency-name");
+const pop_up = document.querySelector("#pop-up");
+const xmark = document.querySelector("#xmark");
 
 quickSelect.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -11,11 +14,11 @@ quickSelect.forEach(btn => {
         inputIcon.classList.add("focus");
         inputContainer.classList.add("focus");
     })
-})
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     amountInput.value = "";
-})
+});
 
 amountInput.addEventListener('input', () => {
     if (!amountInput.value){
@@ -29,4 +32,12 @@ amountInput.addEventListener('input', () => {
         inputContainer.classList.add("focus");
         
     }
+});
+
+currencyBtn.addEventListener('click', () => {
+    pop_up.classList.toggle('d-none');
+})
+
+xmark.addEventListener('click', () => {
+    pop_up.classList.toggle('d-none');
 })
