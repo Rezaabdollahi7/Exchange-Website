@@ -402,6 +402,9 @@ section.pop-up-background .pop-up .input-container {
   padding: 0 20px;
   border: 1px solid transparent;
 }
+section.pop-up-background .pop-up #search-svg {
+  flex-shrink: 0 !important;
+}
 section.pop-up-background .pop-up .checkboxes {
   padding: 25px;
 }

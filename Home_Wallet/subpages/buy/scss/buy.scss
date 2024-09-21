@@ -173,6 +173,10 @@ section.pop-up-background{
             @include inputContainer();
         }
 
+        #search-svg{
+            flex-shrink: 0 !important;
+        }
+
         .checkboxes{
             padding: 25px;
         }
