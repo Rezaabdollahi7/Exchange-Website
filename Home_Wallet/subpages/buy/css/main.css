@@ -304,15 +304,16 @@ nav.mini-nav h1 {
   line-height: 3.2rem;
 }
 
+.head-span {
+  font-size: 1.8rem;
+  color: #848586;
+  font-weight: 500;
+}
+
 section.countSection {
   padding: 27px;
   background-color: #27282E;
   border-radius: 30px;
-}
-section.countSection .head-span {
-  font-size: 1.8rem;
-  color: #848586;
-  font-weight: 500;
 }
 section.countSection .input-container {
   background-color: #303134;
@@ -345,10 +346,6 @@ section.countSection .input-container .dollar-sign.focus {
 }
 section.countSection .input-container #wallet-icon.focus {
   fill: #006FFF;
-  font-weight: 700;
-}
-section.countSection .input-container.focus {
-  border-color: #006FFF !important;
 }
 section.countSection .quick-select button {
   color: #848586;
@@ -364,13 +361,90 @@ section.countSection .quick-select button:hover {
   border-color: #006FFF;
 }
 
-#buy-form #buy-btn {
+.input-container.focus {
+  border-color: #006FFF !important;
+}
+
+#buy-btn, #currency-btn {
   margin-top: 40px;
   padding: 15px 39px;
   border-radius: 25px;
   font-size: 1.6rem;
   font-weight: 700;
   box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
+}
+
+section.pop-up-background {
+  z-index: 90;
+  padding: 0 20px;
+}
+section.pop-up-background .pop-up {
+  background-color: #27282E;
+  border-radius: 30px;
+  padding: 25px 30px 0px;
+}
+section.pop-up-background .pop-up #currency-input {
+  background-color: transparent;
+  border: none;
+  stroke: none;
+  color: #fff;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 20px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  -moz-appearance: textfield;
+  margin-left: 20px;
+}
+section.pop-up-background .pop-up .input-container {
+  background-color: #303134;
+  border-radius: 25px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+}
+section.pop-up-background .pop-up .checkboxes {
+  padding: 25px;
+}
+section.pop-up-background .pop-up .checkbox-container {
+  overflow-y: scroll;
+  max-height: 230px;
+}
+section.pop-up-background .pop-up .form-check {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+section.pop-up-background .pop-up .form-check-input {
+  width: 25px;
+  height: 25px;
+  border-radius: 7px;
+}
+section.pop-up-background .pop-up .form-check-input:checked {
+  background-color: #006FFF;
+  border-color: #006FFF;
+}
+section.pop-up-background .pop-up .form-check-label {
+  font-size: 1.6rem;
+  color: #848586;
+  font-weight: 500;
+  margin-left: 15px;
+}
+section.pop-up-background .pop-up .xmark {
+  border-radius: 100%;
+  background-color: #303134;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #848586;
+  align-self: flex-end;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.fa-solid {
+  font-family: "Font Awesome 6 Free" !important;
 }
 
 /*# sourceMappingURL=main.css.map */

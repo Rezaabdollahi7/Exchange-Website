@@ -85,35 +85,23 @@ nav.mini-nav{
     }
 }
 
+.head-span{
+    font-size: 1.8rem;
+    color: $small-title;
+    font-weight: 500;
+}
+
 section.countSection{
     padding: 27px;
-    background-color: #27282E;
+    background-color: $part-back-gray;
     border-radius: 30px;
 
-    .head-span{
-        font-size: 1.8rem;
-        color: $small-title;
-        font-weight: 500;
-    }
 
     .input-container{
-        background-color: #303134;
-        border-radius: 25px;
-        padding: 0 20px;
-        border: 1px solid transparent;
+        @include inputContainer();
 
         #walletInput{
-            background-color: transparent;
-            border: none;
-            stroke: none;
-            color: #fff;
-            flex-grow: 1;
-            flex-shrink: 1;
-            padding: 20px 0;
-            // margin-left: 10px;
-            font-size: 1.6rem;
-            font-weight: 700;
-            -moz-appearance: textfield;
+            @include inputStyle();
         }
 
         .wallet-svg{
@@ -132,14 +120,10 @@ section.countSection{
 
         #wallet-icon.focus{
             fill: $main_blue;
-            font-weight: 700;
         }
 
     }
-    .input-container.focus{
-        border-color: $main_blue !important;
-    }
-
+    
     .quick-select{
         button{
             color: $small-title;
@@ -155,16 +139,86 @@ section.countSection{
             border-color: $main_blue;
         }
     }
-
+    
 }
 
-#buy-form{
-    #buy-btn{
-        margin-top: 40px;
-        padding: 15px 39px;
-        border-radius: 25px;
-        font-size: 1.6rem;
-        font-weight: 700;
-        box-shadow: 0 0 15px #0C61EC57;
+.input-container.focus{
+    border-color: $main_blue !important;
+}
+
+#buy-btn, #currency-btn{
+    margin-top: 40px;
+    padding: 15px 39px;
+    border-radius: 25px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    box-shadow: 0 0 15px #0C61EC57;
+}
+
+section.pop-up-background{
+    z-index: 90;
+    padding: 0 20px;
+
+    .pop-up{
+        background-color: $part-back-gray;
+        border-radius: 30px;
+        padding: 25px 30px 0px;
+
+        #currency-input{
+            @include inputStyle();
+            margin-left: 20px;
+        }
+
+        .input-container{
+            @include inputContainer();
+        }
+
+        .checkboxes{
+            padding: 25px;
+        }
+
+        .checkbox-container{
+            overflow-y: scroll;
+            max-height: 230px;
+        }
+        .form-check{
+            width: 100%;
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .form-check-input{
+            width: 25px;
+            height: 25px;
+            border-radius: 7px;
+        }
+        .form-check-input:checked{
+            background-color: $main_blue;
+            border-color: $main_blue;
+        }
+
+        .form-check-label{
+            font-size: 1.6rem;
+            color: $small-title;
+            font-weight: 500;
+            margin-left: 15px;
+        }
+
+        .xmark{
+            border-radius: 100%;
+            background-color: #303134;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $small-title;
+            align-self: flex-end;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
     }
+}
+
+.fa-solid{
+    font-family: "Font Awesome 6 Free" !important;
 }
