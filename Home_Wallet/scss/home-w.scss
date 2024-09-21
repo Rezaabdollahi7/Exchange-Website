@@ -6,12 +6,15 @@ html{
 }
 body{
     background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+    background-repeat: no-repeat;
     height: auto !important;
+    min-height: 100vh !important;
 }
 main{
     max-width: 430px;
     padding: 36px 25px;
     background: linear-gradient(to bottom, $background_from, $background_to);
+    background-repeat: no-repeat;
 }
 
 nav.mini-nav{
