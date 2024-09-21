@@ -1,7 +1,8 @@
 
 
 const getNavbar = `
-     <nav class="navbar navbar-expand-lg navbar-dark ">
+  <div class="overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="../Home/src/assets/Home_assets/Logo.svg" alt="Logo" class="navbar-logo">
@@ -38,15 +39,105 @@ const getNavbar = `
                         </ul>
                     </li>
                 </ul>
-                <div class="btn-container d-flex justify-content-center align-items-center d-lg-none mt-4 ">
-                    <button class="btn btn-primary btn-price  ">Connect Wallet</button>
+
+                <!-- connect dropdown in phone menu -->
+                <div
+                    class="btn-container dropdown phone-connect-dropdown d-flex justify-content-center align-items-center d-lg-none mt-4 ">
+                    <button class="btn btn-primary btn-connect dropdown-toggle  " type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Connect Wallet</button>
+
+                    <ul class="dropdown-menu wallet-drop">
+                        <div class="wallet-modal">
+                            <h4>Select a wallet</h4>
+                            <p class="terms">
+                                By Connecting your wallet you agree <a href="#">Terms of service</a> and our <a
+                                    href="#">privacy policy</a>
+                            </p>
+
+                            <div class="wallet-option mt-4">
+                                <img src="./assets/icons/metamask-icon.svg" alt="MetaMask">
+                                <a href="#">MetaMask</a>
+                                <span class="connect-link">Connect</span>
+                            </div>
+
+                            <div class="wallet-option">
+                                <img src="./assets/icons/coinbase-logo 1.svg" alt="Coinbase Wallet">
+                                <a href="#">Coinbase Wallet</a>
+                            </div>
+
+                            <div class="wallet-option">
+                                <img src="./assets/icons/walletconnect-seeklogo.com 1.svg" alt="WalletConnect">
+                                <a href="#">WalletConnect</a>
+                            </div>
+                        </div>
+
+                    </ul>
+
                 </div>
 
             </div>
 
-            <button class="btn btn-primary  btn-price d-none d-lg-block ">Connect Wallet</button>
+            <!-- connect dropdown in laptop menu -->
+            <div
+                class="btn-container dropdown laptop-connect-dropdown  d-flex justify-content-center align-items-center d-none d-lg-block  ">
+                <button class="btn btn-primary btn-connect dropdown-toggle  " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Connect Wallet</button>
+
+                <ul class="dropdown-menu wallet-drop">
+                    <div class="wallet-modal">
+                        <h4>Select a wallet</h4>
+                        <p class="terms">
+                            By Connecting your wallet you agree <a href="#">Terms of service</a> and our <a
+                                href="#">privacy policy</a>
+                        </p>
+
+                        <div class="wallet-option mt-4">
+                            <img src="./assets/icons/metamask-icon.svg" alt="MetaMask">
+                            <a href="#">MetaMask</a>
+                            <span class="connect-link">Connect</span>
+                        </div>
+
+                        <div class="wallet-option">
+                            <img src="./assets/icons/coinbase-logo 1.svg" alt="Coinbase Wallet">
+                            <a href="#">Coinbase Wallet</a>
+                        </div>
+
+                        <div class="wallet-option">
+                            <img src="./assets/icons/walletconnect-seeklogo.com 1.svg" alt="WalletConnect">
+                            <a href="#">WalletConnect</a>
+                        </div>
+                    </div>
+
+                </ul>
+
+            </div>
         </div>
     </nav>
    `
+   function connectOverlay(){
+      document.addEventListener('DOMContentLoaded', function () {
+         const dropdown = document.querySelector('.laptop-connect-dropdown');
+         const more_dropdown = document.querySelector('.phone-connect-dropdown');
+         const overlay = document.querySelector('.overlay');
 
-export { getNavbar }
+         dropdown.addEventListener('show.bs.dropdown', function () {
+            overlay.style.display = 'block';
+            console.log("hi");
+         });
+
+         dropdown.addEventListener('hide.bs.dropdown', function () {
+            overlay.style.display = 'none';
+         });
+
+         more_dropdown.addEventListener('show.bs.dropdown', function () {
+            overlay.style.display = 'block';
+            console.log("hi");
+         });
+
+         more_dropdown.addEventListener('hide.bs.dropdown', function () {
+            overlay.style.display = 'none';
+         });
+      });
+   }
+
+export { getNavbar , connectOverlay}

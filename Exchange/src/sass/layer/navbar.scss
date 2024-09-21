@@ -6,16 +6,26 @@ $btn-bg-color: #006fff;
 $btn-text-color: #ffffff;
 $dropdown-link-hower: #007bff;
 
+// Define colors
+$background-color: #0e1a32;
+$text-color: #c1c8d5;
+$link-color: #006fff;
+$white-color: #ffffff;
+$line-color: #2a2e39;
+
+.overlay {
+  width: 100vw;
+  height: 200vh;
+  position: absolute;
+  filter: blur(4px);
+  display: none;
+  background-color: #000000b2;
+  z-index: 2;
+}
+
 .navbar {
   padding: 30px 20px;
-  //   ! change it
-  // background: rgb(17, 20, 43);
-  // background: linear-gradient(
-  //   135deg,
-  //   rgba(17, 20, 43, 1) 0%,
-  //   rgba(22, 35, 72, 1) 43%,
-  //   rgba(22, 30, 61, 1) 100%
-  // );
+
   .navbar-nav {
     border-bottom: 1px #bdbdbd1b solid;
     padding: 1rem 3rem;
@@ -40,11 +50,12 @@ $dropdown-link-hower: #007bff;
     }
   }
 
-  .btn-price {
+  .btn-connect {
     border: none;
     font-size: 1rem;
     border-radius: 30px;
-    // width: 164px;
+    z-index: 10 !important;
+    position: relative;
     height: 54px;
     padding: 15px 46px 15px 46px;
     background-color: $btn-bg-color;
@@ -54,27 +65,114 @@ $dropdown-link-hower: #007bff;
       background-color: darken($btn-bg-color, 10%);
     }
   }
+  .phone-connect-dropdown {
+    .dropdown-menu {
+      background: transparent;
+      border: none;
 
-  .dropdown-menu {
-    background: transparent;
-    border: none;
+      .dropdown-item {
+        color: white;
 
-    .dropdown-item {
-      color: white;
-
-      &:hover {
-        background-color: darken($dropdown-link-hower, 10%);
-        cursor: pointer;
-        border-radius: 2px;
+        &:hover {
+          background-color: darken($dropdown-link-hower, 10%);
+          cursor: pointer;
+          border-radius: 2px;
+        }
       }
     }
-  }
-  .dropdown-toggle::after {
-    vertical-align: 1px !important;
+    .dropdown-toggle::after {
+      vertical-align: 1px !important;
+    }
   }
 
   .navbar-toggler {
     border: none;
+  }
+  .laptop-connect-dropdown,
+  .phone-connect-dropdown {
+    .dropdown-toggle::after {
+      display: none !important;
+    }
+    .wallet-drop {
+      padding: 0;
+      border-radius: 30px;
+      background: #0e1a32;
+      width: 386px;
+      right: 36%;
+      left: -84% !important;
+      margin-top: 2rem !important;
+      z-index: 100;
+      .wallet-modal {
+        background-color: $background-color;
+        padding: 20px;
+        border-radius: 30px;
+        max-width: 350px;
+        margin: 0 auto;
+        color: $text-color;
+
+        h4 {
+          color: $white-color;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        .terms {
+          margin: 10px 0;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 32px;
+          text-align: center;
+
+          a {
+            color: #006fff;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .wallet-option {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #182a47;
+          padding: 1rem 0;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+
+          a {
+            flex-grow: 1;
+            margin-left: 10px;
+            font-size: 19.73px;
+            font-weight: 700;
+            line-height: 30.43px;
+            letter-spacing: 0.2414964884519577px;
+            color: #fff;
+            margin-left: 20px;
+          }
+
+          .connect-link {
+            color: #006fff;
+            font-size: 0.9rem;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .phone-connect-dropdown .wallet-drop {
+      width: 107%;
+      left: -4% !important;
+      margin: 0 auto;
+    }
+    .wallet-modal .wallet-option a {
+      font-size: 16px !important;
+    }
   }
   @media screen and (max-width: 768px) {
     .navbar-brand {
@@ -85,13 +183,13 @@ $dropdown-link-hower: #007bff;
       font-size: 0.9rem;
     }
 
-    .btn-price {
+    .btn-connect {
       font-size: 0.9rem;
     }
   }
 
   @media screen and (max-width: 992px) {
-    .btn-price {
+    .btn-connect {
       padding: 0.4rem 1.2rem;
     }
     .navbar-nav {
@@ -110,9 +208,11 @@ $dropdown-link-hower: #007bff;
   }
 
   @media screen and (min-width: 992px) {
-    .dropdown-menu {
-      background: rgb(43 62 117 / 88%) !important;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    .phone-connect-dropdown {
+      .dropdown-menu {
+        background: rgb(43 62 117 / 88%) !important;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+      }
     }
   }
 }
