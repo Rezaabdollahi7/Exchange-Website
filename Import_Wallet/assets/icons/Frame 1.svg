@@ -1,0 +1,16 @@
+<svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="55.5" height="55.1891" transform="translate(0.75 0.208008)" fill="#006FFF"/>
+<mask id="mask0_1_3750" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="10" y="9" width="37" height="38">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28.4999 46.0301C38.5669 46.0301 46.7279 37.8692 46.7279 27.8022C46.7279 17.7351 38.5669 9.57422 28.4999 9.57422C18.4329 9.57422 10.272 17.7351 10.272 27.8022C10.272 37.8692 18.4329 46.0301 28.4999 46.0301ZM28.5 38.6063C34.4672 38.6063 39.3046 33.7689 39.3046 27.8017C39.3046 21.8345 34.4672 16.9971 28.5 16.9971C22.5328 16.9971 17.6954 21.8345 17.6954 27.8017C17.6954 33.7689 22.5328 38.6063 28.5 38.6063Z" fill="#CB202D"/>
+</mask>
+<g mask="url(#mask0_1_3750)">
+<rect x="8.29004" y="7.59277" width="40.4202" height="40.4202" fill="url(#paint0_angular_1_3750)"/>
+<circle cx="28.5196" cy="42.3189" r="3.75053" fill="white"/>
+</g>
+<defs>
+<radialGradient id="paint0_angular_1_3750" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(28.5001 27.8029) rotate(90) scale(20.2101)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

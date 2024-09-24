@@ -231,11 +231,6 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
 }
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-}
 
 .main-content {
   margin-top: 5rem;
@@ -378,4 +373,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=select_mode.css.map */

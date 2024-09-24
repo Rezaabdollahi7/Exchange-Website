@@ -1,3 +1,6 @@
+@import "./sass/base/reset";
+
+
 // Variables
 $desktop-font-size: 16px;
 $mobile-font-size: 14px;
@@ -15,9 +18,7 @@ body {
   font-size: $desktop-font-size;
   line-height: 1.6;
 
-  @media (max-width: $breakpoint) {
-    font-size: $mobile-font-size;
-  }
+
 
   background: radial-gradient(at 60% 35%, $background-color, $gradient-color);
   background-repeat: repeat;
@@ -189,3 +190,5 @@ body {
     width: 604px;
   }
 }
+
+
