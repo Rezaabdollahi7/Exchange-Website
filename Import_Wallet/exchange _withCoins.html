@@ -29,10 +29,11 @@
         <h2 class="page-title">Welcome to the web3</h2>
 
         <div class="swiper d-flex justify-content-center align-items-center">
-            <swiper-container class="wallets-container mt-5 d-flex justify-content-center align-items-center" autoplay-delay="0">
+            <swiper-container class="wallets-container mt-5 d-flex justify-content-center align-items-center"
+                autoplay-delay="0">
                 <!-- item 1 -->
                 <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
-                    <img class="coinbase-icon"  src="./assets/images/coinbase.svg" alt="coinbase logo">
+                    <img class="coinbase-icon" src="./assets/images/coinbase.svg" alt="coinbase logo">
                 </swiper-slide>
 
                 <!-- item 2 -->
@@ -67,12 +68,12 @@
 
                 <!-- item 8 -->
                 <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
-                    <img class="larged-img"  src="./assets/images/safepal-sfp-seeklogo-2.svg" alt="safepal wallet logo">
+                    <img class="larged-img" src="./assets/images/safepal-sfp-seeklogo-2.svg" alt="safepal wallet logo">
                 </swiper-slide>
 
                 <!-- item 9 -->
                 <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
-                    <img class="larged-img"  src="./assets/images/trust-wallet-seeklogo.svg" alt="trust wallet logo">
+                    <img class="larged-img" src="./assets/images/trust-wallet-seeklogo.svg" alt="trust wallet logo">
                 </swiper-slide>
 
                 <!-- item 10 -->
@@ -82,14 +83,13 @@
 
                 <!-- item 11 -->
                 <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
-                    <img class="mini-img"  src="./assets/images/tronlink.png" alt="trezor wallet logo">
+                    <img class="mini-img" src="./assets/images/tronlink.png" alt="trezor wallet logo">
                 </swiper-slide>
 
                 <!-- item 12 -->
                 <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
-                    <img class="mini-img"  src="./assets/images/tonkeeper-seeklogo.svg" alt="trezor wallet logo">
+                    <img class="mini-img" src="./assets/images/tonkeeper-seeklogo.svg" alt="trezor wallet logo">
                 </swiper-slide>
-
 
 
             </swiper-container>
@@ -247,16 +247,19 @@
     <script>
         const swiperEl = document.querySelector('swiper-container');
 
-        // اضافه کردن تنظیمات Swiper
+
         Object.assign(swiperEl, {
             slidesPerView: 3.5,
             spaceBetween: 60,
             centeredSlides: true,
             loop: true,
-
             speed: 800,
             mousewheel: true,
             grabCursor: true,
+            autoplay: {
+                delay: 0, 
+                disableOnInteraction: false, 
+            },
             breakpoints: {
                 350: {
                     centeredSlides: true,
