@@ -36,7 +36,20 @@ $line-color: #2a2e39;
     width: 107px;
     height: 37px;
   }
+  .more-dropdown-menu {
+    background: transparent;
+    border: none;
 
+    .dropdown-item {
+      color: white;
+
+      &:hover {
+        background-color: darken($dropdown-link-hower, 10%);
+        cursor: pointer;
+        border-radius: 2px;
+      }
+    }
+  }
   .nav-link {
     color: $nav-text-color;
     font-size: 16px;

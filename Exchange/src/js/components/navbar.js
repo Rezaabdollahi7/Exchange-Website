@@ -33,7 +33,7 @@ const getNavbar = `
                             data-bs-toggle="dropdown" aria-expanded="false">
                             More
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu more-dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Link 1</a></li>
                             <li><a class="dropdown-item" href="#">Link 2</a></li>
                         </ul>
