@@ -52,16 +52,26 @@ body {
       border-radius: 37px;
       margin: auto;
       transition: background-color 1s ease;
-      background-color: #727380;
+      // background-color: #727380;
+      background-color: #fff;
       padding: 10px 25px;
       img {
         width: 250px;
-        height: 70px;
+        height: 120px;
+      }
+      .atomic-img {
+        height: 81px;
+      }
+      .mini-img {
+        height: 80px;
+      }
+      .larged-img {
+        height: 180px;
       }
     }
   }
   .swiper-slide-active {
-    height: 165px !important;
+    // height: 165px !important;
     background-color: white !important;
     img {
       width: 280px;
@@ -232,6 +242,19 @@ body {
   .wallets-container {
     .wallet-item {
       img {
+        height: 100px !important;
+      }
+      .atomic-img {
+        width: 158px !important;
+        height: 40px !important;
+      }
+      .mini-img {
+        height: 60px !important;
+      }
+      .larged-img {
+        height: 135px !important;
+      }
+      .coinbase-icon {
         height: 40px !important;
       }
     }
@@ -263,6 +286,13 @@ body {
     span {
       font-size: 16px;
     }
+  }
+  .atomic-img {
+    width: 178px !important;
+    height: 56px !important;
+  }
+  .main-content .wallets-container .wallet-item .mini-img {
+    height: 52px;
   }
 }
 @media (min-width: 480px) and (max-width: 620px) {

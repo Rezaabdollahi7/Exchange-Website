@@ -28,32 +28,69 @@
 
         <h2 class="page-title">Welcome to the web3</h2>
 
-        <div class="swiper d-flex justify-content-center align-items-center" >
-            <swiper-container class="wallets-container mt-5 d-flex justify-content-center align-items-center" autoplay-delay="2500">
+        <div class="swiper d-flex justify-content-center align-items-center">
+            <swiper-container class="wallets-container mt-5 d-flex justify-content-center align-items-center" autoplay-delay="0">
                 <!-- item 1 -->
                 <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
-                    <img src="./assets/images/coinbase.svg" alt="binance logo">
+                    <img class="coinbase-icon"  src="./assets/images/coinbase.svg" alt="coinbase logo">
                 </swiper-slide>
+
                 <!-- item 2 -->
                 <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
-                    <img src="./assets/images/binance.svg" alt="binance logo">
+                    <img class="larged-img" src="./assets/images/binance.svg" alt="binance logo">
                 </swiper-slide>
+
                 <!-- item 3 -->
                 <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
-                    <img src="./assets/images/coinw.svg" alt="binance logo">
+                    <img src="./assets/images/coinw.svg" alt="coinw logo">
                 </swiper-slide>
+
                 <!-- item 4 -->
                 <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
-                    <img src="./assets/images/coinbase.svg" alt="binance logo">
+                    <img class="atomic-img" src="./assets/images/atomic.png" alt="atomic wallet logo">
                 </swiper-slide>
+
                 <!-- item 5 -->
                 <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
-                    <img src="./assets/images/binance.svg" alt="binance logo">
+                    <img class="larged-img" src="./assets/images/Coinomi.svg" alt="coinomi wallet logo">
                 </swiper-slide>
+
                 <!-- item 6 -->
                 <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
-                    <img src="./assets/images/coinw.svg" alt="binance logo">
+                    <img class="larged-img" src="./assets/images/exodus-wallet-seeklogo.svg" alt="exodus wallet logo">
                 </swiper-slide>
+
+                <!-- item 7 -->
+                <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
+                    <img src="./assets/images/metamask-seeklogo.svg" alt="metamask wallet logo">
+                </swiper-slide>
+
+                <!-- item 8 -->
+                <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
+                    <img class="larged-img"  src="./assets/images/safepal-sfp-seeklogo-2.svg" alt="safepal wallet logo">
+                </swiper-slide>
+
+                <!-- item 9 -->
+                <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
+                    <img class="larged-img"  src="./assets/images/trust-wallet-seeklogo.svg" alt="trust wallet logo">
+                </swiper-slide>
+
+                <!-- item 10 -->
+                <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
+                    <img src="./assets/images/trezor-wallet-seeklogo.svg" alt="trezor wallet logo">
+                </swiper-slide>
+
+                <!-- item 11 -->
+                <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
+                    <img class="mini-img"  src="./assets/images/tronlink.png" alt="trezor wallet logo">
+                </swiper-slide>
+
+                <!-- item 12 -->
+                <swiper-slide class="wallet-item d-flex justify-content-center align-items-center ">
+                    <img class="mini-img"  src="./assets/images/tonkeeper-seeklogo.svg" alt="trezor wallet logo">
+                </swiper-slide>
+
+
 
             </swiper-container>
         </div>
@@ -66,8 +103,8 @@
 
             <ul class="nav nav-tabs d-flex justify-content-around align-items-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
-                        role="tab" aria-controls="tab1" aria-selected="true"> 12 word</button>
+                    <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1"
+                        type="button" role="tab" aria-controls="tab1" aria-selected="true"> 12 word</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button"
@@ -142,7 +179,7 @@
 
         </div>
 
-        
+
     </main>
 
 
@@ -214,12 +251,12 @@
         Object.assign(swiperEl, {
             slidesPerView: 3.5,
             spaceBetween: 60,
-            centeredSlides: true,  
-            loop: true,           
-            
-            speed: 500,           
-            mousewheel: true,      
-            grabCursor: true,     
+            centeredSlides: true,
+            loop: true,
+
+            speed: 800,
+            mousewheel: true,
+            grabCursor: true,
             breakpoints: {
                 350: {
                     centeredSlides: true,
