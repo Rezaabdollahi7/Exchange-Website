@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stake</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- main styles css -->
+    <link rel="stylesheet" href="./dist/stake.css">
+    <link rel="stylesheet" href="../fonts.css">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon" />
+</head>
+
+<body>
+    <main id="wallet-mobile-page" class="pt-3 px-3">
+
+        <nav class=" d-flex justify-content-between align-items-center">
+            <a href="#">
+                <img class="back-icon" src="./assets/wallet-icons/backicon.svg" alt="back-icon">
+            </a>
+
+            <h2 class="page-title">Meta Wallet</h2>
+
+            <a href="#">
+                <img class="setting-icon" src="./assets/wallet-icons/settingicon.svg" alt="setting-icon">
+            </a>
+        </nav>
+
+        <section class="wallets-details mt-3 d-flex justify-content-center align-items-center flex-column">
+
+            <div class="img-container p-1  d-flex justify-content-center align-items-center">
+                <img src="./assets/meta-wallet-icons/Wallet.svg" alt="wallet-icon">
+            </div>
+
+            <h6 class="wal-text mt-3">Total Wallet Balance</h6>
+
+            <p class="wallet-inventory">$970,025,360,00</p>
+
+            <img class="mt-2" src="./assets/meta-wallet-icons/barcodeicon.svg" alt="barcodeicon">
+
+
+            <p class="wal-addres mt-4" id="walletAddress">1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71.</p>
+
+            <button class="copy-btn w-100" id="copyButton">
+                <img src="./assets/meta-wallet-icons/docicon.svg" alt="copy-icon">
+            </button>
+
+            <button class="connect-btn w-100 mt-3">Connect</button>
+
+            <button class="delete-btn w-100 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Delete wallet
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header d-flex justify-content-center align-items-center flex-column">
+                            <img class="delete-icon" src="./assets/meta-wallet-icons/delete.svg" alt="">
+                            <h1 class="modal-title mt-2" id="exampleModalLabel">Delete wallet</h1>
+                        </div>
+
+                        <div class="modal-body">
+                            <p class="modal-text">Are you sure you want to delete “Meta wallet” from your wallet list?
+                            </p>
+                        </div>
+
+                        <div class="modal-footer d-flex justify-content-center align-items-center px-0">
+                            <button type="button" class="btn btn-secondary cancel-btn"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary remove-btn">Yes, Remove it!</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+    <script>
+        document.getElementById('copyButton').addEventListener('click', function () {
+            // Get the wallet address text
+            const walletAddress = document.getElementById('walletAddress').innerText;
+
+            // Create a temporary textarea element
+            const tempTextarea = document.createElement('textarea');
+            tempTextarea.value = walletAddress;
+            document.body.appendChild(tempTextarea);
+
+            // Select the text in the textarea
+            tempTextarea.select();
+            tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the text to the clipboard
+            document.execCommand('copy');
+
+            // Remove the temporary textarea
+            document.body.removeChild(tempTextarea);
+
+            // Optionally, show a message or feedback to the user
+            alert('Wallet address copied to clipboard!');
+        });
+
+
+        document.querySelector('.remove-btn').addEventListener('click', function () {
+            const modalFooter = document.querySelector('.modal-footer');
+            const cancelButton = document.querySelector('.cancel-btn');
+            const modal_title = document.querySelector('.modal-title');
+            const modal_text = document.querySelector('.modal-text');
+            const image = document.querySelector('.delete-icon');
+
+            // Remove the cancel button
+            modalFooter.removeChild(cancelButton);
+
+            // Make the remove button take full width and change to loading state
+            const removeButton = this;
+            removeButton.classList.add('w-100');
+
+            // Create loading image
+            const loadingImage = document.createElement('img');
+            loadingImage.src = './assets/meta-wallet-icons/icons8-preloader-96.png'; // Loading image
+            loadingImage.alt = 'Loading...';
+            loadingImage.style.width = '40px';
+            loadingImage.style.verticalAlign = 'middle';
+            loadingImage.classList.add('loading'); // Add loading class for spinning animation
+
+            // Set inner HTML to loading image
+            removeButton.innerHTML = ''; // Clear the button content
+            removeButton.appendChild(loadingImage); // Append the loading image
+
+            // After 3 seconds, update the button
+            setTimeout(() => {
+
+                modal_title.innerHTML = 'Wallet deleted';
+                modal_text.innerHTML = 'Your wallet was successfully deleted. You can create a new wallet';
+
+
+                const newSrc = './assets/meta-wallet-icons/tick.svg'; // New image link
+                image.src = newSrc;
+
+                // Change button text and color
+                removeButton.innerHTML = 'Delete was successful';
+                removeButton.style.backgroundColor = '#0caf60'; // Green color
+                removeButton.style.color = '#ffffff'; // White text
+                removeButton.style.border = 'none'; // Remove border
+                removeButton.style.boxShadow = '0px 3.37px 15.57px 0px #0CAF6066'; // Remove border
+            }, 3000);
+        });
+
+
+
+    </script>
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
