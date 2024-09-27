@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferences</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- main styles css -->
+    <link rel="stylesheet" href="./dist/preferences.css">
+    <link rel="stylesheet" href="../fonts.css">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon" />
+</head>
+
+<body>
+    <main id="preferences-mobile-page" class="pt-5 px-3">
+
+        <nav class=" d-flex justify-content-between align-items-center">
+            <a href="#">
+                <img class="back-icon" src="./assets/wallet-icons/backicon.svg" alt="back-icon">
+            </a>
+
+            <h2 class="page-title">Preferences</h2>
+
+            <a href="#">
+                <img class="setting-icon d-none" src="./assets/wallet-icons/settingicon.svg" alt="setting-icon">
+            </a>
+        </nav>
+
+        <section class="wallets-list-container mt-5">
+            <ul class="wallets-list p-0">
+                <li class="wallet-item px-1">
+                    <a href="#" class="d-flex align-items-center justify-content-between py-4"
+                        data-target="#currencyMenu">
+                        <span class="wallet-name">Currency</span>
+                        <div class="right-container d-flex justify-content-center align-items-center">
+                            <span class="wallet-inventory me-2"> USD</span>
+                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                        </div>
+                    </a>
+                </li>
+
+                <li class="wallet-item px-1">
+                    <a href="#" class="d-flex align-items-center justify-content-between py-4"
+                        data-target="#languageMenu">
+                        <span class="wallet-name">App Language</span>
+                        <div class="right-container d-flex justify-content-center align-items-center">
+                            <span class="wallet-inventory me-2">English</span>
+                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                        </div>
+                    </a>
+                </li>
+
+                <li class="wallet-item px-1">
+                    <a href="#" class="d-flex align-items-center justify-content-between py-4" data-target="#colorMenu">
+                        <span class="wallet-name">Quote Color</span>
+                        <div class="right-container d-flex justify-content-center align-items-center">
+                            <img class="me-2" src="./assets/updown-icon.svg" alt="updown-icon">
+                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Modal for Currency Menu -->
+        <div class="modal fade " id="currencyMenu" tabindex="-1" aria-labelledby="currencyMenuLabel" aria-hidden="true">
+            <div class="modal-dialog mt-0 ">
+                <div class="modal-content ">
+
+                    <div class="modal-header w-100 pt-5 ">
+                        <nav class="   d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <img class="back-icon" src="./assets/wallet-icons/backicon.svg" alt="back-icon">
+                            </a>
+
+                            <h2 class="page-title">Currency</h2>
+
+                            <a href="#">
+                                <img class="setting-icon d-none" src="./assets/wallet-icons/settingicon.svg"
+                                    alt="setting-icon">
+                            </a>
+                        </nav>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="input-container">
+                            <input type="text" id="currencySearch" placeholder="Search currency..."
+                                class="form-control">
+                            <span class="search-icon">
+                                <img src="./assets/search-normal.svg" alt="Search">
+                            </span>
+                        </div>
+
+                        <ul id="currencyList" class="list-group mt-2">
+                            <li class="list-group-item">
+                                <input type="radio" id="usd" name="currency" value="USD">
+                                <label  for="usd"> USD ( US Dollar ) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="aud" name="currency" value="AUD">
+                                <label  for="aud"> AUD ( Australian Dollar ) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="bhd" name="currency" value="BHD">
+                                <label  for="bhd"> BHD ( Bahraini Dinar ) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="cad" name="currency" value="CAD">
+                                <label  for="cad"> CAD ( Canadian Dollar ) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="cny" name="currency" value="CNY">
+                                <label  for="cny"> Chinese Yuan (CNY) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="jpy" name="currency" value="JPY">
+                                <label  for="jpy"> Japanese Yen (JPY) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="gbp" name="currency" value="GBP">
+                                <label  for="gbp"> British Pound Sterling (GBP) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="cad2" name="currency" value="CAD">
+                                <label  for="cad2"> Canadian Dollar (CAD) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="chf" name="currency" value="CHF">
+                                <label  for="chf"> Swiss Franc (CHF) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="aud2" name="currency" value="AUD">
+                                <label  for="aud2"> Australian Dollar (AUD) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="inr" name="currency" value="INR">
+                                <label  for="inr"> Indian Rupee (INR) </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal for Language Menu -->
+        <div class="modal fade" id="languageMenu" tabindex="-1" aria-labelledby="languageMenuLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="languageMenuLabel">Language Options</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Here you can manage your app language settings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Color Menu -->
+        <div class="modal fade" id="colorMenu" tabindex="-1" aria-labelledby="colorMenuLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="colorMenuLabel">Color Options</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Here you can manage your quote color settings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Add click event listeners to each link
+        document.querySelectorAll('.wallet-item a').forEach(item => {
+            item.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent default link behavior
+                const target = this.getAttribute('data-target'); // Get the target modal ID
+                const modal = new bootstrap.Modal(document.querySelector(target)); // Create a modal instance
+                modal.show(); // Show the modal
+            });
+        });
+
+        // Function to filter the currency list based on search input
+        document.getElementById('currencySearch').addEventListener('keyup', function () {
+            const searchValue = this.value.toLowerCase();
+            const items = document.querySelectorAll('#currencyList .list-group-item');
+
+            items.forEach(item => {
+                const label = item.querySelector('label').textContent.toLowerCase();
+                if (label.includes(searchValue)) {
+                    item.style.display = 'flex'; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

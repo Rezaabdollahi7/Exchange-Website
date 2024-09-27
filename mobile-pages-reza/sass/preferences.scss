@@ -1,0 +1,193 @@
+$background-color: #14121c;
+$text-color-white: #fff;
+$text-color-muted: #848586;
+$border-color-light: rgba(140, 140, 171, 0.2);
+$hover-bg-color: rgba(144, 142, 156, 0.06);
+$font-weight-bold: 700;
+$font-weight-regular: 400;
+
+body {
+  background-color: $background-color;
+}
+
+#preferences-mobile-page {
+  max-width: 382px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+    color: $text-color-white;
+  }
+  .wallets-list-container {
+    ul.wallets-list {
+      list-style: none;
+      padding: 0;
+
+      li {
+        border-bottom: 1px solid $border-color-light;
+        transition: background-color 0.3s ease;
+
+        a {
+          text-decoration: none;
+        }
+
+        .wallet-name {
+          font-size: 18px;
+          font-weight: $font-weight-bold;
+          line-height: 1.3;
+          color: $text-color-white;
+        }
+
+        .right-container {
+          .wallet-inventory {
+            font-size: 14px;
+            font-weight: $font-weight-bold;
+            line-height: 1.3;
+            color: $text-color-muted;
+          }
+        }
+
+        &:hover {
+          background-color: $hover-bg-color;
+        }
+      }
+    }
+  }
+}
+
+#currencyMenu {
+  background-color: #13111d;
+  .modal-dialog {
+    width: 382px !important;
+  }
+  .modal-content {
+    background-color: #13111d;
+    
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  .modal-header {
+    .page-title {
+      margin-left: 6rem;
+    }
+    border: 0;
+
+    .btn-close {
+      --bs-btn-close-color: #26272b;
+      --bs-btn-close-opacity: 0.5;
+      --bs-btn-close-hover-opacity: 0.75;
+      --bs-btn-close-focus-shadow: 0;
+      --bs-btn-close-focus-opacity: 1;
+      --bs-btn-close-disabled-opacity: 0.25;
+      --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+      box-sizing: content-box;
+      width: unset;
+      height: unset;
+      padding: unset;
+      background: transparent var(--bs-btn-close-bg) center / 1em auto no-repeat;
+      border: 0;
+      border-radius: unset;
+      opacity: 1;
+    }
+  }
+
+  .modal-body {
+    .input-container {
+      position: relative;
+    }
+
+    input.form-control {
+      padding-left: 3.5rem;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .search-icon img {
+      width: 24px;
+    }
+
+    #currencySearch {
+      background-color: #26272b;
+      border-radius: 25px;
+      border: 0;
+      height: 56px;
+      color: white;
+
+      &:focus {
+        border: 1px solid blue;
+      }
+    }
+
+    ul#currencyList {
+      background-color: transparent !important;
+      --bs-list-group-bg: transparent;
+
+      li.list-group-item {
+        border: 0 !important;
+        margin-top: 7px;
+      }
+
+      label {
+        color: #848586;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.83px;
+        border: 0;
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    input[type="radio"] + label {
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+    }
+
+    input[type="radio"] + label::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    input[type="radio"]:checked + label::before {
+      background: #007bff;
+      border: 2px solid #007bff;
+    }
+
+    input[type="radio"]:checked + label::after {
+      content: "✓";
+      position: absolute;
+      left: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  #currencyMenu {
+    .page-title {
+      margin-left: 5rem !important;
+    }
+  }
+}
