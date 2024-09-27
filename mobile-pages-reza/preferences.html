@@ -67,7 +67,7 @@
         </section>
 
 
-        <!-- Modal for Currency Menu -->
+        <!--! Modal for Currency Menu -->
         <div class="modal fade " id="currencyMenu" tabindex="-1" aria-labelledby="currencyMenuLabel" aria-hidden="true">
             <div class="modal-dialog mt-0 ">
                 <div class="modal-content ">
@@ -99,47 +99,47 @@
                         <ul id="currencyList" class="list-group mt-2">
                             <li class="list-group-item">
                                 <input type="radio" id="usd" name="currency" value="USD">
-                                <label  for="usd"> USD ( US Dollar ) </label>
+                                <label for="usd"> USD ( US Dollar ) </label>
                             </li>
                             <li class="list-group-item">
                                 <input type="radio" id="aud" name="currency" value="AUD">
-                                <label  for="aud"> AUD ( Australian Dollar ) </label>
+                                <label for="aud"> AUD ( Australian Dollar ) </label>
                             </li>
                             <li class="list-group-item">
                                 <input type="radio" id="bhd" name="currency" value="BHD">
-                                <label  for="bhd"> BHD ( Bahraini Dinar ) </label>
+                                <label for="bhd"> BHD ( Bahraini Dinar ) </label>
                             </li>
                             <li class="list-group-item">
                                 <input type="radio" id="cad" name="currency" value="CAD">
-                                <label  for="cad"> CAD ( Canadian Dollar ) </label>
+                                <label for="cad"> CAD ( Canadian Dollar ) </label>
                             </li>
                             <li class="list-group-item">
                                 <input type="radio" id="cny" name="currency" value="CNY">
-                                <label  for="cny"> Chinese Yuan (CNY) </label>
+                                <label for="cny"> Chinese Yuan (CNY) </label>
                             </li>
                             <li class="list-group-item">
                                 <input type="radio" id="jpy" name="currency" value="JPY">
-                                <label  for="jpy"> Japanese Yen (JPY) </label>
+                                <label for="jpy"> Japanese Yen (JPY) </label>
                             </li>
                             <li class="list-group-item">
                                 <input type="radio" id="gbp" name="currency" value="GBP">
-                                <label  for="gbp"> British Pound Sterling (GBP) </label>
+                                <label for="gbp"> British Pound Sterling (GBP) </label>
                             </li>
                             <li class="list-group-item">
                                 <input type="radio" id="cad2" name="currency" value="CAD">
-                                <label  for="cad2"> Canadian Dollar (CAD) </label>
+                                <label for="cad2"> Canadian Dollar (CAD) </label>
                             </li>
                             <li class="list-group-item">
                                 <input type="radio" id="chf" name="currency" value="CHF">
-                                <label  for="chf"> Swiss Franc (CHF) </label>
+                                <label for="chf"> Swiss Franc (CHF) </label>
                             </li>
                             <li class="list-group-item">
                                 <input type="radio" id="aud2" name="currency" value="AUD">
-                                <label  for="aud2"> Australian Dollar (AUD) </label>
+                                <label for="aud2"> Australian Dollar (AUD) </label>
                             </li>
                             <li class="list-group-item">
                                 <input type="radio" id="inr" name="currency" value="INR">
-                                <label  for="inr"> Indian Rupee (INR) </label>
+                                <label for="inr"> Indian Rupee (INR) </label>
                             </li>
                         </ul>
                     </div>
@@ -147,34 +147,120 @@
                 </div>
             </div>
         </div>
+        <!--! end Modal for Currency Menu -->
 
 
+        <!-- ! Modal for Language Menu -->
+        <div class="modal fade " id="languageMenu" tabindex="-1" aria-labelledby="languageMenuLabel" aria-hidden="true">
+            <div class="modal-dialog mt-0 ">
+                <div class="modal-content ">
 
-        <!-- Modal for Language Menu -->
-        <div class="modal fade" id="languageMenu" tabindex="-1" aria-labelledby="languageMenuLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="languageMenuLabel">Language Options</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-header w-100 pt-5 ">
+                        <nav class="   d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <img class="back-icon" src="./assets/wallet-icons/backicon.svg" alt="back-icon">
+                            </a>
+
+                            <h2 class="page-title">Language</h2>
+
+                            <a href="#">
+                                <img class="setting-icon d-none" src="./assets/wallet-icons/settingicon.svg"
+                                    alt="setting-icon">
+                            </a>
+                        </nav>
                     </div>
+
                     <div class="modal-body">
-                        <p>Here you can manage your app language settings.</p>
+                        <div class="input-container">
+                            <input type="text" id="langSearch" placeholder="Search language..." class="form-control">
+                            <span class="search-icon">
+                                <img src="./assets/search-normal.svg" alt="Search">
+                            </span>
+                        </div>
+
+                        <ul id="langList" class="list-group mt-2">
+                            <li class="list-group-item">
+                                <input type="radio" id="enLange" name="language" value="USD">
+                                <label for="enLange"> English ( united state ) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="guamLange" name="language" value="AUD">
+                                <label for="guamLange"> Chamorro (Guam) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="colombiaLange" name="language" value="BHD">
+                                <label for="colombiaLange"> Khmer (Cambodia) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="indLang" name="language" value="CAD">
+                                <label for="indLang"> Gujarati (India) </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="francLang" name="language" value="CNY">
+                                <label for="francLang"> French </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="rusLang" name="language" value="JPY">
+                                <label for="rusLang"> Russian </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="japanLang" name="language" value="GBP">
+                                <label for="japanLang"> Japanese </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="italyLang" name="language" value="CAD">
+                                <label for="italyLang"> Italian </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="arabLang" name="language" value="CHF">
+                                <label for="arabLang"> Arabic </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="swedishLange" name="language" value="AUD">
+                                <label for="swedishLange"> Swedish </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" id="finishLang" name="language" value="INR">
+                                <label for="finishLang"> Finnish </label>
+                            </li>
+                        </ul>
                     </div>
+
                 </div>
             </div>
         </div>
+        <!-- ! end of language modal -->
+
 
         <!-- Modal for Color Menu -->
         <div class="modal fade" id="colorMenu" tabindex="-1" aria-labelledby="colorMenuLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-dialog ">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="colorMenuLabel">Color Options</h5>
+                    <div class="modal-header px-4 pt-4">
+
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Here you can manage your quote color settings.</p>
+                        <h5 class="color-header-text text-center mt-2">What would you like to do?</h5>
+                        <ul class="color-options-container mt-5">
+                            <li class="color-option"><a href="#"
+                                    class="d-flex justify-content-between align-items-center">
+                                    <div class="txt-icon">
+                                        <img src="./assets/greenUp.svg" alt="color-status">
+                                        <span class="color-text ms-3">Green up and red down</span>
+                                    </div>
+                                    <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                </a></li>
+                                <hr>
+                            <li class="color-option mt-2"><a href="#"
+                                    class="d-flex justify-content-between align-items-center">
+                                    <div class="txt-icon">
+                                        <img src="./assets/redUp.svg" alt="color-status">
+                                        <span class="color-text ms-3">Red up and green down</span>
+                                    </div>
+                                    <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                </a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -204,6 +290,20 @@
         document.getElementById('currencySearch').addEventListener('keyup', function () {
             const searchValue = this.value.toLowerCase();
             const items = document.querySelectorAll('#currencyList .list-group-item');
+
+            items.forEach(item => {
+                const label = item.querySelector('label').textContent.toLowerCase();
+                if (label.includes(searchValue)) {
+                    item.style.display = 'flex'; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        });
+
+        document.getElementById('langSearch').addEventListener('keyup', function () {
+            const searchValue = this.value.toLowerCase();
+            const items = document.querySelectorAll('#langList .list-group-item');
 
             items.forEach(item => {
                 const label = item.querySelector('label').textContent.toLowerCase();

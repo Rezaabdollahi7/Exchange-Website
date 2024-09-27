@@ -55,16 +55,70 @@ body {
       }
     }
   }
+  #colorMenu {
+    background-color: #030303ba;
+    .modal-dialog {
+      width: 382px !important;
+      height: auto;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .modal-content {
+      background-color: #27282e;
+      border-radius: 25px 25px 0 0;
+      height: auto;
+    }
+    .modal-header {
+      border: 0;
+      button {
+        width: 35px;
+        height: 35px;
+        color: #fff;
+        background-color: #34353a;
+        border-radius: 999px;
+        padding: 0;
+        --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+      }
+    }
+    .modal-body {
+      .color-header-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #848586;
+      }
+      ul.color-options-container {
+        list-style: none;
+        padding: 0;
+        li {
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+        hr {
+          color: #273454;
+          border-top: 2px solid;
+        }
+      }
+    }
+  }
 }
 
-#currencyMenu {
+#currencyMenu,
+#languageMenu {
   background-color: #13111d;
   .modal-dialog {
     width: 382px !important;
   }
   .modal-content {
     background-color: #13111d;
-    
+
     margin: 0 auto;
     height: 100vh;
   }
@@ -115,7 +169,8 @@ body {
       width: 24px;
     }
 
-    #currencySearch {
+    #currencySearch,
+    #langSearch {
       background-color: #26272b;
       border-radius: 25px;
       border: 0;
@@ -127,7 +182,8 @@ body {
       }
     }
 
-    ul#currencyList {
+    ul#currencyList,
+    ul#langList {
       background-color: transparent !important;
       --bs-list-group-bg: transparent;
 
@@ -185,7 +241,8 @@ body {
   }
 }
 @media screen and (max-width: 400px) {
-  #currencyMenu {
+  #currencyMenu,
+  #languageMenu {
     .page-title {
       margin-left: 5rem !important;
     }
