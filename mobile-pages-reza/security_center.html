@@ -73,7 +73,7 @@
                 </li>
 
                 <li class="wallet-item px-1">
-                    <a href="#" class="d-flex align-items-center justify-content-between py-4" data-target="#colorMenu">
+                    <a href="#" class="d-flex align-items-center justify-content-between py-4" data-target="#phoneMenu">
                         <span class="wallet-name">Phone Verification</span>
                         <div class="right-container d-flex justify-content-center align-items-center">
                             <span class="wallet-inventory me-2">Not set</span>
@@ -221,39 +221,102 @@
         <!-- ! end of language modal -->
 
 
-        <!-- Modal for Color Menu -->
-        <div class="modal fade" id="colorMenu" tabindex="-1" aria-labelledby="colorMenuLabel" aria-hidden="true">
-            <div class="modal-dialog ">
-                <div class="modal-content">
-                    <div class="modal-header px-4 pt-4">
 
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Modal for Phone Menu -->
+        <div class="modal fade" id="phoneMenu" tabindex="-1" aria-labelledby="phoneMenuLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header w-100 pt-5">
+                        <nav class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <img class="back-icon" src="./assets/wallet-icons/backicon.svg" alt="back-icon">
+                            </a>
+                            <h2 class="page-title">Phone Number</h2>
+                            <a href="#">
+                                <img class="setting-icon d-none" src="./assets/wallet-icons/settingicon.svg"
+                                    alt="setting-icon">
+                            </a>
+                        </nav>
                     </div>
-                    <div class="modal-body">
-                        <h5 class="color-header-text text-center mt-2">What would you like to do?</h5>
-                        <ul class="color-options-container mt-5">
-                            <li class="color-option"><a href="#"
-                                    class="d-flex justify-content-between align-items-center">
-                                    <div class="txt-icon">
-                                        <img src="./assets/greenUp.svg" alt="color-status">
-                                        <span class="color-text ms-3">Green up and red down</span>
-                                    </div>
-                                    <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
-                                </a></li>
-                            <hr>
-                            <li class="color-option mt-2"><a href="#"
-                                    class="d-flex justify-content-between align-items-center">
-                                    <div class="txt-icon">
-                                        <img src="./assets/redUp.svg" alt="color-status">
-                                        <span class="color-text ms-3">Red up and green down</span>
-                                    </div>
-                                    <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
-                                </a></li>
-                        </ul>
+                    <div class="modal-body email-modal-body">
+                        <p class="phone-text">Enter your phone number so we can send you the verification code</p>
+
+                        <!-- Input Field with Country Code -->
+                        <div class="phone-input-container mt-4">
+                            <div class="input-group py-3">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                    id="countryCodeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    +62
+                                </button>
+                                <ul class="dropdown-menu pt-5 pb-2 px-3" aria-labelledby="countryCodeDropdown">
+                                    <p class="select-dropdown-text text-center">what currency you like ?</p>
+                                    <li class="dropdown-search">
+
+
+                                        <div class="input-container mt-4 position-relative">
+                                            <input type="text" class="form-control" id="searchCountry"
+                                                placeholder="Search country...">
+                                            <span class="box-icon position-absolute">
+                                                <img src="./assets/search-normal.svg" alt="message">
+                                            </span>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="mt-4"><a
+                                            class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+1">Canada
+                                            (+1)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+44">United Kingdom
+                                            (+44)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+61">Australia
+                                            (+61)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+49">Germany
+                                            (+49)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+33">France
+                                            (+33)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+81">Japan
+                                            (+81)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+86">China
+                                            (+86)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+91">India
+                                            (+91)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <!-- Add more countries as needed -->
+                                </ul>
+                                <input type="number" class="form-control ms-1" id="phoneNumberInput"
+                                    placeholder="Enter phone number">
+                            </div>
+                            <button href="#" class="sendcode w-100">Send Code</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
 
 
     </main>
@@ -276,7 +339,7 @@
         });
 
 
-
+        //email verify
         document.getElementById("emailSubmitButton").addEventListener("click", function (event) {
             event.preventDefault(); // Prevent form submission
             const formContainer = document.querySelector(".form-container");
@@ -287,21 +350,46 @@
             <p class="mt-2 check-email-sub-title text-white-50">We will now send an email to it. To continue, click on the link in your email.</p>
             <a href="#" class="w-100 " style="
                 background-color: #006FFF;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-
-    vertical-align: middle;
-    text-align: center;
-    padding: 0.75rem 0;
-    margin-top: 7.5rem;">
+                 font-size: 18px;
+                color: white;
+                text-decoration: none;
+                border-radius: 25px;       
+                vertical-align: middle;
+                text-align: center;
+                padding: 0.75rem 0;
+                margin-top: 7.5rem;">
                 Open inbox 
             </a>
         </div>
     `;
         });
 
+
+        //phone verify
+        // Filtering country codes based on search
+        document.getElementById('searchCountry').addEventListener('input', function () {
+            var filter = this.value.toLowerCase();
+            var items = document.querySelectorAll('.country-item');
+            items.forEach(function (item) {
+                var text = item.textContent.toLowerCase();
+                if (text.includes(filter)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Setting selected country code
+        var countryCodeDropdown = document.getElementById('countryCodeDropdown');
+        var countryItems = document.querySelectorAll('.country-item');
+        countryItems.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                var code = this.getAttribute('data-country-code');
+                countryCodeDropdown.textContent = code;
+            });
+        });
 
     </script>
 </body>

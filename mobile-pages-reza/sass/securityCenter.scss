@@ -111,7 +111,8 @@ body {
 }
 
 #autolockMenu,
-#emailMenu {
+#emailMenu,
+#phoneMenu {
   background-color: #13111d;
 
   .modal-dialog {
@@ -165,6 +166,7 @@ body {
     }
   }
 }
+// -----------------------
 #emailMenu {
   .modal-header {
     .page-title {
@@ -221,13 +223,164 @@ body {
     }
   }
 }
+// ------------------------
+#phoneMenu {
+  .page-title {
+    margin-left: 4rem !important;
+  }
+  .phone-text {
+    color: #8e9bae;
+  }
+  .phone-input-container {
+    .input-group {
+      border: 1px solid #444;
+      border-radius: 30px;
+      padding: 5px 10px;
+      background-color: #1c1c1c;
+      flex-wrap: unset !important;
+
+      input {
+        border: none;
+        background: none;
+        color: #ffffffc6;
+        width: 100%;
+        outline: none;
+        font-size: 16px;
+        border-left: 1px solid #fff;
+
+        &::placeholder {
+          color: #ffffff93;
+        }
+        &:focus {
+          box-shadow: none !important;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        font-weight: bold;
+      }
+      ul.dropdown-menu {
+        background-color: #27282e;
+        width: 100%;
+        margin-top: 2rem !important;
+        height: 400px;
+        overflow-y: auto; /* تغییر به auto برای ایجاد اسکرول خودکار */
+
+        /* استایل برای Firefox */
+        scrollbar-width: thin; /* عرض اسکرول‌بار ریز */
+        scrollbar-color: #888 #13111d; /* رنگ اسکرولر و پس‌زمینه‌ی اسکرول‌بار */
+
+        /* استایل برای مرورگرهای WebKit (مانند Chrome و Safari) */
+        &::-webkit-scrollbar {
+          width: 10px; /* عرض اسکرول‌بار */
+          height: 10px; /* ارتفاع اسکرول‌بار برای اسکرول‌های افقی */
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: #f1f1f1; /* رنگ پس‌زمینه اسکرول‌بار */
+          border-radius: 10px; /* گرد کردن گوشه‌های پس‌زمینه */
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #888; /* رنگ اسکرولر */
+          border-radius: 10px; /* گرد کردن گوشه‌های اسکرولر */
+          border: 2px solid #ccc; /* تنظیم حاشیه برای اسکرولر */
+        }
+
+        /* استایل برای اسکرولر هنگام هاور شدن در WebKit */
+        &::-webkit-scrollbar-thumb:hover {
+          background-color: #555; /* رنگ جدید برای هاور */
+        }
+
+        .select-dropdown-text {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          text-align: left;
+          color: #848586;
+        }
+
+        .dropdown-item {
+          padding: 0.5rem 0;
+          font-size: 14px;
+          border-radius: 20px;
+          padding: 1rem;
+          &:hover {
+            background-color: #6e6c6c36;
+          }
+        }
+
+        input {
+          border: none;
+          background-color: #303134;
+          height: 56px;
+          border-radius: 25px;
+          padding-left: 3.5rem;
+
+          &:focus {
+            border: 1px solid #006fff;
+          }
+        }
+
+        .box-icon {
+          left: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none;
+        }
+      }
+    }
+
+    .modal-content {
+      background-color: #27282e;
+      .list-group-item {
+        background-color: #1c1c1c;
+        color: #fff;
+        cursor: pointer;
+        &:hover {
+          background-color: #343a40;
+        }
+      }
+    }
+
+    .dropdown-toggle::after {
+      display: inline-block;
+      margin-left: 15px;
+      vertical-align: 3px;
+    }
+  }
+
+  .sendcode {
+    background-color: #006fff;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.75rem 0;
+    border: 0;
+    margin-top: 95%;
+    box-shadow: 0px 3.37px 15.57px 0px #0c61ec57;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .sendcode {
+      margin-top: 100%;
+    }
+  }
+}
+
 @media screen and (max-width: 400px) {
   #autolockMenu,
   #emailMenu {
     .page-title {
       margin-left: 5rem !important;
     }
- 
+
     .form-conntainer {
       h3 {
         font-size: 24px;
@@ -243,4 +396,15 @@ body {
       }
     }
   }
+}
+
+/* مخفی کردن دکمه‌های عددی */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }

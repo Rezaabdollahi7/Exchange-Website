@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #14121c;
 }
@@ -89,26 +90,31 @@ body {
 }
 
 #autolockMenu,
-#emailMenu {
+#emailMenu,
+#phoneMenu {
   background-color: #13111d;
 }
 #autolockMenu .modal-dialog,
-#emailMenu .modal-dialog {
+#emailMenu .modal-dialog,
+#phoneMenu .modal-dialog {
   width: 382px !important;
   margin: 0 auto;
 }
 #autolockMenu .modal-content,
-#emailMenu .modal-content {
+#emailMenu .modal-content,
+#phoneMenu .modal-content {
   background-color: #13111d;
   margin: 0 auto;
   height: 90vh;
 }
 #autolockMenu .modal-body ul,
-#emailMenu .modal-body ul {
+#emailMenu .modal-body ul,
+#phoneMenu .modal-body ul {
   list-style-type: none;
 }
 #autolockMenu .modal-body ul li a,
-#emailMenu .modal-body ul li a {
+#emailMenu .modal-body ul li a,
+#phoneMenu .modal-body ul li a {
   text-decoration: none;
   font-size: 17px;
   font-weight: 700;
@@ -117,15 +123,18 @@ body {
   color: #fff;
 }
 #autolockMenu .modal-header,
-#emailMenu .modal-header {
+#emailMenu .modal-header,
+#phoneMenu .modal-header {
   border: 0;
 }
 #autolockMenu .modal-header .page-title,
-#emailMenu .modal-header .page-title {
+#emailMenu .modal-header .page-title,
+#phoneMenu .modal-header .page-title {
   margin-left: 6rem;
 }
 #autolockMenu .modal-header .btn-close,
-#emailMenu .modal-header .btn-close {
+#emailMenu .modal-header .btn-close,
+#phoneMenu .modal-header .btn-close {
   --bs-btn-close-color: #26272b;
   --bs-btn-close-opacity: 0.5;
   --bs-btn-close-hover-opacity: 0.75;
@@ -193,6 +202,135 @@ body {
   color: #fff;
 }
 
+#phoneMenu .page-title {
+  margin-left: 4rem !important;
+}
+#phoneMenu .phone-text {
+  color: #8e9bae;
+}
+#phoneMenu .phone-input-container .input-group {
+  border: 1px solid #444;
+  border-radius: 30px;
+  padding: 5px 10px;
+  background-color: #1c1c1c;
+  flex-wrap: unset !important;
+}
+#phoneMenu .phone-input-container .input-group input {
+  border: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.7764705882);
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-left: 1px solid #fff;
+}
+#phoneMenu .phone-input-container .input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5764705882);
+}
+#phoneMenu .phone-input-container .input-group input:focus {
+  box-shadow: none !important;
+}
+#phoneMenu .phone-input-container .input-group button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+#phoneMenu .phone-input-container .input-group ul.dropdown-menu {
+  background-color: #27282e;
+  width: 100%;
+  margin-top: 2rem !important;
+  height: 400px;
+  overflow-y: auto; /* تغییر به auto برای ایجاد اسکرول خودکار */
+  /* استایل برای Firefox */
+  scrollbar-width: thin; /* عرض اسکرول‌بار ریز */
+  scrollbar-color: #888 #13111d; /* رنگ اسکرولر و پس‌زمینه‌ی اسکرول‌بار */
+  /* استایل برای مرورگرهای WebKit (مانند Chrome و Safari) */
+  /* استایل برای اسکرولر هنگام هاور شدن در WebKit */
+}
+#phoneMenu .phone-input-container .input-group ul.dropdown-menu::-webkit-scrollbar {
+  width: 10px; /* عرض اسکرول‌بار */
+  height: 10px; /* ارتفاع اسکرول‌بار برای اسکرول‌های افقی */
+}
+#phoneMenu .phone-input-container .input-group ul.dropdown-menu::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* رنگ پس‌زمینه اسکرول‌بار */
+  border-radius: 10px; /* گرد کردن گوشه‌های پس‌زمینه */
+}
+#phoneMenu .phone-input-container .input-group ul.dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: #888; /* رنگ اسکرولر */
+  border-radius: 10px; /* گرد کردن گوشه‌های اسکرولر */
+  border: 2px solid #ccc; /* تنظیم حاشیه برای اسکرولر */
+}
+#phoneMenu .phone-input-container .input-group ul.dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* رنگ جدید برای هاور */
+}
+#phoneMenu .phone-input-container .input-group ul.dropdown-menu .select-dropdown-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #848586;
+}
+#phoneMenu .phone-input-container .input-group ul.dropdown-menu .dropdown-item {
+  padding: 0.5rem 0;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 1rem;
+}
+#phoneMenu .phone-input-container .input-group ul.dropdown-menu .dropdown-item:hover {
+  background-color: rgba(110, 108, 108, 0.2117647059);
+}
+#phoneMenu .phone-input-container .input-group ul.dropdown-menu input {
+  border: none;
+  background-color: #303134;
+  height: 56px;
+  border-radius: 25px;
+  padding-left: 3.5rem;
+}
+#phoneMenu .phone-input-container .input-group ul.dropdown-menu input:focus {
+  border: 1px solid #006fff;
+}
+#phoneMenu .phone-input-container .input-group ul.dropdown-menu .box-icon {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+#phoneMenu .phone-input-container .modal-content {
+  background-color: #27282e;
+}
+#phoneMenu .phone-input-container .modal-content .list-group-item {
+  background-color: #1c1c1c;
+  color: #fff;
+  cursor: pointer;
+}
+#phoneMenu .phone-input-container .modal-content .list-group-item:hover {
+  background-color: #343a40;
+}
+#phoneMenu .phone-input-container .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: 3px;
+}
+#phoneMenu .sendcode {
+  background-color: #006fff;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0.75rem 0;
+  border: 0;
+  margin-top: 95%;
+  box-shadow: 0px 3.37px 15.57px 0px rgba(12, 97, 236, 0.3411764706);
+}
+@media screen and (min-width: 1200px) {
+  #phoneMenu .sendcode {
+    margin-top: 100%;
+  }
+}
+
 @media screen and (max-width: 400px) {
   #autolockMenu .page-title,
   #emailMenu .page-title {
@@ -212,6 +350,16 @@ body {
     line-height: 19.6px;
     color: #848586;
   }
+}
+/* مخفی کردن دکمه‌های عددی */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /*# sourceMappingURL=securityCenter.css.map */
