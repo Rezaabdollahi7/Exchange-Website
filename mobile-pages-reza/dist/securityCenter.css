@@ -1,0 +1,217 @@
+body {
+  background-color: #14121c;
+}
+
+#preferences-mobile-page {
+  max-width: 382px;
+  margin: 0 auto;
+}
+#preferences-mobile-page h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+#preferences-mobile-page .wallets-list-container ul.wallets-list {
+  list-style: none;
+  padding: 0;
+}
+#preferences-mobile-page .wallets-list-container ul.wallets-list li {
+  border-bottom: 1px solid rgba(140, 140, 171, 0.2);
+  transition: background-color 0.3s ease;
+}
+#preferences-mobile-page .wallets-list-container ul.wallets-list li a {
+  text-decoration: none;
+}
+#preferences-mobile-page .wallets-list-container ul.wallets-list li .wallet-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+}
+#preferences-mobile-page .wallets-list-container ul.wallets-list li .right-container .wallet-inventory {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #848586;
+}
+#preferences-mobile-page .wallets-list-container ul.wallets-list li:hover {
+  background-color: rgba(144, 142, 156, 0.06);
+}
+#preferences-mobile-page #colorMenu {
+  background-color: rgba(3, 3, 3, 0.7294117647);
+}
+#preferences-mobile-page #colorMenu .modal-dialog {
+  width: 382px !important;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+#preferences-mobile-page #colorMenu .modal-content {
+  background-color: #27282e;
+  border-radius: 25px 25px 0 0;
+  height: auto;
+}
+#preferences-mobile-page #colorMenu .modal-header {
+  border: 0;
+}
+#preferences-mobile-page #colorMenu .modal-header button {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  background-color: #34353a;
+  border-radius: 999px;
+  padding: 0;
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
+#preferences-mobile-page #colorMenu .modal-body .color-header-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #848586;
+}
+#preferences-mobile-page #colorMenu .modal-body ul.color-options-container {
+  list-style: none;
+  padding: 0;
+}
+#preferences-mobile-page #colorMenu .modal-body ul.color-options-container li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+#preferences-mobile-page #colorMenu .modal-body ul.color-options-container hr {
+  color: #273454;
+  border-top: 2px solid;
+}
+
+#autolockMenu,
+#emailMenu {
+  background-color: #13111d;
+}
+#autolockMenu .modal-dialog,
+#emailMenu .modal-dialog {
+  width: 382px !important;
+  margin: 0 auto;
+}
+#autolockMenu .modal-content,
+#emailMenu .modal-content {
+  background-color: #13111d;
+  margin: 0 auto;
+  height: 90vh;
+}
+#autolockMenu .modal-body ul,
+#emailMenu .modal-body ul {
+  list-style-type: none;
+}
+#autolockMenu .modal-body ul li a,
+#emailMenu .modal-body ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: left;
+  color: #fff;
+}
+#autolockMenu .modal-header,
+#emailMenu .modal-header {
+  border: 0;
+}
+#autolockMenu .modal-header .page-title,
+#emailMenu .modal-header .page-title {
+  margin-left: 6rem;
+}
+#autolockMenu .modal-header .btn-close,
+#emailMenu .modal-header .btn-close {
+  --bs-btn-close-color: #26272b;
+  --bs-btn-close-opacity: 0.5;
+  --bs-btn-close-hover-opacity: 0.75;
+  --bs-btn-close-focus-shadow: 0;
+  --bs-btn-close-focus-opacity: 1;
+  --bs-btn-close-disabled-opacity: 0.25;
+  --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+  box-sizing: content-box;
+  width: unset;
+  height: unset;
+  padding: unset;
+  background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+  border: 0;
+  border-radius: unset;
+  opacity: 1;
+  --bs-btn-close-bg: unset !important;
+}
+
+#emailMenu .modal-header .page-title {
+  font-size: 23px;
+  margin-left: 3rem;
+}
+#emailMenu .email-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-align: left;
+  color: #848586;
+}
+#emailMenu .modal-body .input-container {
+  position: relative;
+}
+#emailMenu .modal-body input.form-control {
+  padding-left: 3.5rem;
+}
+#emailMenu .modal-body .box-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+#emailMenu .modal-body .box-icon img {
+  width: 24px;
+}
+#emailMenu .modal-body #emailInput {
+  background-color: #26272b;
+  border-radius: 25px;
+  border: 0;
+  height: 56px;
+  color: white;
+}
+#emailMenu .modal-body #emailInput:focus {
+  border: 1px solid blue;
+}
+#emailMenu .modal-footer {
+  border: 0;
+  margin-top: 93%;
+}
+#emailMenu .modal-footer button {
+  background: #006fff;
+  box-shadow: 0px 3.37px 15.57px 0px rgba(12, 97, 236, 0.3411764706);
+  border-radius: 25px;
+  height: 56px;
+  color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+  #autolockMenu .page-title,
+  #emailMenu .page-title {
+    margin-left: 5rem !important;
+  }
+  #autolockMenu .form-conntainer h3,
+  #emailMenu .form-conntainer h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #f8fafc;
+  }
+  #autolockMenu .form-conntainer p,
+  #emailMenu .form-conntainer p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: #848586;
+  }
+}
+
+/*# sourceMappingURL=securityCenter.css.map */
