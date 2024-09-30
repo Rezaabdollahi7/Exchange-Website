@@ -259,7 +259,7 @@ nav.mini-nav h1 {
   justify-content: center;
 }
 
-.currency-name {
+.network-name {
   position: relative;
   background-color: rgba(255, 255, 255, 0.0509803922);
   font-size: 1.6rem;
@@ -268,23 +268,23 @@ nav.mini-nav h1 {
   z-index: 1;
   margin-top: 30px;
 }
-.currency-name #network-type {
+.network-name #network-type {
   margin-top: -40px;
   color: #848586;
   font-weight: 500;
   font-size: 1.8rem;
 }
-.currency-name #currency-redirector {
+.network-name #network-redirector {
   padding: 15px 46px 15px 46px;
   border: 1px solid rgba(255, 255, 255, 0.1411764706);
   backdrop-filter: blur(3px);
   border-radius: 21px;
   z-index: 1;
 }
-.currency-name #currency-redirector img {
+.network-name #network-redirector img {
   transform: rotate(-90deg);
 }
-.currency-name #currency-address {
+.network-name #network-address {
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -292,7 +292,7 @@ nav.mini-nav h1 {
   width: 140px;
   transform: rotate();
 }
-.currency-name .bottom-line {
+.network-name .bottom-line {
   display: block;
   width: 60%;
   height: 7px;
@@ -302,22 +302,22 @@ nav.mini-nav h1 {
   z-index: -1;
 }
 
-.wallet-details {
+.coin-details {
   margin-bottom: 60px;
 }
-.wallet-details span {
+.coin-details span {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 2rem;
   color: #848586;
 }
-.wallet-details .wallet-balance #balance {
+.coin-details .wallet-balance #balance {
   font-size: 3.2rem;
   font-weight: 700;
   color: #fff;
   line-height: 3.2rem;
 }
-.wallet-details #received-name {
+.coin-details #received-name {
   color: #fff;
 }
 
@@ -327,62 +327,7 @@ nav.mini-nav h1 {
   font-weight: 500;
 }
 
-section.countSection {
-  padding: 27px;
-  background-color: #27282E;
-  border-radius: 30px;
-}
-section.countSection .input-container {
-  background-color: #303134;
-  border-radius: 25px;
-  padding: 0 20px;
-  border: 1px solid transparent;
-}
-section.countSection .input-container #walletInput {
-  background-color: transparent;
-  border: none;
-  stroke: none;
-  color: #fff;
-  flex-grow: 1;
-  flex-shrink: 1;
-  padding: 20px 0;
-  font-size: 1.6rem;
-  font-weight: 700;
-  -moz-appearance: textfield;
-}
-section.countSection .input-container .wallet-svg {
-  flex-shrink: 0;
-}
-section.countSection .input-container .dollar-sign {
-  font-size: 1.6rem;
-  opacity: 0;
-  margin-left: 20px;
-}
-section.countSection .input-container .dollar-sign.focus {
-  opacity: 1;
-}
-section.countSection .input-container #wallet-icon.focus {
-  fill: #006FFF;
-}
-section.countSection .quick-select button {
-  color: #848586;
-  font-size: 2.4rem;
-  font-weight: 700;
-  border-radius: 20px;
-  border: 1px solid rgba(140, 140, 171, 0.2);
-  padding: 20px 0;
-  transition: all linear 0.3s;
-}
-section.countSection .quick-select button:hover {
-  color: #006FFF;
-  border-color: #006FFF;
-}
-
-.input-container.focus {
-  border-color: #006FFF !important;
-}
-
-#buy-btn, #currency-btn {
+#share-btn {
   margin-top: 40px;
   padding: 15px 39px;
   border-radius: 25px;
@@ -391,80 +336,28 @@ section.countSection .quick-select button:hover {
   box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
 }
 
-section.pop-up-background {
-  z-index: 90;
-  padding: 0 20px;
-}
-section.pop-up-background .pop-up {
-  background-color: #27282E;
-  border-radius: 30px;
-  padding: 25px 30px 0px;
-}
-section.pop-up-background .pop-up #currency-input {
-  background-color: transparent;
-  border: none;
-  stroke: none;
-  color: #fff;
-  flex-grow: 1;
-  flex-shrink: 1;
-  padding: 20px 0;
-  font-size: 1.6rem;
-  font-weight: 700;
-  -moz-appearance: textfield;
-  margin-left: 20px;
-}
-section.pop-up-background .pop-up .input-container {
-  background-color: #303134;
-  border-radius: 25px;
-  padding: 0 20px;
-  border: 1px solid transparent;
-}
-section.pop-up-background .pop-up #search-svg {
-  flex-shrink: 0 !important;
-}
-section.pop-up-background .pop-up .checkboxes {
-  padding: 25px;
-}
-section.pop-up-background .pop-up .checkbox-container {
-  overflow-y: scroll;
-  max-height: 230px;
-}
-section.pop-up-background .pop-up .form-check {
-  width: 100%;
-  display: flex;
-  margin-bottom: 30px;
-}
-section.pop-up-background .pop-up .form-check-input {
-  width: 25px;
-  height: 25px;
-  border-radius: 7px;
-}
-section.pop-up-background .pop-up .form-check-input:checked {
-  background-color: #006FFF;
-  border-color: #006FFF;
-}
-section.pop-up-background .pop-up .form-check-label {
-  font-size: 1.6rem;
-  color: #848586;
-  font-weight: 500;
-  margin-left: 15px;
-}
-section.pop-up-background .pop-up .xmark {
-  border-radius: 100%;
-  background-color: #303134;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #848586;
-  align-self: flex-end;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
 .fa-solid {
   font-family: "Font Awesome 6 Free" !important;
+}
+
+.receive-add {
+  margin-top: 40px;
+  gap: 20px;
+}
+.receive-add #qr-code {
+  width: 170px;
+  height: 170px;
+}
+.receive-add #dest-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #848586;
+}
+.receive-add #copyBtn {
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
