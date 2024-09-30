@@ -1,0 +1,470 @@
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+/* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #333;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+
+/* Custom resets */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+body,
+* {
+  font-family: "DMSans" !important;
+}
+
+.background {
+  background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+}
+
+html {
+  font-size: 62.5% !important;
+  height: auto !important;
+}
+
+body {
+  background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+  background-repeat: no-repeat;
+  height: auto !important;
+  min-height: 100vh !important;
+}
+
+main {
+  max-width: 430px;
+  padding: 30px 25px;
+  background: linear-gradient(to bottom, #15151C, #110D1D);
+  background-repeat: no-repeat;
+}
+
+nav.mini-nav {
+  margin-bottom: 30px;
+}
+nav.mini-nav .setting-around {
+  padding: 15px;
+  background-color: #26272B;
+  cursor: pointer;
+}
+nav.mini-nav h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currency-name {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 21px;
+  z-index: 1;
+  margin-top: 30px;
+}
+.currency-name #network-type {
+  margin-top: -40px;
+  color: #848586;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.currency-name #currency-redirector {
+  padding: 15px 46px 15px 46px;
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(3px);
+  border-radius: 21px;
+  z-index: 1;
+}
+.currency-name #currency-redirector img {
+  transform: rotate(-90deg);
+}
+.currency-name #currency-address {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 140px;
+  transform: rotate();
+}
+.currency-name .bottom-line {
+  display: block;
+  width: 60%;
+  height: 7px;
+  border-radius: 120px;
+  background-color: #006FFF;
+  bottom: -3px;
+  z-index: -1;
+}
+
+.wallet-details {
+  margin-bottom: 60px;
+}
+.wallet-details span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: #848586;
+}
+.wallet-details .wallet-balance #balance {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 3.2rem;
+}
+.wallet-details #received-name {
+  color: #fff;
+}
+
+.head-span {
+  font-size: 1.8rem;
+  color: #848586;
+  font-weight: 500;
+}
+
+section.countSection {
+  padding: 27px;
+  background-color: #27282E;
+  border-radius: 30px;
+}
+section.countSection .input-container {
+  background-color: #303134;
+  border-radius: 25px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+}
+section.countSection .input-container #walletInput {
+  background-color: transparent;
+  border: none;
+  stroke: none;
+  color: #fff;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 20px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  -moz-appearance: textfield;
+}
+section.countSection .input-container .wallet-svg {
+  flex-shrink: 0;
+}
+section.countSection .input-container .dollar-sign {
+  font-size: 1.6rem;
+  opacity: 0;
+  margin-left: 20px;
+}
+section.countSection .input-container .dollar-sign.focus {
+  opacity: 1;
+}
+section.countSection .input-container #wallet-icon.focus {
+  fill: #006FFF;
+}
+section.countSection .quick-select button {
+  color: #848586;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 1px solid rgba(140, 140, 171, 0.2);
+  padding: 20px 0;
+  transition: all linear 0.3s;
+}
+section.countSection .quick-select button:hover {
+  color: #006FFF;
+  border-color: #006FFF;
+}
+
+.input-container.focus {
+  border-color: #006FFF !important;
+}
+
+#buy-btn, #currency-btn {
+  margin-top: 40px;
+  padding: 15px 39px;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
+}
+
+section.pop-up-background {
+  z-index: 90;
+  padding: 0 20px;
+}
+section.pop-up-background .pop-up {
+  background-color: #27282E;
+  border-radius: 30px;
+  padding: 25px 30px 0px;
+}
+section.pop-up-background .pop-up #currency-input {
+  background-color: transparent;
+  border: none;
+  stroke: none;
+  color: #fff;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 20px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  -moz-appearance: textfield;
+  margin-left: 20px;
+}
+section.pop-up-background .pop-up .input-container {
+  background-color: #303134;
+  border-radius: 25px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+}
+section.pop-up-background .pop-up #search-svg {
+  flex-shrink: 0 !important;
+}
+section.pop-up-background .pop-up .checkboxes {
+  padding: 25px;
+}
+section.pop-up-background .pop-up .checkbox-container {
+  overflow-y: scroll;
+  max-height: 230px;
+}
+section.pop-up-background .pop-up .form-check {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+section.pop-up-background .pop-up .form-check-input {
+  width: 25px;
+  height: 25px;
+  border-radius: 7px;
+}
+section.pop-up-background .pop-up .form-check-input:checked {
+  background-color: #006FFF;
+  border-color: #006FFF;
+}
+section.pop-up-background .pop-up .form-check-label {
+  font-size: 1.6rem;
+  color: #848586;
+  font-weight: 500;
+  margin-left: 15px;
+}
+section.pop-up-background .pop-up .xmark {
+  border-radius: 100%;
+  background-color: #303134;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #848586;
+  align-self: flex-end;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.fa-solid {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+/*# sourceMappingURL=main.css.map */

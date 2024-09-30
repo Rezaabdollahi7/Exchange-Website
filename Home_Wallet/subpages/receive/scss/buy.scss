@@ -1,0 +1,247 @@
+html{
+    font-size: 62.5% !important; //this makes each rem to be 10px when the font size of browser has been set to 16px
+    height: auto !important;
+}
+body{
+    background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+    background-repeat: no-repeat;
+    height: auto !important;
+    min-height: 100vh !important;
+}
+main{
+    max-width: 430px;
+    padding: 30px 25px;
+    background: linear-gradient(to bottom, $background_from, $background_to);
+    background-repeat: no-repeat;
+}
+
+nav.mini-nav{
+    margin-bottom: 30px;
+
+    .setting-around{
+        padding: 15px;
+        background-color: $button_gray;
+        cursor: pointer;
+    }
+    h1{
+        color: #fff;
+        font-size: 2.4rem;
+        font-weight: 700;
+        height: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.currency-name{
+    position: relative;
+    background-color: #FFFFFF0D;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 21px;
+    z-index: 1;
+    margin-top: 30px;
+
+    #network-type{
+        margin-top: -40px;
+        color: $small-title;
+        font-weight: 500;
+        font-size: 1.8rem;
+        
+    }
+
+    #currency-redirector{
+        padding: 15px 46px 15px 46px;
+        border: 1px solid #FFFFFF24;
+        backdrop-filter: blur(3px);
+        border-radius: 21px;
+        z-index: 1;
+
+        img{
+            transform: rotate(-90deg);
+        }
+    }
+    #currency-address{
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 140px;
+        transform: rotate();
+    }
+    .bottom-line{
+        display: block;
+        width: 60%;
+        height: 7px;
+        border-radius: 120px;
+        background-color: $main_blue;
+        bottom: -3px;
+        z-index: -1;
+    }
+}
+
+.wallet-details{
+    margin-bottom: 60px;
+    span{
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2rem;
+        color: $small-title;
+    }
+    
+    .wallet-balance{
+        #balance{
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #fff;
+            line-height: 3.2rem;
+        }
+    }
+
+    #received-name{
+        color: #fff;
+    }
+}
+
+.head-span{
+    font-size: 1.8rem;
+    color: $small-title;
+    font-weight: 500;
+}
+
+section.countSection{
+    padding: 27px;
+    background-color: $part-back-gray;
+    border-radius: 30px;
+
+
+    .input-container{
+        @include inputContainer();
+
+        #walletInput{
+            @include inputStyle();
+        }
+
+        .wallet-svg{
+            flex-shrink: 0;
+        }
+
+        .dollar-sign{
+            font-size: 1.6rem;
+            opacity: 0;
+            margin-left: 20px;
+        }
+
+        .dollar-sign.focus{
+            opacity: 1;
+        }
+
+        #wallet-icon.focus{
+            fill: $main_blue;
+        }
+
+    }
+    
+    .quick-select{
+        button{
+            color: $small-title;
+            font-size: 2.4rem;
+            font-weight: 700;
+            border-radius: 20px;
+            border: 1px solid #8C8CAB33;
+            padding: 20px 0;
+            transition: all linear 0.3s;
+        }
+        button:hover{
+            color: $main_blue;
+            border-color: $main_blue;
+        }
+    }
+    
+}
+
+.input-container.focus{
+    border-color: $main_blue !important;
+}
+
+#buy-btn, #currency-btn{
+    margin-top: 40px;
+    padding: 15px 39px;
+    border-radius: 25px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    box-shadow: 0 0 15px #0C61EC57;
+}
+
+section.pop-up-background{
+    z-index: 90;
+    padding: 0 20px;
+
+    .pop-up{
+        background-color: $part-back-gray;
+        border-radius: 30px;
+        padding: 25px 30px 0px;
+
+        #currency-input{
+            @include inputStyle();
+            margin-left: 20px;
+        }
+
+        .input-container{
+            @include inputContainer();
+        }
+
+        #search-svg{
+            flex-shrink: 0 !important;
+        }
+
+        .checkboxes{
+            padding: 25px;
+        }
+
+        .checkbox-container{
+            overflow-y: scroll;
+            max-height: 230px;
+        }
+        .form-check{
+            width: 100%;
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .form-check-input{
+            width: 25px;
+            height: 25px;
+            border-radius: 7px;
+        }
+        .form-check-input:checked{
+            background-color: $main_blue;
+            border-color: $main_blue;
+        }
+
+        .form-check-label{
+            font-size: 1.6rem;
+            color: $small-title;
+            font-weight: 500;
+            margin-left: 15px;
+        }
+
+        .xmark{
+            border-radius: 100%;
+            background-color: #303134;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $small-title;
+            align-self: flex-end;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+.fa-solid{
+    font-family: "Font Awesome 6 Free" !important;
+}
