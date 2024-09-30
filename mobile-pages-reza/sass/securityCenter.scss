@@ -112,7 +112,8 @@ body {
 
 #autolockMenu,
 #emailMenu,
-#phoneMenu {
+#phoneMenu,
+#notifMenu {
   background-color: #13111d;
 
   .modal-dialog {
@@ -374,6 +375,88 @@ body {
   }
 }
 
+#notifMenu {
+  .page-title {
+    margin-left: 3rem !important;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  .notif-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.83px;
+    text-align: left;
+    color: #ffffff;
+  }
+  .notif-sub-title {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+    color: #848586;
+  }
+
+  /* From Uiverse.io by arghyaBiswasDev */
+  /* The switch - the box around the slider */
+  .switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #283454;
+    // border: 1px solid #adb5bd;
+    transition: 0.4s;
+    border-radius: 30px;
+    width: 44px;
+    height: 25px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    border-radius: 20px;
+    left: 7%;
+    bottom: 13%;
+    background-color: #fff;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #007bff;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(1em);
+    background-color: #fff;
+  }
+}
 @media screen and (max-width: 400px) {
   #autolockMenu,
   #emailMenu {
