@@ -30,25 +30,27 @@
             </a>
         </nav>
 
-        <section class="wallets-list-container mt-5">
+        <section class="wallets-list-container mt-4">
             <ul class="wallets-list p-0">
 
                 <li class="wallet-item px-1">
-                    <a href="#" class="d-flex align-items-center justify-content-between py-4">
+                    <span class="d-flex align-items-center justify-content-between py-4">
                         <span class="wallet-name">Google Authentication</span>
-                        <div class="right-container d-flex justify-content-center align-items-center">
-                            <input type="radio" name="test" id="">
-                        </div>
-                    </a>
+                        <label class="switch mt-2">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </span>
                 </li>
 
                 <li class="wallet-item px-1">
-                    <a href="#" class="d-flex align-items-center justify-content-between py-4">
+                    <span class="d-flex align-items-center justify-content-between py-4">
                         <span class="wallet-name">Login with Touch Id</span>
-                        <div class="right-container d-flex justify-content-center align-items-center">
-                            <input type="radio" name="test" id="">
-                        </div>
-                    </a>
+                        <label class="switch mt-2">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </span>
                 </li>
 
                 <li class="wallet-item px-1">
@@ -214,13 +216,13 @@
                                     <input type="email" id="emailInput" name="email" placeholder="Enter your email"
                                         class="form-control" required>
                                     <span class="box-icon">
-                                        <img src="./assets/Message.svg" alt="message">
+                                        <img id="emailMessegaIcon" src="./assets/Message.svg" alt="message">
                                     </span>
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <button id="emailSubmitButton" type="submit"
-                                    class="border-0 w-100 btn btn-primary">Submit</button>
+                                    class="border-0 w-100 btn btn-primary">Submit →</button>
                             </div>
                         </form>
                     </div>
@@ -319,7 +321,7 @@
                                 <input type="number" class="form-control ms-1" id="phoneNumberInput"
                                     placeholder="Enter phone number">
                             </div>
-                            <button href="#" class="sendcode w-100">Send Code</button>
+                            <button href="#" class="sendcode w-100">Send Code →</button>
                         </div>
                     </div>
                 </div>
@@ -414,19 +416,22 @@
                                 <label for="currentPassword" class="form-label ">Current Password</label>
                                 <input type="password" class="form-control" id="currentPassword" required
                                     placeholder="Enter current password">
-                                <img class="position-absolute" src="./assets/Password.svg" alt="key-icon">
+                                <img id="currentPasswordImg" class="position-absolute" src="./assets/Password.svg"
+                                    alt="key-icon">
                             </div>
                             <div class="mb-3 position-relative">
                                 <label for="newPassword" class="form-label ">New Password</label>
                                 <input type="password" class="form-control" id="newPassword" required
                                     placeholder="Enter new password">
-                                <img class="position-absolute" src="./assets/Password.svg" alt="key-icon">
+                                <img id="newPasswordImg" class="position-absolute" src="./assets/Password.svg"
+                                    alt="key-icon">
                             </div>
                             <div class="mb-3 position-relative">
                                 <label for="reNewPassword" class="form-label ">Re-New Password</label>
                                 <input type="password" class="form-control" id="reNewPassword" required
                                     placeholder="Re-enter new password">
-                                <img class="position-absolute" src="./assets/Password.svg" alt="key-icon">
+                                <img id="reNewPasswordImg" class="position-absolute" src="./assets/Password.svg"
+                                    alt="key-icon">
                             </div>
                             <div class="mb-3  text-center">
                                 <a href="#" class="text-primary forgot-link">Forgot Password?</a>
@@ -474,7 +479,7 @@
             <p class="mt-2 check-email-sub-title text-white-50">We will now send an email to it. To continue, click on the link in your email.</p>
             <a href="#" class="w-100 " style="
                 background-color: #006FFF;
-                 font-size: 18px;
+                 font-size: 16px;
                 color: white;
                 text-decoration: none;
                 border-radius: 25px;       
@@ -482,10 +487,63 @@
                 text-align: center;
                 padding: 0.75rem 0;
                 margin-top: 7.5rem;">
-                Open inbox 
+                Open inbox →
             </a>
         </div>
     `;
+        });
+
+        //Email Input image with focus
+        const emailInput = document.getElementById('emailInput');
+        const messageIcon = document.getElementById('emailMessegaIcon');
+
+        const currentPasswordInput = document.getElementById('currentPassword');
+        const newPasswordInput = document.getElementById('newPassword');
+        const renewPasswordInput = document.getElementById('reNewPassword');
+
+        const currentPasswordImg = document.getElementById('currentPasswordImg');
+        const newPasswordImg = document.getElementById('newPasswordImg');
+        const renewPasswordImg = document.getElementById('reNewPasswordImg');
+
+
+        const blueKeyImg = './assets/Password.png';
+        const defaultKeyImg = './assets/Password.svg';
+
+
+        const defaultIcon = './assets/Message.svg';
+        const focusedIcon = './assets/Message.png'; // آدرس عکس جدید هنگام فوکوس
+
+        emailInput.addEventListener('focus', () => {
+            messageIcon.src = focusedIcon; // تغییر عکس هنگام فوکوس
+        });
+
+        emailInput.addEventListener('blur', () => {
+            messageIcon.src = defaultIcon; // تغییر عکس به حالت اولیه هنگام از دست دادن فوکوس
+        });
+
+        currentPasswordInput.addEventListener('focus', () => {
+            console.log("fuvk")
+            currentPasswordImg.src = blueKeyImg; // تغییر عکس هنگام فوکوس
+        });
+
+        currentPasswordInput.addEventListener('blur', () => {
+            currentPasswordImg.src = defaultKeyImg; // تغییر عکس به حالت اولیه هنگام از دست دادن فوکوس
+        });
+
+        newPasswordInput.addEventListener('focus', () => {
+            newPasswordImg.src = blueKeyImg; // تغییر عکس هنگام فوکوس
+        });
+
+        newPasswordInput.addEventListener('blur', () => {
+            newPasswordImg.src = defaultKeyImg; // تغییر عکس به حالت اولیه هنگام از دست دادن فوکوس
+        });
+
+        renewPasswordInput.addEventListener('focus', () => {
+            renewPasswordImg.src = blueKeyImg; // تغییر عکس هنگام فوکوس
+        });
+
+        renewPasswordInput.addEventListener('blur', () => {
+            renewPasswordImg.src = defaultKeyImg; // تغییر عکس به حالت اولیه هنگام از دست دادن فوکوس
         });
 
 
