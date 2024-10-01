@@ -1,0 +1,62 @@
+// Variables
+$background-color: #14121c;
+$text-color-white: #fff;
+$text-color-muted: #848586;
+$border-color-light: rgba(140, 140, 171, 0.2);
+$hover-bg-color: rgba(144, 142, 156, 0.06);
+$font-weight-bold: 700;
+$font-weight-regular: 400;
+
+// Base Styles
+body {
+  background-color: $background-color;
+}
+
+// Wallet Page Container
+#wallet-mobile-page {
+  max-width: 400px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+    color: $text-color-white;
+  }
+
+  .wallets-list-container {
+    ul.wallets-list {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        border-bottom: 1px solid $border-color-light;
+        transition: background-color 0.3s ease;
+
+        a {
+          text-decoration: none;
+        }
+
+        .wallet-name {
+          font-size: 18px;
+          font-weight: $font-weight-bold;
+          line-height: 1.3;        
+          color: $text-color-white;
+        }
+
+        .right-container {
+          .wallet-inventory {
+            font-size: 14px;
+            font-weight: $font-weight-bold;
+            line-height: 1.3;        
+            color: $text-color-muted;
+          }
+        }
+
+        &:hover {
+          background-color: $hover-bg-color;
+        }
+      }
+    }
+  }
+}
