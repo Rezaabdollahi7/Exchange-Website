@@ -113,7 +113,8 @@ body {
 #autolockMenu,
 #emailMenu,
 #phoneMenu,
-#notifMenu {
+#notifMenu,
+#passMenu {
   background-color: #13111d;
 
   .modal-dialog {
@@ -457,6 +458,55 @@ body {
     background-color: #fff;
   }
 }
+#passMenu {
+  .page-title {
+    margin-left: 4rem !important;
+  }
+  .modal-body {
+    label {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19.6px;
+      color: #848586;
+    }
+
+    input {
+      height: 56px;
+      background-color: #26272b;
+      padding: 21px;
+      border: none;
+      border-radius: 25px;
+      padding-left: 3rem;
+      color: white;
+      font-size: 17px;
+      &:focus {
+        border: 1px solid #006fff;
+      }
+    }
+    .forgot-link {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19.6px;
+      color: #006fff;
+      text-decoration: none;
+    }
+    button {
+      background-color: #006fff;
+      box-shadow: 0px 3.37px 15.57px 0px #0c61ec57;
+      height: 56px;
+      border-radius: 25px;
+      margin: 0 auto;
+      margin-top: 40%;
+    }
+    img {
+      top: 55%;
+      left: 3%;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
 @media screen and (max-width: 400px) {
   #autolockMenu,
   #emailMenu {

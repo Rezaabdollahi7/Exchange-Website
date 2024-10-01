@@ -92,20 +92,23 @@ body {
 #autolockMenu,
 #emailMenu,
 #phoneMenu,
-#notifMenu {
+#notifMenu,
+#passMenu {
   background-color: #13111d;
 }
 #autolockMenu .modal-dialog,
 #emailMenu .modal-dialog,
 #phoneMenu .modal-dialog,
-#notifMenu .modal-dialog {
+#notifMenu .modal-dialog,
+#passMenu .modal-dialog {
   width: 382px !important;
   margin: 0 auto;
 }
 #autolockMenu .modal-content,
 #emailMenu .modal-content,
 #phoneMenu .modal-content,
-#notifMenu .modal-content {
+#notifMenu .modal-content,
+#passMenu .modal-content {
   background-color: #13111d;
   margin: 0 auto;
   height: 90vh;
@@ -113,13 +116,15 @@ body {
 #autolockMenu .modal-body ul,
 #emailMenu .modal-body ul,
 #phoneMenu .modal-body ul,
-#notifMenu .modal-body ul {
+#notifMenu .modal-body ul,
+#passMenu .modal-body ul {
   list-style-type: none;
 }
 #autolockMenu .modal-body ul li a,
 #emailMenu .modal-body ul li a,
 #phoneMenu .modal-body ul li a,
-#notifMenu .modal-body ul li a {
+#notifMenu .modal-body ul li a,
+#passMenu .modal-body ul li a {
   text-decoration: none;
   font-size: 17px;
   font-weight: 700;
@@ -130,19 +135,22 @@ body {
 #autolockMenu .modal-header,
 #emailMenu .modal-header,
 #phoneMenu .modal-header,
-#notifMenu .modal-header {
+#notifMenu .modal-header,
+#passMenu .modal-header {
   border: 0;
 }
 #autolockMenu .modal-header .page-title,
 #emailMenu .modal-header .page-title,
 #phoneMenu .modal-header .page-title,
-#notifMenu .modal-header .page-title {
+#notifMenu .modal-header .page-title,
+#passMenu .modal-header .page-title {
   margin-left: 6rem;
 }
 #autolockMenu .modal-header .btn-close,
 #emailMenu .modal-header .btn-close,
 #phoneMenu .modal-header .btn-close,
-#notifMenu .modal-header .btn-close {
+#notifMenu .modal-header .btn-close,
+#passMenu .modal-header .btn-close {
   --bs-btn-close-color: #26272b;
   --bs-btn-close-opacity: 0.5;
   --bs-btn-close-hover-opacity: 0.75;
@@ -412,6 +420,50 @@ body {
 #notifMenu input:checked + .slider:before {
   transform: translateX(1em);
   background-color: #fff;
+}
+
+#passMenu .page-title {
+  margin-left: 4rem !important;
+}
+#passMenu .modal-body label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: #848586;
+}
+#passMenu .modal-body input {
+  height: 56px;
+  background-color: #26272b;
+  padding: 21px;
+  border: none;
+  border-radius: 25px;
+  padding-left: 3rem;
+  color: white;
+  font-size: 17px;
+}
+#passMenu .modal-body input:focus {
+  border: 1px solid #006fff;
+}
+#passMenu .modal-body .forgot-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: #006fff;
+  text-decoration: none;
+}
+#passMenu .modal-body button {
+  background-color: #006fff;
+  box-shadow: 0px 3.37px 15.57px 0px rgba(12, 97, 236, 0.3411764706);
+  height: 56px;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 40%;
+}
+#passMenu .modal-body img {
+  top: 55%;
+  left: 3%;
+  width: 24px;
+  height: 24px;
 }
 
 @media screen and (max-width: 400px) {

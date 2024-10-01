@@ -91,6 +91,16 @@
                         </div>
                     </a>
                 </li>
+
+                <li class="wallet-item px-1">
+                    <a href="#" class="d-flex align-items-center justify-content-between py-4 " data-target="#passMenu">
+                        <span class="wallet-name">Change Password</span>
+                        <div class="right-container d-flex justify-content-center align-items-center">
+                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                        </div>
+                    </a>
+                </li>
+
             </ul>
         </section>
 
@@ -222,8 +232,7 @@
         <!-- ! end of language modal -->
 
 
-
-        <!-- Modal for Phone Menu -->
+        <!-- ! Modal for Phone number Menu -->
         <div class="modal fade" id="phoneMenu" tabindex="-1" aria-labelledby="phoneMenuLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -316,7 +325,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- ! end of  Modal for Phone number Menu -->
 
         <!-- ! Modal for email Menu -->
         <div class="modal fade " id="notifMenu" tabindex="-1" aria-labelledby="languageMenuLabel" aria-hidden="true">
@@ -381,6 +390,57 @@
         </div>
         <!-- ! end of language modal -->
 
+        <!--! Modal for autolock  Menu -->
+        <div class="modal fade " id="passMenu" tabindex="-1" aria-labelledby="passMenuLabel" aria-hidden="true">
+            <div class="modal-dialog mt-0 ">
+                <div class="modal-content ">
+
+                    <div class="modal-header w-100 pt-5">
+                        <nav class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <img class="back-icon" src="./assets/wallet-icons/backicon.svg" alt="back-icon">
+                            </a>
+                            <h2 class="page-title">New Password</h2>
+                            <a href="#">
+                                <img class="setting-icon d-none" src="./assets/wallet-icons/settingicon.svg"
+                                    alt="setting-icon">
+                            </a>
+                        </nav>
+                    </div>
+
+                    <div class="modal-body mt-2">
+                        <form id="passwordResetForm" class="w-100">
+                            <div class="mb-3 position-relative">
+                                <label for="currentPassword" class="form-label ">Current Password</label>
+                                <input type="password" class="form-control" id="currentPassword" required
+                                    placeholder="Enter current password">
+                                <img class="position-absolute" src="./assets/Password.svg" alt="key-icon">
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <label for="newPassword" class="form-label ">New Password</label>
+                                <input type="password" class="form-control" id="newPassword" required
+                                    placeholder="Enter new password">
+                                <img class="position-absolute" src="./assets/Password.svg" alt="key-icon">
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <label for="reNewPassword" class="form-label ">Re-New Password</label>
+                                <input type="password" class="form-control" id="reNewPassword" required
+                                    placeholder="Re-enter new password">
+                                <img class="position-absolute" src="./assets/Password.svg" alt="key-icon">
+                            </div>
+                            <div class="mb-3  text-center">
+                                <a href="#" class="text-primary forgot-link">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Set new password</button>
+
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!--! end Modal for Currency Menu -->
 
     </main>
 
@@ -453,6 +513,24 @@
                 var code = this.getAttribute('data-country-code');
                 countryCodeDropdown.textContent = code;
             });
+        });
+
+        //password reset
+        document.getElementById('passwordResetForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            const currentPassword = document.getElementById('currentPassword').value;
+            const newPassword = document.getElementById('newPassword').value;
+            const reNewPassword = document.getElementById('reNewPassword').value;
+
+            if (newPassword !== reNewPassword) {
+                alert('New passwords do not match!');
+                return;
+            }
+
+            // Additional logic for password validation can be added here
+            alert('Password has been successfully reset!');
+            // Here, you can proceed to submit the form via AJAX or another method.
         });
 
     </script>
