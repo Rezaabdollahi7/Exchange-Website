@@ -20,10 +20,6 @@ body {
 #preferences-mobile-page .wallets-list-container ul.wallets-list li {
   border-bottom: 1px solid rgba(140, 140, 171, 0.2);
   transition: background-color 0.3s ease;
-  /* From Uiverse.io by arghyaBiswasDev */
-  /* The switch - the box around the slider */
-  /* Hide default HTML checkbox */
-  /* The slider */
 }
 #preferences-mobile-page .wallets-list-container ul.wallets-list li .switch {
   font-size: 17px;
@@ -62,11 +58,11 @@ body {
   transition: 0.4s;
 }
 #preferences-mobile-page .wallets-list-container ul.wallets-list li input:checked + .slider {
-  background-color: #007bff;
-  border: 1px solid #007bff;
+  background-color: #006fff;
+  border: 1px solid #006fff;
 }
 #preferences-mobile-page .wallets-list-container ul.wallets-list li input:focus + .slider {
-  box-shadow: 0 0 1px #007bff;
+  box-shadow: 0 0 1px #006fff;
 }
 #preferences-mobile-page .wallets-list-container ul.wallets-list li input:checked + .slider:before {
   transform: translateX(1em);
@@ -91,7 +87,7 @@ body {
   background-color: rgba(144, 142, 156, 0.06);
 }
 #preferences-mobile-page #colorMenu {
-  background-color: rgba(3, 3, 3, 0.7294117647);
+  background-color: rgba(3, 3, 3, 0.73);
 }
 #preferences-mobile-page #colorMenu .modal-dialog {
   width: 382px !important;
@@ -145,7 +141,7 @@ body {
 #phoneMenu,
 #notifMenu,
 #passMenu {
-  background-color: #13111d;
+  background-color: #14121c;
 }
 #autolockMenu .modal-dialog,
 #emailMenu .modal-dialog,
@@ -160,7 +156,7 @@ body {
 #phoneMenu .modal-content,
 #notifMenu .modal-content,
 #passMenu .modal-content {
-  background-color: #13111d;
+  background-color: #14121c;
   margin: 0 auto;
   height: 90vh;
 }
@@ -252,7 +248,7 @@ body {
   border-radius: 25px;
   border: 0;
   height: 56px;
-  color: white;
+  color: #fff;
 }
 #emailMenu .modal-body #emailInput:focus {
   box-shadow: none !important;
@@ -274,7 +270,7 @@ body {
   margin-left: 4rem !important;
 }
 #phoneMenu .phone-text {
-  color: #8e9bae;
+  color: #848586;
 }
 #phoneMenu .phone-input-container .input-group {
   border: 1px solid #444;
@@ -302,35 +298,32 @@ body {
   background-color: transparent;
   color: #fff;
   border: none;
-  font-weight: bold;
+  font-weight: 700;
 }
 #phoneMenu .phone-input-container .input-group ul.dropdown-menu {
   background-color: #27282e;
   width: 100%;
   margin-top: 2rem !important;
   height: 400px;
-  overflow-y: auto; /* تغییر به auto برای ایجاد اسکرول خودکار */
-  /* استایل برای Firefox */
-  scrollbar-width: thin; /* عرض اسکرول‌بار ریز */
-  scrollbar-color: #888 #13111d; /* رنگ اسکرولر و پس‌زمینه‌ی اسکرول‌بار */
-  /* استایل برای مرورگرهای WebKit (مانند Chrome و Safari) */
-  /* استایل برای اسکرولر هنگام هاور شدن در WebKit */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #13111d;
 }
 #phoneMenu .phone-input-container .input-group ul.dropdown-menu::-webkit-scrollbar {
-  width: 10px; /* عرض اسکرول‌بار */
-  height: 10px; /* ارتفاع اسکرول‌بار برای اسکرول‌های افقی */
+  width: 10px;
+  height: 10px;
 }
 #phoneMenu .phone-input-container .input-group ul.dropdown-menu::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* رنگ پس‌زمینه اسکرول‌بار */
-  border-radius: 10px; /* گرد کردن گوشه‌های پس‌زمینه */
+  background-color: #f1f1f1;
+  border-radius: 10px;
 }
 #phoneMenu .phone-input-container .input-group ul.dropdown-menu::-webkit-scrollbar-thumb {
-  background-color: #888; /* رنگ اسکرولر */
-  border-radius: 10px; /* گرد کردن گوشه‌های اسکرولر */
-  border: 2px solid #ccc; /* تنظیم حاشیه برای اسکرولر */
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid #ccc;
 }
 #phoneMenu .phone-input-container .input-group ul.dropdown-menu::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* رنگ جدید برای هاور */
+  background-color: #555;
 }
 #phoneMenu .phone-input-container .input-group ul.dropdown-menu .select-dropdown-text {
   font-size: 16px;
@@ -383,7 +376,7 @@ body {
 #phoneMenu .sendcode {
   background-color: #006fff;
   font-size: 16px;
-  color: white;
+  color: #fff;
   text-decoration: none;
   border-radius: 25px;
   vertical-align: middle;
@@ -399,12 +392,6 @@ body {
   }
 }
 
-#notifMenu {
-  /* From Uiverse.io by arghyaBiswasDev */
-  /* The switch - the box around the slider */
-  /* Hide default HTML checkbox */
-  /* The slider */
-}
 #notifMenu .page-title {
   margin-left: 3rem !important;
 }
@@ -417,7 +404,7 @@ body {
   font-weight: 700;
   line-height: 20.83px;
   text-align: left;
-  color: #ffffff;
+  color: #fff;
 }
 #notifMenu .notif-sub-title {
   font-size: 13px;
@@ -463,11 +450,11 @@ body {
   transition: 0.4s;
 }
 #notifMenu input:checked + .slider {
-  background-color: #007bff;
-  border: 1px solid #007bff;
+  background-color: #006fff;
+  border: 1px solid #006fff;
 }
 #notifMenu input:focus + .slider {
-  box-shadow: 0 0 1px #007bff;
+  box-shadow: 0 0 1px #006fff;
 }
 #notifMenu input:checked + .slider:before {
   transform: translateX(1em);
@@ -490,7 +477,7 @@ body {
   border: none;
   border-radius: 25px;
   padding-left: 3rem;
-  color: white;
+  color: #fff;
   font-size: 17px;
 }
 #passMenu .modal-body input:focus {

@@ -467,33 +467,33 @@
             });
         });
 
-
-        //email verify
+        // Email verify
         document.getElementById("emailSubmitButton").addEventListener("click", function (event) {
             event.preventDefault(); // Prevent form submission
             const formContainer = document.querySelector(".form-container");
             formContainer.innerHTML = `
-        <div class="text-center d-flex justify-content-center align-items-center flex-column">
-            <img class="mt-4" src="./assets/email-check.svg" alt="status-image" class="img-fluid mx-auto" />
-            <h3 class="mt-3 check-imail-title text-white">Check your email</h3>
-            <p class="mt-2 check-email-sub-title text-white-50">We will now send an email to it. To continue, click on the link in your email.</p>
-            <a href="#" class="w-100 " style="
-                background-color: #006FFF;
-                 font-size: 16px;
-                color: white;
-                text-decoration: none;
-                border-radius: 25px;       
-                vertical-align: middle;
-                text-align: center;
-                padding: 0.75rem 0;
-                margin-top: 7.5rem;">
-                Open inbox →
-            </a>
-        </div>
+    <div class="text-center d-flex justify-content-center align-items-center flex-column">
+        <img class="mt-4" src="./assets/email-check.svg" alt="status-image" class="img-fluid mx-auto" />
+        <h3 class="mt-3 check-imail-title text-white">Check your email</h3>
+        <p class="mt-2 check-email-sub-title text-white-50">We will now send an email to it. To continue, click on the
+            link in your email.</p>
+        <a href="#" class="w-100 " style="
+                    background-color: #006FFF;
+                    font-size: 16px;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 25px;       
+                    vertical-align: middle;
+                    text-align: center;
+                    padding: 0.75rem 0;
+                    margin-top: 7.5rem;">
+            Open inbox →
+        </a>
+    </div>
     `;
         });
 
-        //Email Input image with focus
+        // Email Input image with focus
         const emailInput = document.getElementById('emailInput');
         const messageIcon = document.getElementById('emailMessegaIcon');
 
@@ -505,49 +505,45 @@
         const newPasswordImg = document.getElementById('newPasswordImg');
         const renewPasswordImg = document.getElementById('reNewPasswordImg');
 
-
         const blueKeyImg = './assets/Password.png';
         const defaultKeyImg = './assets/Password.svg';
 
-
         const defaultIcon = './assets/Message.svg';
-        const focusedIcon = './assets/Message.png'; // آدرس عکس جدید هنگام فوکوس
+        const focusedIcon = './assets/Message.png';
 
         emailInput.addEventListener('focus', () => {
-            messageIcon.src = focusedIcon; // تغییر عکس هنگام فوکوس
+            messageIcon.src = focusedIcon;
         });
 
         emailInput.addEventListener('blur', () => {
-            messageIcon.src = defaultIcon; // تغییر عکس به حالت اولیه هنگام از دست دادن فوکوس
+            messageIcon.src = defaultIcon;
         });
 
         currentPasswordInput.addEventListener('focus', () => {
-            console.log("fuvk")
-            currentPasswordImg.src = blueKeyImg; // تغییر عکس هنگام فوکوس
+            currentPasswordImg.src = blueKeyImg;
         });
 
         currentPasswordInput.addEventListener('blur', () => {
-            currentPasswordImg.src = defaultKeyImg; // تغییر عکس به حالت اولیه هنگام از دست دادن فوکوس
+            currentPasswordImg.src = defaultKeyImg;
         });
 
         newPasswordInput.addEventListener('focus', () => {
-            newPasswordImg.src = blueKeyImg; // تغییر عکس هنگام فوکوس
+            newPasswordImg.src = blueKeyImg;
         });
 
         newPasswordInput.addEventListener('blur', () => {
-            newPasswordImg.src = defaultKeyImg; // تغییر عکس به حالت اولیه هنگام از دست دادن فوکوس
+            newPasswordImg.src = defaultKeyImg;
         });
 
         renewPasswordInput.addEventListener('focus', () => {
-            renewPasswordImg.src = blueKeyImg; // تغییر عکس هنگام فوکوس
+            renewPasswordImg.src = blueKeyImg;
         });
 
         renewPasswordInput.addEventListener('blur', () => {
-            renewPasswordImg.src = defaultKeyImg; // تغییر عکس به حالت اولیه هنگام از دست دادن فوکوس
+            renewPasswordImg.src = defaultKeyImg;
         });
 
-
-        //phone verify
+        // Phone verify
         // Filtering country codes based on search
         document.getElementById('searchCountry').addEventListener('input', function () {
             var filter = this.value.toLowerCase();
@@ -573,7 +569,7 @@
             });
         });
 
-        //password reset
+        // Password reset
         document.getElementById('passwordResetForm').addEventListener('submit', function (event) {
             event.preventDefault(); // Prevent form submission
 
@@ -590,8 +586,8 @@
             alert('Password has been successfully reset!');
             // Here, you can proceed to submit the form via AJAX or another method.
         });
-
     </script>
+
 </body>
 
 </html>
