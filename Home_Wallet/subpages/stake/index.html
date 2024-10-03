@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stake</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- main styles css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- fav icon -->
+    <link rel="icon" href="../../assets/Logo.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../assets/Logo.svg" type="image/x-icon" />
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/999242beec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="mx-auto position-relative">
+        <nav class="mini-nav container p-0">
+            <div class="text-center position-relative">
+                <h1 class="head-name">Receive</h1>
+                <i class="setting-around rounded-pill position-absolute end-0 top-0" id="setting-button">
+                    <img src="../../assets/Settings.svg" alt="setting">
+                </i>
+            </div>
+        </nav>
+        <div class="wallet-details d-flex flex-column align-items-center mb-5">
+            <img id="coin-pic" src="./assets/btc.svg" alt="BNB">
+            <span class="mt-5">Total Wallet Balance</span>
+            <div class="wallet-balance d-flex flex-row justify-content-between mt-3">
+                <span id="balance">0.00045321 BNB</span>
+            </div>
+        </div>
+        <form method="post" id="stake-form" class="mt-4">
+            <section class="stakeSection d-flex flex-column align-items-center">
+                <span class="head-span">How much amount to stake?</span>
+                <div class="input-container w-100 d-flex align-items-center mt-4">
+                    <svg class="icon-svg" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="coin-icon" fill-rule="evenodd" clip-rule="evenodd" d="M12.5262 5.42399L7.92179 10.085L7.92188 10.0848L5.24292 7.37279L12.5262 0L19.8118 7.375L17.1327 10.087L12.5262 5.42399ZM3.3509 9.2875L0.671743 12L3.35071 14.7115L6.02986 11.9994L3.3509 9.2875ZM7.92173 13.9153L12.5261 18.576L17.1326 13.9131L19.813 16.6237L19.8117 16.6251L12.5261 24L5.24286 16.6272L5.23907 16.6234L7.92173 13.9153ZM21.701 9.2891L19.0218 12.0012L21.7009 14.7131L24.38 12.001L21.701 9.2891Z" fill="#47484E"/>
+                    </svg>
+                    <span class="dollar-sign text-white fw-bold">$</span>
+                    <input type="number" id="StakeAmount" placeholder="$0" required/>
+                </div>
+                <span class="head-span mt-4 mb-3">Validator</span>
+                <div class="Validator-name text-center text-white w-100" id="validator-name">
+                    <a href="#" id="Validator-redirector" class="d-flex justify-content-center gap-2 w-full h-full"><span id="validator-address">Trust node ( 3.05% ARP )</span><img src="../../assets/DownArrow.svg" alt="arrow_down"></a>
+                    <div class="bottom-line position-absolute start-50 translate-middle-x"></div>
+                </div>
+                <p id="notice" class="text-center">
+                    The day after staking marks the starting <br>point for generating returns.<br><br>
+                    Earning starts one day after staking.
+                </p>
+            </section>
+            <button type="submit" class="btn btn-primary w-100" id="stake-btn">Continue</button>
+        </form>
+    </main>
+
+
+    <!-- main js -->
+     <script src="./js/main.js"></script>
+</body>
+</html>

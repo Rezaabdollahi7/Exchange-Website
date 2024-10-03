@@ -1,0 +1,19 @@
+@mixin inputStyle(){
+    background-color: transparent;
+    border: none;
+    stroke: none;
+    color: #fff;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 20px 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    -moz-appearance: textfield;
+}
+
+@mixin inputContainer(){
+    background-color: #303134;
+    border-radius: 25px;
+    padding: 0 20px;
+    border: 1px solid transparent;
+}
