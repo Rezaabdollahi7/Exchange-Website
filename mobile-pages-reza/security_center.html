@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security center</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- main styles css -->
+    <link rel="stylesheet" href="./dist/securityCenter.css">
+    <link rel="stylesheet" href="../fonts.css">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon" />
+</head>
+
+<body>
+    <main id="preferences-mobile-page" class="pt-5 px-3">
+
+        <nav class=" d-flex justify-content-between align-items-center">
+            <a href="#">
+                <img class="back-icon" src="./assets/wallet-icons/backicon.svg" alt="back-icon">
+            </a>
+
+            <h2 class="page-title">Security center</h2>
+
+            <a href="#">
+                <img class="setting-icon d-none" src="./assets/wallet-icons/settingicon.svg" alt="setting-icon">
+            </a>
+        </nav>
+
+        <section class="wallets-list-container mt-4">
+            <ul class="wallets-list p-0">
+
+                <li class="wallet-item px-1">
+                    <span class="d-flex align-items-center justify-content-between py-4">
+                        <span class="wallet-name">Google Authentication</span>
+                        <label class="switch mt-2">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </span>
+                </li>
+
+                <li class="wallet-item px-1">
+                    <span class="d-flex align-items-center justify-content-between py-4">
+                        <span class="wallet-name">Login with Touch Id</span>
+                        <label class="switch mt-2">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </span>
+                </li>
+
+                <li class="wallet-item px-1">
+                    <a href="#" class="d-flex align-items-center justify-content-between py-4"
+                        data-target="#autolockMenu">
+                        <span class="wallet-name">Auto Lock</span>
+                        <div class="right-container d-flex justify-content-center align-items-center">
+                            <span class="wallet-inventory me-2"> After 30 min</span>
+                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                        </div>
+                    </a>
+                </li>
+
+                <li class="wallet-item px-1">
+                    <a href="#" class="d-flex align-items-center justify-content-between py-4" data-target="#emailMenu">
+                        <span class="wallet-name">Email Verification</span>
+                        <div class="right-container d-flex justify-content-center align-items-center">
+                            <span class="wallet-inventory me-2">Sample@gmail.com</span>
+                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                        </div>
+                    </a>
+                </li>
+
+                <li class="wallet-item px-1">
+                    <a href="#" class="d-flex align-items-center justify-content-between py-4" data-target="#phoneMenu">
+                        <span class="wallet-name">Phone Verification</span>
+                        <div class="right-container d-flex justify-content-center align-items-center">
+                            <span class="wallet-inventory me-2">Not set</span>
+                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                        </div>
+                    </a>
+                </li>
+
+                <li class="wallet-item px-1">
+                    <a href="#" class="d-flex align-items-center justify-content-between py-4 "
+                        data-target="#notifMenu">
+                        <span class="wallet-name">Push Notofication</span>
+                        <div class="right-container d-flex justify-content-center align-items-center">
+                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                        </div>
+                    </a>
+                </li>
+
+                <li class="wallet-item px-1">
+                    <a href="#" class="d-flex align-items-center justify-content-between py-4 " data-target="#passMenu">
+                        <span class="wallet-name">Change Password</span>
+                        <div class="right-container d-flex justify-content-center align-items-center">
+                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+
+
+        <!--! Modal for autolock  Menu -->
+        <div class="modal fade " id="autolockMenu" tabindex="-1" aria-labelledby="autolockMenuLabel" aria-hidden="true">
+            <div class="modal-dialog mt-0 ">
+                <div class="modal-content ">
+
+                    <div class="modal-header w-100 pt-5 ">
+                        <nav class="   d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <img class="back-icon" src="./assets/wallet-icons/backicon.svg" alt="back-icon">
+                            </a>
+
+                            <h2 class="page-title">Auto Lock</h2>
+
+                            <a href="#">
+                                <img class="setting-icon d-none" src="./assets/wallet-icons/settingicon.svg"
+                                    alt="setting-icon">
+                            </a>
+                        </nav>
+                    </div>
+
+                    <div class="modal-body mt-2">
+
+                        <ul class="times-container p-0">
+                            <li class="item-li ">
+                                <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <span class="time-name">Immediately</span>
+                                    <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                </a>
+                            </li>
+
+                            <li class="item-li mt-5">
+                                <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <span class="time-name">After 30 sec</span>
+                                    <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                </a>
+                            </li>
+
+                            <li class="item-li mt-5">
+                                <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <span class="time-name">After 50 sec</span>
+                                    <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                </a>
+                            </li>
+
+                            <li class="item-li mt-5">
+                                <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <span class="time-name">After 1 min</span>
+                                    <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                </a>
+                            </li>
+
+                            <li class="item-li mt-5">
+                                <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <span class="time-name">After 5 min</span>
+                                    <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                </a>
+                            </li>
+
+                            <li class="item-li mt-5">
+                                <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <span class="time-name">After 10 min</span>
+                                    <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                </a>
+                            </li>
+
+                            <li class="item-li mt-5">
+                                <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <span class="time-name">Never</span>
+                                    <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--! end Modal for Currency Menu -->
+
+
+        <!-- ! Modal for email Menu -->
+        <div class="modal fade " id="emailMenu" tabindex="-1" aria-labelledby="languageMenuLabel" aria-hidden="true">
+            <div class="modal-dialog mt-0">
+                <div class="modal-content">
+                    <div class="modal-header w-100 pt-5">
+                        <nav class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <img class="back-icon" src="./assets/wallet-icons/backicon.svg" alt="back-icon">
+                            </a>
+                            <h2 class="page-title">Email Verification</h2>
+                            <a href="#">
+                                <img class="setting-icon d-none" src="./assets/wallet-icons/settingicon.svg"
+                                    alt="setting-icon">
+                            </a>
+                        </nav>
+                    </div>
+
+                    <div class="form-container">
+                        <form action="#" method="POST" id="emailVerificationForm">
+                            <div class="modal-body email-modal-body">
+                                <p class="email-text">Please enter a valid email and ensure that this email belongs to
+                                    you and is active.
+                                </p>
+                                <div class="input-container mt-4">
+                                    <input type="email" id="emailInput" name="email" placeholder="Enter your email"
+                                        class="form-control" required>
+                                    <span class="box-icon">
+                                        <img id="emailMessegaIcon" src="./assets/Message.svg" alt="message">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="emailSubmitButton" type="submit"
+                                    class="border-0 w-100 btn btn-primary">Submit →</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- ! end of language modal -->
+
+
+        <!-- ! Modal for Phone number Menu -->
+        <div class="modal fade" id="phoneMenu" tabindex="-1" aria-labelledby="phoneMenuLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header w-100 pt-5">
+                        <nav class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <img class="back-icon" src="./assets/wallet-icons/backicon.svg" alt="back-icon">
+                            </a>
+                            <h2 class="page-title">Phone Number</h2>
+                            <a href="#">
+                                <img class="setting-icon d-none" src="./assets/wallet-icons/settingicon.svg"
+                                    alt="setting-icon">
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="modal-body email-modal-body">
+                        <p class="phone-text">Enter your phone number so we can send you the verification code</p>
+
+                        <!-- Input Field with Country Code -->
+                        <div class="phone-input-container mt-4">
+                            <div class="input-group py-3">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                    id="countryCodeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    +62
+                                </button>
+                                <ul class="dropdown-menu pt-5 pb-2 px-3" aria-labelledby="countryCodeDropdown">
+                                    <p class="select-dropdown-text text-center">what currency you like ?</p>
+                                    <li class="dropdown-search">
+
+
+                                        <div class="input-container mt-4 position-relative">
+                                            <input type="text" class="form-control" id="searchCountry"
+                                                placeholder="Search country...">
+                                            <span class="box-icon position-absolute">
+                                                <img src="./assets/search-normal.svg" alt="message">
+                                            </span>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="mt-4"><a
+                                            class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+1">Canada
+                                            (+1)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+44">United Kingdom
+                                            (+44)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+61">Australia
+                                            (+61)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+49">Germany
+                                            (+49)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+33">France
+                                            (+33)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+81">Japan
+                                            (+81)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+86">China
+                                            (+86)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <li><a class="dropdown-item country-item w-100 d-flex justify-content-between align-items-center"
+                                            href="#" data-country-code="+91">India
+                                            (+91)
+                                            <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
+                                        </a></li>
+                                    <!-- Add more countries as needed -->
+                                </ul>
+                                <input type="number" class="form-control ms-1" id="phoneNumberInput"
+                                    placeholder="Enter phone number">
+                            </div>
+                            <button href="#" class="sendcode w-100">Send Code →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ! end of  Modal for Phone number Menu -->
+
+        <!-- ! Modal for email Menu -->
+        <div class="modal fade " id="notifMenu" tabindex="-1" aria-labelledby="languageMenuLabel" aria-hidden="true">
+            <div class="modal-dialog mt-0">
+                <div class="modal-content">
+                    <div class="modal-header w-100 pt-5">
+                        <nav class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <img class="back-icon" src="./assets/wallet-icons/backicon.svg" alt="back-icon">
+                            </a>
+                            <h2 class="page-title">Push Notification</h2>
+                            <a href="#">
+                                <img class="setting-icon d-none" src="./assets/wallet-icons/settingicon.svg"
+                                    alt="setting-icon">
+                            </a>
+                        </nav>
+                    </div>
+
+                    <div class="notif-container d-flex align-items-center justify-content-between mt-5">
+                        <ul class="notif-ul">
+                            <li class="d-flex justify-content-center mt-3">
+                                <div class="titles-wraper d-flex flex-column w-75">
+                                    <span class="notif-title">Transactional Notifications</span>
+                                    <p class="notif-sub-title mt-2">Instant notifications to update you on the status of
+                                        your transactions as they happen or get completed.</p>
+                                </div>
+                                <label class="switch mt-2">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="d-flex justify-content-center mt-3">
+                                <div class="titles-wraper d-flex flex-column w-75">
+                                    <span class="notif-title">Send and receive</span>
+                                    <p class="notif-sub-title mt-2">Receive alerts when sending or receiving.
+                                    </p>
+                                </div>
+                                <label class="switch mt-2">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="d-flex justify-content-center mt-3">
+                                <div class="titles-wraper d-flex flex-column w-75">
+                                    <span class="notif-title">Get product updates instantly</span>
+                                    <p class="notif-sub-title mt-2">Get early updates on new features</p>
+                                </div>
+                                <label class="switch mt-2">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- ! end of language modal -->
+
+        <!--! Modal for autolock  Menu -->
+        <div class="modal fade " id="passMenu" tabindex="-1" aria-labelledby="passMenuLabel" aria-hidden="true">
+            <div class="modal-dialog mt-0 ">
+                <div class="modal-content ">
+
+                    <div class="modal-header w-100 pt-5">
+                        <nav class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <img class="back-icon" src="./assets/wallet-icons/backicon.svg" alt="back-icon">
+                            </a>
+                            <h2 class="page-title">New Password</h2>
+                            <a href="#">
+                                <img class="setting-icon d-none" src="./assets/wallet-icons/settingicon.svg"
+                                    alt="setting-icon">
+                            </a>
+                        </nav>
+                    </div>
+
+                    <div class="modal-body mt-2">
+                        <form id="passwordResetForm" class="w-100">
+                            <div class="mb-3 position-relative">
+                                <label for="currentPassword" class="form-label ">Current Password</label>
+                                <input type="password" class="form-control" id="currentPassword" required
+                                    placeholder="Enter current password">
+                                <img id="currentPasswordImg" class="position-absolute" src="./assets/Password.svg"
+                                    alt="key-icon">
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <label for="newPassword" class="form-label ">New Password</label>
+                                <input type="password" class="form-control" id="newPassword" required
+                                    placeholder="Enter new password">
+                                <img id="newPasswordImg" class="position-absolute" src="./assets/Password.svg"
+                                    alt="key-icon">
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <label for="reNewPassword" class="form-label ">Re-New Password</label>
+                                <input type="password" class="form-control" id="reNewPassword" required
+                                    placeholder="Re-enter new password">
+                                <img id="reNewPasswordImg" class="position-absolute" src="./assets/Password.svg"
+                                    alt="key-icon">
+                            </div>
+                            <div class="mb-3  text-center">
+                                <a href="#" class="text-primary forgot-link">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Set new password</button>
+
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!--! end Modal for Currency Menu -->
+
+    </main>
+
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        // Add click event listeners to each link
+        document.querySelectorAll('.wallet-item a').forEach(item => {
+            item.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent default link behavior
+                const target = this.getAttribute('data-target'); // Get the target modal ID
+                const modal = new bootstrap.Modal(document.querySelector(target)); // Create a modal instance
+                modal.show(); // Show the modal
+            });
+        });
+
+        // Email verify
+        document.getElementById("emailSubmitButton").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent form submission
+            const formContainer = document.querySelector(".form-container");
+            formContainer.innerHTML = `
+    <div class="text-center d-flex justify-content-center align-items-center flex-column">
+        <img class="mt-4" src="./assets/email-check.svg" alt="status-image" class="img-fluid mx-auto" />
+        <h3 class="mt-3 check-imail-title text-white">Check your email</h3>
+        <p class="mt-2 check-email-sub-title text-white-50">We will now send an email to it. To continue, click on the
+            link in your email.</p>
+        <a href="#" class="w-100 " style="
+                    background-color: #006FFF;
+                    font-size: 16px;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 25px;       
+                    vertical-align: middle;
+                    text-align: center;
+                    padding: 0.75rem 0;
+                    margin-top: 7.5rem;">
+            Open inbox →
+        </a>
+    </div>
+    `;
+        });
+
+        // Email Input image with focus
+        const emailInput = document.getElementById('emailInput');
+        const messageIcon = document.getElementById('emailMessegaIcon');
+
+        const currentPasswordInput = document.getElementById('currentPassword');
+        const newPasswordInput = document.getElementById('newPassword');
+        const renewPasswordInput = document.getElementById('reNewPassword');
+
+        const currentPasswordImg = document.getElementById('currentPasswordImg');
+        const newPasswordImg = document.getElementById('newPasswordImg');
+        const renewPasswordImg = document.getElementById('reNewPasswordImg');
+
+        const blueKeyImg = './assets/Password.png';
+        const defaultKeyImg = './assets/Password.svg';
+
+        const defaultIcon = './assets/Message.svg';
+        const focusedIcon = './assets/Message.png';
+
+        emailInput.addEventListener('focus', () => {
+            messageIcon.src = focusedIcon;
+        });
+
+        emailInput.addEventListener('blur', () => {
+            messageIcon.src = defaultIcon;
+        });
+
+        currentPasswordInput.addEventListener('focus', () => {
+            currentPasswordImg.src = blueKeyImg;
+        });
+
+        currentPasswordInput.addEventListener('blur', () => {
+            currentPasswordImg.src = defaultKeyImg;
+        });
+
+        newPasswordInput.addEventListener('focus', () => {
+            newPasswordImg.src = blueKeyImg;
+        });
+
+        newPasswordInput.addEventListener('blur', () => {
+            newPasswordImg.src = defaultKeyImg;
+        });
+
+        renewPasswordInput.addEventListener('focus', () => {
+            renewPasswordImg.src = blueKeyImg;
+        });
+
+        renewPasswordInput.addEventListener('blur', () => {
+            renewPasswordImg.src = defaultKeyImg;
+        });
+
+        // Phone verify
+        // Filtering country codes based on search
+        document.getElementById('searchCountry').addEventListener('input', function () {
+            var filter = this.value.toLowerCase();
+            var items = document.querySelectorAll('.country-item');
+            items.forEach(function (item) {
+                var text = item.textContent.toLowerCase();
+                if (text.includes(filter)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Setting selected country code
+        var countryCodeDropdown = document.getElementById('countryCodeDropdown');
+        var countryItems = document.querySelectorAll('.country-item');
+        countryItems.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                var code = this.getAttribute('data-country-code');
+                countryCodeDropdown.textContent = code;
+            });
+        });
+
+        // Password reset
+        document.getElementById('passwordResetForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            const currentPassword = document.getElementById('currentPassword').value;
+            const newPassword = document.getElementById('newPassword').value;
+            const reNewPassword = document.getElementById('reNewPassword').value;
+
+            if (newPassword !== reNewPassword) {
+                alert('New passwords do not match!');
+                return;
+            }
+
+            // Additional logic for password validation can be added here
+            alert('Password has been successfully reset!');
+            // Here, you can proceed to submit the form via AJAX or another method.
+        });
+    </script>
+
+</body>
+
+</html>

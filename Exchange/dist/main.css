@@ -244,6 +244,18 @@ body {
   width: 107px;
   height: 37px;
 }
+.navbar .more-dropdown-menu {
+  background: transparent;
+  border: none;
+}
+.navbar .more-dropdown-menu .dropdown-item {
+  color: white;
+}
+.navbar .more-dropdown-menu .dropdown-item:hover {
+  background-color: #0062cc;
+  cursor: pointer;
+  border-radius: 2px;
+}
 .navbar .nav-link {
   color: #bdbdbd;
   font-size: 16px;
