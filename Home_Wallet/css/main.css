@@ -250,29 +250,30 @@ nav.mini-nav .setting-around {
   cursor: pointer;
 }
 
-.wallet-address {
-  position: relative;
+.navigateBtn {
   background-color: rgba(255, 255, 255, 0.0509803922);
   font-size: 1.6rem;
   font-weight: 700;
+  color: #FFFFFF;
+  line-height: none;
   border-radius: 21px;
   z-index: 1;
 }
-.wallet-address #wallet-redirector {
+.navigateBtn #navigateLinker {
   padding: 15px 46px 15px 46px;
   border: 1px solid rgba(255, 255, 255, 0.1411764706);
   backdrop-filter: blur(3px);
   border-radius: 21px;
   z-index: 1;
 }
-.wallet-address #wallet-address {
+.navigateBtn #navigateText {
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 170px;
 }
-.wallet-address .bottom-line {
+.navigateBtn .bottom-blue-line {
   display: block;
   width: 60%;
   height: 7px;
@@ -282,16 +283,30 @@ nav.mini-nav .setting-around {
   z-index: -1;
 }
 
+.wallet-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+}
 .wallet-details span {
   font-size: 1.8rem;
   font-weight: 500;
-  line-height: 2rem;
   color: #848586;
+  line-height: none;
+}
+.wallet-details .wallet-balance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
 }
 .wallet-details .wallet-balance #balance {
   font-size: 3.2rem;
   font-weight: 700;
-  color: #fff;
+  color: #FFFFFF;
   line-height: 3.2rem;
 }
 .wallet-details .wallet-balance #balance-status {
@@ -304,10 +319,19 @@ nav.mini-nav .setting-around {
   color: #F65556;
 }
 
+.interaction-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+}
 .interaction-btns .wallet-btn {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: none;
   width: 57px;
   height: 57px;
   border: 1px solid rgba(255, 255, 255, 0.031372549);
@@ -318,6 +342,8 @@ nav.mini-nav .setting-around {
 }
 .interaction-btns .interBtn_container span {
   font-size: 1.4rem;
+  font-weight: 700;
+  color: #FFFFFF;
   line-height: 1.8rem;
 }
 
@@ -333,17 +359,21 @@ nav.mini-nav .setting-around {
   border-radius: 25px;
   border: none !important;
   font-size: 1.6rem;
+  font-weight: none;
+  color: none;
   line-height: 2.4rem;
 }
 .control-segment .btn-toggle .badge {
   background-color: #E4761B;
   font-size: 1.4rem;
   font-weight: 400;
+  color: none;
+  line-height: none;
   margin-left: 5px;
 }
 .control-segment .btn-toggle.active {
   background-color: #006FFF;
-  color: #fff;
+  color: #FFFFFF;
   font-weight: 700;
 }
 .control-segment .btn-toggle.inactive {
@@ -351,21 +381,65 @@ nav.mini-nav .setting-around {
   font-weight: 500;
 }
 
+.coins-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 8px;
+}
+
 .coin {
   height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+}
+.coin .coin_details {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: 16px;
+}
+.coin .coin_details_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 8px;
 }
 .coin .coin_details_text .coin-name {
   font-size: 1.4rem;
+  font-weight: 700;
+  color: #FFFFFF;
   line-height: 1.9rem;
 }
 .coin .coin_details_text abbr {
   font-size: 1.2rem;
   font-weight: 400;
-  text-decoration: none !important;
   color: #848586;
+  line-height: none;
+  text-decoration: none !important;
+}
+.coin .coinMarket {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: 16px;
 }
 .coin .coinWorth .coinPrice {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 8px;
   font-size: 1.4rem;
+  font-weight: 700;
+  color: #FFFFFF;
   line-height: 1.9rem;
 }
 .coin .coinWorth .coinStatus {
