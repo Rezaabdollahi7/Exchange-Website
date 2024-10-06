@@ -1,0 +1,245 @@
+html{
+    font-size: 62.5% !important; //this makes each rem to be 10px when the font size of browser has been set to 16px
+    height: auto !important;
+}
+body{
+    background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+    background-repeat: no-repeat;
+    height: auto !important;
+    min-height: 100vh !important;
+}
+main{
+    max-width: 430px;
+    padding: 30px 25px;
+    background: linear-gradient(to bottom, $main_background_from, $main_background_to);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav.mini-nav{
+    margin-bottom: 30px;
+
+    .setting-around{
+        padding: 15px;
+        background-color: $setting_back;
+        cursor: pointer;
+    }
+    h1{
+        color: #fff;
+        font-size: 2.4rem;
+        font-weight: 700;
+        height: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.currency-container{
+    padding: 26px;
+    background-color: $part-back-gray;
+    border-radius: 25px;
+
+    .currency-name{
+        font-weight: 500;
+        font-size: 1.8rem;
+        color: #fff;
+    }
+    .currency-wallet-amount{
+        font-weight: 700;
+        font-size: 3.7rem;
+        color: #fff;
+    }
+    .currency-status{
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: $fail-red;
+    }
+    #mainCoin-currency__total{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $small-title;
+    }
+}
+
+.interaction-btns{
+    @include flex(row, space-between, none, none);
+}
+.wallet-btn{
+    @include flex(row, center, center, none);
+    width: 57px;
+    height: 57px;
+    border: 1px solid #ffffff08;
+    background-color: $primary_back_gray;
+    border-radius: 100%;
+    border-top: 1px solid #006eff47;
+    backdrop-filter: blur(3px);
+}
+.interBtn_container{
+    span{
+        @include typography(1.4rem, 700, $white_text, 1.8rem)
+    }
+}
+
+.last-transactions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+
+    .transaction-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span{
+            font-weight: 700;
+            color: $white_text;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+        #see-all{
+            font-weight: 500;
+            color: $main_blue;
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+    }
+    .transactions{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .transaction{
+            background-color: $part-back-gray;
+            border-radius: 40px;
+            display: flex;
+            padding: 15px;
+            padding-right: 30px;
+            gap: 20px;
+            align-items: center;
+
+            .transaction__type{
+                width: 57px;
+                height: 57px;
+                background-color: $main_blue;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .transaction__details{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                flex-grow: 1;
+                font-weight: 500;
+                color: $small-title;
+                font-size: 1.4rem;
+                .from, .to{
+                    font-weight: 500;
+                    color: $white_text;
+                    font-size: 1.65rem;
+                }
+            }
+
+            .transaction__status.complited{
+                font-weight: 500;
+                color: $success-green;
+                font-size: 1.4rem;
+            }
+            .transaction__status.canceled{
+                font-weight: 500;
+                color: $fail-red;
+                font-size: 1.4rem;
+            }
+
+        }
+    }
+}
+
+.pop-up{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all ease 1s;
+    display: none;
+    .container{
+        background-color: $part-back-gray;
+        border-radius: 40px 40px 0 0;
+        padding: 80px 0 20px;
+        position: relative;
+
+        .xspan{
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            background-color: $primary_back_gray;
+            cursor: pointer;
+            i{
+                color: $white_text;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .head-span{
+        font-size: 1.8rem;
+        color: $small-title;
+        font-weight: 500;
+        text-align: center;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .actions{
+        padding: 0 20px;
+
+        hr{
+            background-color: $small-title;
+        }
+        .action{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 0 10px;
+
+            .action__text{
+                font-weight: 700;
+                color: $white_text;
+                font-size: 1.4rem;
+                flex-grow: 1;
+            }
+
+            i{
+                font-size: 1.4rem;
+                color: $small-title;
+            }
+        }
+    }
+}
+.pop-up.show{
+    display: block;
+}
+.pop-up-back{
+    background-color: #000000ab;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.pop-up-back.show{
+    display: block;
+}
+
+.fa-solid{
+    font-family: "Font Awesome 6 Free" !important;
+}
