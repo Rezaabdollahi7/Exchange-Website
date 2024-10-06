@@ -1,0 +1,64 @@
+@mixin inputStyle(){
+    background-color: transparent;
+    border: none;
+    stroke: none;
+    color: #fff;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 20px 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    -moz-appearance: textfield;
+}
+
+@mixin inputContainer(){
+    background-color: #303134;
+    border-radius: 25px;
+    padding: 0 20px;
+    border: 1px solid transparent;
+}
+
+@mixin flex($direction, $justify, $align, $gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin typography($size, $weight, $color, $line_height){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $line_height;
+}
+
+@mixin CommonNavigate(){
+    background-color: $primary_back_gray;
+    @include typography(1.6rem, 700, $white_text, none);
+    border-radius: 21px;
+    z-index: 1;
+    #navigateLinker{
+        padding: 15px 46px 15px 46px;
+        border: 1px solid #FFFFFF24;
+        backdrop-filter: blur(3px);
+        border-radius: 21px;
+        z-index: 1;
+    }
+    #navigateText{
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 170px;
+    }
+    .bottom-blue-line{
+        display: block;
+        width: 60%;
+        height: 7px;
+        border-radius: 120px;
+        background-color: $main_blue;
+        bottom: -3px;
+        z-index: -1;
+    }
+}

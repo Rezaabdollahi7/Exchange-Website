@@ -1,0 +1,474 @@
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../../../Common/fonts/DMSans-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+/* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #333;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+
+/* Custom resets */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+body,
+* {
+  font-family: "DMSans" !important;
+}
+
+.background {
+  background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+}
+
+html {
+  font-size: 62.5% !important;
+  height: auto !important;
+}
+
+body {
+  background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+  background-repeat: no-repeat;
+  height: auto !important;
+  min-height: 100vh !important;
+}
+
+main {
+  max-width: 430px;
+  padding: 30px 25px;
+  background: linear-gradient(to bottom, #15151C, #110D1D);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+nav.mini-nav {
+  margin-bottom: 30px;
+}
+nav.mini-nav .setting-around {
+  padding: 15px;
+  background-color: #26272B;
+  cursor: pointer;
+}
+nav.mini-nav h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currency-container {
+  padding: 26px;
+  background-color: #27282E;
+  border-radius: 25px;
+}
+.currency-container .currency-name {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.currency-container .currency-wallet-amount {
+  font-weight: 700;
+  font-size: 3.7rem;
+  color: #fff;
+}
+.currency-container .currency-status {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #F65556;
+}
+.currency-container #mainCoin-currency__total {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #848586;
+}
+
+.interaction-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+}
+
+.wallet-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  width: 57px;
+  height: 57px;
+  border: 1px solid rgba(255, 255, 255, 0.031372549);
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  border-radius: 100%;
+  border-top: 1px solid rgba(0, 110, 255, 0.2784313725);
+  backdrop-filter: blur(3px);
+}
+
+.interBtn_container span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.8rem;
+}
+
+.last-transactions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 20px;
+}
+.last-transactions .transaction-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.last-transactions .transaction-head span {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+.last-transactions .transaction-head #see-all {
+  font-weight: 500;
+  color: #006FFF;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.last-transactions .transactions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.last-transactions .transactions .transaction {
+  background-color: #27282E;
+  border-radius: 40px;
+  display: flex;
+  padding: 15px;
+  padding-right: 30px;
+  gap: 20px;
+  align-items: center;
+}
+.last-transactions .transactions .transaction .transaction__type {
+  width: 57px;
+  height: 57px;
+  background-color: #006FFF;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.last-transactions .transactions .transaction .transaction__details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-grow: 1;
+  font-weight: 500;
+  color: #848586;
+  font-size: 1.4rem;
+}
+.last-transactions .transactions .transaction .transaction__details .from, .last-transactions .transactions .transaction .transaction__details .to {
+  font-weight: 500;
+  color: #FFFFFF;
+  font-size: 1.65rem;
+}
+.last-transactions .transactions .transaction .transaction__status.complited {
+  font-weight: 500;
+  color: #20D691;
+  font-size: 1.4rem;
+}
+.last-transactions .transactions .transaction .transaction__status.canceled {
+  font-weight: 500;
+  color: #F65556;
+  font-size: 1.4rem;
+}
+
+.pop-up {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all ease 1s;
+  display: none;
+}
+.pop-up .container {
+  background-color: #27282E;
+  border-radius: 40px 40px 0 0;
+  padding: 80px 0 20px;
+  position: relative;
+}
+.pop-up .container .xspan {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  cursor: pointer;
+}
+.pop-up .container .xspan i {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+}
+.pop-up .head-span {
+  font-size: 1.8rem;
+  color: #848586;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+.pop-up .actions {
+  padding: 0 20px;
+}
+.pop-up .actions hr {
+  background-color: #848586;
+}
+.pop-up .actions .action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+.pop-up .actions .action .action__text {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  flex-grow: 1;
+}
+.pop-up .actions .action i {
+  font-size: 1.4rem;
+  color: #848586;
+}
+
+.pop-up.show {
+  display: block;
+}
+
+.pop-up-back {
+  background-color: rgba(0, 0, 0, 0.6705882353);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.pop-up-back.show {
+  display: block;
+}
+
+.fa-solid {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+/*# sourceMappingURL=main.css.map */
