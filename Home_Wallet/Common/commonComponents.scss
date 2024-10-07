@@ -1,0 +1,29 @@
+@mixin CommonNavigate(){
+    background-color: $primary_back_gray;
+    @include typography(1.6rem, 700, $white_text, none);
+    border-radius: 21px;
+    z-index: 1;
+    #navigateLinker{
+        padding: 15px 46px 15px 46px;
+        border: 1px solid #FFFFFF24;
+        backdrop-filter: blur(3px);
+        border-radius: 21px;
+        z-index: 1;
+    }
+    #navigateText{
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 170px;
+    }
+    .bottom-blue-line{
+        display: block;
+        width: 60%;
+        height: 7px;
+        border-radius: 120px;
+        background-color: $main_blue;
+        bottom: -3px;
+        z-index: -1;
+    }
+}
