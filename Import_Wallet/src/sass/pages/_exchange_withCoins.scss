@@ -44,11 +44,10 @@ body {
 .main-content {
   margin-top: 5rem;
   // max-width: 430px;
-
   .wallets-container {
     width: 100%;
     .wallet-item {
-      height: 126px;
+      height: 116px;
       border-radius: 37px;
       margin: auto;
       transition: background-color 1s ease;
@@ -342,6 +341,14 @@ body {
     top: -6%;
     left: 25%;
     width: 50%;
+  }
+  .swiper{
+    width: 80%;
+    margin: 0 auto; 
+  }
+  form{
+    width: 90%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1360px) {

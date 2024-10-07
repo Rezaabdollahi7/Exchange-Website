@@ -1,8 +1,9 @@
 const getSupporting = `
-    <section id="support" class="position-relative container-full">
+       <section id="support" class="position-relative container-full ">
         <div class="container ">
             <div class="row">
-                <div class="col-12 support-titles-container d-flex justify-content-center align-items-center flex-column">
+                <div
+                    class="col-12 support-titles-container d-flex justify-content-center align-items-center flex-column">
                     <h2 class="support-title text-center">
                         <p> Supporting the forefront of </p>
                         <p class="web3"> Web3 projects </p>
@@ -31,28 +32,44 @@ const getSupporting = `
             </div>
             <!-- end first row -->
 
-            <!-- second row -->
-            <div class="row col-12 gap-2 gap-lg-4  mt-5 d-flex justify-content-center mx-auto">
-                <div class="item col-2">
-                    <img src="./src/assets/Home_assets/quickswap.svg" alt="quickswap-icon">
+            <!-- Swiper -->
+            <div class="swiper supportingSwiper mt-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./src/assets/Home_assets/quickswap.svg" alt="quickswap-icon">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./src/assets/Home_assets/kraken.svg" alt="kraken-icon">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./src/assets/Home_assets/cointr.svg" alt="cointr-icon">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./src/assets/Home_assets/lbank.svg" alt="lbank-icon">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./src/assets/Home_assets/uniswap.svg" alt="uniswap-icon">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./src/assets/Home_assets/cryptocom.svg" alt="cryptocom-icon">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./src/assets/Home_assets/cointr.svg" alt="cointr-icon">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./src/assets/Home_assets/cryptocom.svg" alt="cryptocom-icon">
+                    </div>
+
                 </div>
-                <div class="item col-2">
-                    <img src="./src/assets/Home_assets/kraken.svg" alt="kraken-icon">
-                </div>
-                <div class="item col-2">
-                    <img src="./src/assets/Home_assets/cointr.svg" alt="cointr-icon">
-                </div>
-                <div class="item col-2 d-none d-md-flex">
-                    <img src="./src/assets/Home_assets/lbank.svg" alt="lbank-icon">
-                </div>
-                <div class="item col-2 d-none d-md-flex">
-                    <img src="./src/assets/Home_assets/uniswap.svg" alt="uniswap-icon">
-                </div>
-                <div class="item col-2 d-none d-md-flex">
-                    <img src="./src/assets/Home_assets/cryptocom.svg" alt="cryptocom-icon">
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <!-- end of second row -->
 
             <!-- third row -->
             <div class="row col-12 gap-4 mx-auto d-flex justify-content-center mt-5">
