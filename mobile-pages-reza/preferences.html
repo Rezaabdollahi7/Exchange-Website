@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./dist/preferences.css">
     <link rel="stylesheet" href="../fonts.css">
     <!-- fav icon -->
-    <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon" />
 </head>
 
 <body>
@@ -92,7 +92,7 @@
                             <input type="text" id="currencySearch" placeholder="Search currency..."
                                 class="form-control">
                             <span class="search-icon">
-                                <img src="./assets/search-normal.svg" alt="Search">
+                                <img id="currencySearchIcon" src="./assets/search-normal.svg" alt="Search">
                             </span>
                         </div>
 
@@ -174,7 +174,7 @@
                         <div class="input-container">
                             <input type="text" id="langSearch" placeholder="Search language..." class="form-control">
                             <span class="search-icon">
-                                <img src="./assets/search-normal.svg" alt="Search">
+                                <img id="langSearchIcon" src="./assets/search-normal.svg" alt="Search">
                             </span>
                         </div>
 
@@ -251,7 +251,7 @@
                                     </div>
                                     <img src="./assets/wallet-icons/Arrow - Right 5.svg" alt="arrow-icon">
                                 </a></li>
-                                <hr>
+                            <hr>
                             <li class="color-option mt-2"><a href="#"
                                     class="d-flex justify-content-between align-items-center">
                                     <div class="txt-icon">
@@ -314,6 +314,33 @@
                 }
             });
         });
+
+        // Email Input image with focus
+        const langSearchInput = document.getElementById('langSearch');
+        const searchIcon = document.getElementById('langSearchIcon');
+
+        const currencySearchInput = document.getElementById('currencySearch');
+        const currencySearchIcon = document.getElementById('currencySearchIcon');
+
+        const blueSearchImg = './assets/search-blue.svg';
+        const defaultSearchImg = './assets/search-normal.svg';
+
+        langSearchInput.addEventListener('focus', () => {
+            searchIcon.src = blueSearchImg;
+        });
+
+        langSearchInput.addEventListener('blur', () => {
+            searchIcon.src = defaultSearchImg;
+        });
+
+        currencySearchInput.addEventListener('focus', () => {
+            currencySearchIcon.src = blueSearchImg;
+        });
+
+        currencySearchInput.addEventListener('blur', () => {
+            currencySearchIcon.src = defaultSearchImg;
+        });
+
 
     </script>
 </body>

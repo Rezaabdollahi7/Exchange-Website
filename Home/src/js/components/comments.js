@@ -85,39 +85,226 @@ const comment_part = `
     </div>
     `
 
-function addCommentSwiper(){
+function addCommentSwiper() {
     const swiper = new Swiper('.swiper_comment', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-          
-            // If we need pagination
-            pagination: {
-              el: '.comment-pagination',
-              clickable: true
-            },
-          
-            // Navigation arrows
-            navigation: {
-              nextEl: '.swiper-next',
-              prevEl: '.swiper-prev',
-            },
-        
-            breakpoints: {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.comment-pagination',
+            clickable: true
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+        },
+
+        breakpoints: {
             200: {
                 slidesPerView: 1,
                 spaceBetween: 30
             },
             808: {
-              slidesPerView: 1.5,
-              spaceBetween: 60
+                slidesPerView: 1.5,
+                spaceBetween: 60
             },
             1038: {
                 slidesPerView: 2,
                 spaceBetween: 60
             }
-          }
+        }
+    });
+    const middleSwiper = new Swiper('.supportingMiddleSwiper', {
+        slidesPerView: 3.5,
+        spaceBetween: 60,
+        mousewheel: {
+            invert: false,    
+            forceToAxis: true,
+        },
+        centeredSlides: true,
+        grabCursor: true,
+        loop: true,
+        speed: 800,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+
+
+        // If we need pagination
+        pagination: {
+            el: '.comment-pagination',
+            clickable: true
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+        },
+
+        breakpoints: {
+            350: {
+                centeredSlides: true,
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+            },
+            450: {
+                centeredSlides: false,
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            550: {
+                centeredSlides: false,
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            650: {
+                centeredSlides: true,
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768: {
+                centeredSlides: false,
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 6,
+                spaceBetween: 50,
+            },
+        },
+    });
+
+    const lastSwiper = new Swiper('.supportingLastSwiper', {
+        slidesPerView: 3.5,
+        spaceBetween: 60,
+        mousewheel: {
+            invert: false, 
+            forceToAxis: true, 
+        },
+        centeredSlides: true,
+        grabCursor: true,
+        loop: true,
+        speed: 800,
+        autoplay: {
+            delay: 0,
+            reverseDirection: true,
+            disableOnInteraction: false,
+        },
+
+
+        // If we need pagination
+        pagination: {
+            el: '.comment-pagination',
+            clickable: true
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+        },
+
+        breakpoints: {
+            350: {
+                centeredSlides: true,
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+            },
+            450: {
+                centeredSlides: false,
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            550: {
+                centeredSlides: false,
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            650: {
+                centeredSlides: true,
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768: {
+                centeredSlides: false,
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+            },
+        },
+    });
+
+    const firstSwiper = new Swiper('.supportingFirstSwiper', {
+        slidesPerView: 3.5,
+        spaceBetween: 60,
+        mousewheel: {
+            invert: false,     
+            forceToAxis: true, 
+        },
+        centeredSlides: true,
+        grabCursor: true,
+        loop: true,
+        speed: 800,
+        autoplay: {
+            delay: 0,
+            reverseDirection: true,
+            disableOnInteraction: false,
+        },
+
+
+        // If we need pagination
+        pagination: {
+            el: '.comment-pagination',
+            clickable: true
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+        },
+
+        breakpoints: {
+            350: {
+                centeredSlides: true,
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+            },
+            450: {
+                centeredSlides: false,
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            550: {
+                centeredSlides: false,
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            650: {
+                centeredSlides: true,
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768: {
+                centeredSlides: false,
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+            },
+        },
     });
 }
 
-export {comment_part, addCommentSwiper}
+export { comment_part, addCommentSwiper }

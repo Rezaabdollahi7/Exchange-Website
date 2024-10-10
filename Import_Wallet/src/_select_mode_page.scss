@@ -17,23 +17,19 @@ $item-background-color: #1b3254;
 body {
   font-size: $desktop-font-size;
   line-height: 1.6;
-
-
-
   background: radial-gradient(at 60% 35%, $background-color, $gradient-color);
   background-repeat: repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
+   min-height: 90vh;
 }
 
 // Main Content Styles
 .main-content {
-  margin-top: 5rem;
+  padding-top: 2rem;
   max-width: 430px;
 
   .page-title {
-    // font-size: $desktop-font-size * 3;
     font-weight: 700;
     line-height: 76.8px;
     text-align: center;
@@ -41,7 +37,6 @@ body {
   }
 
   .page-sub-title {
-    // font-size: $desktop-font-size * 1.3;
     font-weight: 500;
     line-height: 50px;
     text-align: center;
@@ -50,11 +45,10 @@ body {
 
   .item-container {
     background-color: $item-background-color;
-    padding: 30px;
+    padding: 25px;
     border-radius: 25.11px;
 
     .item-title {
-    //   font-size: $desktop-font-size * 2;
       font-weight: 700;
       line-height: 48px;
       text-align: center;
@@ -64,7 +58,6 @@ body {
     }
 
     .item-sub-title {
-    //   font-size: $desktop-font-size;
       font-weight: 500;
       line-height: 28.93px;
       text-align: center;
@@ -169,25 +162,6 @@ body {
       width: 60px;
       height: 60px;
     }
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .main-content {
-    max-width: 650px;
-  }
-  .page-title {
-    font-size: $desktop-font-size * 3;
-  }
-  .page-sub-title {
-    font-size: $desktop-font-size * 1.3;
-  }
-  .item-title {
-    font-size: $desktop-font-size * 2;
-  }
-  .item-container {
-    // background-color: #1b3254;
-    width: 604px;
   }
 }
 

@@ -124,10 +124,10 @@ body {
   }
 
   .modal-header {
+    border: 0;
     .page-title {
       margin-left: 6rem;
     }
-    border: 0;
 
     .btn-close {
       --bs-btn-close-color: #26272b;

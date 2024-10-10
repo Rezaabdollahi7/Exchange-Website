@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./dist/securityCenter.css">
     <link rel="stylesheet" href="../fonts.css">
     <!-- fav icon -->
-    <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon" />
 </head>
 
 <body>
@@ -30,10 +30,10 @@
             </a>
         </nav>
 
-        <section class="wallets-list-container mt-4">
-            <ul class="wallets-list p-0">
+        <section class="security-list-container mt-4">
+            <ul class="security-list p-0">
 
-                <li class="wallet-item px-1">
+                <li class="security-item px-1">
                     <span class="d-flex align-items-center justify-content-between py-4">
                         <span class="wallet-name">Google Authentication</span>
                         <label class="switch mt-2">
@@ -43,7 +43,7 @@
                     </span>
                 </li>
 
-                <li class="wallet-item px-1">
+                <li class="security-item px-1">
                     <span class="d-flex align-items-center justify-content-between py-4">
                         <span class="wallet-name">Login with Touch Id</span>
                         <label class="switch mt-2">
@@ -53,7 +53,7 @@
                     </span>
                 </li>
 
-                <li class="wallet-item px-1">
+                <li class="security-item px-1">
                     <a href="#" class="d-flex align-items-center justify-content-between py-4"
                         data-target="#autolockMenu">
                         <span class="wallet-name">Auto Lock</span>
@@ -64,7 +64,7 @@
                     </a>
                 </li>
 
-                <li class="wallet-item px-1">
+                <li class="security-item px-1">
                     <a href="#" class="d-flex align-items-center justify-content-between py-4" data-target="#emailMenu">
                         <span class="wallet-name">Email Verification</span>
                         <div class="right-container d-flex justify-content-center align-items-center">
@@ -74,7 +74,7 @@
                     </a>
                 </li>
 
-                <li class="wallet-item px-1">
+                <li class="security-item px-1">
                     <a href="#" class="d-flex align-items-center justify-content-between py-4" data-target="#phoneMenu">
                         <span class="wallet-name">Phone Verification</span>
                         <div class="right-container d-flex justify-content-center align-items-center">
@@ -84,7 +84,7 @@
                     </a>
                 </li>
 
-                <li class="wallet-item px-1">
+                <li class="security-item px-1">
                     <a href="#" class="d-flex align-items-center justify-content-between py-4 "
                         data-target="#notifMenu">
                         <span class="wallet-name">Push Notofication</span>
@@ -94,7 +94,7 @@
                     </a>
                 </li>
 
-                <li class="wallet-item px-1">
+                <li class="security-item px-1">
                     <a href="#" class="d-flex align-items-center justify-content-between py-4 " data-target="#passMenu">
                         <span class="wallet-name">Change Password</span>
                         <div class="right-container d-flex justify-content-center align-items-center">
@@ -458,7 +458,7 @@
 
     <script>
         // Add click event listeners to each link
-        document.querySelectorAll('.wallet-item a').forEach(item => {
+        document.querySelectorAll('.security-item a').forEach(item => {
             item.addEventListener('click', function (event) {
                 event.preventDefault(); // Prevent default link behavior
                 const target = this.getAttribute('data-target'); // Get the target modal ID

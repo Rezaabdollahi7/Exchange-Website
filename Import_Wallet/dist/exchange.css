@@ -236,6 +236,7 @@ body .alert-box {
   background-color: #0caf60;
   border-radius: 3px 10px 10px 3px;
   border-left: 6px solid #ffffff;
+  opacity: 0.98;
 }
 body .alert-box span {
   color: #ffffff;
@@ -245,7 +246,7 @@ body .alert-box span {
 }
 
 .main-content {
-  margin-top: 5rem;
+  padding-top: 2rem;
   max-width: 430px;
 }
 .main-content .alert-box {
@@ -268,7 +269,7 @@ body .alert-box span {
   text-align: center;
   color: #ffffff;
   border-top: 1px solid rgba(128, 128, 128, 0.099);
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 .main-content .page-sub-title {
   font-weight: 500;
@@ -322,7 +323,7 @@ body .alert-box span {
   border-radius: 25.8px;
   border: none;
   resize: none;
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: 1.35rem 3rem;
   color: #a4a8ab;
   font-size: 20px;
@@ -387,7 +388,7 @@ body .alert-box span {
   }
   .alert-box {
     padding: 10px 19px;
-    top: -5%;
+    top: 5%;
     left: 5%;
     width: 90%;
   }
@@ -411,7 +412,7 @@ body .alert-box span {
   }
   .alert-box {
     padding: 14px 19px;
-    top: -5%;
+    top: 5%;
     left: 5%;
     width: 90%;
   }
@@ -444,7 +445,7 @@ body .alert-box span {
     font-size: 64px;
   }
   .page-sub-title {
-    font-size: 20.8px;
+    font-size: 17.6px;
   }
   .main-content .tabs-main-container ul#myTab {
     width: 530px;
@@ -455,7 +456,7 @@ body .alert-box span {
   }
   .alert-box {
     padding: 14px 20px;
-    top: -6%;
+    top: 6%;
     left: 25%;
     width: 50%;
   }
@@ -463,9 +464,9 @@ body .alert-box span {
 @media screen and (min-width: 1500px) {
   .alert-box {
     padding: 14px 20px;
-    top: -6%;
+    top: 6%;
     left: 36%;
-    width: 28%;
+    width: 32%;
   }
 }
 

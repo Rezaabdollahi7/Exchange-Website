@@ -66,7 +66,7 @@ const getFooter = `
                             <img src="./assets/footer-icons/Dribbble/Line.svg" alt="Dribbble-logo" />
                         </a>
                         <a href="#">
-                            <img src="./assets/footer-icons/Behance/behance.svg" alt="Behance-logo" />
+                            <img src="./assets/footer-icons/telegram/telegram.svg" alt="telegram-logo" />
                         </a>
                     </div>
                 </div>
