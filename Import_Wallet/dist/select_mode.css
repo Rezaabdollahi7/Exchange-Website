@@ -229,11 +229,11 @@ body {
   background-repeat: repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .main-content {
-  margin-top: 5rem;
+  padding-top: 2rem;
   max-width: 430px;
 }
 .main-content .page-title {
@@ -250,7 +250,7 @@ body {
 }
 .main-content .item-container {
   background-color: #1b3254;
-  padding: 30px;
+  padding: 25px;
   border-radius: 25.11px;
 }
 .main-content .item-container .item-title {
@@ -353,23 +353,6 @@ body {
   .item-container img {
     width: 60px;
     height: 60px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .main-content {
-    max-width: 650px;
-  }
-  .page-title {
-    font-size: 48px;
-  }
-  .page-sub-title {
-    font-size: 20.8px;
-  }
-  .item-title {
-    font-size: 32px;
-  }
-  .item-container {
-    width: 604px;
   }
 }
 
