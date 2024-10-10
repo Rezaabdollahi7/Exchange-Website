@@ -231,11 +231,13 @@ body {
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
+  overflow: hidden;
 }
 body .alert-box {
   background-color: #0caf60;
   border-radius: 3px 10px 10px 3px;
   border-left: 6px solid #ffffff;
+  z-index: 10;
 }
 body .alert-box span {
   color: #ffffff;
@@ -244,14 +246,11 @@ body .alert-box span {
   text-align: center;
 }
 
-.main-content {
-  margin-top: 5rem;
-}
 .main-content .wallets-container {
   width: 100%;
 }
 .main-content .wallets-container .wallet-item {
-  height: 116px;
+  height: 56px;
   border-radius: 37px;
   margin: auto;
   transition: background-color 1s ease;
@@ -259,17 +258,17 @@ body .alert-box span {
   padding: 10px 25px;
 }
 .main-content .wallets-container .wallet-item img {
-  width: 250px;
-  height: 120px;
+  width: 200px;
+  height: 40px;
 }
 .main-content .wallets-container .wallet-item .atomic-img {
   height: 81px;
 }
 .main-content .wallets-container .wallet-item .mini-img {
-  height: 80px;
+  height: 50px;
 }
 .main-content .wallets-container .wallet-item .larged-img {
-  height: 180px;
+  height: 140px;
 }
 .main-content .swiper-slide-active {
   background-color: white !important;
@@ -284,10 +283,10 @@ body .alert-box span {
   text-align: center;
   color: #ffffff;
   border-top: 1px solid rgba(128, 128, 128, 0.099);
-  padding-top: 2rem;
+  padding-top: 0.5rem;
 }
 .main-content .page-sub-title {
-  margin-top: 10rem;
+  margin-top: 2rem;
   font-weight: 500;
   line-height: 50px;
   text-align: center;
@@ -338,11 +337,11 @@ body .alert-box span {
 }
 .main-content .tabs-main-container .tab-content textarea {
   background: #1b3254;
-  height: 371.8px;
+  height: 230px;
   border-radius: 25.8px;
   border: none;
   resize: none;
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: 1.35rem 3rem;
   color: #a4a8ab;
   font-size: 20px;
@@ -392,7 +391,7 @@ body .alert-box span {
 }
 @media screen and (max-width: 800px) {
   .main-content .wallet-item {
-    height: 80px !important;
+    height: 60px !important;
   }
 }
 
@@ -414,7 +413,7 @@ body .alert-box span {
   }
   .alert-box {
     padding: 10px 19px;
-    top: -5%;
+    top: 5%;
     left: 5%;
     width: 90%;
   }
@@ -422,20 +421,23 @@ body .alert-box span {
     font-size: 14px;
   }
   .wallets-container .wallet-item img {
-    height: 100px !important;
+    height: 40px !important;
   }
   .wallets-container .wallet-item .atomic-img {
-    width: 158px !important;
+    width: 98px !important;
     height: 40px !important;
   }
   .wallets-container .wallet-item .mini-img {
-    height: 60px !important;
+    height: 40px !important;
   }
   .wallets-container .wallet-item .larged-img {
     height: 135px !important;
   }
   .wallets-container .wallet-item .coinbase-icon {
-    height: 40px !important;
+    height: 30px !important;
+  }
+  .wallets-container .wallet-item .metamaskicon {
+    height: 50px !important;
   }
 }
 @media screen and (min-width: 450px) {
@@ -456,7 +458,7 @@ body .alert-box span {
   }
   .alert-box {
     padding: 14px 19px;
-    top: -5%;
+    top: 5%;
     left: 5%;
     width: 90%;
   }
@@ -464,11 +466,11 @@ body .alert-box span {
     font-size: 16px;
   }
   .atomic-img {
-    width: 178px !important;
-    height: 56px !important;
+    width: 113px !important;
+    height: 36px !important;
   }
   .main-content .wallets-container .wallet-item .mini-img {
-    height: 52px;
+    height: 42px;
   }
 }
 @media (min-width: 480px) and (max-width: 620px) {
@@ -496,7 +498,7 @@ body .alert-box span {
 }
 @media screen and (min-width: 1000px) {
   .page-title {
-    font-size: 64px;
+    font-size: 48px;
     width: 70%;
     margin: 0 auto;
   }
@@ -512,7 +514,7 @@ body .alert-box span {
   }
   .alert-box {
     padding: 14px 20px;
-    top: -6%;
+    top: 6%;
     left: 25%;
     width: 50%;
   }
@@ -534,9 +536,9 @@ body .alert-box span {
 @media screen and (min-width: 1500px) {
   .alert-box {
     padding: 14px 20px;
-    top: -6%;
+    top: 6%;
     left: 36%;
-    width: 28%;
+    width: 30%;
   }
 }
 
