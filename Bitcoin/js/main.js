@@ -3,11 +3,11 @@ const close_x = document.querySelector('#close');
 const pop_back = document.querySelector('.pop-up-back');
 const pop_up = document.querySelector('.pop-up');
 
-more.addEventListener('click', ()=>{
+more.addEventListener('click', () => {
     pop_back.classList.add('show');
     pop_up.classList.add('show');
 })
-close_x.addEventListener('click', ()=>{
+close_x.addEventListener('click', () => {
     pop_back.classList.remove('show');
     pop_up.classList.remove('show');
 })
@@ -267,7 +267,7 @@ var options = {
                 }
             }
         },
-     
+
         animations: {
             enabled: true,
             easing: 'easeinout',
@@ -297,7 +297,8 @@ var options = {
 
             autoSelected: 'zoom'
         },
-      
+
+
     },
     legend: {
         show: true,
@@ -319,7 +320,7 @@ var options = {
         offsetX: 0,
         offsetY: 5,
         labels: {
-            colors: undefined,
+            colors: "#9a9696",
             useSeriesColors: false
         },
         markers: {
@@ -329,7 +330,7 @@ var options = {
             fillColors: undefined,
             customHTML: undefined,
             onClick: undefined,
-            offsetX: 0,
+            offsetX: -5,
             offsetY: 0
         },
         itemMargin: {
@@ -343,23 +344,25 @@ var options = {
             highlightDataSeries: true
         },
     },
-    theme: {
-        mode: 'dark',
-        palette: 'palette6',
-        monochrome: {
-            enabled: true,
-            color: '#255aee',
-            shadeTo: 'light',
-            shadeIntensity: 0.65
-        },
-    },
+    // theme: {
+    //     mode: 'dark',
+    //     palette: 'palette6',
+    //     background:'#fff',
+    //     monochrome: {
+    //         enabled: true,
+    //         color: '#255aee',
+    //         shadeTo: 'light',
+    //         shadeIntensity: 0.65
+    //     },
+    // },
+
     plotOptions: {
         candlestick: {
             colors: {
                 upward: '#e1822e',
                 downward: '#386ac1'
             },
-            
+
         }
     },
     stroke: {
@@ -367,7 +370,7 @@ var options = {
     },
     tooltip: {
         shared: true,
-        
+
         custom: [function ({ seriesIndex, dataPointIndex, w }) {
             return w.globals.series[seriesIndex][dataPointIndex]
         }, function ({ seriesIndex, dataPointIndex, w }) {
@@ -413,6 +416,19 @@ var options = {
         },
         min: undefined,
         max: undefined,
+        labels: {
+            show: true,
+            align: 'left',
+            style: {
+                colors: ["#fff"],
+                fontSize: '13px',
+                fontFamily: 'Helvetica, Arial, sans-serif',
+                fontWeight: 400,
+                cssClass: 'apexcharts-xaxis-label',
+
+            },
+
+        },
     },
     yaxis: {
         show: true,
@@ -421,16 +437,17 @@ var options = {
         },
         showAlways: false,
         floating: false,
-        decimalsInFloat: true,
+        decimalsInFloat: false,
         labels: {
             show: true,
             align: 'left',
             style: {
-                colors: [],
-                fontSize: '11px',
+                colors: ["#fff"],
+                fontSize: '13px',
                 fontFamily: 'Helvetica, Arial, sans-serif',
                 fontWeight: 400,
                 cssClass: 'apexcharts-yaxis-label',
+
             },
             offsetX: -10,
 
@@ -447,7 +464,7 @@ var options = {
             inverseColors: true,
             opacityFrom: 1,
             opacityTo: 1,
-            stops: [0,30 , 100],
+            stops: [0, 30, 100],
             colorStops: []
         }
     }
