@@ -1,7 +1,7 @@
 @import "./fonts.scss";
-@import "../Common/functions.scss";
-@import "../Common/commonComponents.scss";
+@import "../../Common/Home_Wallet/functions";
+@import "../../Common/Home_Wallet/commonComponents.scss";
 @import "../../Common/reset.scss";
-@import "./variables";
+@import "../../Common/Home_Wallet/variables";
 @import "./home-w.scss";
 @import "../../Common/chartMaker/chart.scss";
