@@ -259,33 +259,62 @@ nav.mini-nav h1 {
   justify-content: center;
 }
 
-.currency-name {
-  position: relative;
+.wallet-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+}
+.wallet-details span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: 2rem;
+}
+.wallet-details .wallet-balance #balance {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 3.2rem;
+}
+
+.head-span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+}
+
+.navigateBtn {
   background-color: rgba(255, 255, 255, 0.0509803922);
   font-size: 1.6rem;
   font-weight: 700;
+  color: #FFFFFF;
+  line-height: none;
   border-radius: 21px;
   z-index: 1;
 }
-.currency-name #currency-redirector {
+.navigateBtn #navigateLinker {
   padding: 15px 46px 15px 46px;
   border: 1px solid rgba(255, 255, 255, 0.1411764706);
   backdrop-filter: blur(3px);
   border-radius: 21px;
   z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 8px;
 }
-.currency-name #currency-redirector img {
-  transform: rotate(-90deg);
-}
-.currency-name #currency-address {
+.navigateBtn #navigateText {
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 140px;
-  transform: rotate();
+  width: 170px;
 }
-.currency-name .bottom-line {
+.navigateBtn .bottom-blue-line {
   display: block;
   width: 60%;
   height: 7px;
@@ -294,32 +323,29 @@ nav.mini-nav h1 {
   bottom: -3px;
   z-index: -1;
 }
-
-.wallet-details span {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2rem;
-  color: #848586;
+.navigateBtn img {
+  transform: rotate(-90deg);
 }
-.wallet-details .wallet-balance #balance {
-  font-size: 3.2rem;
-  font-weight: 700;
-  color: #fff;
-  line-height: 3.2rem;
-}
-
-.head-span {
-  font-size: 1.8rem;
-  color: #848586;
-  font-weight: 500;
+.navigateBtn #navigateText {
+  width: 140px !important;
 }
 
 section.countSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
   padding: 27px;
   background-color: #27282E;
   border-radius: 30px;
 }
 section.countSection .input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: none;
   background-color: #303134;
   border-radius: 25px;
   padding: 0 20px;
@@ -342,6 +368,9 @@ section.countSection .input-container .wallet-svg {
 }
 section.countSection .input-container .dollar-sign {
   font-size: 1.6rem;
+  font-weight: 700;
+  color: none;
+  line-height: none;
   opacity: 0;
   margin-left: 20px;
 }
@@ -352,9 +381,10 @@ section.countSection .input-container #wallet-icon.focus {
   fill: #006FFF;
 }
 section.countSection .quick-select button {
-  color: #848586;
   font-size: 2.4rem;
   font-weight: 700;
+  color: #848586;
+  line-height: none;
   border-radius: 20px;
   border: 1px solid rgba(140, 140, 171, 0.2);
   padding: 20px 0;
@@ -370,19 +400,31 @@ section.countSection .quick-select button:hover {
 }
 
 #buy-btn, #currency-btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: none;
+  line-height: none;
   margin-top: 40px;
   padding: 15px 39px;
   border-radius: 25px;
-  font-size: 1.6rem;
-  font-weight: 700;
   box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
 }
 
 section.pop-up-background {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: none;
   z-index: 90;
   padding: 0 20px;
 }
 section.pop-up-background .pop-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
   background-color: #27282E;
   border-radius: 30px;
   padding: 25px 30px 0px;
@@ -401,6 +443,11 @@ section.pop-up-background .pop-up #currency-input {
   margin-left: 20px;
 }
 section.pop-up-background .pop-up .input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: none;
   background-color: #303134;
   border-radius: 25px;
   padding: 0 20px;
@@ -432,8 +479,9 @@ section.pop-up-background .pop-up .form-check-input:checked {
 }
 section.pop-up-background .pop-up .form-check-label {
   font-size: 1.6rem;
-  color: #848586;
   font-weight: 500;
+  color: #848586;
+  line-height: none;
   margin-left: 15px;
 }
 section.pop-up-background .pop-up .xmark {
@@ -442,8 +490,10 @@ section.pop-up-background .pop-up .xmark {
   width: 35px;
   height: 35px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: none;
   color: #848586;
   align-self: flex-end;
   margin-bottom: 20px;

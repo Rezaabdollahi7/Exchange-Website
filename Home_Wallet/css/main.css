@@ -434,7 +434,7 @@ nav.mini-nav .setting-around {
   flex-direction: row;
   justify-content: none;
   align-items: center;
-  gap: 16px;
+  gap: 22px;
 }
 .coin .coinWorth .coinPrice {
   display: flex;

@@ -34,74 +34,42 @@ nav.mini-nav{
     }
 }
 
-.currency-name{
-    position: relative;
-    background-color: #FFFFFF0D;
-    font-size: 1.6rem;
-    font-weight: 700;
-    border-radius: 21px;
-    z-index: 1;
-    #currency-redirector{
-        padding: 15px 46px 15px 46px;
-        border: 1px solid #FFFFFF24;
-        backdrop-filter: blur(3px);
-        border-radius: 21px;
-        z-index: 1;
-
-        img{
-            transform: rotate(-90deg);
-        }
-    }
-    #currency-address{
-        display: block;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 140px;
-        transform: rotate();
-    }
-    .bottom-line{
-        display: block;
-        width: 60%;
-        height: 7px;
-        border-radius: 120px;
-        background-color: $main_blue;
-        bottom: -3px;
-        z-index: -1;
-    }
-}
-
 .wallet-details{
+    @include flex(column, none, center, none);
     span{
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: 2rem;
-        color: $small-title;
+        @include typography(1.8rem, 500, $small-title, 2rem);
     }
     
     .wallet-balance{
         #balance{
-            font-size: 3.2rem;
-            font-weight: 700;
-            color: #fff;
-            line-height: 3.2rem;
+            @include typography(3.2rem, 700, $white_text, 3.2rem);
         }
     }
 }
 
 .head-span{
-    font-size: 1.8rem;
-    color: $small-title;
-    font-weight: 500;
+    @include typography(1.8rem, 500, $small-title, none);
+}
+
+.navigateBtn{
+    @include CommonNavigate();
+    img{
+        transform: rotate(-90deg);
+    }
+    #navigateText{
+        width: 140px !important;
+    }
 }
 
 section.countSection{
+    @include flex(column, none, center, none);
     padding: 27px;
     background-color: $part-back-gray;
     border-radius: 30px;
 
 
     .input-container{
+        @include flex(row, none, center, none);
         @include inputContainer();
 
         #walletInput{
@@ -113,7 +81,7 @@ section.countSection{
         }
 
         .dollar-sign{
-            font-size: 1.6rem;
+            @include typography(1.6rem, 700, none, none);
             opacity: 0;
             margin-left: 20px;
         }
@@ -130,9 +98,7 @@ section.countSection{
     
     .quick-select{
         button{
-            color: $small-title;
-            font-size: 2.4rem;
-            font-weight: 700;
+            @include typography(2.4rem, 700, $small-title, none);
             border-radius: 20px;
             border: 1px solid #8C8CAB33;
             padding: 20px 0;
@@ -151,19 +117,20 @@ section.countSection{
 }
 
 #buy-btn, #currency-btn{
+    @include typography(1.6rem, 700, none, none);
     margin-top: 40px;
     padding: 15px 39px;
     border-radius: 25px;
-    font-size: 1.6rem;
-    font-weight: 700;
     box-shadow: 0 0 15px #0C61EC57;
 }
 
 section.pop-up-background{
+    @include flex(row, center, center, none);
     z-index: 90;
     padding: 0 20px;
 
     .pop-up{
+        @include flex(column, none, center, none);
         background-color: $part-back-gray;
         border-radius: 30px;
         padding: 25px 30px 0px;
@@ -174,6 +141,7 @@ section.pop-up-background{
         }
 
         .input-container{
+            @include flex(row, none, center, none);
             @include inputContainer();
         }
 
@@ -205,9 +173,7 @@ section.pop-up-background{
         }
 
         .form-check-label{
-            font-size: 1.6rem;
-            color: $small-title;
-            font-weight: 500;
+            @include typography(1.6rem, 500, $small-title, none);
             margin-left: 15px;
         }
 
@@ -216,9 +182,7 @@ section.pop-up-background{
             background-color: #303134;
             width: 35px;
             height: 35px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(row, center, center, none);
             color: $small-title;
             align-self: flex-end;
             margin-bottom: 20px;
