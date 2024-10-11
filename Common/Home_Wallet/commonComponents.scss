@@ -9,6 +9,7 @@
         backdrop-filter: blur(3px);
         border-radius: 21px;
         z-index: 1;
+        @include flex(row, center, none, 8px);
     }
     #navigateText{
         display: block;
