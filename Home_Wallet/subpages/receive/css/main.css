@@ -327,6 +327,12 @@ nav.mini-nav h1 {
   color: #848586;
   line-height: none;
 }
+.navigateBtn img {
+  transform: rotate(-90deg);
+}
+.navigateBtn #navigateText {
+  width: 140px !important;
+}
 
 .head-span {
   font-size: 1.8rem;

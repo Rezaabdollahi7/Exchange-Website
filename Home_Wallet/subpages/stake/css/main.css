@@ -259,67 +259,51 @@ nav.mini-nav h1 {
   justify-content: center;
 }
 
+.wallet-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+}
 .wallet-details span {
   font-size: 1.8rem;
   font-weight: 500;
-  line-height: 2rem;
   color: #848586;
+  line-height: 2rem;
 }
 .wallet-details #coin-pic {
   border-radius: 100%;
   outline-offset: 4px;
   outline: 2px solid #F3BA2F;
 }
+.wallet-details .wallet-balance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+}
 .wallet-details .wallet-balance #balance {
   font-size: 3.2rem;
   font-weight: 700;
-  color: #fff;
+  color: #FFFFFF;
   line-height: 3.2rem;
-}
-
-.Validator-name {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.0509803922);
-  font-size: 1.6rem;
-  font-weight: 700;
-  border-radius: 21px;
-  z-index: 1;
-}
-.Validator-name #Validator-redirector {
-  padding: 15px 46px 15px 46px;
-  border: 1px solid rgba(255, 255, 255, 0.1411764706);
-  backdrop-filter: blur(3px);
-  border-radius: 21px;
-  z-index: 1;
-}
-.Validator-name #Validator-redirector img {
-  transform: rotate(-90deg);
-}
-.Validator-name #validator-address {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 140px;
-  transform: rotate();
-}
-.Validator-name .bottom-line {
-  display: block;
-  width: 60%;
-  height: 7px;
-  border-radius: 120px;
-  background-color: #006FFF;
-  bottom: -3px;
-  z-index: -1;
 }
 
 .head-span {
   font-size: 1.8rem;
-  color: #848586;
   font-weight: 500;
+  color: #848586;
+  line-height: none;
 }
 
 section.stakeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
   padding: 27px;
   background-color: #27282E;
   border-radius: 30px;
@@ -327,10 +311,16 @@ section.stakeSection {
 section.stakeSection #notice {
   font-size: 1.4rem;
   font-weight: 400;
-  color: #fff;
+  color: #FFFFFF;
+  line-height: none;
   margin-top: 40px;
 }
 section.stakeSection .input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: none;
   background-color: #303134;
   border-radius: 25px;
   padding: 0 20px;
@@ -353,6 +343,9 @@ section.stakeSection .input-container .icon-svg {
 }
 section.stakeSection .input-container .dollar-sign {
   font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: none;
   opacity: 0;
   margin-left: 20px;
 }
@@ -362,10 +355,54 @@ section.stakeSection .input-container .dollar-sign.focus {
 section.stakeSection .input-container #coin-icon.focus {
   fill: #006FFF;
 }
+section.stakeSection .navigateBtn {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: none;
+  border-radius: 21px;
+  z-index: 1;
+}
+section.stakeSection .navigateBtn #navigateLinker {
+  padding: 15px 46px 15px 46px;
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(3px);
+  border-radius: 21px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 8px;
+}
+section.stakeSection .navigateBtn #navigateText {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 170px;
+}
+section.stakeSection .navigateBtn .bottom-blue-line {
+  display: block;
+  width: 60%;
+  height: 7px;
+  border-radius: 120px;
+  background-color: #006FFF;
+  bottom: -3px;
+  z-index: -1;
+}
+section.stakeSection .navigateBtn img {
+  transform: rotate(-90deg);
+}
+section.stakeSection .navigateBtn #navigateText {
+  width: 140px !important;
+}
 section.stakeSection .quick-select button {
-  color: #848586;
   font-size: 2.4rem;
   font-weight: 700;
+  color: #848586;
+  line-height: none;
   border-radius: 20px;
   border: 1px solid rgba(140, 140, 171, 0.2);
   padding: 20px 0;
@@ -386,6 +423,8 @@ section.stakeSection .quick-select button:hover {
   border-radius: 25px;
   font-size: 1.6rem;
   font-weight: 700;
+  color: none;
+  line-height: none;
   box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
 }
 

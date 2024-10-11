@@ -59,6 +59,12 @@ nav.mini-nav{
         margin-top: -40px;
         @include typography(1.8rem, 500, $small-title, none);
     }
+    img{
+        transform: rotate(-90deg);
+    }
+    #navigateText{
+        width: 140px !important;
+    }
 }
 
 .head-span{
