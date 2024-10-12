@@ -1,0 +1,361 @@
+@import "./base/reset.css";
+
+// Variables
+$desktop-font-size: 16px;
+$mobile-font-size: 14px;
+$breakpoint: 768px;
+
+// Color Variables
+$background-color: #243a77;
+$gradient-color: #110d1d;
+$text-color-white: #ffffff;
+$text-color-subtitle: #b4c0de;
+$item-background-color: #1b3254;
+$green-alert: #0caf60;
+$border-color: #505e75; // Added for border color
+$hover-background-color: #006fff; // Added for hover background color
+$textarea-background: #1b3254; // Added for textarea background
+$placeholder-color: #a4a8ab; // Added for placeholder color
+
+// Base Styles
+body {
+  font-size: $desktop-font-size;
+  line-height: 1.6;
+  background: linear-gradient(to right, #152146 50%, #110f23);
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  .alert-box {
+    background-color: $green-alert;
+    border-radius: 3px 10px 10px 3px;
+    border-left: 6px solid $text-color-white;
+    z-index: 10;
+    span {
+      color: $text-color-white;
+      font-weight: 500;
+      line-height: 22.38px;
+      text-align: center;
+    }
+  }
+}
+
+// Main Content Styles
+.main-content {
+  .wallets-container {
+    width: 100%;
+    .wallet-item {
+      height: 56px;
+      border-radius: 37px;
+      margin: auto;
+      transition: background-color 1s ease;
+      background-color: #fff;
+      padding: 10px 25px;
+      img {
+        width: 200px;
+        height: 40px;
+      }
+      .atomic-img {
+        height: 81px;
+      }
+      .mini-img {
+        height: 50px;
+      }
+      .larged-img {
+        height: 140px;
+      }
+    }
+  }
+  .swiper-slide-active {
+    background-color: white !important;
+    img {
+      width: 280px;
+      height: 140px;
+    }
+  }
+
+  .page-title {
+    font-weight: 700;
+    line-height: 76.8px;
+    text-align: center;
+    color: $text-color-white;
+    border-top: 1px solid rgba(128, 128, 128, 0.099);
+    padding-top: 0.5rem;
+  }
+
+  .page-sub-title {
+    margin-top: 2rem;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+    color: $text-color-subtitle;
+  }
+
+  .tabs-main-container {
+    ul#myTab {
+      border: 1px solid $border-color;
+      border-radius: 25px;
+      height: 82px;
+      width: 530px;
+      margin: 0 auto;
+      justify-content: space-between;
+      padding: 0 !important;
+    }
+    li.nav-item {
+      width: 33%;
+    }
+    li.nav-item:nth-child(1),
+    li.nav-item:nth-child(2) {
+      border-right: 1px solid $border-color;
+    }
+    li.nav-item button {
+      margin: 0 auto;
+    }
+
+    .nav-tabs .nav-link.active {
+      background-color: $hover-background-color !important;
+      color: $text-color-white !important;
+      border: none;
+      border-radius: 20px;
+    }
+    button.nav-link {
+      color: $text-color-subtitle;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28.8px;
+      text-align: left;
+      padding: 16px 25px;
+      border: none;
+      border-radius: 30px;
+      width: 150px;
+      text-align: center;
+      &:hover {
+        border: none;
+      }
+    }
+    .tab-content {
+      textarea {
+        background: $textarea-background;
+        height: 230px;
+        border-radius: 25.8px;
+        border: none;
+        resize: none;
+        margin-top: 2rem;
+        padding: 1.35rem 3rem;
+        color: $placeholder-color;
+        font-size: 20px;
+        font-weight: 400;
+
+        &::placeholder {
+          color: $placeholder-color;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      .textarea-container {
+        position: relative;
+      }
+
+      .textarea-container::before {
+        content: "●";
+        color: #007bff;
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        font-size: 20px;
+        pointer-events: none;
+      }
+
+      .textarea-container.text-entered::before {
+        display: none;
+      }
+    }
+    .btn-container {
+      button {
+        padding: 11.86px 56.57px;
+        border-radius: 36.67px;
+        box-shadow: 0px 4.89px 22.61px 0px #0c61ec57;
+        color: $text-color-white;
+        background-color: $hover-background-color;
+        height: 50px;
+      }
+    }
+    .loading-img {
+      width: 20px;
+      height: 20px;
+      animation: spin 1.5s ease infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .wallet-item {
+      height: 60px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .page-title {
+    width: 80%;
+    margin: 0 auto;
+    font-size: $desktop-font-size * 1.7;
+  }
+  .page-sub-title {
+    font-size: $mobile-font-size;
+  }
+  .main-content .tabs-main-container ul#myTab {
+    width: unset;
+  }
+  .main-content .tabs-main-container button.nav-link {
+    width: unset;
+    font-size: 13px;
+  }
+  .alert-box {
+    padding: 10px 19px;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    span {
+      font-size: 14px;
+    }
+  }
+  .wallets-container {
+    .wallet-item {
+      img {
+        height: 40px !important;
+      }
+      .atomic-img {
+        width: 98px !important;
+        height: 40px !important;
+      }
+      .mini-img {
+        height: 40px !important;
+      }
+      .larged-img {
+        height: 135px !important;
+      }
+      .coinbase-icon {
+        height: 30px !important;
+      }
+      .metamaskicon {
+        height: 50px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .page-title {
+    font-size: $desktop-font-size * 1.8;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .page-sub-title {
+    font-size: $mobile-font-size * 1.2;
+  }
+  .main-content .tabs-main-container ul#myTab {
+    width: unset;
+  }
+  .main-content .tabs-main-container button.nav-link {
+    width: unset;
+    font-size: 14px;
+  }
+  .alert-box {
+    padding: 14px 19px;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+
+    span {
+      font-size: 16px;
+    }
+  }
+  .atomic-img {
+    width: 113px !important;
+    height: 36px !important;
+  }
+  .main-content .wallets-container .wallet-item .mini-img {
+    height: 42px;
+  }
+}
+@media (min-width: 480px) and (max-width: 620px) {
+  .wallets-container {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 600px) {
+  .main-content .tabs-main-container button.nav-link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .page-title {
+    font-size: $desktop-font-size * 2.2;
+  }
+  .page-sub-title {
+    font-size: $mobile-font-size * 1.4;
+  }
+  .alert-box {
+    left: 14%;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .page-title {
+    font-size: $desktop-font-size * 3;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .page-sub-title {
+    font-size: $desktop-font-size * 1.3;
+  }
+  .main-content .tabs-main-container ul#myTab {
+    width: 530px;
+  }
+
+  .main-content .tabs-main-container button.nav-link {
+    width: 150px;
+    font-size: 19px;
+  }
+  .alert-box {
+    padding: 14px 20px;
+    top: 6%;
+    left: 25%;
+    width: 50%;
+  }
+  .swiper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .page-title {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .alert-box {
+    padding: 14px 20px;
+    top: 6%;
+    left: 36%;
+    width: 30%;
+  }
+}
