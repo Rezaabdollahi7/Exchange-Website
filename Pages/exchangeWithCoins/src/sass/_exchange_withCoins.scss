@@ -1,4 +1,4 @@
-@import "../base/reset.scss";
+@import "./base/reset.css";
 
 // Variables
 $desktop-font-size: 16px;
@@ -26,7 +26,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
-  overflow: hidden;
   .alert-box {
     background-color: $green-alert;
     border-radius: 3px 10px 10px 3px;
@@ -43,8 +42,6 @@ body {
 
 // Main Content Styles
 .main-content {
-  // padding-top: 1.5rem;
-  // max-width: 430px;
   .wallets-container {
     width: 100%;
     .wallet-item {
@@ -52,7 +49,6 @@ body {
       border-radius: 37px;
       margin: auto;
       transition: background-color 1s ease;
-      // background-color: #727380;
       background-color: #fff;
       padding: 10px 25px;
       img {
@@ -71,7 +67,6 @@ body {
     }
   }
   .swiper-slide-active {
-    // height: 165px !important;
     background-color: white !important;
     img {
       width: 280px;
@@ -97,7 +92,6 @@ body {
   }
 
   .tabs-main-container {
-    margin-bottom: 8rem;
     ul#myTab {
       border: 1px solid $border-color;
       border-radius: 25px;
@@ -144,10 +138,6 @@ body {
         background: $textarea-background;
         height: 230px;
         border-radius: 25.8px;
-
-        // width: 1012px;
-        // height: 371.53px;
-
         border: none;
         resize: none;
         margin-top: 2rem;
