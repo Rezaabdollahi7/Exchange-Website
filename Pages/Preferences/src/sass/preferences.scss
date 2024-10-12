@@ -20,8 +20,8 @@ body {
     line-height: 1;
     color: $text-color-white;
   }
-  .wallets-list-container {
-    ul.wallets-list {
+  .options-list-container {
+    ul.options-list {
       list-style: none;
       padding: 0;
 
@@ -33,7 +33,7 @@ body {
           text-decoration: none;
         }
 
-        .wallet-name {
+        .option-name {
           font-size: 18px;
           font-weight: $font-weight-bold;
           line-height: 1.3;
@@ -76,7 +76,7 @@ body {
       button {
         width: 35px;
         height: 35px;
-        color: #fff;
+        color: $text-color-white;
         background-color: #34353a;
         border-radius: 999px;
         padding: 0;
@@ -96,7 +96,7 @@ body {
         li {
           a {
             text-decoration: none;
-            color: #fff;
+            color: $text-color-white;
             font-size: 14px;
             font-weight: 700;
           }

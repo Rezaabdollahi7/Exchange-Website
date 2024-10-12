@@ -13,30 +13,30 @@ body {
   line-height: 1;
   color: #fff;
 }
-#preferences-mobile-page .wallets-list-container ul.wallets-list {
+#preferences-mobile-page .options-list-container ul.options-list {
   list-style: none;
   padding: 0;
 }
-#preferences-mobile-page .wallets-list-container ul.wallets-list li {
+#preferences-mobile-page .options-list-container ul.options-list li {
   border-bottom: 1px solid rgba(140, 140, 171, 0.2);
   transition: background-color 0.3s ease;
 }
-#preferences-mobile-page .wallets-list-container ul.wallets-list li a {
+#preferences-mobile-page .options-list-container ul.options-list li a {
   text-decoration: none;
 }
-#preferences-mobile-page .wallets-list-container ul.wallets-list li .wallet-name {
+#preferences-mobile-page .options-list-container ul.options-list li .option-name {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.3;
   color: #fff;
 }
-#preferences-mobile-page .wallets-list-container ul.wallets-list li .right-container .wallet-inventory {
+#preferences-mobile-page .options-list-container ul.options-list li .right-container .wallet-inventory {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.3;
   color: #848586;
 }
-#preferences-mobile-page .wallets-list-container ul.wallets-list li:hover {
+#preferences-mobile-page .options-list-container ul.options-list li:hover {
   background-color: rgba(144, 142, 156, 0.06);
 }
 #preferences-mobile-page #colorMenu {
@@ -235,4 +235,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=preferences.css.map */
+/*# sourceMappingURL=main.css.map */
