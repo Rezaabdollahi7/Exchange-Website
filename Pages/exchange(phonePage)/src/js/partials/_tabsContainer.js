@@ -1,35 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exchange</title>
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- my css -->
-    <link rel="stylesheet" href="./dist/exchange.css">
-    <!-- fav icon -->
-    <link rel="icon" href="../Home/src/assets/Home_assets/Logo.svg" type="image/x-icon" />
-    <link rel="shortcut icon" href="./src/assets/Home_assets/Logo.svg" type="image/x-icon" />
-</head>
-
-<body class="position-relative">
-    <div class="d-none alert-box position-absolute  justify-content-center align-items-center gap-3">
-        <img src="./assets/icons/tick.svg" alt="">
-        <span>Successful login! Currently transmitting data</span>
-    </div>
-
-    <main class="main-content mx-auto ">
-
-
-        <h2 class="page-title">Welcome to the web3</h2>
-        <p class="page-sub-title mt-1">Import with secret phrase
-        </p>
-
-
-        <div class="container my-3 tabs-main-container">
+const tabsContainer = 
+`
+    <section class="container my-3 tabs-main-container">
 
             <ul class="nav nav-tabs d-flex justify-content-around align-items-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -107,75 +78,8 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
-    </main>
+`
 
-
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const textareas = document.querySelectorAll('textarea');
-
-            textareas.forEach((textarea) => {
-                textarea.value = '';
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const forms = document.querySelectorAll('form');
-
-            forms.forEach((form, index) => {
-                const textarea = form.querySelector(`textarea`);
-                const importButton = form.querySelector(`button`);
-                const spanText = importButton.querySelector('span');
-                const loadingImg = importButton.querySelector('img');
-
-                textarea.addEventListener('input', function () {
-                    const container = document.getElementById(`textarea-container-${index + 1}`);
-                    if (this.value.length > 0) {
-                        container.classList.add('text-entered');
-                    } else {
-                        container.classList.remove('text-entered');
-                    }
-                });
-
-                importButton.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    spanText.classList.add('d-none');
-                    loadingImg.classList.remove('d-none');
-
-                    setTimeout(() => {
-                        spanText.classList.remove('d-none');
-                        loadingImg.classList.add('d-none');
-                    }, 4000);
-                    setTimeout(() =>   showAlert(), 4000);
-
-                  
-                });
-            });
-            function showAlert() {
-                const alertBox = document.querySelector('.alert-box');
-          
-                alertBox.classList.remove('d-none');
-                alertBox.classList.add('d-flex');
-     
-                setTimeout(() => {
-                    alertBox.classList.remove('d-flex');
-                    alertBox.classList.add('d-none');
-                }, 4000); 
-            }
-        });
-    </script>
-
-
-    <!-- main script -->
-    <script src="./src/main.js" type="module"></script>
-</body>
-
-
-</html>
+export { tabsContainer }
