@@ -2,17 +2,55 @@ body {
   background-color: #14121c;
 }
 
-#wallet-mobile-page {
+#stake-mobile-page {
   max-width: 400px;
   margin: 0 auto;
 }
-#wallet-mobile-page h2 {
+#stake-mobile-page h2 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
   color: #fff;
 }
-#wallet-mobile-page .wallets-details .img-container {
+#stake-mobile-page .wallets-list-container ul.wallets-list {
+  list-style: none;
+  padding: 0;
+}
+#stake-mobile-page .wallets-list-container ul.wallets-list li {
+  border-bottom: 1px solid rgba(140, 140, 171, 0.2);
+  transition: background-color 0.3s ease;
+}
+#stake-mobile-page .wallets-list-container ul.wallets-list li a {
+  text-decoration: none;
+}
+#stake-mobile-page .wallets-list-container ul.wallets-list li .wallet-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+}
+#stake-mobile-page .wallets-list-container ul.wallets-list li .right-container .wallet-inventory {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #848586;
+}
+#stake-mobile-page .wallets-list-container ul.wallets-list li:hover {
+  background-color: rgba(144, 142, 156, 0.06);
+}
+#stake-mobile-page #metaWallet1 {
+  margin: 0 auto;
+}
+#stake-mobile-page #metaWallet1 .modal-content {
+  background-color: #14121c;
+}
+#stake-mobile-page #metaWallet1 h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+#stake-mobile-page #metaWallet1 .wallets-details .img-container {
   width: 72px;
   height: 72px;
   background-color: #1649ff;
@@ -20,93 +58,93 @@ body {
   outline: 1px solid #1649ff;
   outline-offset: 5px;
 }
-#wallet-mobile-page .wallets-details .wal-text {
+#stake-mobile-page #metaWallet1 .wallets-details .wal-text {
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
   text-align: left;
   color: #848586;
 }
-#wallet-mobile-page .wallets-details .wallet-inventory {
+#stake-mobile-page #metaWallet1 .wallets-details .wallet-inventory {
   font-size: 32px;
   font-weight: 700;
   line-height: 32px;
   text-align: left;
   color: #fff;
 }
-#wallet-mobile-page .wallets-details .wal-addres {
+#stake-mobile-page #metaWallet1 .wallets-details .wal-addres {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   text-align: left;
   color: #848586;
 }
-#wallet-mobile-page .wallets-details .copy-btn {
+#stake-mobile-page #metaWallet1 .wallets-details .copy-btn {
   background-color: transparent;
   box-shadow: none;
   border: 1px solid gray;
   border-radius: 25px;
   height: 56px;
 }
-#wallet-mobile-page .wallets-details .connect-btn,
-#wallet-mobile-page .wallets-details .delete-btn {
+#stake-mobile-page #metaWallet1 .wallets-details .connect-btn,
+#stake-mobile-page #metaWallet1 .wallets-details .delete-btn {
   border: none;
   height: 56px;
   background: #006fff;
   color: #fff;
   border-radius: 25px;
 }
-#wallet-mobile-page .wallets-details .connect-btn {
+#stake-mobile-page #metaWallet1 .wallets-details .connect-btn {
   box-shadow: 0px 3.37px 15.57px 0px rgba(12, 97, 236, 0.3411764706);
 }
-#wallet-mobile-page .wallets-details .delete-btn {
+#stake-mobile-page #metaWallet1 .wallets-details .delete-btn {
   background-color: #3b3c47;
 }
-#wallet-mobile-page .modal.fade {
+#stake-mobile-page #metaWallet1 .modal.fade {
   background-color: rgba(3, 3, 3, 0.5725490196);
 }
-#wallet-mobile-page .modal.fade .modal-dialog {
+#stake-mobile-page #metaWallet1 .modal.fade .modal-dialog {
   top: 44%;
 }
-#wallet-mobile-page .modal.fade .modal-content {
+#stake-mobile-page #metaWallet1 .modal.fade .modal-content {
   max-width: 400px;
   margin: 0 auto;
   background-color: #27282e;
 }
-#wallet-mobile-page .modal.fade .modal-content .modal-header {
+#stake-mobile-page #metaWallet1 .modal.fade .modal-content .modal-header {
   border: 0;
 }
-#wallet-mobile-page .modal.fade .modal-content .modal-header h1 {
+#stake-mobile-page #metaWallet1 .modal.fade .modal-content .modal-header h1 {
   font-size: 32px;
   font-weight: 700;
   line-height: 32px;
   text-align: left;
   color: #fff;
 }
-#wallet-mobile-page .modal.fade .modal-content .modal-header .delete-icon {
+#stake-mobile-page #metaWallet1 .modal.fade .modal-content .modal-header .delete-icon {
   margin-top: -5rem;
 }
-#wallet-mobile-page .modal.fade .modal-content .modal-body {
+#stake-mobile-page #metaWallet1 .modal.fade .modal-content .modal-body {
   border: 0;
 }
-#wallet-mobile-page .modal.fade .modal-content .modal-body .modal-text {
+#stake-mobile-page #metaWallet1 .modal.fade .modal-content .modal-body .modal-text {
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
   text-align: center;
   color: #8c8cab;
 }
-#wallet-mobile-page .modal.fade .modal-content .modal-footer {
+#stake-mobile-page #metaWallet1 .modal.fade .modal-content .modal-footer {
   border: 0;
 }
-#wallet-mobile-page .modal.fade .modal-content .modal-footer .cancel-btn {
+#stake-mobile-page #metaWallet1 .modal.fade .modal-content .modal-footer .cancel-btn {
   width: 30%;
   height: 66px;
   border: none;
   border-radius: 25.26px;
   background-color: rgba(140, 140, 171, 0.2);
 }
-#wallet-mobile-page .modal.fade .modal-content .modal-footer .remove-btn {
+#stake-mobile-page #metaWallet1 .modal.fade .modal-content .modal-footer .remove-btn {
   width: 65%;
   height: 66px;
   border-radius: 25.26px;
@@ -122,7 +160,7 @@ body {
     transform: rotate(360deg);
   }
 }
-#wallet-mobile-page .loading {
+#stake-mobile-page #metaWallet1 .loading {
   animation: spin 1.5s linear infinite;
 }
 
