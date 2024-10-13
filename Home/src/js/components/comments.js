@@ -122,13 +122,13 @@ function addCommentSwiper() {
         slidesPerView: 3.5,
         spaceBetween: 60,
         mousewheel: {
-            invert: false,    
+            invert: false,
             forceToAxis: true,
         },
         centeredSlides: true,
         grabCursor: true,
         loop: true,
-        speed: 800,
+        speed: 1400,
         autoplay: {
             delay: 0,
             disableOnInteraction: false,
@@ -184,13 +184,13 @@ function addCommentSwiper() {
         slidesPerView: 3.5,
         spaceBetween: 60,
         mousewheel: {
-            invert: false, 
-            forceToAxis: true, 
+            invert: false,
+            forceToAxis: true,
         },
         centeredSlides: true,
         grabCursor: true,
         loop: true,
-        speed: 800,
+        speed: 1400,
         autoplay: {
             delay: 0,
             reverseDirection: true,
@@ -237,7 +237,7 @@ function addCommentSwiper() {
                 spaceBetween: 40,
             },
             1024: {
-                slidesPerView: 5,
+                slidesPerView: 6,
                 spaceBetween: 50,
             },
         },
@@ -247,13 +247,13 @@ function addCommentSwiper() {
         slidesPerView: 3.5,
         spaceBetween: 60,
         mousewheel: {
-            invert: false,     
-            forceToAxis: true, 
+            invert: false,
+            forceToAxis: true,
         },
         centeredSlides: true,
         grabCursor: true,
         loop: true,
-        speed: 800,
+        speed: 1400,
         autoplay: {
             delay: 0,
             reverseDirection: true,
@@ -300,7 +300,7 @@ function addCommentSwiper() {
                 spaceBetween: 40,
             },
             1024: {
-                slidesPerView: 5,
+                slidesPerView: 6,
                 spaceBetween: 50,
             },
         },

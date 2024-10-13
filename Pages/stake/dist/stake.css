@@ -1,0 +1,189 @@
+body {
+  background-color: #14121c;
+}
+
+#stake-mobile-page {
+  max-width: 400px;
+  margin: 0 auto;
+}
+#stake-mobile-page h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+#stake-mobile-page .wallets-list-container ul.wallets-list {
+  list-style: none;
+  padding: 0;
+}
+#stake-mobile-page .wallets-list-container ul.wallets-list li {
+  border-bottom: 1px solid rgba(140, 140, 171, 0.2);
+  transition: background-color 0.3s ease;
+}
+#stake-mobile-page .wallets-list-container ul.wallets-list li a {
+  text-decoration: none;
+}
+#stake-mobile-page .wallets-list-container ul.wallets-list li .wallet-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+}
+#stake-mobile-page .wallets-list-container ul.wallets-list li .right-container .wallet-inventory {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #848586;
+}
+#stake-mobile-page .wallets-list-container ul.wallets-list li:hover {
+  background-color: rgba(144, 142, 156, 0.06);
+}
+#stake-mobile-page #metaWallet1 {
+  max-width: 100%;
+  margin: 0;
+  background-color: #14121c;
+}
+#stake-mobile-page #metaWallet1 .modal-dialog {
+  max-width: 400px;
+  margin: 2rem auto 0 auto;
+}
+#stake-mobile-page #metaWallet1 .modal-content {
+  background-color: #14121c;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+  overflow-y: auto;
+}
+#stake-mobile-page #metaWallet1 h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+#stake-mobile-page #metaWallet1 .wallets-details .img-container {
+  width: 60px;
+  height: 60px;
+  background-color: #1649ff;
+  border-radius: 999px;
+  outline: 1px solid #1649ff;
+  outline-offset: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#stake-mobile-page #metaWallet1 .wallets-details .wal-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #848586;
+}
+#stake-mobile-page #metaWallet1 .wallets-details .wallet-inventory {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #fff;
+}
+#stake-mobile-page #metaWallet1 .wallets-details .wal-addres {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #848586;
+}
+#stake-mobile-page #metaWallet1 .wallets-details .copy-btn {
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  font-weight: 500;
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid #848586;
+}
+#stake-mobile-page #metaWallet1 .wallets-details .connect-btn,
+#stake-mobile-page #metaWallet1 .wallets-details .delete-btn {
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+#stake-mobile-page #metaWallet1 .wallets-details .connect-btn {
+  background: #006fff;
+  box-shadow: 0px 3.37px 15.57px 0px rgba(0, 111, 255, 0.34);
+}
+#stake-mobile-page #metaWallet1 .wallets-details .delete-btn {
+  background-color: #3b3c47;
+}
+#stake-mobile-page #deleteWalletModal {
+  background-color: rgba(20, 18, 28, 0.92);
+}
+#stake-mobile-page #deleteWalletModal .modal-dialog {
+  top: 44%;
+}
+#stake-mobile-page #deleteWalletModal .modal-content {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #27282e;
+}
+#stake-mobile-page #deleteWalletModal .modal-content .modal-header {
+  border: 0;
+}
+#stake-mobile-page #deleteWalletModal .modal-content .modal-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #fff;
+}
+#stake-mobile-page #deleteWalletModal .modal-content .modal-header .delete-icon {
+  margin-top: -5rem;
+}
+#stake-mobile-page #deleteWalletModal .modal-content .modal-body {
+  border: 0;
+}
+#stake-mobile-page #deleteWalletModal .modal-content .modal-body .modal-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: #9e9f9f;
+}
+#stake-mobile-page #deleteWalletModal .modal-content .modal-footer {
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#stake-mobile-page #deleteWalletModal .modal-content .modal-footer .cancel-btn,
+#stake-mobile-page #deleteWalletModal .modal-content .modal-footer .remove-btn {
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  font-weight: 500;
+  height: 66px;
+}
+#stake-mobile-page #deleteWalletModal .modal-content .modal-footer .cancel-btn {
+  width: 30%;
+  background-color: rgba(132, 133, 134, 0.2);
+}
+#stake-mobile-page #deleteWalletModal .modal-content .modal-footer .remove-btn {
+  width: 65%;
+  background: #ff3e46;
+  box-shadow: 0px 3.37px 15.57px 0px rgba(255, 62, 70, 0.4);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  animation: spin 1.5s linear infinite;
+}
+
+/*# sourceMappingURL=stake.css.map */

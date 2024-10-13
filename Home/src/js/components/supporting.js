@@ -1,6 +1,6 @@
 const getSupporting = `
        <section id="support" class="position-relative container-full ">
-        <div class="container ">
+        <div class="container-fluid ">
             <div class="row">
                 <div
                     class="col-12 support-titles-container d-flex justify-content-center align-items-center flex-column">
@@ -36,6 +36,17 @@ const getSupporting = `
                       <img src="./src/assets/Home_assets/polygon.svg" alt="polygon-icon">
                     </div>
 
+                     <div class="swiper-slide bg-white p-4 rounded-5 d-flex justify-content-center align-items-center">
+                        <img src="./src/assets/Home_assets/coinbase.svg" alt="coinbase-icon">
+                    </div>
+
+                    <div class="swiper-slide bg-white p-4 rounded-5 d-flex justify-content-center align-items-center">
+                        <img src="./src/assets/Home_assets/dodo.svg" alt="dodo-icon">
+                    </div>
+
+                    <div class="swiper-slide bg-white p-4 rounded-5 d-flex justify-content-center align-items-center">
+                        <img src="./src/assets/Home_assets/okx.svg" alt="okx-icon">
+                    </div>
               
 
                 </div>
@@ -94,6 +105,18 @@ const getSupporting = `
                     </div>
 
                     <div class="swiper-slide bg-white p-4 rounded-5 d-flex justify-content-center align-items-center">
+                       <img src="./src/assets/Home_assets/coinw.svg" alt="coinw-icon">
+                    </div>
+
+                    <div class="swiper-slide bg-white p-4 rounded-5 d-flex justify-content-center align-items-center">
+                        <img src="./src/assets/Home_assets/sui.svg" alt="sui-icon">
+                    </div>
+
+                    <div class="swiper-slide bg-white p-4 rounded-5 d-flex justify-content-center align-items-center">
+                        <img height="34"  src="./src/assets/Home_assets/tptoken.svg" alt="tptoken-icon">
+                    </div>
+
+                       <div class="swiper-slide bg-white p-4 rounded-5 d-flex justify-content-center align-items-center">
                        <img src="./src/assets/Home_assets/coinw.svg" alt="coinw-icon">
                     </div>
 

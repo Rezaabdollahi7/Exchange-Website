@@ -471,4 +471,14 @@ nav.mini-nav h1 {
   font-family: "Font Awesome 6 Free" !important;
 }
 
+.cahrt-container {
+  border-radius: 1rem !important;
+  overflow: hidden;
+}
+
+#chart {
+  max-width: 430px;
+  margin: 35px auto;
+}
+
 /*# sourceMappingURL=main.css.map */

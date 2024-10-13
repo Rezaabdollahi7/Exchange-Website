@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container-full {
   width: 100% !important;
 }
@@ -219,6 +220,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 800ms linear; /* انیمیشن خطی */
 }
 #support .supportingSwiper .swiper-slide img {
   width: 100px !important;
@@ -259,6 +261,11 @@
   #support .shadow-img-wrapper {
     top: 33%;
   }
+}
+#support .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }
 
 #InternationalCoverege {
