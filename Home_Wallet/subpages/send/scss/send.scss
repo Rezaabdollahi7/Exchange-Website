@@ -34,21 +34,18 @@ nav.mini-nav{
     }
 }
 
-.coin-details{
-    margin-bottom: 60px;
+.wallet-details{
     @include flex(column, none, center, none);
-
+    margin-bottom: 70px;
     span{
         @include typography(1.8rem, 500, $small-title, 2rem);
     }
-    
+
     .wallet-balance{
+        @include flex(row, space-between, none, none);
         #balance{
             @include typography(3.2rem, 700, $white_text, 3.2rem);
         }
-    }
-    #received-name{
-        color: $white_text;
     }
 }
 
@@ -71,7 +68,32 @@ nav.mini-nav{
     @include typography(1.8rem, 500, $small-title, none);
 }
 
-#share-btn{
+.input-container{
+    @include flex(row, none, center, none);
+    @include inputContainer();
+    background-color: $part-back-gray !important;
+
+    #walletInput, #amountInput{
+        @include inputStyle();
+        @include typography(1.4rem, 400, $white_text, 1.8rem);
+    }
+
+    .wallet-svg{
+        flex-shrink: 0;
+        margin-right: 20px;
+    }
+
+    #wallet-icon.focus, #money-icon.focus{
+        fill: $main_blue;
+    }
+
+}
+
+.input-container.focus{
+    border-color: $main_blue !important;
+}
+
+#send-btn{
     margin-top: 40px;
     padding: 15px 39px;
     border-radius: 25px;
@@ -81,26 +103,4 @@ nav.mini-nav{
 
 .fa-solid{
     font-family: "Font Awesome 6 Free" !important;
-}
-
-.receive-add{
-    margin-top: 40px;
-    @include flex(column, none, center, 20px);
-
-    #qr-code{
-        width: 170px;
-        height: 170px;
-    }
-
-    #dest-link{
-        @include typography(1.6rem, 500, $small-title, none);
-    }
-
-    #copyBtn{
-        border: 1px solid #FFFFFF24;
-        width: 100%;
-        padding: 20px 0;
-        border-radius: 25px;
-        @include flex(row, center, none, none);
-    }
 }

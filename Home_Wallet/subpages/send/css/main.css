@@ -259,28 +259,32 @@ nav.mini-nav h1 {
   justify-content: center;
 }
 
-.coin-details {
-  margin-bottom: 60px;
+.wallet-details {
   display: flex;
   flex-direction: column;
   justify-content: none;
   align-items: center;
   gap: none;
+  margin-bottom: 70px;
 }
-.coin-details span {
+.wallet-details span {
   font-size: 1.8rem;
   font-weight: 500;
   color: #848586;
   line-height: 2rem;
 }
-.coin-details .wallet-balance #balance {
+.wallet-details .wallet-balance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+}
+.wallet-details .wallet-balance #balance {
   font-size: 3.2rem;
   font-weight: 700;
   color: #FFFFFF;
   line-height: 3.2rem;
-}
-.coin-details #received-name {
-  color: #FFFFFF;
 }
 
 .navigateBtn {
@@ -341,7 +345,47 @@ nav.mini-nav h1 {
   line-height: none;
 }
 
-#share-btn {
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  background-color: #303134;
+  border-radius: 25px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  background-color: #27282E !important;
+}
+.input-container #walletInput, .input-container #amountInput {
+  background-color: transparent;
+  border: none;
+  stroke: none;
+  color: #fff;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 20px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  -moz-appearance: textfield;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.8rem;
+}
+.input-container .wallet-svg {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+.input-container #wallet-icon.focus, .input-container #money-icon.focus {
+  fill: #006FFF;
+}
+
+.input-container.focus {
+  border-color: #006FFF !important;
+}
+
+#send-btn {
   margin-top: 40px;
   padding: 15px 39px;
   border-radius: 25px;
@@ -354,36 +398,6 @@ nav.mini-nav h1 {
 
 .fa-solid {
   font-family: "Font Awesome 6 Free" !important;
-}
-
-.receive-add {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: none;
-  align-items: center;
-  gap: 20px;
-}
-.receive-add #qr-code {
-  width: 170px;
-  height: 170px;
-}
-.receive-add #dest-link {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #848586;
-  line-height: none;
-}
-.receive-add #copyBtn {
-  border: 1px solid rgba(255, 255, 255, 0.1411764706);
-  width: 100%;
-  padding: 20px 0;
-  border-radius: 25px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: none;
-  gap: none;
 }
 
 /*# sourceMappingURL=main.css.map */

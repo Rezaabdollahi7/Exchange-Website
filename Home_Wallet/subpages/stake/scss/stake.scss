@@ -11,7 +11,7 @@ body{
 main{
     max-width: 430px;
     padding: 30px 25px;
-    background: linear-gradient(to bottom, $background_from, $background_to);
+    background: linear-gradient(to bottom, $main_background_from, $main_background_to);
     background-repeat: no-repeat;
 }
 
@@ -20,7 +20,7 @@ nav.mini-nav{
 
     .setting-around{
         padding: 15px;
-        background-color: $button_gray;
+        background-color: $setting_back;
         cursor: pointer;
     }
     h1{
@@ -35,11 +35,9 @@ nav.mini-nav{
 }
 
 .wallet-details{
+    @include flex(column, none, center, none);
     span{
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: 2rem;
-        color: $small-title;
+        @include typography(1.8rem, 500, $small-title, 2rem);
     }
     
     #coin-pic{
@@ -49,71 +47,30 @@ nav.mini-nav{
     }
 
     .wallet-balance{
+        @include flex(row, space-between, none, none);
         #balance{
-            font-size: 3.2rem;
-            font-weight: 700;
-            color: #fff;
-            line-height: 3.2rem;
+            @include typography(3.2rem, 700, $white_text, 3.2rem);
         }
-    }
-}
-
-.Validator-name{
-    position: relative;
-    background-color: #FFFFFF0D;
-    font-size: 1.6rem;
-    font-weight: 700;
-    border-radius: 21px;
-    z-index: 1;
-    #Validator-redirector{
-        padding: 15px 46px 15px 46px;
-        border: 1px solid #FFFFFF24;
-        backdrop-filter: blur(3px);
-        border-radius: 21px;
-        z-index: 1;
-
-        img{
-            transform: rotate(-90deg);
-        }
-    }
-    #validator-address{
-        display: block;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 140px;
-        transform: rotate();
-    }
-    .bottom-line{
-        display: block;
-        width: 60%;
-        height: 7px;
-        border-radius: 120px;
-        background-color: $main_blue;
-        bottom: -3px;
-        z-index: -1;
     }
 }
 
 .head-span{
-    font-size: 1.8rem;
-    color: $small-title;
-    font-weight: 500;
+    @include typography(1.8rem, 500, $small-title, none);
 }
 
 section.stakeSection{
+    @include flex(column, none, center, none);
     padding: 27px;
     background-color: $part-back-gray;
     border-radius: 30px;
 
     #notice{
-        font-size: 1.4rem;
-        font-weight: 400;
-        color: #fff;
+        @include typography(1.4rem, 400, $white_text, none);
         margin-top: 40px;
     }
 
     .input-container{
+        @include flex(row, none, center, none);
         @include inputContainer();
 
         #StakeAmount{
@@ -125,7 +82,7 @@ section.stakeSection{
         }
 
         .dollar-sign{
-            font-size: 1.6rem;
+            @include typography(1.6rem, 700, $white_text, none);
             opacity: 0;
             margin-left: 20px;
         }
@@ -139,12 +96,21 @@ section.stakeSection{
         }
 
     }
+
+    .navigateBtn{
+        @include CommonNavigate();
+
+        img{
+            transform: rotate(-90deg);
+        }
+        #navigateText{
+            width: 140px !important;
+        }
+    }
     
     .quick-select{
         button{
-            color: $small-title;
-            font-size: 2.4rem;
-            font-weight: 700;
+            @include typography(2.4rem, 700, $small-title, none);
             border-radius: 20px;
             border: 1px solid #8C8CAB33;
             padding: 20px 0;
@@ -166,8 +132,7 @@ section.stakeSection{
     margin-top: 40px;
     padding: 15px 39px;
     border-radius: 25px;
-    font-size: 1.6rem;
-    font-weight: 700;
+    @include typography(1.6rem, 700, none, none);
     box-shadow: 0 0 15px #0C61EC57;
 }
 

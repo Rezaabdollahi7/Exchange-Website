@@ -1,10 +1,16 @@
+import nav from "./components/nav.js";
+import stakeForm from "./components/stakeForm.js";
+import walletDetails from "./components/walletDetails.js";
+
+const main = document.querySelector("#main");
+main.innerHTML += nav;
+main.innerHTML += walletDetails;
+main.innerHTML += stakeForm;
+
 const inputContainer = document.querySelector(".input-container");
 const amountInput = document.querySelector("#StakeAmount");
 const coinIcon = document.querySelector("#coin-icon");
 const dollarSign = document.querySelector(".dollar-sign");
-const validatorBtn = document.querySelector("#validator-name");
-// const pop_up = document.querySelector("#pop-up");
-// const xmark = document.querySelector("#xmark");
 
 document.addEventListener('DOMContentLoaded', () => {
     amountInput.value = "";
@@ -23,11 +29,3 @@ amountInput.addEventListener('input', () => {
         
     }
 });
-
-// validatorBtn.addEventListener('click', () => {
-//     pop_up.classList.toggle('d-none');
-// })
-
-// xmark.addEventListener('click', () => {
-//     pop_up.classList.toggle('d-none');
-// })
