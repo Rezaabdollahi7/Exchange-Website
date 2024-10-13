@@ -259,40 +259,59 @@ nav.mini-nav h1 {
   justify-content: center;
 }
 
-.network-name {
-  position: relative;
+.coin-details {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+}
+.coin-details span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: 2rem;
+}
+.coin-details .wallet-balance #balance {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 3.2rem;
+}
+.coin-details #received-name {
+  color: #FFFFFF;
+}
+
+.navigateBtn {
   background-color: rgba(255, 255, 255, 0.0509803922);
   font-size: 1.6rem;
   font-weight: 700;
+  color: #FFFFFF;
+  line-height: none;
   border-radius: 21px;
   z-index: 1;
-  margin-top: 30px;
 }
-.network-name #network-type {
-  margin-top: -40px;
-  color: #848586;
-  font-weight: 500;
-  font-size: 1.8rem;
-}
-.network-name #network-redirector {
+.navigateBtn #navigateLinker {
   padding: 15px 46px 15px 46px;
   border: 1px solid rgba(255, 255, 255, 0.1411764706);
   backdrop-filter: blur(3px);
   border-radius: 21px;
   z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 8px;
 }
-.network-name #network-redirector img {
-  transform: rotate(-90deg);
-}
-.network-name #network-address {
+.navigateBtn #navigateText {
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 140px;
-  transform: rotate();
+  width: 170px;
 }
-.network-name .bottom-line {
+.navigateBtn .bottom-blue-line {
   display: block;
   width: 60%;
   height: 7px;
@@ -301,30 +320,25 @@ nav.mini-nav h1 {
   bottom: -3px;
   z-index: -1;
 }
-
-.coin-details {
-  margin-bottom: 60px;
-}
-.coin-details span {
+.navigateBtn #network-type {
+  margin-top: -40px;
   font-size: 1.8rem;
   font-weight: 500;
-  line-height: 2rem;
   color: #848586;
+  line-height: none;
 }
-.coin-details .wallet-balance #balance {
-  font-size: 3.2rem;
-  font-weight: 700;
-  color: #fff;
-  line-height: 3.2rem;
+.navigateBtn img {
+  transform: rotate(-90deg);
 }
-.coin-details #received-name {
-  color: #fff;
+.navigateBtn #navigateText {
+  width: 140px !important;
 }
 
 .head-span {
   font-size: 1.8rem;
-  color: #848586;
   font-weight: 500;
+  color: #848586;
+  line-height: none;
 }
 
 #share-btn {
@@ -333,6 +347,8 @@ nav.mini-nav h1 {
   border-radius: 25px;
   font-size: 1.6rem;
   font-weight: 700;
+  color: none;
+  line-height: none;
   box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
 }
 
@@ -342,6 +358,10 @@ nav.mini-nav h1 {
 
 .receive-add {
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
   gap: 20px;
 }
 .receive-add #qr-code {
@@ -352,12 +372,18 @@ nav.mini-nav h1 {
   font-size: 1.6rem;
   font-weight: 500;
   color: #848586;
+  line-height: none;
 }
 .receive-add #copyBtn {
   border: 1px solid rgba(255, 255, 255, 0.1411764706);
   width: 100%;
   padding: 20px 0;
   border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: none;
 }
 
 /*# sourceMappingURL=main.css.map */

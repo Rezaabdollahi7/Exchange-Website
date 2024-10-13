@@ -125,7 +125,7 @@ nav.mini-nav{
         }
     }
     .coinMarket{
-        @include flex(row, none, center, 16px);
+        @include flex(row, none, center, 22px);
     }
     .coinWorth{
         .coinPrice{

@@ -11,7 +11,7 @@ body{
 main{
     max-width: 430px;
     padding: 30px 25px;
-    background: linear-gradient(to bottom, $background_from, $background_to);
+    background: linear-gradient(to bottom, $main_background_from, $main_background_to);
     background-repeat: no-repeat;
 }
 
@@ -20,7 +20,7 @@ nav.mini-nav{
 
     .setting-around{
         padding: 15px;
-        background-color: $button_gray;
+        background-color: $setting_back;
         cursor: pointer;
     }
     h1{
@@ -34,88 +34,48 @@ nav.mini-nav{
     }
 }
 
-.network-name{
-    position: relative;
-    background-color: #FFFFFF0D;
-    font-size: 1.6rem;
-    font-weight: 700;
-    border-radius: 21px;
-    z-index: 1;
-    margin-top: 30px;
-
-    #network-type{
-        margin-top: -40px;
-        color: $small-title;
-        font-weight: 500;
-        font-size: 1.8rem;
-        
-    }
-
-    #network-redirector{
-        padding: 15px 46px 15px 46px;
-        border: 1px solid #FFFFFF24;
-        backdrop-filter: blur(3px);
-        border-radius: 21px;
-        z-index: 1;
-
-        img{
-            transform: rotate(-90deg);
-        }
-    }
-    #network-address{
-        display: block;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 140px;
-        transform: rotate();
-    }
-    .bottom-line{
-        display: block;
-        width: 60%;
-        height: 7px;
-        border-radius: 120px;
-        background-color: $main_blue;
-        bottom: -3px;
-        z-index: -1;
-    }
-}
-
 .coin-details{
     margin-bottom: 60px;
+    @include flex(column, none, center, none);
+
     span{
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: 2rem;
-        color: $small-title;
+        @include typography(1.8rem, 500, $small-title, 2rem);
     }
     
     .wallet-balance{
         #balance{
-            font-size: 3.2rem;
-            font-weight: 700;
-            color: #fff;
-            line-height: 3.2rem;
+            @include typography(3.2rem, 700, $white_text, 3.2rem);
         }
     }
-
     #received-name{
-        color: #fff;
+        color: $white_text;
+    }
+}
+
+.navigateBtn{
+    @include CommonNavigate();
+
+    #network-type{
+        margin-top: -40px;
+        @include typography(1.8rem, 500, $small-title, none);
+    }
+    img{
+        transform: rotate(-90deg);
+    }
+    #navigateText{
+        width: 140px !important;
     }
 }
 
 .head-span{
-    font-size: 1.8rem;
-    color: $small-title;
-    font-weight: 500;
+    @include typography(1.8rem, 500, $small-title, none);
 }
 
 #share-btn{
     margin-top: 40px;
     padding: 15px 39px;
     border-radius: 25px;
-    font-size: 1.6rem;
-    font-weight: 700;
+    @include typography(1.6rem, 700, none, none);
     box-shadow: 0 0 15px #0C61EC57;
 }
 
@@ -125,16 +85,15 @@ nav.mini-nav{
 
 .receive-add{
     margin-top: 40px;
-    gap: 20px;
+    @include flex(column, none, center, 20px);
+
     #qr-code{
         width: 170px;
         height: 170px;
     }
 
     #dest-link{
-        font-size: 1.6rem;
-        font-weight: 500;
-        color: $small-title;
+        @include typography(1.6rem, 500, $small-title, none);
     }
 
     #copyBtn{
@@ -142,5 +101,6 @@ nav.mini-nav{
         width: 100%;
         padding: 20px 0;
         border-radius: 25px;
+        @include flex(row, center, none, none);
     }
 }
