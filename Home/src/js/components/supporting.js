@@ -1,5 +1,5 @@
 const getSupporting = `
-       <section id="support" class="position-relative container-full ">
+       <section id="support" class="position-relative container-full  ">
         <div class="container-fluid ">
             <div class="row">
                 <div
@@ -133,6 +133,12 @@ const getSupporting = `
             </div>
 
             <!-- end of third row -->
+
+           <!-- left & right shadow -->
+              <div class="shadow-img-wrapper position-absolute w-100 d-flex justify-content-between align-items-center">
+                <img class="left" src="./src/assets/Home_assets/Ellipse-left.png" alt="shadow-left">
+                <img class="right" src="./src/assets/Home_assets/Ellipse-right.png" alt="shadow-right">
+               </div>
 
             <div class="row mt-5">
                 <div class="btn-container mb-4 d-flex justify-content-center align-items-center gap-4">

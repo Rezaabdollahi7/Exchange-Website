@@ -487,4 +487,764 @@ nav.mini-nav .setting-around {
   vertical-align: middle;
 }
 
+#buyModal {
+  background-color: #14121c;
+  scrollbar-width: thin;
+  scrollbar-color: #888;
+}
+#buyModal::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+#buyModal::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+#buyModal::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+#buyModal::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+#buyModal .modal-dialog {
+  margin: 0 auto;
+}
+#buyModal .modal-content {
+  background: #14121c;
+  max-width: 380px;
+  margin: 0 auto;
+}
+#buyModal .modal-body {
+  padding: 0;
+}
+#buyModal nav.mini-nav {
+  margin: 36px 0;
+}
+#buyModal nav.mini-nav .setting-around {
+  padding: 15px;
+  background-color: #26272B;
+  cursor: pointer;
+}
+#buyModal nav.mini-nav h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#buyModal .wallet-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+}
+#buyModal .wallet-details span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: 2rem;
+}
+#buyModal .wallet-details .wallet-balance #buy-balance {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 3.2rem;
+}
+#buyModal .head-span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+}
+#buyModal #buy-navigateBtn {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: none;
+  border-radius: 21px;
+  z-index: 1;
+  border: 1px solid gray;
+  text-align: center;
+  position: relative;
+}
+#buyModal #buy-navigateBtn img {
+  transform: rotate(-90deg);
+}
+#buyModal #buy-navigateBtn a {
+  padding: 15px 46px 15px 46px;
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(3px);
+  border-radius: 21px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 8px;
+}
+#buyModal #buy-navigateBtn #buy-navigateText {
+  width: 140px !important;
+}
+#buyModal section.countSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  padding: 20px;
+  background-color: #27282E;
+  border-radius: 30px;
+}
+#buyModal section.countSection .input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  background-color: #303134;
+  border-radius: 25px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  height: 55px;
+}
+#buyModal section.countSection .input-container #buy-walletInput {
+  background-color: transparent;
+  border: none;
+  stroke: none;
+  color: #fff;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 20px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  -moz-appearance: textfield;
+}
+#buyModal section.countSection .input-container .wallet-svg {
+  flex-shrink: 0;
+}
+#buyModal section.countSection .input-container .buy-dollar-sign {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: none;
+  line-height: none;
+  opacity: 0;
+  margin-left: 20px;
+}
+#buyModal section.countSection .input-container .buy-dollar-sign.focus {
+  opacity: 1;
+}
+#buyModal section.countSection .input-container #buy-wallet-icon.focus {
+  fill: #006FFF;
+}
+#buyModal section.countSection .quick-select button {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #848586;
+  line-height: none;
+  border-radius: 20px;
+  border: 1px solid rgba(140, 140, 171, 0.2);
+  padding: 12px 0;
+  transition: all linear 0.3s;
+}
+#buyModal section.countSection .quick-select button:hover {
+  color: #006FFF;
+  border-color: #006FFF;
+}
+#buyModal .input-container.focus {
+  border-color: #006FFF !important;
+}
+#buyModal #buy-btn,
+#buyModal #currency-btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: none;
+  line-height: none;
+  margin-top: 30px;
+  padding: 15px 39px;
+  border-radius: 25px;
+  box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
+}
+#buyModal section.pop-up-background {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  z-index: 90;
+  padding: 0 20px;
+}
+#buyModal section.pop-up-background .pop-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  background-color: #27282E;
+  border-radius: 30px;
+  padding: 25px 30px 0px;
+}
+#buyModal section.pop-up-background .pop-up #currency-input {
+  background-color: transparent;
+  border: none;
+  stroke: none;
+  color: #fff;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 20px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  -moz-appearance: textfield;
+  margin-left: 20px;
+}
+#buyModal section.pop-up-background .pop-up .input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  background-color: #303134;
+  border-radius: 25px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+}
+#buyModal section.pop-up-background .pop-up #search-svg {
+  flex-shrink: 0 !important;
+}
+#buyModal section.pop-up-background .pop-up .checkboxes {
+  padding: 20px 6px;
+}
+#buyModal section.pop-up-background .pop-up .checkbox-container {
+  overflow-y: scroll;
+  max-height: 230px;
+}
+#buyModal section.pop-up-background .pop-up .form-check {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+#buyModal section.pop-up-background .pop-up .form-check-input {
+  width: 25px;
+  height: 25px;
+  border-radius: 7px;
+}
+#buyModal section.pop-up-background .pop-up .form-check-input:checked {
+  background-color: #006FFF;
+  border-color: #006FFF;
+}
+#buyModal section.pop-up-background .pop-up .form-check-label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+  margin-left: 15px;
+}
+#buyModal section.pop-up-background .pop-up .xmark {
+  border-radius: 100%;
+  background-color: #303134;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  color: #848586;
+  align-self: flex-end;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#buyModal .fa-solid {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+#receiveModal {
+  background-color: #14121c;
+}
+#receiveModal .modal-dialog {
+  margin: 0 auto;
+}
+#receiveModal .modal-content {
+  background: #14121c;
+  max-width: 380px;
+  margin: 0 auto;
+}
+#receiveModal .modal-body {
+  padding: 0;
+}
+#receiveModal nav.mini-nav {
+  margin: 36px 0;
+}
+#receiveModal nav.mini-nav .setting-around {
+  padding: 15px;
+  background-color: #26272B;
+  cursor: pointer;
+}
+#receiveModal nav.mini-nav h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#receiveModal #rec-navigateBtn {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: none;
+  border-radius: 21px;
+  z-index: 1;
+  border: 1px solid gray;
+  text-align: center;
+  position: relative;
+}
+#receiveModal #rec-navigateBtn img {
+  transform: rotate(-90deg);
+}
+#receiveModal #rec-navigateBtn a {
+  padding: 15px 46px 15px 46px;
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(3px);
+  border-radius: 21px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 8px;
+}
+#receiveModal #rec-navigateBtn #rec-navigateText {
+  width: 140px !important;
+}
+#receiveModal .coin-details {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+}
+#receiveModal .coin-details span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: 2rem;
+}
+#receiveModal .coin-details .wallet-balance #balance {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 3.2rem;
+}
+#receiveModal .coin-details #received-name {
+  color: #FFFFFF;
+}
+#receiveModal .navigateBtn {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: none;
+  border-radius: 21px;
+  z-index: 1;
+}
+#receiveModal .navigateBtn #navigateLinker {
+  padding: 15px 46px 15px 46px;
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(3px);
+  border-radius: 21px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 8px;
+}
+#receiveModal .navigateBtn #navigateText {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 170px;
+}
+#receiveModal .navigateBtn .bottom-blue-line {
+  display: block;
+  width: 60%;
+  height: 7px;
+  border-radius: 120px;
+  background-color: #006FFF;
+  bottom: -3px;
+  z-index: -1;
+}
+#receiveModal .navigateBtn #network-type {
+  margin-top: -40px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+}
+#receiveModal .navigateBtn img {
+  transform: rotate(-90deg);
+}
+#receiveModal .navigateBtn #navigateText {
+  width: 140px !important;
+}
+#receiveModal .head-span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+}
+#receiveModal #rec-share-btn {
+  padding: 15px 39px;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: none;
+  line-height: none;
+  box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
+}
+#receiveModal .fa-solid {
+  font-family: "Font Awesome 6 Free" !important;
+}
+#receiveModal .receive-add {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: 20px;
+}
+#receiveModal .receive-add #qr-code {
+  width: 160px;
+  height: 160px;
+}
+#receiveModal .receive-add #rec-dest-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+}
+#receiveModal .receive-add #rec-copyBtn {
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  width: 100%;
+  padding: 13px 0;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+}
+
+#sendModal {
+  background-color: #14121c;
+}
+#sendModal .modal-dialog {
+  margin: 0 auto;
+}
+#sendModal .modal-content {
+  background: #14121c;
+  max-width: 380px;
+  margin: 0 auto;
+}
+#sendModal .modal-body {
+  padding: 0;
+}
+#sendModal nav.mini-nav {
+  margin: 36px 0;
+}
+#sendModal nav.mini-nav .setting-around {
+  padding: 15px;
+  background-color: #26272B;
+  cursor: pointer;
+}
+#sendModal nav.mini-nav h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sendModal #send-navigateBtn {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: none;
+  border-radius: 21px;
+  z-index: 1;
+  border: 1px solid gray;
+  text-align: center;
+  position: relative;
+}
+#sendModal #send-navigateBtn img {
+  transform: rotate(-90deg);
+}
+#sendModal #send-navigateBtn a {
+  padding: 15px 46px 15px 46px;
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(3px);
+  border-radius: 21px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 8px;
+}
+#sendModal #send-navigateBtn #send-navigateText {
+  width: 200px !important;
+}
+#sendModal .wallet-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  margin-bottom: 50px;
+}
+#sendModal .wallet-details span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: 2rem;
+}
+#sendModal .wallet-details .wallet-balance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+}
+#sendModal .wallet-details .wallet-balance #send-balance {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 3.2rem;
+}
+#sendModal .navigateBtn {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: none;
+  border-radius: 21px;
+  z-index: 1;
+}
+#sendModal .navigateBtn #navigateLinker {
+  padding: 15px 46px 15px 46px;
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(3px);
+  border-radius: 21px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 8px;
+}
+#sendModal .navigateBtn #navigateText {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 170px;
+}
+#sendModal .navigateBtn .bottom-blue-line {
+  display: block;
+  width: 60%;
+  height: 7px;
+  border-radius: 120px;
+  background-color: #006FFF;
+  bottom: -3px;
+  z-index: -1;
+}
+#sendModal .navigateBtn #send-network-type {
+  margin-top: -40px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+}
+#sendModal .navigateBtn img {
+  transform: rotate(-90deg);
+}
+#sendModal .navigateBtn #send-navigateText {
+  width: 140px !important;
+}
+#sendModal .head-span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+}
+#sendModal .input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  background-color: #303134;
+  border-radius: 25px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  background-color: #27282E !important;
+}
+#sendModal .input-container #send-walletInput,
+#sendModal .input-container #send-amountInput {
+  background-color: transparent;
+  border: none;
+  stroke: none;
+  color: #fff;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 20px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  -moz-appearance: textfield;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.8rem;
+}
+#sendModal .input-container .wallet-svg {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+#sendModal .input-container #send-wallet-icon.focus,
+#sendModal .input-container #money-icon.focus {
+  fill: #006FFF;
+}
+#sendModal .send-input-container.focus {
+  border-color: #006FFF !important;
+}
+#sendModal #send-btn {
+  margin-top: 40px;
+  padding: 15px 39px;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: none;
+  line-height: none;
+  box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
+}
+#sendModal .fa-solid {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+#swapModal {
+  background-color: #14121c;
+}
+#swapModal .modal-dialog {
+  margin: 0 auto;
+}
+#swapModal .modal-content {
+  background: #14121c;
+  max-width: 380px;
+  margin: 0 auto;
+}
+#swapModal .modal-body {
+  padding: 0;
+}
+#swapModal nav.mini-nav {
+  margin: 26px 0 0 0;
+}
+#swapModal nav.mini-nav .setting-around {
+  padding: 15px;
+  background-color: #26272b;
+  cursor: pointer;
+}
+#swapModal nav.mini-nav h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#swapModal .head-span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #848586;
+}
+#swapModal .exchange .currency-name {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #fff;
+}
+#swapModal .exchange .currency-wallet-amount {
+  font-weight: 700;
+  font-size: 3.7rem;
+  color: #fff;
+}
+#swapModal .exchange .currency-status {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #F65556;
+}
+#swapModal .exchange .currency-container {
+  padding: 22px;
+  background-color: #27282E;
+  border-radius: 25px;
+}
+#swapModal .exchange .currency-container#you-pay-section {
+  border-bottom: 1px solid #006FFF;
+}
+#swapModal .exchange .currency-container#you-receive-section {
+  border-top: 1px solid #006FFF;
+}
+#swapModal .exchange .changeBtnAround {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  bottom: -106px;
+  z-index: 999;
+}
+#swapModal .exchange .changeBtnAround .changeBtnBack {
+  background-color: #006FFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 54px 10px #006FFF;
+  cursor: pointer;
+}
+#swapModal .exchange-fee .fee-numbers {
+  padding-right: 15px;
+}
+#swapModal .exchange-fee .fee-numbers span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+#swapModal #exchange-btn {
+  margin-top: 10px;
+  padding: 10px 39px;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
+}
+#swapModal .fa-solid {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
 /*# sourceMappingURL=main.css.map */
