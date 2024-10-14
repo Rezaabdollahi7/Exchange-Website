@@ -677,3 +677,122 @@ nav.mini-nav {
     font-family: "Font Awesome 6 Free" !important;
   }
 }
+
+#swapModal {
+  background-color: #14121c;
+  .modal-dialog {
+    margin: 0 auto;
+  }
+  .modal-content {
+    background: #14121c;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .modal-body {
+    padding: 0;
+  }
+  nav.mini-nav {
+    margin: 26px 0 0 0;
+
+    .setting-around {
+      padding: 15px;
+      background-color: #26272b;
+      cursor: pointer;
+    }
+    h1 {
+      color: #fff;
+      font-size: 2.4rem;
+      font-weight: 700;
+      height: 57px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .head-span {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $small-title;
+  }
+
+  .exchange {
+    .currency-name {
+      font-weight: 500;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+    .currency-wallet-amount {
+      font-weight: 700;
+      font-size: 3.7rem;
+      color: #fff;
+    }
+    .currency-status {
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: $fail-red;
+    }
+
+    .currency-container {
+      padding: 22px;
+      background-color: $part-back-gray;
+      border-radius: 25px;
+    }
+    .currency-container#you-pay-section {
+      border-bottom: 1px solid $main_blue;
+    }
+    .currency-container#you-receive-section {
+      border-top: 1px solid $main_blue;
+    }
+
+    .changeBtnAround {
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(20px);
+      bottom: -106px;
+      z-index: 999;
+      // background: radial-gradient();
+
+      .changeBtnBack {
+        background-color: $main_blue;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 54px 10px $main_blue;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .exchange-fee {
+    .fee-numbers {
+      padding-right: 15px;
+
+      span {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff;
+      }
+    }
+  }
+
+  #exchange-btn {
+    margin-top: 10px;
+    padding: 10px 39px;
+    border-radius: 25px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    box-shadow: 0 0 15px #0c61ec57;
+  }
+
+  .fa-solid {
+    font-family: "Font Awesome 6 Free" !important;
+  }
+}

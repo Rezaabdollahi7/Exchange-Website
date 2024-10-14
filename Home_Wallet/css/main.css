@@ -1143,4 +1143,108 @@ nav.mini-nav .setting-around {
   font-family: "Font Awesome 6 Free" !important;
 }
 
+#swapModal {
+  background-color: #14121c;
+}
+#swapModal .modal-dialog {
+  margin: 0 auto;
+}
+#swapModal .modal-content {
+  background: #14121c;
+  max-width: 380px;
+  margin: 0 auto;
+}
+#swapModal .modal-body {
+  padding: 0;
+}
+#swapModal nav.mini-nav {
+  margin: 26px 0 0 0;
+}
+#swapModal nav.mini-nav .setting-around {
+  padding: 15px;
+  background-color: #26272b;
+  cursor: pointer;
+}
+#swapModal nav.mini-nav h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#swapModal .head-span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #848586;
+}
+#swapModal .exchange .currency-name {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #fff;
+}
+#swapModal .exchange .currency-wallet-amount {
+  font-weight: 700;
+  font-size: 3.7rem;
+  color: #fff;
+}
+#swapModal .exchange .currency-status {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #F65556;
+}
+#swapModal .exchange .currency-container {
+  padding: 22px;
+  background-color: #27282E;
+  border-radius: 25px;
+}
+#swapModal .exchange .currency-container#you-pay-section {
+  border-bottom: 1px solid #006FFF;
+}
+#swapModal .exchange .currency-container#you-receive-section {
+  border-top: 1px solid #006FFF;
+}
+#swapModal .exchange .changeBtnAround {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  bottom: -106px;
+  z-index: 999;
+}
+#swapModal .exchange .changeBtnAround .changeBtnBack {
+  background-color: #006FFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 54px 10px #006FFF;
+  cursor: pointer;
+}
+#swapModal .exchange-fee .fee-numbers {
+  padding-right: 15px;
+}
+#swapModal .exchange-fee .fee-numbers span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+#swapModal #exchange-btn {
+  margin-top: 10px;
+  padding: 10px 39px;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
+}
+#swapModal .fa-solid {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -307,18 +307,87 @@
         <div class="modal fade" id="swapModal" tabindex="-1" aria-labelledby="swapModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="swapModalLabel">تبدیل</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+                    <!-- body -->
                     <div class="modal-body">
-                        <!-- محتوای مودال تبدیل را اینجا قرار دهید -->
-                        <p>فرم تبدیل ارز در اینجا قرار می‌گیرد.</p>
+                        <nav class="mini-nav container p-0">
+                            <div class="text-center position-relative">
+                                <h1 class="head-name">Exchange</h1>
+                                <i class="setting-around rounded-pill position-absolute end-0 top-0"
+                                    id="setting-button">
+                                    <img src="../../../Common/commonAssets/Settings.svg" alt="setting">
+                                </i>
+                            </div>
+                        </nav>
+                        <section class="exchange">
+                            <span class="head-span">
+                                You Pay
+                            </span>
+                            <div class="currency-container my-2 position-relative" id="you-pay-section">
+                                <div class="coinbox">
+                                    <div class="coinbox__head d-flex align-items-center gap-4 mb-4">
+                                        <img src="./assets/Bitcoin.svg" alt="for-pay-currency" width="59px"
+                                            height="59px">
+                                        <span id="pay-currency" class="currency-name">Bitcoin <i
+                                                class="fa-solid fa-caret-down"></i></span>
+                                    </div>
+                                    <div class="coinbox__wallet d-flex flex-column">
+                                        <span class="currency-wallet-amount w-100 position-relative"
+                                            id="pay-currency__wallet">5.211321 <span
+                                                class="currency-status position-absolute top-50 end-0 translate-middle"
+                                                id="pay-currency__status"><i class="fa-solid fa-xl fa-caret-down"></i>
+                                                -15%</span></span>
+                                        <span id="pay-currency__total" class="head-span">$20.021</span>
+                                    </div>
+                                </div>
+                                <img id="pay-back" class="position-absolute end-0 top-0" src="./assets/btcback.svg"
+                                    alt="back-icon">
+                                <div class="changeBtnAround position-absolute start-50 translate-middle">
+                                    <div class="changeBtnBack">
+                                        <img src="./assets/left-right.svg" alt="arrows">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="head-span">
+                                You Receive
+                            </span>
+                            <div class="currency-container my-4 position-relative" id="you-receive-section">
+                                <div class="coinbox">
+                                    <div class="coinbox__head d-flex align-items-center gap-4 mb-4">
+                                        <img src="./assets/Ethereum.svg" alt="t=for-receive-currency" width="59px"
+                                            height="59px">
+                                        <span id="receive-currency" class="currency-name">Ethereum <i
+                                                class="fa-solid fa-caret-down"></i></span>
+                                    </div>
+                                    <div class="coinbox__wallet d-flex flex-column">
+                                        <span class="currency-wallet-amount w-100 position-relative"
+                                            id="receive-currency__wallet">5.211321
+                                            <span
+                                                class="currency-status position-absolute top-50 end-0 translate-middle"
+                                                id="receive-currency__status"><i
+                                                    class="fa-solid fa-xl fa-caret-down"></i> -15%</span></span>
+                                        <span id="receive-currency__total" class="head-span">$20.021</span>
+                                    </div>
+                                </div>
+                                <img id="receive-back" class="position-absolute end-0 top-0" src="./assets/ethBack.svg"
+                                    alt="back-icon">
+                            </div>
+                        </section>
+                        <section class="exchange-fee mb-4">
+                            <span class="head-span">
+                                Exchange fee
+                            </span>
+                            <div class="fee-numbers d-flex justify-content-between mt-2">
+                                <span id="fee-percent">
+                                    0.010%
+                                </span>
+                                <span id="fee-amount">
+                                    $40
+                                </span>
+                            </div>
+                        </section>
+                        <button type="button" class="btn btn-primary w-100" id="exchange-btn">Exchange</button>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
-                        <button type="button" class="btn btn-primary">تأیید تبدیل</button>
-                    </div>
+                    <!-- -------- -->
                 </div>
             </div>
         </div>
