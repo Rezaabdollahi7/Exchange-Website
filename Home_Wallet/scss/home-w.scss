@@ -170,3 +170,238 @@ nav.mini-nav {
     vertical-align: middle;
   }
 }
+
+#buyModal {
+  background-color: #14121c;
+  .modal-dialog {
+    margin: 0 auto;
+  }
+  .modal-content {
+    background: #14121c;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .modal-body {
+    padding: 0;
+  }
+  scrollbar-width: thin;
+  scrollbar-color: #888 #13111d;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  nav.mini-nav {
+    margin: 36px 0;
+
+    .setting-around {
+      padding: 15px;
+      background-color: $setting_back;
+      cursor: pointer;
+    }
+    h1 {
+      color: #fff;
+      font-size: 2.4rem;
+      font-weight: 700;
+      height: 57px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .wallet-details {
+    @include flex(column, none, center, none);
+    span {
+      @include typography(1.8rem, 500, $small-title, 2rem);
+    }
+
+    .wallet-balance {
+      #buy-balance {
+        @include typography(3.2rem, 700, $white_text, 3.2rem);
+      }
+    }
+  }
+
+  .head-span {
+    @include typography(1.8rem, 500, $small-title, none);
+  }
+
+  #buy-navigateBtn {
+    background-color: rgba(255, 255, 255, 0.0509803922);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: none;
+    border-radius: 21px;
+    z-index: 1;
+    border: 1px solid gray;
+    text-align: center;
+    position: relative;
+    img {
+      transform: rotate(-90deg);
+    }
+    a {
+      padding: 15px 46px 15px 46px;
+      border: 1px solid rgba(255, 255, 255, 0.1411764706);
+      backdrop-filter: blur(3px);
+      border-radius: 21px;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: none;
+      gap: 8px;
+    }
+    #buy-navigateText {
+      width: 140px !important;
+    }
+  }
+
+  section.countSection {
+    @include flex(column, none, center, none);
+    padding: 20px;
+    background-color: $part-back-gray;
+    border-radius: 30px;
+
+    .input-container {
+      @include flex(row, none, center, none);
+      @include inputContainer();
+      height: 55px;
+      #buy-walletInput {
+        @include inputStyle();
+      }
+
+      .wallet-svg {
+        flex-shrink: 0;
+      }
+
+      .buy-dollar-sign {
+        @include typography(1.6rem, 700, none, none);
+        opacity: 0;
+        margin-left: 20px;
+      }
+
+      .buy-dollar-sign.focus {
+        opacity: 1;
+      }
+
+      #buy-wallet-icon.focus {
+        fill: $main_blue;
+      }
+    }
+
+    .quick-select {
+      button {
+        @include typography(2.4rem, 700, $small-title, none);
+        border-radius: 20px;
+        border: 1px solid #8c8cab33;
+        padding: 12px 0;
+        transition: all linear 0.3s;
+      }
+      button:hover {
+        color: $main_blue;
+        border-color: $main_blue;
+      }
+    }
+  }
+
+  .input-container.focus {
+    border-color: $main_blue !important;
+  }
+
+  #buy-btn,
+  #currency-btn {
+    @include typography(1.6rem, 700, none, none);
+    margin-top: 30px;
+    padding: 15px 39px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px #0c61ec57;
+  }
+
+  section.pop-up-background {
+    @include flex(row, center, center, none);
+    z-index: 90;
+    padding: 0 20px;
+
+    .pop-up {
+      @include flex(column, none, center, none);
+      background-color: $part-back-gray;
+      border-radius: 30px;
+      padding: 25px 30px 0px;
+
+      #currency-input {
+        @include inputStyle();
+        margin-left: 20px;
+      }
+
+      .input-container {
+        @include flex(row, none, center, none);
+        @include inputContainer();
+      }
+
+      #search-svg {
+        flex-shrink: 0 !important;
+      }
+
+      .checkboxes {
+        padding: 20px 6px;
+      }
+
+      .checkbox-container {
+        overflow-y: scroll;
+        max-height: 230px;
+      }
+      .form-check {
+        width: 100%;
+        display: flex;
+        margin-bottom: 30px;
+      }
+      .form-check-input {
+        width: 25px;
+        height: 25px;
+        border-radius: 7px;
+      }
+      .form-check-input:checked {
+        background-color: $main_blue;
+        border-color: $main_blue;
+      }
+
+      .form-check-label {
+        @include typography(1.6rem, 500, $small-title, none);
+        margin-left: 15px;
+      }
+
+      .xmark {
+        border-radius: 100%;
+        background-color: #303134;
+        width: 35px;
+        height: 35px;
+        @include flex(row, center, center, none);
+        color: $small-title;
+        align-self: flex-end;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .fa-solid {
+    font-family: "Font Awesome 6 Free" !important;
+  }
+}

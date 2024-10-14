@@ -1,8 +1,11 @@
-const controlSegment = `<div class="control-segment p-1">
+const controlSegment = `
+ <div class="control-segment p-1">
             <button type="button" id="cryptoBtn" class="btn btn-toggle active">Crypto</button>
-            <button type="button" id="nftBtn" class="btn btn-toggle inactive">NFT <span class="badge rounded-pill" id="badge">2</span></button>
+            <button type="button" id="nftBtn" class="btn btn-toggle inactive">NFT <span class="badge rounded-pill"
+                    id="badge">2</span></button>
         </div>
-        <div class="coins-section mt-5">
+        
+ <div class="coins-section mt-5">
             <div class="coin">
                 <div class="coin_details">
                     <img src="assets/Bitcoin.svg" alt="bitcoin" width="40px" height="40px">
@@ -99,6 +102,8 @@ const controlSegment = `<div class="control-segment p-1">
                     </div>
                 </div>
             </div>
-        </div>`
+        </div>
+        
+        `
 
 export default controlSegment
