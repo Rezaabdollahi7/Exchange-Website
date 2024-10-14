@@ -1,169 +1,172 @@
 @import "../../Common/chartMaker/chart.scss";
 
-html{
-    font-size: 62.5% !important; //this makes each rem to be 10px when the font size of browser has been set to 16px
-    height: auto !important;
+html {
+  font-size: 62.5% !important; //this makes each rem to be 10px when the font size of browser has been set to 16px
+  height: auto !important;
 }
-body{
-    background: $body_background;
-    background-repeat: no-repeat;
-    height: auto !important;
-    min-height: 100vh !important;
+body {
+  background: #14121c;
+  background-repeat: no-repeat;
+  height: auto !important;
+  min-height: 100vh !important;
 }
-main{
-    max-width: 430px;
-    padding: 36px 25px;
-    background: linear-gradient(to bottom, $main_background_from, $main_background_to);
-    background-repeat: no-repeat;
+main {
+  max-width: 380px;
+  padding: 36px 25px;
+  background: linear-gradient(
+    to bottom,
+    $main_background_from,
+    $main_background_to
+  );
+  background-repeat: no-repeat;
 }
-nav.mini-nav{
-    margin-bottom: 30px;
+nav.mini-nav {
+  margin-bottom: 30px;
 
-    .setting-around{
-        padding: 15px;
-        background-color: $setting_back;
-        cursor: pointer;
-    }
-}
-
-.navigateBtn{
-    @include CommonNavigate();
-}
-
-.wallet-details{
-    @include flex(column, none, none, none);
-    span{
-        @include typography(1.8rem, 500, $small-title, none);
-    }
-    
-    .wallet-balance{
-        @include flex(row, space-between, none, none);
-        #balance{
-            @include typography(3.2rem, 700, $white_text, 3.2rem);
-
-        }
-        #balance-status{
-            font-size: 1.4rem;
-        }
-        #balance-status.up{
-            color: $success-green;
-        }
-        #balance-status.down{
-            color: $fail-red;
-        }
-    }
+  .setting-around {
+    padding: 15px;
+    background-color: $setting_back;
+    cursor: pointer;
+  }
 }
 
-.interaction-btns{
+.navigateBtn {
+  @include CommonNavigate();
+}
+
+.wallet-details {
+  @include flex(column, none, none, none);
+  span {
+    @include typography(1.8rem, 500, $small-title, none);
+  }
+
+  .wallet-balance {
     @include flex(row, space-between, none, none);
-    .wallet-btn{
-        @include flex(row, center, center, none);
-        width: 57px;
-        height: 57px;
-        border: 1px solid #ffffff08;
-        background-color: $primary_back_gray;
-        border-radius: 100%;
-        border-top: 1px solid #006eff47;
-        backdrop-filter: blur(3px);
+    #balance {
+      @include typography(3.2rem, 700, $white_text, 3.2rem);
     }
-    .interBtn_container{
-        span{
-            @include typography(1.4rem, 700, $white_text, 1.8rem)
-        }
+    #balance-status {
+      font-size: 1.4rem;
     }
+    #balance-status.up {
+      color: $success-green;
+    }
+    #balance-status.down {
+      color: $fail-red;
+    }
+  }
 }
 
-.control-segment{
-    background-color: #26272B;
+.interaction-btns {
+  @include flex(row, space-between, none, none);
+  .wallet-btn {
+    @include flex(row, center, center, none);
+    width: 57px;
+    height: 57px;
+    border: 1px solid #ffffff08;
+    background-color: $primary_back_gray;
+    border-radius: 100%;
+    border-top: 1px solid #006eff47;
+    backdrop-filter: blur(3px);
+  }
+  .interBtn_container {
+    span {
+      @include typography(1.4rem, 700, $white_text, 1.8rem);
+    }
+  }
+}
+
+.control-segment {
+  background-color: #26272b;
+  border-radius: 25px;
+  height: 60px;
+  margin-top: 40px;
+
+  .btn-toggle {
+    width: calc(50% - 2px);
+    height: 100%;
     border-radius: 25px;
-    height: 60px;
-    margin-top: 40px;
+    border: none !important;
+    @include typography(1.6rem, none, none, 2.4rem);
 
-    .btn-toggle{
-        width: calc(50% - 2px);
-        height: 100%;
-        border-radius: 25px;
-        border: none !important;
-        @include typography(1.6rem, none, none, 2.4rem);
-
-        .badge{
-            background-color: #E4761B;
-            @include typography(1.4rem, 400, none, none);
-            margin-left: 5px;
-        }
+    .badge {
+      background-color: #e4761b;
+      @include typography(1.4rem, 400, none, none);
+      margin-left: 5px;
     }
-    .btn-toggle.active{
-        background-color: $main_blue;
-        color: $white_text;
-        font-weight: 700;
-    }
-    .btn-toggle.inactive{
-        color: $small-title;
-        font-weight: 500;
-    }
+  }
+  .btn-toggle.active {
+    background-color: $main_blue;
+    color: $white_text;
+    font-weight: 700;
+  }
+  .btn-toggle.inactive {
+    color: $small-title;
+    font-weight: 500;
+  }
 }
 
-.coins-section{
+.coins-section {
+  @include flex(column, none, none, 8px);
+}
+.coin {
+  height: 64px;
+  @include flex(row, space-between, none, none);
+
+  .coin_details {
+    @include flex(row, none, center, 16px);
+  }
+  .coin_details_text {
     @include flex(column, none, none, 8px);
-}
-.coin{
-    height: 64px;
-    @include flex(row, space-between, none, none);
 
-    .coin_details{
-        @include flex(row, none, center, 16px);
+    .coin-name {
+      @include typography(1.4rem, 700, $white_text, 1.9rem);
     }
-    .coin_details_text{
-        @include flex(column, none, none, 8px);
+    abbr {
+      @include typography(1.2rem, 400, $small-title, none);
+      text-decoration: none !important;
+    }
+  }
+  .coinMarket {
+    @include flex(row, none, center, 22px);
+  }
+  .coinWorth {
+    .coinPrice {
+      @include flex(column, none, none, 8px);
+      @include typography(1.4rem, 700, $white_text, 1.9rem);
+    }
+    .coinStatus {
+      font-size: 1.2rem;
+      text-align: right;
+    }
+    .coinStatus.up {
+      color: $success-green;
+    }
+    .coinStatus.down {
+      color: $fail-red;
+    }
+  }
+  .chartCont {
+    width: 70px;
+  }
 
-        .coin-name{
-            @include typography(1.4rem, 700, $white_text, 1.9rem);
-        }
-        abbr{
-            @include typography(1.2rem, 400, $small-title, none);
-            text-decoration: none !important;
-        }
-    }
-    .coinMarket{
-        @include flex(row, none, center, 22px);
-    }
-    .coinWorth{
-        .coinPrice{
-            @include flex(column, none, none, 8px);
-            @include typography(1.4rem, 700, $white_text, 1.9rem);
-        }
-        .coinStatus{
-            font-size: 1.2rem;
-            text-align: right;
-        }
-        .coinStatus.up{
-            color: $success-green;
-        }
-        .coinStatus.down{
-            color: $fail-red;
-        }
-    }
-    .chartCont{
-        width: 70px;
-    }
-
-    .apexcharts-canvas.increase{
-        @include colorPicker($success-green);
-    }
-    .apexcharts-canvas.decrease{
-        @include colorPicker($fail-red);
-    }
-    .apexcharts-canvas.equal{
-        @include colorPicker(#ccd911);
-    }
+  .apexcharts-canvas.increase {
+    @include colorPicker($success-green);
+  }
+  .apexcharts-canvas.decrease {
+    @include colorPicker($fail-red);
+  }
+  .apexcharts-canvas.equal {
+    @include colorPicker(#ccd911);
+  }
 }
 
 #balance-status {
-    i{
-        font-family: "Font Awesome 6 Free" !important;
-        margin-right: 5px;
-    }
-    i.fa-caret-up{
-        vertical-align: middle;
-    }
+  i {
+    font-family: "Font Awesome 6 Free" !important;
+    margin-right: 5px;
+  }
+  i.fa-caret-up {
+    vertical-align: middle;
+  }
 }
