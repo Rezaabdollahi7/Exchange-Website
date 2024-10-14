@@ -194,17 +194,47 @@
         <div class="modal fade" id="receiveModal" tabindex="-1" aria-labelledby="receiveModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="receiveModalLabel">دریافت</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+                    <!-- body -->
                     <div class="modal-body">
-                        <!-- محتوای مودال دریافت را اینجا قرار دهید -->
-                        <p>اطلاعات مربوط به دریافت ارز در اینجا قرار می‌گیرد.</p>
+                        <nav class="mini-nav container p-0">
+                            <div class="text-center position-relative">
+                                <h1 class="head-name">Receive</h1>
+                                <i class="setting-around rounded-pill position-absolute end-0 top-0"
+                                    id="setting-button">
+                                    <img src="../../../Common/commonAssets/Settings.svg" alt="setting">
+                                </i>
+                            </div>
+                        </nav>
+
+                        <div class="coin-details">
+                            <img id="received-icon" src="./assets/Ethereum.svg" alt="Ethereum_icon">
+                            <span id="received-name" class="">ETH</span>
+                        </div>
+
+                        <div class="navigateBtn text-center position-relative" id="rec-navigateBtn">
+                            <span class="position-absolute start-50 translate-middle-x" id="network-type">Network
+                                type</span>
+                            <a href="#" id="rec-navigateLinker" class="w-full h-full"><span id="rec-navigateText">USD (
+                                    US Dollar )</span><img src="./assets/DownArrow.svg" alt="arrow_down"></a>
+                            <div class="bottom-blue-line position-absolute start-50 translate-middle-x"></div>
+                        </div>
+
+                        <section class="receive-add">
+                            <div id="qr-code-container">
+                                <img id="qr-code" src="./assets/Qrcode.svg" alt="QR-CODE">
+                            </div>
+                            <span id="rec-dest-link">
+                                1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71
+                            </span>
+                            <div id="rec-copyBtn" type="button">
+                                <img src="./assets/Frame.svg" alt="COPY">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" id="rec-share-btn">Share</button>
+                        </section>
+
+
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
-                    </div>
+                    <!-- body -->
                 </div>
             </div>
         </div>
@@ -262,6 +292,7 @@
     <!-- main js -->
     <script src="./js/main.js" type="module"></script>
     <script>
+        //buy modal
         document.addEventListener('DOMContentLoaded', () => {
             const buyModal = document.getElementById('buyModal');
             if (buyModal) {
@@ -311,14 +342,28 @@
                     });
                 }
 
-              
+
                 if (xmark && pop_up) {
                     xmark.addEventListener('click', () => {
                         pop_up.classList.toggle('d-none');
                     });
                 }
             }
+
+            //rec modal
+            const copyAddress = document.querySelector('#rec-dest-link');
+            const copyButton = document.querySelector("#rec-copyBtn");
+
+
+            copyButton.addEventListener('click', () => {
+                const text = copyAddress.textContent.trim();
+                navigator.clipboard.writeText(text);
+                alert("Copied text: " + text);
+            })
         });
+
+
+
     </script>
 </body>
 

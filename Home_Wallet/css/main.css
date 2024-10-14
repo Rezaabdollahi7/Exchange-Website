@@ -490,18 +490,7 @@ nav.mini-nav .setting-around {
 #buyModal {
   background-color: #14121c;
   scrollbar-width: thin;
-  scrollbar-color: #888 #13111d;
-}
-#buyModal .modal-dialog {
-  margin: 0 auto;
-}
-#buyModal .modal-content {
-  background: #14121c;
-  max-width: 380px;
-  margin: 0 auto;
-}
-#buyModal .modal-body {
-  padding: 0;
+  scrollbar-color: #888;
 }
 #buyModal::-webkit-scrollbar {
   width: 10px;
@@ -518,6 +507,17 @@ nav.mini-nav .setting-around {
 }
 #buyModal::-webkit-scrollbar-thumb:hover {
   background-color: #555;
+}
+#buyModal .modal-dialog {
+  margin: 0 auto;
+}
+#buyModal .modal-content {
+  background: #14121c;
+  max-width: 380px;
+  margin: 0 auto;
+}
+#buyModal .modal-body {
+  padding: 0;
 }
 #buyModal nav.mini-nav {
   margin: 36px 0;
@@ -761,6 +761,188 @@ nav.mini-nav .setting-around {
 }
 #buyModal .fa-solid {
   font-family: "Font Awesome 6 Free" !important;
+}
+
+#receiveModal {
+  background-color: #14121c;
+}
+#receiveModal .modal-dialog {
+  margin: 0 auto;
+}
+#receiveModal .modal-content {
+  background: #14121c;
+  max-width: 380px;
+  margin: 0 auto;
+}
+#receiveModal .modal-body {
+  padding: 0;
+}
+#receiveModal nav.mini-nav {
+  margin: 36px 0;
+}
+#receiveModal nav.mini-nav .setting-around {
+  padding: 15px;
+  background-color: #26272B;
+  cursor: pointer;
+}
+#receiveModal nav.mini-nav h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#receiveModal #rec-navigateBtn {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: none;
+  border-radius: 21px;
+  z-index: 1;
+  border: 1px solid gray;
+  text-align: center;
+  position: relative;
+}
+#receiveModal #rec-navigateBtn img {
+  transform: rotate(-90deg);
+}
+#receiveModal #rec-navigateBtn a {
+  padding: 15px 46px 15px 46px;
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(3px);
+  border-radius: 21px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 8px;
+}
+#receiveModal #rec-navigateBtn #rec-navigateText {
+  width: 140px !important;
+}
+#receiveModal .coin-details {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+}
+#receiveModal .coin-details span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: 2rem;
+}
+#receiveModal .coin-details .wallet-balance #balance {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 3.2rem;
+}
+#receiveModal .coin-details #received-name {
+  color: #FFFFFF;
+}
+#receiveModal .navigateBtn {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: none;
+  border-radius: 21px;
+  z-index: 1;
+}
+#receiveModal .navigateBtn #navigateLinker {
+  padding: 15px 46px 15px 46px;
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(3px);
+  border-radius: 21px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 8px;
+}
+#receiveModal .navigateBtn #navigateText {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 170px;
+}
+#receiveModal .navigateBtn .bottom-blue-line {
+  display: block;
+  width: 60%;
+  height: 7px;
+  border-radius: 120px;
+  background-color: #006FFF;
+  bottom: -3px;
+  z-index: -1;
+}
+#receiveModal .navigateBtn #network-type {
+  margin-top: -40px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+}
+#receiveModal .navigateBtn img {
+  transform: rotate(-90deg);
+}
+#receiveModal .navigateBtn #navigateText {
+  width: 140px !important;
+}
+#receiveModal .head-span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+}
+#receiveModal #rec-share-btn {
+  padding: 15px 39px;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: none;
+  line-height: none;
+  box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
+}
+#receiveModal .fa-solid {
+  font-family: "Font Awesome 6 Free" !important;
+}
+#receiveModal .receive-add {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: 20px;
+}
+#receiveModal .receive-add #qr-code {
+  width: 160px;
+  height: 160px;
+}
+#receiveModal .receive-add #rec-dest-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+}
+#receiveModal .receive-add #rec-copyBtn {
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  width: 100%;
+  padding: 13px 0;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: none;
 }
 
 /*# sourceMappingURL=main.css.map */

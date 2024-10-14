@@ -173,19 +173,8 @@ nav.mini-nav {
 
 #buyModal {
   background-color: #14121c;
-  .modal-dialog {
-    margin: 0 auto;
-  }
-  .modal-content {
-    background: #14121c;
-    max-width: 380px;
-    margin: 0 auto;
-  }
-  .modal-body {
-    padding: 0;
-  }
   scrollbar-width: thin;
-  scrollbar-color: #888 #13111d;
+  scrollbar-color: #888;
 
   &::-webkit-scrollbar {
     width: 10px;
@@ -206,6 +195,18 @@ nav.mini-nav {
   &::-webkit-scrollbar-thumb:hover {
     background-color: #555;
   }
+  .modal-dialog {
+    margin: 0 auto;
+  }
+  .modal-content {
+    background: #14121c;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .modal-body {
+    padding: 0;
+  }
+
   nav.mini-nav {
     margin: 36px 0;
 
@@ -403,5 +404,140 @@ nav.mini-nav {
 
   .fa-solid {
     font-family: "Font Awesome 6 Free" !important;
+  }
+}
+
+#receiveModal {
+  background-color: #14121c;
+  .modal-dialog {
+    margin: 0 auto;
+  }
+  .modal-content {
+    background: #14121c;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .modal-body {
+    padding: 0;
+  }
+
+  nav.mini-nav {
+    margin: 36px 0;
+
+    .setting-around {
+      padding: 15px;
+      background-color: $setting_back;
+      cursor: pointer;
+    }
+    h1 {
+      color: #fff;
+      font-size: 2.4rem;
+      font-weight: 700;
+      height: 57px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  #rec-navigateBtn {
+    background-color: rgba(255, 255, 255, 0.0509803922);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: none;
+    border-radius: 21px;
+    z-index: 1;
+    border: 1px solid gray;
+    text-align: center;
+    position: relative;
+    img {
+      transform: rotate(-90deg);
+    }
+    a {
+      padding: 15px 46px 15px 46px;
+      border: 1px solid rgba(255, 255, 255, 0.1411764706);
+      backdrop-filter: blur(3px);
+      border-radius: 21px;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: none;
+      gap: 8px;
+    }
+    #rec-navigateText {
+      width: 140px !important;
+    }
+  }
+  .coin-details {
+    margin-bottom: 60px;
+    @include flex(column, none, center, none);
+
+    span {
+      @include typography(1.8rem, 500, $small-title, 2rem);
+    }
+
+    .wallet-balance {
+      #balance {
+        @include typography(3.2rem, 700, $white_text, 3.2rem);
+      }
+    }
+    #received-name {
+      color: $white_text;
+    }
+  }
+
+  .navigateBtn {
+    @include CommonNavigate();
+
+    #network-type {
+      margin-top: -40px;
+      @include typography(1.8rem, 500, $small-title, none);
+    }
+    img {
+      transform: rotate(-90deg);
+    }
+    #navigateText {
+      width: 140px !important;
+    }
+  }
+
+  .head-span {
+    @include typography(1.8rem, 500, $small-title, none);
+  }
+
+  #rec-share-btn {
+    // margin-top: 5px;
+    padding: 15px 39px;
+    border-radius: 25px;
+    @include typography(1.6rem, 700, none, none);
+    box-shadow: 0 0 15px #0c61ec57;
+  }
+
+  .fa-solid {
+    font-family: "Font Awesome 6 Free" !important;
+  }
+
+  .receive-add {
+    margin-top: 30px;
+    @include flex(column, none, center, 20px);
+
+    #qr-code {
+      width: 160px;
+      height: 160px;
+    }
+
+    #rec-dest-link {
+      @include typography(1.6rem, 500, $small-title, none);
+    }
+
+    #rec-copyBtn {
+      border: 1px solid #ffffff24;
+      width: 100%;
+      padding: 13px 0;
+      border-radius: 25px;
+      @include flex(row, center, none, none);
+    }
   }
 }
