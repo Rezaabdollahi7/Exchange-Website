@@ -541,3 +541,139 @@ nav.mini-nav {
     }
   }
 }
+
+#sendModal {
+  background-color: #14121c;
+  .modal-dialog {
+    margin: 0 auto;
+  }
+  .modal-content {
+    background: #14121c;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .modal-body {
+    padding: 0;
+  }
+
+  nav.mini-nav {
+    margin: 36px 0;
+
+    .setting-around {
+      padding: 15px;
+      background-color: $setting_back;
+      cursor: pointer;
+    }
+    h1 {
+      color: #fff;
+      font-size: 2.4rem;
+      font-weight: 700;
+      height: 57px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  #send-navigateBtn {
+    background-color: rgba(255, 255, 255, 0.0509803922);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: none;
+    border-radius: 21px;
+    z-index: 1;
+    border: 1px solid gray;
+    text-align: center;
+    position: relative;
+    img {
+      transform: rotate(-90deg);
+    }
+    a {
+      padding: 15px 46px 15px 46px;
+      border: 1px solid rgba(255, 255, 255, 0.1411764706);
+      backdrop-filter: blur(3px);
+      border-radius: 21px;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: none;
+      gap: 8px;
+    }
+    #send-navigateText {
+      width: 200px !important;
+    }
+  }
+  .wallet-details {
+    @include flex(column, none, center, none);
+    margin-bottom: 50px;
+    span {
+      @include typography(1.8rem, 500, $small-title, 2rem);
+    }
+
+    .wallet-balance {
+      @include flex(row, space-between, none, none);
+      #send-balance {
+        @include typography(3.2rem, 700, $white_text, 3.2rem);
+      }
+    }
+  }
+
+  .navigateBtn {
+    @include CommonNavigate();
+
+    #send-network-type {
+      margin-top: -40px;
+      @include typography(1.8rem, 500, $small-title, none);
+    }
+    img {
+      transform: rotate(-90deg);
+    }
+    #send-navigateText {
+      width: 140px !important;
+    }
+  }
+
+  .head-span {
+    @include typography(1.8rem, 500, $small-title, none);
+  }
+
+  .input-container {
+    @include flex(row, none, center, none);
+    @include inputContainer();
+    background-color: $part-back-gray !important;
+
+    #send-walletInput,
+    #send-amountInput {
+      @include inputStyle();
+      @include typography(1.4rem, 400, $white_text, 1.8rem);
+    }
+
+    .wallet-svg {
+      flex-shrink: 0;
+      margin-right: 20px;
+    }
+
+    #send-wallet-icon.focus,
+    #money-icon.focus {
+      fill: $main_blue;
+    }
+  }
+
+  .send-input-container.focus {
+    border-color: $main_blue !important;
+  }
+
+  #send-btn {
+    margin-top: 40px;
+    padding: 15px 39px;
+    border-radius: 25px;
+    @include typography(1.6rem, 700, none, none);
+    box-shadow: 0 0 15px #0c61ec57;
+  }
+
+  .fa-solid {
+    font-family: "Font Awesome 6 Free" !important;
+  }
+}

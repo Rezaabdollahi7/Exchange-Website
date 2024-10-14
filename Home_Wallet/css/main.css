@@ -945,4 +945,202 @@ nav.mini-nav .setting-around {
   gap: none;
 }
 
+#sendModal {
+  background-color: #14121c;
+}
+#sendModal .modal-dialog {
+  margin: 0 auto;
+}
+#sendModal .modal-content {
+  background: #14121c;
+  max-width: 380px;
+  margin: 0 auto;
+}
+#sendModal .modal-body {
+  padding: 0;
+}
+#sendModal nav.mini-nav {
+  margin: 36px 0;
+}
+#sendModal nav.mini-nav .setting-around {
+  padding: 15px;
+  background-color: #26272B;
+  cursor: pointer;
+}
+#sendModal nav.mini-nav h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sendModal #send-navigateBtn {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: none;
+  border-radius: 21px;
+  z-index: 1;
+  border: 1px solid gray;
+  text-align: center;
+  position: relative;
+}
+#sendModal #send-navigateBtn img {
+  transform: rotate(-90deg);
+}
+#sendModal #send-navigateBtn a {
+  padding: 15px 46px 15px 46px;
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(3px);
+  border-radius: 21px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 8px;
+}
+#sendModal #send-navigateBtn #send-navigateText {
+  width: 200px !important;
+}
+#sendModal .wallet-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  margin-bottom: 50px;
+}
+#sendModal .wallet-details span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: 2rem;
+}
+#sendModal .wallet-details .wallet-balance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+}
+#sendModal .wallet-details .wallet-balance #send-balance {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 3.2rem;
+}
+#sendModal .navigateBtn {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: none;
+  border-radius: 21px;
+  z-index: 1;
+}
+#sendModal .navigateBtn #navigateLinker {
+  padding: 15px 46px 15px 46px;
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  backdrop-filter: blur(3px);
+  border-radius: 21px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 8px;
+}
+#sendModal .navigateBtn #navigateText {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 170px;
+}
+#sendModal .navigateBtn .bottom-blue-line {
+  display: block;
+  width: 60%;
+  height: 7px;
+  border-radius: 120px;
+  background-color: #006FFF;
+  bottom: -3px;
+  z-index: -1;
+}
+#sendModal .navigateBtn #send-network-type {
+  margin-top: -40px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+}
+#sendModal .navigateBtn img {
+  transform: rotate(-90deg);
+}
+#sendModal .navigateBtn #send-navigateText {
+  width: 140px !important;
+}
+#sendModal .head-span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #848586;
+  line-height: none;
+}
+#sendModal .input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  background-color: #303134;
+  border-radius: 25px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  background-color: #27282E !important;
+}
+#sendModal .input-container #send-walletInput,
+#sendModal .input-container #send-amountInput {
+  background-color: transparent;
+  border: none;
+  stroke: none;
+  color: #fff;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 20px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  -moz-appearance: textfield;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.8rem;
+}
+#sendModal .input-container .wallet-svg {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+#sendModal .input-container #send-wallet-icon.focus,
+#sendModal .input-container #money-icon.focus {
+  fill: #006FFF;
+}
+#sendModal .send-input-container.focus {
+  border-color: #006FFF !important;
+}
+#sendModal #send-btn {
+  margin-top: 40px;
+  padding: 15px 39px;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: none;
+  line-height: none;
+  box-shadow: 0 0 15px rgba(12, 97, 236, 0.3411764706);
+}
+#sendModal .fa-solid {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
 /*# sourceMappingURL=main.css.map */

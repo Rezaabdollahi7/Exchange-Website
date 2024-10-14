@@ -199,8 +199,7 @@
                         <nav class="mini-nav container p-0">
                             <div class="text-center position-relative">
                                 <h1 class="head-name">Receive</h1>
-                                <i class="setting-around rounded-pill position-absolute end-0 top-0"
-                                    id="setting-button">
+                                <i class="setting-around rounded-pill position-absolute end-0 top-0">
                                     <img src="../../../Common/commonAssets/Settings.svg" alt="setting">
                                 </i>
                             </div>
@@ -243,18 +242,63 @@
         <div class="modal fade" id="sendModal" tabindex="-1" aria-labelledby="sendModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="sendModalLabel">ارسال</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+                    <!-- body -->
                     <div class="modal-body">
-                        <!-- محتوای مودال ارسال را اینجا قرار دهید -->
-                        <p>فرم ارسال ارز در اینجا قرار می‌گیرد.</p>
+                        <nav class="mini-nav container p-0">
+                            <div class="text-center position-relative">
+                                <h1 class="head-name">Send</h1>
+                                <i class="setting-around rounded-pill position-absolute end-0 top-0">
+                                    <img src="../../../Common/commonAssets/Settings.svg" alt="setting">
+                                </i>
+                            </div>
+
+                            <div class="wallet-details">
+                                <img id="coin-pic" src="./assets/ethereum.svg" alt="ETC">
+                                <span class="mt-4">Total Balance</span>
+                                <div class="wallet-balance mt-1">
+                                    <span id="send-balance">0.000045698</span>
+                                </div>
+                            </div>
+
+                            <div class="navigateBtn text-center position-relative" id="send-navigateBtn">
+                                <span class="position-absolute start-50 translate-middle-x"
+                                    id="send-network-type">Network
+                                    type</span>
+                                <a href="#" id="send-navigateLinker" class="w-full h-full"><span
+                                        id="send-navigateText">BEP - 20 (
+                                        0.00030000 )</span><img src="./assets/DownArrow.svg" alt="arrow_down"></a>
+                                <div class="bottom-blue-line position-absolute start-50 translate-middle-x"></div>
+                            </div>
+
+                            <form action="#" method="post">
+                                <span class="head-span w-100 d-block text-center mt-4">Wallet Address</span>
+                                <div class="input-container send-input-container wallet w-100 mt-4">
+                                    <svg class="wallet-svg" width="21" height="18" viewBox="0 0 21 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path id="send-wallet-icon" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16.2246 5.3818L20.4043 5.3818C20.4043 1.98459 18.3935 0 14.9865 0L6.06523 0C2.65827 0 0.647461 1.98459 0.647461 5.33847L0.647461 12.6615C0.647461 16.0154 2.65827 18 6.06523 18L14.9865 18C18.3935 18 20.4043 16.0154 20.4043 12.6615V12.3495H16.2246C14.2848 12.3495 12.7123 10.7975 12.7123 8.883C12.7123 6.96849 14.2848 5.41647 16.2246 5.41647V5.3818ZM16.2246 6.87241L19.6667 6.87241C20.0741 6.87241 20.4043 7.19834 20.4043 7.60039V10.131C20.3996 10.5311 20.0721 10.8543 19.6667 10.8589H16.3037C15.3216 10.872 14.4629 10.2084 14.2402 9.26432C14.1286 8.67829 14.2852 8.07357 14.668 7.61222C15.0507 7.15087 15.6205 6.88008 16.2246 6.87241ZM16.3739 9.53298H16.6988C17.1159 9.53298 17.4539 9.1993 17.4539 8.78767C17.4539 8.37605 17.1159 8.04237 16.6988 8.04237H16.3739C16.1744 8.04005 15.9823 8.11664 15.8405 8.25504C15.6986 8.39344 15.6187 8.58213 15.6188 8.77901C15.6187 9.19205 15.9554 9.52823 16.3739 9.53298ZM5.32764 5.3818H10.9035C11.3205 5.3818 11.6586 5.04812 11.6586 4.6365C11.6586 4.22487 11.3205 3.89119 10.9035 3.89119L5.32764 3.89119C4.91398 3.89116 4.5773 4.2196 4.57249 4.62783C4.57246 5.04087 4.90916 5.37705 5.32764 5.3818Z"
+                                            fill="#47484E" />
+                                    </svg>
+                                    <input type="text" id="send-walletInput" placeholder="wallet address" required />
+                                </div>
+                                <span class="head-span w-100 d-block text-center mt-4">Amount of currency</span>
+                                <div class="input-container amount w-100 mt-4">
+                                    <svg class="wallet-svg" width="21" height="18" viewBox="0 0 21 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path id="money-icon" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16.2246 5.3818L20.4043 5.3818C20.4043 1.98459 18.3935 0 14.9865 0L6.06523 0C2.65827 0 0.647461 1.98459 0.647461 5.33847L0.647461 12.6615C0.647461 16.0154 2.65827 18 6.06523 18L14.9865 18C18.3935 18 20.4043 16.0154 20.4043 12.6615V12.3495H16.2246C14.2848 12.3495 12.7123 10.7975 12.7123 8.883C12.7123 6.96849 14.2848 5.41647 16.2246 5.41647V5.3818ZM16.2246 6.87241L19.6667 6.87241C20.0741 6.87241 20.4043 7.19834 20.4043 7.60039V10.131C20.3996 10.5311 20.0721 10.8543 19.6667 10.8589H16.3037C15.3216 10.872 14.4629 10.2084 14.2402 9.26432C14.1286 8.67829 14.2852 8.07357 14.668 7.61222C15.0507 7.15087 15.6205 6.88008 16.2246 6.87241ZM16.3739 9.53298H16.6988C17.1159 9.53298 17.4539 9.1993 17.4539 8.78767C17.4539 8.37605 17.1159 8.04237 16.6988 8.04237H16.3739C16.1744 8.04005 15.9823 8.11664 15.8405 8.25504C15.6986 8.39344 15.6187 8.58213 15.6188 8.77901C15.6187 9.19205 15.9554 9.52823 16.3739 9.53298ZM5.32764 5.3818H10.9035C11.3205 5.3818 11.6586 5.04812 11.6586 4.6365C11.6586 4.22487 11.3205 3.89119 10.9035 3.89119L5.32764 3.89119C4.91398 3.89116 4.5773 4.2196 4.57249 4.62783C4.57246 5.04087 4.90916 5.37705 5.32764 5.3818Z"
+                                            fill="#47484E" />
+                                    </svg>
+                                    <input type="number" id="send-amountInput" placeholder="amount" required />
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-100" id="send-btn">Send</button>
+                            </form>
+
+
+                        </nav>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
-                        <button type="button" class="btn btn-primary">تأیید ارسال</button>
-                    </div>
+                    <!-- -------------- -->
                 </div>
             </div>
         </div>
@@ -360,11 +404,13 @@
                 navigator.clipboard.writeText(text);
                 alert("Copied text: " + text);
             })
+
         });
 
 
 
     </script>
+
 </body>
 
 </html>
