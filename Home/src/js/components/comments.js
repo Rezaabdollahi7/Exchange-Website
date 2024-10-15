@@ -128,7 +128,7 @@ function addCommentSwiper() {
         centeredSlides: true,
         grabCursor: true,
         loop: true,
-        speed: 1400,
+        speed: 2200,
         autoplay: {
             delay: 0,
             disableOnInteraction: false,
@@ -190,7 +190,7 @@ function addCommentSwiper() {
         centeredSlides: true,
         grabCursor: true,
         loop: true,
-        speed: 1400,
+        speed: 2200,
         autoplay: {
             delay: 0,
             reverseDirection: true,
@@ -253,7 +253,7 @@ function addCommentSwiper() {
         centeredSlides: true,
         grabCursor: true,
         loop: true,
-        speed: 1400,
+        speed: 2200,
         autoplay: {
             delay: 0,
             reverseDirection: true,

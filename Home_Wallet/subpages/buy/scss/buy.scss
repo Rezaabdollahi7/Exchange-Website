@@ -3,15 +3,17 @@ html{
     height: auto !important;
 }
 body{
-    background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+    // background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+    background: #14121c;
     background-repeat: no-repeat;
     height: auto !important;
     min-height: 100vh !important;
 }
 main{
-    max-width: 430px;
+    // max-width: 430px;
+    max-width: 380px;
     padding: 30px 25px;
-    background: linear-gradient(to bottom, $main_background_from, $main_background_to);
+    // background: linear-gradient(to bottom, $main_background_from, $main_background_to);
     background-repeat: no-repeat;
 }
 

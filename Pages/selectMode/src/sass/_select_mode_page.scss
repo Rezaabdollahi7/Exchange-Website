@@ -1,168 +1,150 @@
 @import "./base/reset";
 
+// Typography
+$base-font-size: 16px;
+$font-size-sm: 14px;
+$font-size-md: $base-font-size;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-xxl: 32px;
 
-// Variables
-$desktop-font-size: 16px;
-$mobile-font-size: 14px;
-$breakpoint: 768px;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
 
-// Color Variables
+// Colors
 $background-color: #243a77;
 $gradient-color: #110d1d;
 $text-color-white: #ffffff;
 $text-color-subtitle: #b4c0de;
 $item-background-color: #1b3254;
 
+// Breakpoints
+$breakpoint-sm: 450px;
+$breakpoint-md: 700px;
+$breakpoint-lg: 1000px;
+
+// Spacing
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive-font($min-size, $max-size, $min-width, $max-width) {
+  font-size: calc(
+    #{$min-size} + #{strip-unit($max-size - $min-size)} *
+      ((100vw - #{$min-width}) / #{strip-unit($max-width - $min-width)})
+  );
+
+  @media (max-width: $min-width) {
+    font-size: $min-size;
+  }
+
+  @media (min-width: $max-width) {
+    font-size: $max-size;
+  }
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
 // Base Styles
 body {
-  font-size: $desktop-font-size;
+  font-size: $base-font-size;
   line-height: 1.6;
   background: radial-gradient(at 60% 35%, $background-color, $gradient-color);
   background-repeat: repeat;
   background-size: cover;
   background-attachment: fixed;
-   min-height: 90vh;
+  min-height: 90vh;
 }
 
 // Main Content Styles
 .main-content {
-  padding-top: 2rem;
+  padding-top: $spacing-lg;
   max-width: 430px;
+  margin: 0 auto;
 
   .page-title {
-    font-weight: 700;
-    line-height: 76.8px;
+    @include responsive-font(
+      $font-size-lg,
+      $font-size-xxl,
+      $breakpoint-sm,
+      $breakpoint-lg
+    );
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
     text-align: center;
     color: $text-color-white;
   }
 
   .page-sub-title {
-    font-weight: 500;
-    line-height: 50px;
+    @include responsive-font(
+      $font-size-sm,
+      $font-size-lg,
+      $breakpoint-sm,
+      $breakpoint-lg
+    );
+    font-weight: $font-weight-medium;
+    line-height: 1.4;
     text-align: center;
     color: $text-color-subtitle;
   }
 
   .item-container {
     background-color: $item-background-color;
-    padding: 25px;
-    border-radius: 25.11px;
+    padding: $spacing-md;
+    border-radius: 25px;
+    width: 90%;
+    margin: $spacing-md auto;
 
     .item-title {
-      font-weight: 700;
-      line-height: 48px;
+      @include responsive-font(
+        $font-size-md,
+        $font-size-xl,
+        $breakpoint-sm,
+        $breakpoint-lg
+      );
+      font-weight: $font-weight-bold;
+      line-height: 1.2;
       text-align: center;
       color: $text-color-white;
-      padding: 0;
       margin: 0;
     }
 
     .item-sub-title {
-      font-weight: 500;
-      line-height: 28.93px;
+      @include responsive-font(
+        $font-size-sm,
+        $font-size-md,
+        $breakpoint-sm,
+        $breakpoint-lg
+      );
+      font-weight: $font-weight-medium;
+      line-height: 1.4;
       text-align: center;
       color: $text-color-white;
     }
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .page-title {
-    font-size: $desktop-font-size * 1.7;
-  }
-  .page-sub-title {
-    font-size: $mobile-font-size;
-  }
-  .item-container {
-    width: 90%;
-
-    .item-title {
-      font-size: $desktop-font-size ;
-    }
-    .item-sub-title {
-      font-size: $mobile-font-size * 0.9;
-    }
 
     img {
       width: 50px;
       height: 50px;
+      @media (min-width: $breakpoint-md) {
+        width: 60px;
+        height: 60px;
+      }
     }
   }
 }
 
-@media screen and (min-width: 450px) {
-  .page-title {
-    font-size: $desktop-font-size * 1.8;
-  }
-  .page-sub-title {
-    font-size: $mobile-font-size * 1.2;
-  }
-  .item-container {
-    width: 90%;
-
-    .item-title {
-      font-size: $desktop-font-size * 1.3;
-    }
-    .item-sub-title {
-      font-size: $mobile-font-size;
-    }
-
-    img {
-      width: 50px;
-      height: 50px;
-    }
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .page-title {
-    font-size: $desktop-font-size * 2.2;
-  }
-  .page-sub-title {
-    font-size: $mobile-font-size * 1.4;
-  }
-  .item-container {
-    width: 100%;
-
-    .item-title {
-      font-size: $desktop-font-size * 1.4;
-    }
-    .item-sub-title {
-      font-size: $mobile-font-size * 1.2;
-    }
-
-    img {
-      width: 60px;
-      height: 60px;
-    }
-  }
-}
-
-@media screen and (min-width: 1000px) {
+// Responsive adjustments
+@media screen and (min-width: $breakpoint-lg) {
   .main-content {
     max-width: 520px;
   }
-  .page-title {
-    font-size: $desktop-font-size * 2.8;
-  }
-  .page-sub-title {
-    font-size: $mobile-font-size * 1.5;
-  }
-  .item-container {
-    width: 100%;
-
-    .item-title {
-      font-size: $desktop-font-size * 1.5;
-    }
-    .item-sub-title {
-      font-size: $mobile-font-size * 1.3;
-    }
-
-    img {
-      width: 60px;
-      height: 60px;
-    }
-  }
 }
-
-
