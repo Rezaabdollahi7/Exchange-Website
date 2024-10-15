@@ -1,0 +1,122 @@
+html {
+  font-size: 62.5% !important; //this makes each rem to be 10px when the font size of browser has been set to 16px
+  height: auto !important;
+}
+body {
+  // background: radial-gradient(at 60% 35%, #243a77, #110D1D);
+  background: #14121c;
+  background-repeat: no-repeat;
+  height: auto !important;
+  min-height: 100vh !important;
+}
+main {
+  // max-width: 430px;
+  max-width: 380px;
+  padding: 30px 25px;
+  // background: linear-gradient(to bottom, $main_background_from, $main_background_to);
+  background-repeat: no-repeat;
+}
+
+nav.mini-nav {
+  margin-bottom: 30px;
+
+  .setting-around {
+    padding: 15px;
+    background-color: $setting_back;
+    cursor: pointer;
+    width: 57px;
+    height: 57px;
+
+    i{
+      color: $white_text;
+      font-size: 2rem;
+      width: 27px;
+      height: 27px;
+      @include flex(row, center, center, none)
+    }
+  }
+  h1 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+hr{
+  background-color: #8c8cab5d
+}
+
+.wallet-icon {
+  @include flex(column, center, center, none);
+
+  margin: 0 auto 20px;
+  width: 96px;
+  height: 96px;
+  border-radius: 100%;
+  background-color: $main_blue
+}
+
+.setting-body{
+  .setting-categories{
+    .part-row{
+      @include flex(row, space-between, center, none);
+      width: 100%;
+      padding: 15px 0;
+
+      .fa-chevron-right{
+        font-size: 1.5rem;
+        color: #47484E;
+      }
+
+      .form-check{
+        @include flex(row-reverse, space-between, center, none);
+        width: 100%;
+        padding: 0;
+        
+        input{
+          background-color: #283454;
+          border: #283454;
+          padding: 12px;
+          width: 42px;
+          outline: none !important;
+        }
+        input:checked{
+          background-color: $main_blue;
+          border: $main_blue;
+        }
+
+      }
+    }
+    #price-alert-paragrapagh{
+      @include typography(1.4rem, 400, $small-title, 1.9rem);
+    }
+    .row-text{
+      @include typography(1.6rem, 700, $white_text, none);
+    }
+  }
+
+  
+}
+
+.navigateBtn {
+  @include CommonNavigate();
+
+  #network-type {
+    margin-top: -40px;
+    @include typography(1.8rem, 500, $small-title, none);
+  }
+  img {
+    transform: rotate(-90deg);
+  }
+  #navigateText {
+    width: 140px !important;
+  }
+}
+
+.fa-solid {
+  font-family: "Font Awesome 6 Free" !important;
+}
