@@ -53,3 +53,95 @@ if (balance_status.textContent[0] === '+'){
     balance_status.childNodes[0].classList.remove('fa-caret-add');
 }
 
+// ! Buy
+
+const inputContainer = document.querySelector(".input-container.buy-inp");
+const amountInput = document.querySelector("#buy-walletInput");
+const inputIcon = document.querySelector("#buy-wallet-icon");
+const quickSelect = document.querySelectorAll(".buy-select-btn");
+const dollarSign = document.querySelector(".buy-dollar-sign");
+const currencyBtn = document.querySelector("#buy-navigateBtn");
+const pop_up = document.querySelector("#buy-pop-up");
+const xmark = document.querySelector("#buy-xmark");
+
+quickSelect.forEach(btn => {
+    btn.addEventListener('click', () => {
+        amountInput.value = btn.dataset.value;
+        dollarSign.classList.add("focus");
+        inputIcon.classList.add("focus");
+        inputContainer.classList.add("focus");
+    })
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    amountInput.value = "";
+});
+
+amountInput.addEventListener('input', () => {
+    if (!amountInput.value){
+        dollarSign.classList.remove("focus");
+        inputIcon.classList.remove("focus");
+        inputContainer.classList.remove("focus");
+        
+    } else{
+        dollarSign.classList.add("focus");
+        inputIcon.classList.add("focus");
+        inputContainer.classList.add("focus");
+        
+    }
+});
+
+currencyBtn.addEventListener('click', () => {
+    console.log(pop_up.classList);
+    pop_up.classList.remove('d-none');
+})
+
+xmark.addEventListener('click', () => {
+    pop_up.classList.toggle('d-none');
+})
+
+// ! receive
+
+const copyAddress = document.querySelector('#rec-dest-link');
+const copyButton = document.querySelector("#rec-copyBtn");
+
+
+copyButton.addEventListener('click', () => {
+    const text = copyAddress.textContent.trim();
+    navigator.clipboard.writeText(text);
+    alert("Copied text: " + text);
+})
+
+// ! Send
+
+const inputContainer_send = document.querySelector(".input-container.send-input-container");
+const inputContainer_send2 = document.querySelector(".input-container.send-input-container-2");
+const wallet_address = document.querySelector("#send-walletInput");
+const wallet_address_icon = document.querySelector("#send-wallet-icon");
+const amount_input = document.querySelector("#send-amountInput");
+const amount_input_icon = document.querySelector("#send-money-icon");
+
+wallet_address.addEventListener('input', () => {
+    if (!wallet_address.value){
+        wallet_address_icon.classList.remove("focus");
+        inputContainer_send.classList.remove("focus");
+        
+    } else{
+        wallet_address_icon.classList.add("focus");
+        inputContainer_send.classList.add("focus");
+        
+    }
+});
+
+amount_input.addEventListener('input', () => {
+    console.log(!amount_input.value)
+    if (!amount_input.value){
+        amount_input_icon.classList.remove("focus");
+        inputContainer_send2.classList.remove("focus");
+        
+    } else{
+        amount_input_icon.classList.add("focus");
+        inputContainer_send2.classList.add("focus");
+        
+    }
+});

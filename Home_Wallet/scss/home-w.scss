@@ -656,12 +656,15 @@ nav.mini-nav {
     }
 
     #send-wallet-icon.focus,
-    #money-icon.focus {
+    #send-money-icon.focus {
       fill: $main_blue;
     }
   }
 
   .send-input-container.focus {
+    border-color: $main_blue !important;
+  }
+  .send-input-container-2.focus {
     border-color: $main_blue !important;
   }
 

@@ -1123,10 +1123,13 @@ nav.mini-nav .setting-around {
   margin-right: 20px;
 }
 #sendModal .input-container #send-wallet-icon.focus,
-#sendModal .input-container #money-icon.focus {
+#sendModal .input-container #send-money-icon.focus {
   fill: #006FFF;
 }
 #sendModal .send-input-container.focus {
+  border-color: #006FFF !important;
+}
+#sendModal .send-input-container-2.focus {
   border-color: #006FFF !important;
 }
 #sendModal #send-btn {
