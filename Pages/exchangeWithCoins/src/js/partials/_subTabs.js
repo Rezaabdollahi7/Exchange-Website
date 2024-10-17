@@ -62,8 +62,7 @@ const subTabs =
                 </div>
 
                 <!-- tab3 -->
-                <div class="tab-pane fade pb-3" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
-                    <h1 class="text-white fw-bold mt-5 text-center">Private Key</h1>
+                <div class="tab-pane fade " id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
                     <form>
                         <div class="mb-4 mt-2">
                             <div class="textarea-container" id="textarea-container-3">
