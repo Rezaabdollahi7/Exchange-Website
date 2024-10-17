@@ -1250,4 +1250,19 @@ nav.mini-nav .setting-around {
   font-family: "Font Awesome 6 Free" !important;
 }
 
+.modal .btn-close {
+  background-color: #26272b;
+  color: white;
+  padding: 15px;
+  border-radius: 100%;
+  --bs-btn-close-bg: none !important;
+  position: absolute;
+  left: 1%;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  font-weight: 700;
+  transform: rotate(180deg);
+}
+
 /*# sourceMappingURL=main.css.map */
