@@ -32,7 +32,7 @@ $positive-bg-color: #0caf60;
     .coins-container {
       background-color: $secondary-bg;
       width: 100%;
-      height: 118.64px;
+      height: 134px;
       border-radius: 25.28px;
       display: flex;
       align-items: center;
@@ -44,8 +44,41 @@ $positive-bg-color: #0caf60;
       img {
         width: 40px;
         height: 40px;
+        margin-left: 12%;
       }
 
+      .img-and-name-count {
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: #84878b5e;
+          cursor: pointer;
+        }
+      }
+      input.coin-amount {
+        background-color: #0041a833;
+        width: 100%;
+        border-radius: 15px;
+        border: 0;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 5px 0px 5px 14px;
+        box-shadow: 0px 1px 10px #ffffff45;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* برای Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+      .coin-name {
+        width: 60%;
+        margin-left: 13%;
+      }
       .coin-name,
       .coin-price {
         display: flex;
@@ -68,11 +101,6 @@ $positive-bg-color: #0caf60;
       .coin-value {
         font-size: 18px;
         font-weight: 600;
-      }
-
-      .coin-total {
-        font-size: 15.17px;
-        font-weight: 400;
       }
     }
 
@@ -105,10 +133,12 @@ $positive-bg-color: #0caf60;
     }
 
     .swap-container {
-      top: 23%;
+      top: 25%;
       position: absolute;
 
       img {
+        width: 60px;
+        height: 60px;
         transition: transform 0.5s ease-in-out;
 
         &:hover {
@@ -264,25 +294,13 @@ $positive-bg-color: #0caf60;
         &::placeholder {
           color: #9e9e9e;
         }
-        &:focus{
+        &:focus {
           border: 1px solid #006fff;
         }
       }
       ul {
         height: 300px;
         overflow-y: scroll;
-        li {
-          transition: all 0.2s ease;
-          width: 97%;
-
-          &:hover {
-            cursor: pointer;
-            margin-left: 8px;
-            background-color: rgba(128, 128, 128, 0.075) !important;
-            border-radius: 10px;
-          }
-        }
-
         scrollbar-width: thin;
         scrollbar-color: #888 #13111d;
 
@@ -305,6 +323,17 @@ $positive-bg-color: #0caf60;
         &::-webkit-scrollbar-thumb:hover {
           background-color: #555;
         }
+        li {
+          transition: all 0.2s ease;
+          width: 97%;
+
+          &:hover {
+            cursor: pointer;
+            margin-left: 8px;
+            background-color: rgba(128, 128, 128, 0.075) !important;
+            border-radius: 10px;
+          }
+        }
       }
       .search-container {
         position: relative; /* برای قرار دادن موقعیت نسبت به container */
@@ -325,13 +354,3 @@ $positive-bg-color: #0caf60;
     }
   }
 }
-
-// #usdtModal{
-//   .firstcoin-modal{
-//     li{
-//       // display: flex;
-//       // justify-content: space-between;
-//       // align-items: center;
-//     }
-//   }
-// }

@@ -60,15 +60,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Store current values
         const tempLabel = usdtLabelElem.textContent;
-        const tempAmount = usdtAmountElem.textContent;
+        const tempAmount = usdtAmountElem.value;
         const tempImgSrc = usdtImgElem.src;
 
         // Swap the names and amounts of the currencies
         usdtLabelElem.textContent = ethLabelElem.textContent;
         ethLabelElem.textContent = tempLabel;
 
-        usdtAmountElem.textContent = ethAmountElem.textContent;
-        ethAmountElem.textContent = tempAmount;
+        usdtAmountElem.value = ethAmountElem.value;
+        ethAmountElem.value = tempAmount;
 
         // Swap the images
         usdtImgElem.src = ethImgElem.src;
