@@ -237,131 +237,181 @@ const exchange = `
                             <input type="text" class="form-control shadow-lg" id="usdtSearch"
                                 placeholder="Find tokens by name ... ">
                         </div>
-                        <ul class="list-group mt-4" id="usdtList">
+    <ul class="list-group mt-4" id="usdtList">
 
-                            <li class="list-group-item p-0 bg-transparent border-0" data-symbol="ETH"
-                                data-img-src="./assets/icons/etherium.svg">
-                                <div class="item-left-container d-flex align-items-center gap-2 w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35" src="./assets/icons/etherium.svg"
-                                        alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">ETH</p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/bitcoin.svg" data-symbol="BTC">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35" src="./assets/icons/bitcoin.svg"
-                                        alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">BTC</p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/theter.svg" data-symbol="USDT">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35" src="./assets/icons/theter.svg" alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">USDT</p>
-                                    </div>
-                                </div>
-                            </li>
+        <li class="list-group-item p-0 bg-transparent border-0" data-symbol="ETH"
+            data-img-src="./assets/icons/modals-icons/ethereum-eth-logo.png">
+            <div class="item-left-container d-flex align-items-center gap-2 w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/ethereum-eth-logo.png" alt="ETH">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">ETH</p>
+                </div>
+            </div>
+        </li>
 
 
+        <li class="list-group-item  p-0 bg-transparent border-0" data-img-src="./assets/icons/modals-icons/bitcoin-btc-logo.png"
+            data-symbol="BTC">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/bitcoin-btc-logo.png"
+                    alt="BTC">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">BTC</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/solana-sol-logo.png" data-symbol="SOL">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/solana-sol-logo.png"
+                    alt="sol">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">SOL</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/tether-usdt-logo.png" data-symbol="USDT">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/tether-usdt-logo.png"
+                    alt="usdt">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">USDT</p>
+                </div>
+            </div>
+        </li>
 
 
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/aevo.webp" data-symbol="aevo">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35"
-                                        src="./assets/icons/modals-icons/aevo.webp" alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">aevo</p>
-                                    </div>
-                                </div>
-                            </li>
 
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/arcblock.png" data-symbol="arcblock">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35"
-                                        src="./assets/icons/modals-icons/arcblock.png" alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">arcblock</p>
-                                    </div>
-                                </div>
-                            </li>
+        <li class="list-group-item  p-0 bg-transparent border-0" data-img-src="./assets/icons/modals-icons/bitcoin-cash-bch-logo.png"
+            data-symbol="BCH">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/bitcoin-cash-bch-logo.png"
+                    alt="BCH">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">BCH</p>
+                </div>
+            </div>
+        </li>
 
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/Badge_Dai.png" data-symbol="Badge_Dai">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35"
-                                        src="./assets/icons/modals-icons/Badge_Dai.png" alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">Badge_Dai</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/CTX.png" data-symbol="CTX">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/CTX.png"
-                                        alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">CTX</p>
-                                    </div>
-                                </div>
-                            </li>
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/toncoin-ton-logo.png" data-symbol="TON">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/toncoin-ton-logo.png"
+                    alt="ton">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">TON</p>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/tron-trx-logo.png" data-symbol="TRX">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/tron-trx-logo.png"
+                    alt="trx">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">TRX</p>
+                </div>
+            </div>
+        </li>
 
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/usdc.png" data-symbol="usdc">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/usdc.png"
-                                        alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">usdc</p>
-                                    </div>
-                                </div>
-                            </li>
+        <li class="list-group-item  p-0 bg-transparent border-0" data-img-src="./assets/icons/modals-icons/bnb-bnb-logo.png"
+            data-symbol="BNB">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/bnb-bnb-logo.png" alt="bnb">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">BNB</p>
+                </div>
+            </div>
+        </li>
 
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/weth.png" data-symbol="weth">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/weth.png"
-                                        alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">weth</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/wrapped_bitcoin_wbtc.png"
-                                data-symbol="wrapped_bitcoin_wbtc">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35"
-                                        src="./assets/icons/modals-icons/wrapped_bitcoin_wbtc.png" alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">wrapped_bitcoin_wbtc</p>
-                                    </div>
-                                </div>
-                            </li>
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/dogs-dogs-logo.png" data-symbol="DOGS">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/dogs-dogs-logo.png"
+                    alt="dogs">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">DOGS</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0" data-img-src="./assets/icons/modals-icons/fantom-ftm-logo.png"
+            data-symbol="FTM">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/fantom-ftm-logo.png"
+                    alt="fantom">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">FTM</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0" data-img-src="./assets/icons/modals-icons/floki-inu-floki-logo.png"
+            data-symbol="FLOKI">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/floki-inu-floki-logo.png"
+                    alt="floki">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">FLOKI</p>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/multi-collateral-dai-dai-logo.png" data-symbol="DAI">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35"
+                    src="./assets/icons/modals-icons/multi-collateral-dai-dai-logo.png" alt="dai">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">DAI</p>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/pepe-pepe-logo.png" data-symbol="PEPE">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/pepe-pepe-logo.png"
+                    alt="pepe">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">PEPE</p>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/shiba-inu-shib-logo.png" data-symbol="SHIBA">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/shiba-inu-shib-logo.png"
+                    alt="shiba">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">SHIBA</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/xrp-xrp-logo.png" data-symbol="XRP">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/xrp-xrp-logo.png"
+                    alt="xrp">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">XRP</p>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/pol.png" data-symbol="POL">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/pol.png" alt="pol">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">POL</p>
+                </div>
+            </div>
+        </li>
 
 
-                        </ul>
+    </ul>   
                     </div>
                 </div>
             </div>
@@ -383,128 +433,181 @@ const exchange = `
                             <input type="text" class="form-control shadow-lg" id="ethSearch"
                                 placeholder="Find tokens by name ... ">
                         </div>
-                        <ul class="list-group mt-4" id="ethList">
+    <ul class="list-group mt-4" id="ethList">
 
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/etherium.svg" data-symbol="ETH">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35" src="./assets/icons/etherium.svg"
-                                        alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">ETH</p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/bitcoin.svg" data-symbol="BTC">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35" src="./assets/icons/bitcoin.svg"
-                                        alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">BTC</p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/theter.svg" data-symbol="USDT">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35" src="./assets/icons/theter.svg" alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">USDT</p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/aevo.webp" data-symbol="aevo">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35"
-                                        src="./assets/icons/modals-icons/aevo.webp" alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">aevo</p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/arcblock.png" data-symbol="arcblock">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35"
-                                        src="./assets/icons/modals-icons/arcblock.png" alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">arcblock</p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/Badge_Dai.png" data-symbol="Badge_Dai">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35"
-                                        src="./assets/icons/modals-icons/Badge_Dai.png" alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">Badge_Dai</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/CTX.png" data-symbol="CTX">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/CTX.png"
-                                        alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">CTX</p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/usdc.png" data-symbol="usdc">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/usdc.png"
-                                        alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">usdc</p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/weth.png" data-symbol="weth">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/weth.png"
-                                        alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">weth</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item  p-0 bg-transparent border-0"
-                                data-img-src="./assets/icons/modals-icons/wrapped_bitcoin_wbtc.png"
-                                data-symbol="wrapped_bitcoin_wbtc">
-                                <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
-                                    <img class="modal-tokens-icon" width="35"
-                                        src="./assets/icons/modals-icons/wrapped_bitcoin_wbtc.png" alt="bit">
-                                    <div
-                                        class="token-name d-flex justify-content-center align-items-center flex-column">
-                                        <p class="coin-name text-white mb-0">wrapped_bitcoin_wbtc</p>
-                                    </div>
-                                </div>
-                            </li>
+        <li class="list-group-item p-0 bg-transparent border-0" data-symbol="ETH"
+            data-img-src="./assets/icons/modals-icons/ethereum-eth-logo.png">
+            <div class="item-left-container d-flex align-items-center gap-2 w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/ethereum-eth-logo.png" alt="ETH">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">ETH</p>
+                </div>
+            </div>
+        </li>
 
 
-                        </ul>
+        <li class="list-group-item  p-0 bg-transparent border-0" data-img-src="./assets/icons/modals-icons/bitcoin-btc-logo.png"
+            data-symbol="BTC">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/bitcoin-btc-logo.png"
+                    alt="BTC">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">BTC</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/solana-sol-logo.png" data-symbol="SOL">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/solana-sol-logo.png"
+                    alt="sol">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">SOL</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/tether-usdt-logo.png" data-symbol="USDT">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/tether-usdt-logo.png"
+                    alt="usdt">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">USDT</p>
+                </div>
+            </div>
+        </li>
+
+
+
+        <li class="list-group-item  p-0 bg-transparent border-0" data-img-src="./assets/icons/modals-icons/bitcoin-cash-bch-logo.png"
+            data-symbol="BCH">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/bitcoin-cash-bch-logo.png"
+                    alt="BCH">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">BCH</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/toncoin-ton-logo.png" data-symbol="TON">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/toncoin-ton-logo.png"
+                    alt="ton">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">TON</p>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/tron-trx-logo.png" data-symbol="TRX">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/tron-trx-logo.png"
+                    alt="trx">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">TRX</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0" data-img-src="./assets/icons/modals-icons/bnb-bnb-logo.png"
+            data-symbol="BNB">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/bnb-bnb-logo.png" alt="bnb">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">BNB</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/dogs-dogs-logo.png" data-symbol="DOGS">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/dogs-dogs-logo.png"
+                    alt="dogs">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">DOGS</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0" data-img-src="./assets/icons/modals-icons/fantom-ftm-logo.png"
+            data-symbol="FTM">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/fantom-ftm-logo.png"
+                    alt="fantom">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">FTM</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0" data-img-src="./assets/icons/modals-icons/floki-inu-floki-logo.png"
+            data-symbol="FLOKI">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/floki-inu-floki-logo.png"
+                    alt="floki">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">FLOKI</p>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/multi-collateral-dai-dai-logo.png" data-symbol="DAI">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35"
+                    src="./assets/icons/modals-icons/multi-collateral-dai-dai-logo.png" alt="dai">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">DAI</p>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/pepe-pepe-logo.png" data-symbol="PEPE">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/pepe-pepe-logo.png"
+                    alt="pepe">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">PEPE</p>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/shiba-inu-shib-logo.png" data-symbol="SHIBA">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/shiba-inu-shib-logo.png"
+                    alt="shiba">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">SHIBA</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/xrp-xrp-logo.png" data-symbol="XRP">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/xrp-xrp-logo.png"
+                    alt="xrp">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">XRP</p>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item  p-0 bg-transparent border-0"
+            data-img-src="./assets/icons/modals-icons/pol.png" data-symbol="POL">
+            <div class="item-left-container d-flex align-items-center gap-2  w-100 p-2">
+                <img class="modal-tokens-icon" width="35" src="./assets/icons/modals-icons/pol.png" alt="pol">
+                <div class="token-name d-flex justify-content-center align-items-center flex-column">
+                    <p class="coin-name text-white mb-0">POL</p>
+                </div>
+            </div>
+        </li>
+
+
+    </ul>
                     </div>
                 </div>
             </div>
@@ -515,4 +618,4 @@ const exchange = `
     </section>
 `
 
-export {exchange}
+export { exchange }
