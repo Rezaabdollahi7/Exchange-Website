@@ -5,7 +5,8 @@ const controlSegment = `
                     id="badge">2</span></button>
         </div>
         
- <div class="coins-section mt-5">
+
+        <div class="coins-section mt-5">
             <div class="coin">
                 <div class="coin_details">
                     <img src="assets/Bitcoin.svg" alt="bitcoin" width="40px" height="40px">
@@ -40,10 +41,10 @@ const controlSegment = `
             </div>
             <div class="coin">
                 <div class="coin_details">
-                    <img src="assets/XRPsvg.svg" alt="XRP" width="40px" height="40px">
+                    <img src="assets/modals-icons/bitcoin-cash-bch-logo.png" alt="bch" width="40px" height="40px">
                     <div class="coin_details_text">
-                        <span class="coin-name">XRP</span>
-                        <abbr title="XRP" class="">XRP</abbr>
+                        <span class="coin-name">BCH</span>
+                        <abbr title="XRP" class="">BCH</abbr>
                     </div>
                 </div>
                 <div class="coinMarket">
@@ -56,7 +57,7 @@ const controlSegment = `
             </div>
             <div class="coin">
                 <div class="coin_details">
-                    <img src="assets/BNB.svg" alt="BNB" width="40px" height="40px">
+                    <img src="assets/modals-icons/bnb-bnb-logo.png" alt="BNB" width="40px" height="40px">
                     <div class="coin_details_text">
                         <span class="coin-name">Binance</span>
                         <abbr title="Binance" class="">BNB</abbr>
@@ -72,10 +73,10 @@ const controlSegment = `
             </div>
             <div class="coin">
                 <div class="coin_details">
-                    <img src="assets/Dash.svg" alt="Dash" width="40px" height="40px">
+                    <img src="assets/modals-icons/dogs-dogs-logo.png" alt="dogs" width="40px" height="40px">
                     <div class="coin_details_text">
-                        <span class="coin-name">Dash</span>
-                        <abbr title="Dash" class="">XRP</abbr>
+                        <span class="coin-name">Dogs</span>
+                        <abbr title="Dash" class="">DOG</abbr>
                     </div>
                 </div>
                 <div class="coinMarket">
@@ -88,10 +89,10 @@ const controlSegment = `
             </div>
             <div class="coin">
                 <div class="coin_details">
-                    <img src="assets/Litecoin.svg" alt="Litecoin" width="40px" height="40px">
+                    <img src="assets/modals-icons/fantom-ftm-logo.png" alt="fantom" width="40px" height="40px">
                     <div class="coin_details_text">
-                        <span class="coin-name">Litecoin</span>
-                        <abbr title="Litecoin" class="">LTC</abbr>
+                        <span class="coin-name">Fantom</span>
+                        <abbr title="Litecoin" class="">FTM</abbr>
                     </div>
                 </div>
                 <div class="coinMarket">
@@ -102,7 +103,169 @@ const controlSegment = `
                     </div>
                 </div>
             </div>
+            <div class="coin">
+                <div class="coin_details">
+                    <img src="assets/modals-icons/floki-inu-floki-logo.png" alt="floki" width="40px" height="40px">
+                    <div class="coin_details_text">
+                        <span class="coin-name">Floki</span>
+                        <abbr title="Litecoin" class="">Floki</abbr>
+                    </div>
+                </div>
+                <div class="coinMarket">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth">
+                        <span class="coinPrice">$25,788</span>
+                        <span class="coinStatus up">+10,45%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin">
+                <div class="coin_details">
+                    <img src="assets/modals-icons/multi-collateral-dai-dai-logo.png" alt="dai" width="40px"
+                        height="40px">
+                    <div class="coin_details_text">
+                        <span class="coin-name">Dai</span>
+                        <abbr title="Litecoin" class="">dai</abbr>
+                    </div>
+                </div>
+                <div class="coinMarket">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth">
+                        <span class="coinPrice">$2,788</span>
+                        <span class="coinStatus down">-5,00%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin">
+                <div class="coin_details">
+                    <img src="assets/modals-icons/pepe-pepe-logo.png" alt="pepe" width="40px" height="40px">
+                    <div class="coin_details_text">
+                        <span class="coin-name">Pepe</span>
+                        <abbr title="Litecoin" class="">pepe</abbr>
+                    </div>
+                </div>
+                <div class="coinMarket">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth">
+                        <span class="coinPrice">$45,788</span>
+                        <span class="coinStatus down">-0,65%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin">
+                <div class="coin_details">
+                    <img src="assets/modals-icons/pol.png" alt="pol" width="40px" height="40px">
+                    <div class="coin_details_text">
+                        <span class="coin-name">Pol</span>
+                        <abbr title="Litecoin" class="">pol</abbr>
+                    </div>
+                </div>
+                <div class="coinMarket">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth">
+                        <span class="coinPrice">$32,58</span>
+                        <span class="coinStatus up">+17,45%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin">
+                <div class="coin_details">
+                    <img src="assets/modals-icons/shiba-inu-shib-logo.png" alt="shiba" width="40px" height="40px">
+                    <div class="coin_details_text">
+                        <span class="coin-name">Shiba</span>
+                        <abbr title="Litecoin" class="">shib</abbr>
+                    </div>
+                </div>
+                <div class="coinMarket">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth">
+                        <span class="coinPrice">$20,788</span>
+                        <span class="coinStatus down">-10,45%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin">
+                <div class="coin_details">
+                    <img src="assets/modals-icons/solana-sol-logo.png" alt="solana" width="40px" height="40px">
+                    <div class="coin_details_text">
+                        <span class="coin-name">Solana</span>
+                        <abbr title="Litecoin" class="">sol</abbr>
+                    </div>
+                </div>
+                <div class="coinMarket">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth">
+                        <span class="coinPrice">$55,788</span>
+                        <span class="coinStatus up">+20,05%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin">
+                <div class="coin_details">
+                    <img src="assets/modals-icons/tether-usdt-logo.png" alt="Tether" width="40px" height="40px">
+                    <div class="coin_details_text">
+                        <span class="coin-name">Tether</span>
+                        <abbr title="Litecoin" class="">usdt</abbr>
+                    </div>
+                </div>
+                <div class="coinMarket">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth">
+                        <span class="coinPrice">$18,788</span>
+                        <span class="coinStatus down">-20,45%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin">
+                <div class="coin_details">
+                    <img src="assets/modals-icons/toncoin-ton-logo.png" alt="ton" width="40px" height="40px">
+                    <div class="coin_details_text">
+                        <span class="coin-name">Toncoin</span>
+                        <abbr title="Litecoin" class="">ton</abbr>
+                    </div>
+                </div>
+                <div class="coinMarket">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth">
+                        <span class="coinPrice">$13,788</span>
+                        <span class="coinStatus up">+20,4%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin">
+                <div class="coin_details">
+                    <img src="assets/modals-icons/tron-trx-logo.png" alt="trx" width="40px" height="40px">
+                    <div class="coin_details_text">
+                        <span class="coin-name">Tron</span>
+                        <abbr title="Litecoin" class="">trx</abbr>
+                    </div>
+                </div>
+                <div class="coinMarket">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth">
+                        <span class="coinPrice">$65,788</span>
+                        <span class="coinStatus up">+21,45%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coin">
+                <div class="coin_details">
+                    <img src="assets/modals-icons/xrp-xrp-logo.png" alt="xrp" width="40px" height="40px">
+                    <div class="coin_details_text">
+                        <span class="coin-name">Xrp</span>
+                        <abbr title="Litecoin" class="">xrp</abbr>
+                    </div>
+                </div>
+                <div class="coinMarket">
+                    <div class="chartCont"></div>
+                    <div class="coinWorth">
+                        <span class="coinPrice">$25,788</span>
+                        <span class="coinStatus down">-0,45%</span>
+                    </div>
+                </div>
+            </div>
         </div>
+
         
         `
 

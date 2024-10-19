@@ -21,32 +21,32 @@ const balance_status = document.querySelector("#balance-status");
 crypto.addEventListener('click', cryptoClick);
 nft.addEventListener('click', nftClick);
 
-function cryptoClick(){
+function cryptoClick() {
     crypto.classList.add('active');
     crypto.classList.remove('inactive');
     nft.classList.add('inactive');
     nft.classList.remove('active');
 }
 
-function nftClick(){
+function nftClick() {
     crypto.classList.add('inactive');
     crypto.classList.remove('active');
     nft.classList.add('active');
     nft.classList.remove('inactive');
 }
 
-const data = [[-20,0,30,-134,80], [-20,30,-290,140,50,12,56,90,43], [-20,30,320,230,50,12,56,90,11], [-20,90,10,45,36,-87,9], [-20,90,10,45,-36,87,9], [-20,30,-290,20,50,12,56,90,90]]
+const data = [[-20, 0, 30, -134, 180], [-20, 30, -290, 140, 50, 12, 56, 90, 43], [-20, 30, 320, 230, 50, 12, 56, 90, 11], [-20, 90, 10, 45, 36, -87, 9], [-20, 90, 10, 45, -36, 87, 9], [-20, 30, -290, 20, 50, 12, 56, 90, 90], [-20, 0, 10], [25, 30, 15], [20, 30, 27], [10, 20, 45], [-20, 10, 0, -10], [10, 0, 20, 33], [17, 23, 45, 33], [10, 20, 24, 34, 40], [-20, 0, -5, 10, 17], [10, 24, 23, 20]]
 
 chartContainers.forEach((container, index) => {
     chart('bitcoin', data[index], 'auto', 2, container)
 })
 
-if (balance_status.textContent[0] === '+'){
+if (balance_status.textContent[0] === '+') {
     balance_status.classList.add('up');
     balance_status.classList.remove('down');
     balance_status.childNodes[0].classList.add('fa-caret-up');
     balance_status.childNodes[0].classList.remove('fa-caret-down');
-} else if (balance_status.textContent[0] === '-'){
+} else if (balance_status.textContent[0] === '-') {
     balance_status.classList.add('down');
     balance_status.classList.remove('up');
     balance_status.childNodes[0].classList.add('fa-caret-down');
@@ -78,16 +78,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 amountInput.addEventListener('input', () => {
-    if (!amountInput.value){
+    if (!amountInput.value) {
         dollarSign.classList.remove("focus");
         inputIcon.classList.remove("focus");
         inputContainer.classList.remove("focus");
-        
-    } else{
+
+    } else {
         dollarSign.classList.add("focus");
         inputIcon.classList.add("focus");
         inputContainer.classList.add("focus");
-        
+
     }
 });
 
@@ -122,26 +122,26 @@ const amount_input = document.querySelector("#send-amountInput");
 const amount_input_icon = document.querySelector("#send-money-icon");
 
 wallet_address.addEventListener('input', () => {
-    if (!wallet_address.value){
+    if (!wallet_address.value) {
         wallet_address_icon.classList.remove("focus");
         inputContainer_send.classList.remove("focus");
-        
-    } else{
+
+    } else {
         wallet_address_icon.classList.add("focus");
         inputContainer_send.classList.add("focus");
-        
+
     }
 });
 
 amount_input.addEventListener('input', () => {
     console.log(!amount_input.value)
-    if (!amount_input.value){
+    if (!amount_input.value) {
         amount_input_icon.classList.remove("focus");
         inputContainer_send2.classList.remove("focus");
-        
-    } else{
+
+    } else {
         amount_input_icon.classList.add("focus");
         inputContainer_send2.classList.add("focus");
-        
+
     }
 });
