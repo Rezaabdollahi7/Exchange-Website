@@ -1,5 +1,5 @@
 const exchange = `
-        <section id="exchange" class=" mt-5">
+             <section id="exchange" class=" mt-5">
             <div class="container-fluid">
                 <h3 class="section-tittle">Exchange</h3>
 
@@ -28,19 +28,30 @@ const exchange = `
                             <!--  -->
                             <div class="coins-container d-flex justify-content-around align-items-center">
                                 <div class="coin-details d-flex align-items-center">
-                                    <div class="img-and-name-count p-2 rounded-3  d-flex justify-content-center align-items-center flex-column "
-                                        data-bs-toggle="modal" data-bs-target="#usdtModal" data-bs-toggle="tooltip" data-bs-placement="top" title="click to change">
-                                        <img id="usdtImg" src="./assets/icons/theter.svg" alt="theter"
-                                            class="coin-icon exchange-coin-icon">
-                                        <span id="usdtLabel" class="coin-symbol text-center mt-3 w-100">USDT</span>
-                                    </div>
-
-                                    <div class="coin-name d-flex flex-column align-items-end ">
-                                        <input id="usdtAmount" class="coin-amount mt-2 w-100" placeholder="Like 300"
+                                    <div class="coin-name d-flex flex-column align-items-start justify-content-center ">
+                                        <span>Pay</span>
+                                        <input id="usdtAmount" class="coin-amount mt-2 w-100" placeholder="" value="1"
                                             type="number">
                                         <div class="coin-price d-flex flex-column w-100">
                                             <span id="usdtDollar" class="coin-value mt-3">~$ 994.15</span>
                                         </div>
+                                    </div>
+                                    <div class="img-and-name-count   d-flex justify-content-center align-items-center px-1 "
+                                        data-bs-toggle="modal" data-bs-target="#usdtModal">
+                                        <img id="usdtImg" src="./assets/icons/theter.svg" alt="theter"
+                                            class="coin-icon exchange-coin-icon">
+                                        <span id="usdtLabel" class="coin-symbol text-center  w-100">USDT</span>
+                                        <svg width="54px" height="40px" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path d="M7 10L12 15L17 10" stroke="#eef3fb" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </g>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
@@ -53,9 +64,38 @@ const exchange = `
                     <div class="d-flex justify-content-around align-items-center mt-4 w-100">
                         <div class="card-body">
                             <div class="coins-container d-flex justify-content-around align-items-center">
+                                <!--  -->
                                 <div class="coin-details d-flex align-items-center">
+                                    <div class="coin-name d-flex flex-column align-items-start justify-content-center ">
+                                        <span>Receive</span>
+                                        <input id="ethAmount" class="coin-amount mt-2 w-100" placeholder="" value="26"
+                                            type="number">
+                                        <div class="coin-price d-flex flex-column w-100">
+                                            <span id="ethDollar" class="coin-value mt-3">~$ 750</span>
+                                        </div>
+                                    </div>
+                                    <div class="img-and-name-count   d-flex justify-content-center align-items-center px-1 "
+                                        data-bs-toggle="modal" data-bs-target="#ethModal">
+                                        <img id="ethImg" src="./assets/icons/etherium.svg" alt="etherium"
+                                            class="coin-icon exchange-coin-icon">
+                                        <span id="ethLabel" class="coin-symbol text-center  w-100">ETH</span>
+                                        <svg width="54px" height="40px" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path d="M7 10L12 15L17 10" stroke="#eef3fb" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <!-- <div class="coin-details d-flex align-items-center">
                                     <div class="img-and-name-count p-2 rounded-3  d-flex justify-content-center align-items-center flex-column "
-                                        data-bs-toggle="modal" data-bs-target="#ethModal" data-bs-toggle="tooltip" data-bs-placement="top" title="click to change">
+                                        data-bs-toggle="modal" data-bs-target="#ethModal">
                                         <img id="ethImg" src="./assets/icons/etherium.svg" alt="etherium"
                                             class="coin-icon exchange-coin-icon">
                                         <span id="ethLabel" class="coin-symbol text-center mt-3 w-100">ETH</span>
@@ -68,7 +108,7 @@ const exchange = `
                                             <span id="ethDollar" class="coin-value mt-3">~$ 994.15</span>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

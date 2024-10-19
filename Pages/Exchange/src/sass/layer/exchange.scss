@@ -27,43 +27,41 @@ $positive-bg-color: #0caf60;
   .left-container {
     padding: 30px;
     border-radius: 31px;
-    background-color: $primary-bg;
+    background-color: #0e1c37;
 
     .coins-container {
-      background-color: $secondary-bg;
+      background-color: #09162e;
       width: 100%;
       height: 134px;
+      padding: 1.5rem;
       border-radius: 25.28px;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      &:hover {
-        cursor: pointer;
-      }
       img {
-        width: 40px;
-        height: 40px;
-        margin-left: 12%;
+        width: 28px;
+        height: 28px;
+        margin-left: 5%;
       }
 
       .img-and-name-count {
         transition: all 0.3s ease;
+        background-color: #202e49;
+        border-radius: 31px;
         &:hover {
           background-color: #84878b5e;
           cursor: pointer;
         }
       }
       input.coin-amount {
-        background-color: #0041a833;
+        background-color: transparent;
         width: 100%;
         border-radius: 15px;
         border: 0;
-        font-size: 15px;
-        font-weight: 400;
-        padding: 5px 0px 5px 14px;
-        box-shadow: 0px 1px 10px #ffffff45;
-        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        font-size: 17px;
+        font-weight: 700;
+        // padding: 5px 0px 5px 14px;
       }
       input[type="number"]::-webkit-inner-spin-button,
       input[type="number"]::-webkit-outer-spin-button {
@@ -77,7 +75,7 @@ $positive-bg-color: #0caf60;
       }
       .coin-name {
         width: 60%;
-        margin-left: 13%;
+        // margin-left: 13%;
       }
       .coin-name,
       .coin-price {
@@ -90,11 +88,21 @@ $positive-bg-color: #0caf60;
           line-height: 1.6;
         }
       }
-
+      .coin-name {
+        span {
+          color: #a9b0be;
+        }
+      }
+      .coin-price {
+        span {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
       .coin-symbol {
-        font-size: 16.43px;
-        font-weight: 300;
-        color: $light-gray;
+        color: rgb(239, 243, 251);
+        font-size: 16px;
+        font-weight: 600;
       }
 
       .coin-amount,
@@ -272,6 +280,8 @@ $positive-bg-color: #0caf60;
   .firstTokenCointainer,
   .secondTokenCointainer {
     .modal-content {
+      width: 95%;
+      margin: 0 auto;
       .modal-header {
         background-color: #0e1c37;
 
@@ -299,7 +309,7 @@ $positive-bg-color: #0caf60;
         }
       }
       ul {
-        height: 300px;
+        height: 380px;
         overflow-y: scroll;
         scrollbar-width: thin;
         scrollbar-color: #888 #13111d;

@@ -624,43 +624,40 @@ body {
 #exchange .left-container {
   padding: 30px;
   border-radius: 31px;
-  background-color: #0e1a32;
+  background-color: #0e1c37;
 }
 #exchange .left-container .coins-container {
-  background-color: #1b3254;
+  background-color: #09162e;
   width: 100%;
   height: 134px;
+  padding: 1.5rem;
   border-radius: 25.28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* برای Firefox */
 }
-#exchange .left-container .coins-container:hover {
-  cursor: pointer;
-}
 #exchange .left-container .coins-container img {
-  width: 40px;
-  height: 40px;
-  margin-left: 12%;
+  width: 28px;
+  height: 28px;
+  margin-left: 5%;
 }
 #exchange .left-container .coins-container .img-and-name-count {
   transition: all 0.3s ease;
+  background-color: #202e49;
+  border-radius: 31px;
 }
 #exchange .left-container .coins-container .img-and-name-count:hover {
   background-color: rgba(132, 135, 139, 0.368627451);
   cursor: pointer;
 }
 #exchange .left-container .coins-container input.coin-amount {
-  background-color: rgba(0, 65, 168, 0.2);
+  background-color: transparent;
   width: 100%;
   border-radius: 15px;
   border: 0;
-  font-size: 15px;
-  font-weight: 400;
-  padding: 5px 0px 5px 14px;
-  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.2705882353);
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  font-weight: 700;
 }
 #exchange .left-container .coins-container input[type=number]::-webkit-inner-spin-button,
 #exchange .left-container .coins-container input[type=number]::-webkit-outer-spin-button {
@@ -672,7 +669,6 @@ body {
 }
 #exchange .left-container .coins-container .coin-name {
   width: 60%;
-  margin-left: 13%;
 }
 #exchange .left-container .coins-container .coin-name,
 #exchange .left-container .coins-container .coin-price {
@@ -685,10 +681,17 @@ body {
   font-family: DM Sans;
   line-height: 1.6;
 }
+#exchange .left-container .coins-container .coin-name span {
+  color: #a9b0be;
+}
+#exchange .left-container .coins-container .coin-price span {
+  font-size: 14px;
+  font-weight: 400;
+}
 #exchange .left-container .coins-container .coin-symbol {
-  font-size: 16.43px;
-  font-weight: 300;
-  color: #a4a8ab;
+  color: rgb(239, 243, 251);
+  font-size: 16px;
+  font-weight: 600;
 }
 #exchange .left-container .coins-container .coin-amount,
 #exchange .left-container .coins-container .coin-value {
@@ -825,6 +828,11 @@ body {
     width: 700px !important;
   }
 }
+#exchange .firstTokenCointainer .modal-content,
+#exchange .secondTokenCointainer .modal-content {
+  width: 95%;
+  margin: 0 auto;
+}
 #exchange .firstTokenCointainer .modal-content .modal-header,
 #exchange .secondTokenCointainer .modal-content .modal-header {
   background-color: #0e1c37;
@@ -857,7 +865,7 @@ body {
 }
 #exchange .firstTokenCointainer .modal-body ul,
 #exchange .secondTokenCointainer .modal-body ul {
-  height: 300px;
+  height: 380px;
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: #888 #13111d;
