@@ -1,0 +1,207 @@
+body {
+  background-color: #061936;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: transparent;
+  background-image: radial-gradient(at top center, #072149 0%, rgba(6, 25, 54, 0) 45%);
+}
+#header .icons .icon {
+  width: 70px;
+  height: 70px;
+  transition: all 0.2s ease;
+}
+#header .icons .icon:hover {
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+#header .profile-pic img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+#header .profile-pic img:hover {
+  transform: translateY(-1rem);
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  #header .icons .icon {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media screen and (min-width: 440px) {
+  #header .mt-tope-icons {
+    margin-top: 0 !important;
+  }
+}
+
+.main-content {
+  padding: 3rem 0;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #061a35 0%, rgba(6, 26, 53, 0.9294117647) 100%);
+}
+.main-content .main-title {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+.main-content .buttons .btn {
+  font-weight: 800;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+}
+.main-content .buttons .btn-danger {
+  background-color: #bb133e;
+  border: none;
+}
+.main-content .buttons .btn-danger:hover {
+  background-color: #8d0e2f;
+}
+.main-content .buttons .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+.main-content .buttons .btn-outline-light:hover {
+  background-color: #fff;
+  color: #061936;
+}
+.main-content .description {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 500px;
+  color: #e2e2e2;
+  font-weight: 600;
+  line-height: 1.7em;
+}
+.main-content .eagle video {
+  width: 100%;
+  max-width: 580px;
+}
+.main-content .background-video {
+  z-index: -1;
+}
+
+@media screen and (max-width: 500px) {
+  h1.main-title {
+    font-size: 30px !important;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .stars {
+    width: unset !important;
+    margin-top: -16%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1290px) {
+  .main-content .buttons {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 915px) {
+  .stars {
+    margin-top: -9% !important;
+  }
+}
+.crypto-section {
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+}
+.crypto-section .container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.crypto-section .container .header {
+  border: 4px solid #bb133e;
+  padding: 2rem 5rem;
+}
+.crypto-section .container .header .stars {
+  background-color: rgba(6, 25, 54, 0.8862745098);
+  z-index: 10;
+  margin-top: -11%;
+  width: 61%;
+}
+.crypto-section .container .header .title {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.crypto-section .container .header .subtitle {
+  color: #e2e2e2;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+.crypto-section .addresses {
+  margin-top: -2%;
+  z-index: 10;
+}
+.crypto-section .addresses .address-item {
+  position: relative;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 18px;
+  font-weight: 600;
+}
+.crypto-section .addresses .address-item code {
+  font-size: 18px;
+  color: #fff;
+}
+.crypto-section .addresses .address-item:nth-child(1) {
+  background-color: rgba(6, 25, 54, 0.8862745098);
+  width: 70%;
+  font-weight: 800;
+}
+.crypto-section .addresses .address-item:hover {
+  background-color: #1e2a47;
+  border-color: rgba(231, 77, 60, 0.3254901961);
+}
+.crypto-section .addresses .address-item:hover .address-text::after {
+  opacity: 1;
+}
+.crypto-section .addresses .address-item.copied .address-text::after {
+  content: "Copied";
+  color: #00ff00;
+  opacity: 1;
+}
+.crypto-section .addresses .address-text::after {
+  content: "Copy";
+  position: absolute;
+  right: 10px;
+  font-size: 0.9rem;
+  color: #e74c3c;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+@media screen and (max-width: 600px) {
+  .crypto-section .header {
+    padding: 1rem !important;
+  }
+  .crypto-section .header img {
+    width: 99%;
+  }
+  .crypto-section .header .title {
+    font-size: 30px !important;
+  }
+  .crypto-section .addresses .address-item {
+    font-size: 15px;
+  }
+  .crypto-section .addresses .address-item:nth-child(1) {
+    width: 90% !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
