@@ -268,5 +268,64 @@ body {
     line-height: 1.6rem;
   }
 }
+#accordions-wrapper .custom-container {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#accordions-wrapper .custom-container .title h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+#accordions-wrapper .custom-container #accordionFirst {
+  background-color: #061936 !important;
+  --bs-accordion-bg: unset;
+  --bs-accordion-border-radius: unset;
+}
+#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button {
+  color: #e2e2e2;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button::after {
+  height: 12px;
+  width: 12px;
+  border: solid #bb133e;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 1px;
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  background-image: none !important;
+}
+#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button:not(.collapsed) {
+  background-color: unset;
+}
+#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button.collapsed::after {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
+#accordions-wrapper .custom-container #accordionFirst .accordion-body {
+  color: #e2e2e2;
+  font-weight: 400;
+  font-size: 18px;
+}
+#accordions-wrapper .custom-container #accordionFirst .accordion-body strong {
+  color: #bb133e;
+}
+@media screen and (max-width: 500px) {
+  #accordions-wrapper .custom-container .title h2 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  #accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button {
+    font-size: 17px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

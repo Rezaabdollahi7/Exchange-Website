@@ -4,6 +4,6 @@ import { footer } from "./components/footer.js"
 
 let main = document.getElementById('memecoin-page')
 
-main.innerHTML += header;
-main.innerHTML += slogan;
-main.innerHTML += footer;
+// main.innerHTML += header;
+// main.innerHTML += slogan;
+// main.innerHTML += footer;
