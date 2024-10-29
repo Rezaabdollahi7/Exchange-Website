@@ -204,4 +204,69 @@ body {
   }
 }
 
+.footer {
+  color: #ffffff;
+  max-width: 1140px;
+  margin: 0 auto;
+  background-color: transparent;
+  background-image: radial-gradient(at bottom center, #072149 0%, rgba(6, 25, 54, 0) 45%);
+}
+.footer .footer-profile .profile-img {
+  width: 100px;
+  height: 100px;
+  transition: all 0.2s ease;
+  filter: grayscale(1);
+}
+.footer .footer-profile .profile-img:hover {
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+.footer .btn-outline-light {
+  color: #ffffff;
+  border-color: #ffffff;
+  border-width: 2px;
+  transition: all 0.2s ease;
+}
+.footer .btn-outline-light:hover {
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+.footer .btn-outline-light:hover {
+  background-color: white;
+  color: #0f1e3a;
+}
+.footer .footer-email {
+  color: #e2e2e2;
+  font-size: 1.1rem;
+}
+.footer .footer-icons img {
+  width: 35px;
+  height: 35px;
+  transition: all 0.2s ease;
+}
+.footer .footer-icons img:hover {
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+.footer .footer-disclaimer {
+  color: #e2e2e2;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 650px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .footer-profile .profile-img {
+    width: 70px;
+    height: 70px;
+  }
+  .footer-disclaimer {
+    font-size: 0.7rem;
+    line-height: 1.6rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
