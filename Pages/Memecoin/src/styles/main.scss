@@ -273,8 +273,8 @@ $btn-border-color: #ffffff;
     .profile-img {
       width: 100px;
       height: 100px;
-      @include hover-transform();
       filter: grayscale(1);
+      @include hover-transform();
     }
   }
 
@@ -328,6 +328,11 @@ $btn-border-color: #ffffff;
 
 // ----------------- accordion ----------
 #accordions-wrapper {
+  background-color: transparent;
+
+  .background-video {
+    z-index: -1;
+  }
   .custom-container {
     max-width: 680px;
     margin-left: auto;
@@ -339,8 +344,9 @@ $btn-border-color: #ffffff;
         font-weight: 700;
       }
     }
-    #accordionFirst {
-      background-color: $primary-color !important;
+    #accordionFirst , #accordionSecond {
+      
+      background-color: #061936E8 !important;
       --bs-accordion-bg: unset;
       --bs-accordion-border-radius: unset;
 
