@@ -393,6 +393,9 @@ $btn-border-color: #ffffff;
       }
     }
 
+    .swiper-conatiner{
+      margin: 6rem 0;
+    }
     @media screen and (max-width: 500px) {
       .title {
         h2 {
@@ -400,7 +403,7 @@ $btn-border-color: #ffffff;
           font-weight: 700;
         }
       }
-      #accordionFirst {
+      #accordionFirst  , #accordionSecond {
         .accordion-header {
           .accordion-button {
             font-size: 17px;

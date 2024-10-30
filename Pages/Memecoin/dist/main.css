@@ -324,12 +324,15 @@ body {
 #accordions-wrapper .custom-container #accordionFirst .accordion-body strong, #accordions-wrapper .custom-container #accordionSecond .accordion-body strong {
   color: #bb133e;
 }
+#accordions-wrapper .custom-container .swiper-conatiner {
+  margin: 6rem 0;
+}
 @media screen and (max-width: 500px) {
   #accordions-wrapper .custom-container .title h2 {
     font-size: 22px;
     font-weight: 700;
   }
-  #accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button {
+  #accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button, #accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button {
     font-size: 17px;
   }
 }
