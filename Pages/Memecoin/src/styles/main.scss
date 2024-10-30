@@ -344,9 +344,9 @@ $btn-border-color: #ffffff;
         font-weight: 700;
       }
     }
-    #accordionFirst , #accordionSecond {
-      
-      background-color: #061936E8 !important;
+    #accordionFirst,
+    #accordionSecond {
+      background-color: #061936e8 !important;
       --bs-accordion-bg: unset;
       --bs-accordion-border-radius: unset;
 
@@ -393,7 +393,7 @@ $btn-border-color: #ffffff;
       }
     }
 
-    .swiper-conatiner{
+    .swiper-conatiner {
       margin: 6rem 0;
     }
     @media screen and (max-width: 500px) {
@@ -403,7 +403,8 @@ $btn-border-color: #ffffff;
           font-weight: 700;
         }
       }
-      #accordionFirst  , #accordionSecond {
+      #accordionFirst,
+      #accordionSecond {
         .accordion-header {
           .accordion-button {
             font-size: 17px;
@@ -411,5 +412,122 @@ $btn-border-color: #ffffff;
         }
       }
     }
+  }
+}
+
+// ------------------ weekly spaces -------
+
+// Variables
+$bg-color: #0f1e3a;
+$title-color: #ffffff;
+$subtitle-color: #c9d1e4;
+$card-bg-color: #1c2a48;
+$text-color: #ffffff;
+$link-color: #ff4d4d;
+$link-hover-color: lighten($link-color, 20%);
+
+// Weekly Spaces Section
+.weekly-spaces {
+  color: $text-color;
+
+  background-image: linear-gradient(
+      rgba(15, 30, 58, 0.9),
+      rgba(15, 30, 58, 0.9)
+    ),
+    url("../assets/images/American-BG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  .section-title {
+    color: $title-color;
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  .section-subtitle {
+    color: $subtitle-color;
+    margin-bottom: 2rem;
+    color: #e2e2e2;
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .host-card {
+    padding: 1.5rem;
+    border-radius: 10px;
+
+    .host-img {
+      width: 175px;
+      height: 175px;
+      border: 3px solid $text-color;
+      @include hover-transform()
+    }
+
+    .host-name {
+      font-size: 35px;
+      font-weight: 700;
+      margin-top: 1rem;
+      color: $title-color;
+    }
+
+    .host-details {
+      font-size: 1rem;
+      color: $subtitle-color;
+      background-color: #06193673;
+      padding: 10px 20px 10px 20px;
+      border-radius: 5px 5px 5px 5px;
+
+      .host-link {
+        color: $accent-color;
+        text-decoration: none;
+        font-weight: 700;
+        &:hover {
+          color: $link-hover-color;
+        }
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .weekly-spaces .section-title {
+    font-size: 2rem;
+  }
+
+  .weekly-spaces .host-card .host-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .weekly-spaces .host-card .host-name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .weekly-spaces .section-title {
+    font-size: 1.3rem;
+  }
+
+  .weekly-spaces .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .weekly-spaces .host-card .host-name {
+    font-size: 1.2rem;
+  }
+
+  .weekly-spaces .host-card .host-details {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .host-details {
+    width: 80%;
+    margin: 0 auto;
   }
 }

@@ -283,17 +283,20 @@ body {
   font-size: 35px;
   font-weight: 700;
 }
-#accordions-wrapper .custom-container #accordionFirst, #accordions-wrapper .custom-container #accordionSecond {
+#accordions-wrapper .custom-container #accordionFirst,
+#accordions-wrapper .custom-container #accordionSecond {
   background-color: rgba(6, 25, 54, 0.9098039216) !important;
   --bs-accordion-bg: unset;
   --bs-accordion-border-radius: unset;
 }
-#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button, #accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button {
+#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button,
+#accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button {
   color: #e2e2e2;
   font-weight: 700;
   font-size: 1.2rem;
 }
-#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button::after, #accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button::after {
+#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button::after,
+#accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button::after {
   height: 12px;
   width: 12px;
   border: solid #bb133e;
@@ -304,24 +307,29 @@ body {
   -webkit-transform: rotate(225deg);
   background-image: none !important;
 }
-#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button:not(.collapsed), #accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button:not(.collapsed) {
+#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button:not(.collapsed),
+#accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button:not(.collapsed) {
   background-color: unset;
 }
-#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button.collapsed::after, #accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button.collapsed::after {
+#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button.collapsed::after,
+#accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button.collapsed::after {
   border: solid white;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button:focus, #accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button:focus {
+#accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button:focus,
+#accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button:focus {
   box-shadow: none;
 }
-#accordions-wrapper .custom-container #accordionFirst .accordion-body, #accordions-wrapper .custom-container #accordionSecond .accordion-body {
+#accordions-wrapper .custom-container #accordionFirst .accordion-body,
+#accordions-wrapper .custom-container #accordionSecond .accordion-body {
   color: #e2e2e2;
   font-weight: 400;
   font-size: 18px;
 }
-#accordions-wrapper .custom-container #accordionFirst .accordion-body strong, #accordions-wrapper .custom-container #accordionSecond .accordion-body strong {
+#accordions-wrapper .custom-container #accordionFirst .accordion-body strong,
+#accordions-wrapper .custom-container #accordionSecond .accordion-body strong {
   color: #bb133e;
 }
 #accordions-wrapper .custom-container .swiper-conatiner {
@@ -332,8 +340,99 @@ body {
     font-size: 22px;
     font-weight: 700;
   }
-  #accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button, #accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button {
+  #accordions-wrapper .custom-container #accordionFirst .accordion-header .accordion-button,
+  #accordions-wrapper .custom-container #accordionSecond .accordion-header .accordion-button {
     font-size: 17px;
+  }
+}
+
+.weekly-spaces {
+  color: #ffffff;
+  background-image: linear-gradient(rgba(15, 30, 58, 0.9), rgba(15, 30, 58, 0.9)), url("../assets/images/American-BG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.weekly-spaces .section-title {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.weekly-spaces .section-subtitle {
+  color: #c9d1e4;
+  margin-bottom: 2rem;
+  color: #e2e2e2;
+  font-size: 25px;
+  font-weight: 400;
+}
+.weekly-spaces .host-card {
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.weekly-spaces .host-card .host-img {
+  width: 175px;
+  height: 175px;
+  border: 3px solid #ffffff;
+  transition: all 0.2s ease;
+}
+.weekly-spaces .host-card .host-img:hover {
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+.weekly-spaces .host-card .host-name {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+.weekly-spaces .host-card .host-details {
+  font-size: 1rem;
+  color: #c9d1e4;
+  background-color: rgba(6, 25, 54, 0.4509803922);
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px 5px 5px 5px;
+}
+.weekly-spaces .host-card .host-details .host-link {
+  color: #bb133e;
+  text-decoration: none;
+  font-weight: 700;
+}
+.weekly-spaces .host-card .host-details .host-link:hover {
+  color: #ffb3b3;
+}
+
+@media (max-width: 768px) {
+  .weekly-spaces .section-title {
+    font-size: 2rem;
+  }
+  .weekly-spaces .host-card .host-img {
+    width: 90px;
+    height: 90px;
+  }
+  .weekly-spaces .host-card .host-name {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 576px) {
+  .weekly-spaces .section-title {
+    font-size: 1.3rem;
+  }
+  .weekly-spaces .section-subtitle {
+    font-size: 1rem;
+  }
+  .weekly-spaces .host-card .host-name {
+    font-size: 1.2rem;
+  }
+  .weekly-spaces .host-card .host-details {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .host-details {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 

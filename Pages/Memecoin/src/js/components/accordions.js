@@ -1,6 +1,6 @@
 const accordions =
     `
-    <section id="accordions-wrapper" class="mt-5 overflow-x-hidden bg-transparent">
+    <section id="accordions-wrapper" class="mt-5 overflow-x-hidden bg-transparent position-relative">
         <video class="background-video position-absolute top-0 mt-1 " src="./assets/videos/Eagle-Loop.mp4" autoplay loop
             muted playsinline></video>
 
