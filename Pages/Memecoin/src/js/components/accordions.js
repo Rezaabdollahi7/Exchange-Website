@@ -9,7 +9,7 @@ const accordions =
             <div class="row px-2 mb-5 ">
                 <div class="title d-flex flex-column justify-content-center align-items-center">
                     <div class="img-container border rounded-2 p-2">
-                        <img width="60px" src="./assets/icons/Ethereum-Logo-Icon.png" alt="">
+                        <img width="60px" src="./assets/icons/Ethereum-Logo-Icon.png" alt="Ethereum">
                     </div>
                     <h2 class="mt-3 fw-bold">How to Buy using $ETH</h2>
                 </div>
@@ -99,19 +99,19 @@ const accordions =
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./assets/images/bingx-logo-150x44.png" alt="">
+                            <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/images/bingx-logo-150x44.png" alt="">
+                            <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/images/bingx-logo-150x44.png" alt="">
+                            <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/images/bingx-logo-150x44.png" alt="">
+                            <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/images/bingx-logo-150x44.png" alt="">
+                            <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -122,7 +122,7 @@ const accordions =
             <div class="row px-2 mt-5">
                 <div class="title d-flex flex-column justify-content-center align-items-center">
                     <div class="img-container border rounded-2 p-2">
-                        <img width="60px" src="./assets/icons/Solana-Logo-200px.png" alt="">
+                        <img width="60px" src="./assets/icons/Solana-Logo-200px.png" alt="Solana">
                     </div>
                     <h2 class="mt-3 fw-bold">How to Buy using $ETH</h2>
                 </div>

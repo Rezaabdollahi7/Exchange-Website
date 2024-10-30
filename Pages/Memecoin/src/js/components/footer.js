@@ -16,12 +16,12 @@ const footer =
 
             <!-- Social Icons -->
             <div class="footer-icons d-flex justify-content-center  my-4">
-                <img src="./assets/icons/Dextools-Logo-Icon.png" alt="Icon1" class="icon mx-2 mx-lg-3">
-                <img src="./assets/icons/X-Logo-Icon.png" alt="Icon2" class="icon mx-2 mx-lg-3">
-                <img src="./assets/icons/Telegram-Logo-Icon.png" alt="Icon3" class="icon mx-2 mx-lg-3">
-                <img src="./assets/icons/CoinMarketCap-Logo.png" alt="Icon4" class="icon mx-2 mx-lg-3">
-                <img src="./assets/icons/Coingecko-Logo.png" alt="Icon5" class="icon mx-2 mx-lg-3 ">
-                <img src="./assets/icons/Etherscan-Logo-Icon.png" alt="Icon6" class="icon mx-2 mx-lg-3">
+                <img src="./assets/icons/Dextools-Logo-Icon.png" alt="Dextools-Icon" class="icon mx-2 mx-lg-3">
+                <img src="./assets/icons/X-Logo-Icon.png" alt="x-Icon" class="icon mx-2 mx-lg-3">
+                <img src="./assets/icons/Telegram-Logo-Icon.png" alt="Telegram-Icon" class="icon mx-2 mx-lg-3">
+                <img src="./assets/icons/CoinMarketCap-Logo.png" alt="CoinMarketCap-Icon" class="icon mx-2 mx-lg-3">
+                <img src="./assets/icons/Coingecko-Logo.png" alt="Coingecko-Icon" class="icon mx-2 mx-lg-3 ">
+                <img src="./assets/icons/Etherscan-Logo-Icon.png" alt="Etherscan-Icon" class="icon mx-2 mx-lg-3">
             </div>
 
             <!-- Disclaimer -->

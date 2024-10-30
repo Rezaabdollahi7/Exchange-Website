@@ -32,7 +32,7 @@ const slogan =
             <div class="container">
                 <div class="header">
                     <div class="stars mx-auto">
-                        <img src="./assets/images/Star.png" alt="">
+                        <img src="./assets/images/Star.png" alt="Star-icon">
                     </div>
                     <h1 class="title mt-5">MAGA MEMECOIN</h1>
                     <p class="subtitle mt-3">MAKE CRYPTO GREAT AGAIN</p>
