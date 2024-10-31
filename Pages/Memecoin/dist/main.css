@@ -579,4 +579,32 @@ body {
   border-radius: 3px;
 }
 
+@media (max-width: 500px) {
+  #tokenomics .tokenomics-title {
+    font-size: 24px;
+  }
+  #tokenomics .supply-text {
+    font-size: 20px;
+  }
+  #tokenomics .fee-structure-title {
+    font-size: 18px;
+  }
+  #tokenomics .donation-amount {
+    font-size: 26px;
+  }
+  #tokenomics .donation-box p {
+    font-size: 16px;
+  }
+  #tokenomics .verify-donation span {
+    font-size: 17px;
+  }
+  #tokenomics .verify-donation img {
+    width: 130px;
+    height: 40px;
+  }
+  #tokenomics .swiper .swiper-slide {
+    max-height: 250px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -20,6 +20,6 @@ main.innerHTML += footer;
 accordionSwiperinit();
 tokenmicsSwiper();
 document.addEventListener("DOMContentLoaded", () => {
-    animateOnScroll(".donation-amount", 2000); // مدت زمان 1 ثانیه
+    animateOnScroll(".donation-amount", 2000); 
 });
 copyEvent();

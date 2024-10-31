@@ -27,7 +27,7 @@ const tokenmics =
             </div>
 
               <!-- swiper -->
-            <div class="row swiper-conatiner my-5">
+            <div class="row swiper-conatiner my-5 px-3">
                 <div class="swiper tokenmics">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -93,18 +93,13 @@ function tokenmicsSwiper() {
         breakpoints: {
             350: {
                 centeredSlides: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            850: {
+                centeredSlides: false,
                 slidesPerView: 2,
                 spaceBetween: 20,
-            },
-            550: {
-                centeredSlides: false,
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            800: {
-                centeredSlides: false,
-                slidesPerView: 4,
-                spaceBetween: 40,
             },
             1024: {
                 slidesPerView: 3,
