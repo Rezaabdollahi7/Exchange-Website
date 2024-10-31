@@ -463,7 +463,7 @@ $link-hover-color: lighten($link-color, 20%);
       width: 175px;
       height: 175px;
       border: 3px solid $text-color;
-      @include hover-transform()
+      @include hover-transform();
     }
 
     .host-name {
@@ -529,5 +529,117 @@ $link-hover-color: lighten($link-color, 20%);
   .host-details {
     width: 80%;
     margin: 0 auto;
+  }
+}
+
+// ------------------- tokenomics --------------
+// Variables
+$primary-color: #061936;
+$text-color: #ffffff;
+$highlight-color: #2bd8ae;
+$button-color: #ff1d5e;
+$donation-box-border: #00ff84;
+
+// Styles
+.tokenomics-section {
+  background-color: transparent;
+  background-image: radial-gradient(at top center, #072149 0%, #06193600 45%);
+  color: $text-color;
+
+  .background-video {
+    z-index: -1;
+    width: 100%;
+    left: 0;
+  }
+  .tokenomics-title {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 5px;
+    font-weight: bold;
+  }
+
+  .supply-box {
+    background-color: $text-muted-color;
+    padding: 10px 20px;
+    color: #333333;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 6px;
+    .supply-text {
+      font-size: 28px;
+      line-height: 28px;
+      font-weight: bold;
+    }
+  }
+
+  .fee-structure-title {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: bold;
+    margin-top: 1.5rem;
+  }
+
+  .taxed-text,
+  .taxless-text {
+    font-size: 16px;
+    line-height: 24px;
+    .highlighted {
+      color: $button-color;
+      font-weight: bold;
+    }
+  }
+
+  .convert-btn {
+    color: $accent-color;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 12px 24px;
+    border: 1px solid $accent-color;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    @include hover-transform();
+  }
+
+  .donation-box {
+    border: 2px solid $btn-border-color;
+    padding: 8px 25px;
+    border-radius: 5px;
+    margin-top: 5rem;
+    font-size: 16px;
+    line-height: 24px;
+    width: max-content;
+    .donation-amount {
+      color: $highlight-color;
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: bold;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+  .verify-donation {
+    span {
+      font-size: 25px;
+      line-height: 25px;
+      font-weight: 600;
+    }
+    img {
+      width: 250px;
+      height: 60px;
+    }
+  }
+  .receipts-link {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 24px;
+    font-size: 15px;
+    line-height: 15px;
+    color: #061936;
+    background-color: #2bd8ae;
+    border-radius: 3px;
   }
 }

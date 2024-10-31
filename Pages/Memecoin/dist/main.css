@@ -435,5 +435,104 @@ body {
     margin: 0 auto;
   }
 }
+.tokenomics-section {
+  background-color: transparent;
+  background-image: radial-gradient(at top center, #072149 0%, rgba(6, 25, 54, 0) 45%);
+  color: #ffffff;
+}
+.tokenomics-section .background-video {
+  z-index: -1;
+  width: 100%;
+  left: 0;
+}
+.tokenomics-section .tokenomics-title {
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.tokenomics-section .supply-box {
+  background-color: #e2e2e2;
+  padding: 10px 20px;
+  color: #333333;
+  width: max-content;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+.tokenomics-section .supply-box .supply-text {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: bold;
+}
+.tokenomics-section .fee-structure-title {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.tokenomics-section .taxed-text,
+.tokenomics-section .taxless-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+.tokenomics-section .taxed-text .highlighted,
+.tokenomics-section .taxless-text .highlighted {
+  color: #ff1d5e;
+  font-weight: bold;
+}
+.tokenomics-section .convert-btn {
+  color: #bb133e;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 12px 24px;
+  border: 1px solid #bb133e;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  transition: all 0.2s ease;
+}
+.tokenomics-section .convert-btn:hover {
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+.tokenomics-section .donation-box {
+  border: 2px solid #ffffff;
+  padding: 8px 25px;
+  border-radius: 5px;
+  margin-top: 5rem;
+  font-size: 16px;
+  line-height: 24px;
+  width: max-content;
+}
+.tokenomics-section .donation-box .donation-amount {
+  color: #2bd8ae;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.tokenomics-section .donation-box p {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 24px;
+}
+.tokenomics-section .verify-donation span {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 600;
+}
+.tokenomics-section .verify-donation img {
+  width: 250px;
+  height: 60px;
+}
+.tokenomics-section .receipts-link {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 24px;
+  font-size: 15px;
+  line-height: 15px;
+  color: #061936;
+  background-color: #2bd8ae;
+  border-radius: 3px;
+}
 
 /*# sourceMappingURL=main.css.map */
