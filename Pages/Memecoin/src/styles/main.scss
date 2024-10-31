@@ -1,3 +1,5 @@
+@import './mixins';
+
 // Variables
 $primary-color: #061936;
 $white-color: #fff;
@@ -18,63 +20,6 @@ $link-hover-color: lighten($link-color, 20%);
 $bg-color: #0f1e3a;
 // ----------------------------------------------------------------------
 
-@mixin hover-transform($transform: translateY(-0.5rem)) {
-  transition: all 0.2s ease;
-  &:hover {
-    transform: $transform;
-    cursor: pointer;
-  }
-}
-
-@mixin smoothAppear($duration: 1s) {
-  opacity: 0;
-  animation: smoothAppear $duration ease-in-out forwards;
-}
-
-@keyframes smoothAppear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@mixin slideInLeft($duration: 1s) {
-  opacity: 0;
-  transform: translateX(-100%);
-  animation: slideInLeft $duration ease-in-out forwards;
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@mixin slideInRight($duration: 1s) {
-  opacity: 0;
-  transform: translateX(100%);
-  animation: slideInRight $duration ease-in-out forwards;
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-// ----------------------------------------------------------------------
 
 // General Styles
 body {
