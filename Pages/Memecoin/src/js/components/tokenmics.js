@@ -20,7 +20,7 @@ const tokenmics =
                     Taxed $TRUMP:
                 </span> <span class="highlighted">(0%)</span> on all Transactions.
             </p>
-            <button class="btn convert-btn">Convert Taxed to Taxless</button>
+            <a href="#" class="btn convert-btn">Convert Taxed to Taxless</a>
             <div class="donation-box mx-auto ">
                 <span class="donation-amount" data-target="2027303">$2,027,303</span>
                 <p>Donated to U.S. Vets & Child Rescue</p>
@@ -57,7 +57,9 @@ const tokenmics =
                 class="verify-donation d-flex flex-column mx-auto mt-5 gap-4 justify-content-center align-items-center">
                 <div class="d-flex gap-4 justify-content-center align-items-center">
                     <span>Verify Donations on:</span>
-                    <img src="./assets/images/every.org-logo.png" alt="">
+                    <a href="#" target="_blank" >
+                        <img src="./assets/images/every.org-logo.png" alt="">
+                    </a>
                 </div>
                 <a class="receipts-link mt-4 " href="#">8/22/2023 - 1/5/2024 Receipts</a>
             </div>

@@ -1,3 +1,31 @@
+@keyframes smoothAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 body {
   background-color: #061936;
   color: #fff;
@@ -9,10 +37,12 @@ body {
 #header {
   background-color: transparent;
   background-image: radial-gradient(at top center, #072149 0%, rgba(6, 25, 54, 0) 45%);
+  opacity: 0;
+  animation: smoothAppear 2s ease-in-out forwards;
 }
 #header .icons .icon {
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
   transition: all 0.2s ease;
 }
 #header .icons .icon:hover {
@@ -20,8 +50,8 @@ body {
   cursor: pointer;
 }
 #header .profile-pic img {
-  width: 250px;
-  height: 250px;
+  width: 225px;
+  height: 225px;
   border-radius: 50%;
   transition: all 0.2s ease;
 }
@@ -45,6 +75,16 @@ body {
   padding: 3rem 0;
   background-color: transparent;
   background-image: linear-gradient(180deg, #061a35 0%, rgba(6, 26, 53, 0.9294117647) 100%);
+}
+.main-content .left-col {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+.main-content .right-col {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInRight 1s ease-in-out forwards;
 }
 .main-content .main-title {
   font-size: 35px;
@@ -328,9 +368,13 @@ body {
   font-weight: 400;
   font-size: 18px;
 }
-#accordions-wrapper .custom-container #accordionFirst .accordion-body strong,
-#accordions-wrapper .custom-container #accordionSecond .accordion-body strong {
+#accordions-wrapper .custom-container #accordionFirst .accordion-body .link-wall,
+#accordions-wrapper .custom-container #accordionSecond .accordion-body .link-wall {
   color: #bb133e;
+}
+#accordions-wrapper .custom-container #accordionFirst .accordion-body .link-wall:hover,
+#accordions-wrapper .custom-container #accordionSecond .accordion-body .link-wall:hover {
+  color: #ff1d5e;
 }
 #accordions-wrapper .custom-container .swiper-conatiner {
   margin: 6rem 0;

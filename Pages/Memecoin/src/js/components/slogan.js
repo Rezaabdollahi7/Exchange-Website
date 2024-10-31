@@ -7,14 +7,14 @@ const slogan =
         <div class="container">
             <div class="row align-items-center">
                 <!-- Left Column: Image -->
-                <div class="col-md-6 d-flex justify-content-center">
+                <div class="left-col col-md-6 d-flex justify-content-center">
                     <div class="eagle">
                         <video src="./assets/videos/Eagle-Front.mp4" autoplay loop muted playsinline></video>
                     </div>
                 </div>
 
                 <!-- Right Column: Text -->
-                <div class="col-md-6 px-4">
+                <div class="right-col col-md-6 px-4">
                     <h1 class="main-title mb-4 ">MAGA Movement on the Blockchain.</h1>
                     <div class="buttons mb-4 gap-3  d-flex flex-column d-sm-flex flex-sm-row  w-75 mx-auto mx-lg-0">
                         <a href="#" class="btn btn-danger  px-4 py-2 fw-bold w-100 w-md-auto">Buy with Ethereum</a>

@@ -11,10 +11,12 @@ const weekly_spaces =
                 <!-- Host 1 -->
                 <div class="col-12  col-md-6 mb-4">
                     <div class="host-card">
-                        <img src="./assets/images/Shawn-Farash-Profile.png" alt="Shawn Farash" class="host-img rounded-circle mb-3">
+                    <a href="https://twitter.com/Shawn_Farash" target="_blank">
+                       <img src="./assets/images/Shawn-Farash-Profile.png" alt="Shawn Farash" class="host-img rounded-circle mb-3">
+                    </a>
                         <h4 class="host-name">Shawn Farash</h4>
                         <p class="host-details">
-                            Host: <a href="#" class="host-link">@Shawn_Farash</a> Captain Deplorable.<br>
+                            Host: <a href="https://twitter.com/Shawn_Farash" class="host-link">@Shawn_Farash</a> Captain Deplorable.<br>
                             UNGOVERNED on LFA.
                         </p>
                     </div>
@@ -23,10 +25,12 @@ const weekly_spaces =
                 <!-- Host 2 -->
                 <div class="col-12  col-md-6 mb-4">
                     <div class="host-card">
+                    <a href="https://twitter.com/MrStevenSteele" target="_blank">
                         <img src="./assets/images/Steele-Photo.png" alt="Steven Steele" class="host-img rounded-circle mb-3">
+                    </a>
                         <h4 class="host-name">Steven Steele</h4>
                         <p class="host-details">
-                            Cohost: <a href="#" class="host-link">@MrStevenSteele</a> Recording<br>
+                            Cohost: <a href="https://twitter.com/MrStevenSteele" class="host-link">@MrStevenSteele</a> Recording<br>
                             Artist. Marketing Director.
                         </p>
                     </div>
@@ -35,10 +39,12 @@ const weekly_spaces =
                 <!-- Host 3 -->
                 <div class="col-12  col-md-6 mb-4">
                     <div class="host-card">
-                        <img src="./assets/images/jackie.png" alt="Jackie Dutton" class="host-img rounded-circle mb-3">
+                    <a href="https://twitter.com/MrStevenSteele" target="_blank">
+                      <img src="./assets/images/jackie.png" alt="Jackie Dutton" class="host-img rounded-circle mb-3">
+                    </a>
                         <h4 class="host-name">Jackie Dutton</h4>
                         <p class="host-details">
-                            Cohost: <a href="#" class="host-link">@thejackiedutton</a> Face of<br>
+                            Cohost: <a href="https://twitter.com/MrStevenSteele" class="host-link">@thejackiedutton</a> Face of<br>
                             @BSCNews. Pronouns (Try/Me).
                         </p>
                     </div>

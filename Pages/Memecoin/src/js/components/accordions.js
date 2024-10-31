@@ -21,17 +21,17 @@ const accordions =
                             <button class="accordion-button " type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 1. Download and Install
-                                <span class="border rounded-2 mx-2 px-3 py-2">
+                                <a href="https://metamask.io/download" target="_blank" class="border rounded-2 mx-2 px-3 py-2 text-decoration-none text-white">
                                     MetaMask
-                                </span>
+                                </a>
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionFirst">
                             <div class="accordion-body py-4 ">
-                                <strong>
+                                <a class="link-wall text-decoration-none" target="_blank"        href="https://metamask.io">
                                     MetaMask
-                                </strong>
+                                </a>
                                 is a crypto wallet app for used for storing and managing Ethereum tokens. After creating
                                 a
                                 wallet be sure to
@@ -50,7 +50,9 @@ const accordions =
                             data-bs-parent="#accordionFirst">
                             <div class="accordion-body py-4">
                                 From inside the
-                                <strong>MetaMask</strong> app you can purchase Ethereum using PayPal by clicking on the
+                                   <a class="link-wall text-decoration-none" target="_blank"        href="https://metamask.io">
+                                    MetaMask
+                                </a> app you can purchase Ethereum using PayPal by clicking on the
                                 buy
                                 button.
                             </div>
@@ -67,7 +69,9 @@ const accordions =
                             data-bs-parent="#accordionFirst">
                             <div class="accordion-body py-4">
                                 Connect your wallet to
-                                <strong>Uniswap</strong> , input our contract address
+                                  <a class="link-wall text-decoration-none" target="_blank"        href="https://app.uniswap.org/#/swap?outputCurrency=0x576e2BeD8F7b46D34016198911Cdf9886f78bea7">
+                                    Uniswap
+                                </a> , input our contract address
                                 0x576e2BeD8F7b46D34016198911Cdf9886f78bea7, set your slippage
                                 to 1.5%, and click the swap button!
                             </div>
@@ -84,7 +88,9 @@ const accordions =
                             data-bs-parent="#accordionFirst">
                             <div class="accordion-body py-4">
                                 Connect your wallet to
-                                <strong>Uniswap</strong> , input our contract address
+                                  <a class="link-wall text-decoration-none" target="_blank"        href="https://app.uniswap.org/#/swap?outputCurrency=0x576e2BeD8F7b46D34016198911Cdf9886f78bea7">
+                                    Uniswap
+                                </a> , input our contract address
                                 0x576e2BeD8F7b46D34016198911Cdf9886f78bea7, set your slippage
                                 to 1.5%, and click the swap button!
                             </div>
@@ -134,17 +140,17 @@ const accordions =
                             <button class="accordion-button " type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
                                 1. Download and Install
-                                <span class="border rounded-2 mx-2 px-3 py-2">
+                                  <a href="https://phantom.app/download" target="_blank" class="border rounded-2 mx-2 px-3 py-2 text-decoration-none text-white">
                                     Phantom
-                                </span>
+                                </a>
                             </button>
                         </h2>
                         <div id="collapsefive" class="accordion-collapse collapse show" aria-labelledby="headingFive"
                             data-bs-parent="#accordionSecond">
                             <div class="accordion-body py-4 ">
-                                <strong>
+                                <a class="link-wall text-decoration-none" target="_blank"        href="https://phantom.app/download">
                                     Phantom
-                                </strong>
+                                </a>
                                 Phantom is a crypto wallet app used for storing and managing Solana tokens. After
                                 creating a wallet be sure to write
                                 down your recovery phrase on a piece of paper and store it somewhere safe.
@@ -162,7 +168,9 @@ const accordions =
                             data-bs-parent="#accordionSecond">
                             <div class="accordion-body py-4">
                                 From inside the
-                                <strong>Phantom</strong> app you can purchase Ethereum using From app you can purchase
+                                   <a class="link-wall text-decoration-none" target="_blank"        href="https://phantom.app/download">
+                                    Phantom
+                                </a> app you can purchase Ethereum using From app you can purchase
                                 Solana using Moonpay or other providers.
                             </div>
                         </div>
@@ -178,7 +186,9 @@ const accordions =
                             data-bs-parent="#accordionSecond">
                             <div class="accordion-body py-4">
                                 Click the exchange button inside of the
-                                <strong>Phantom</strong> app, input our contract address
+                                <a class="link-wall text-decoration-none" target="_blank"        href="https://phantom.app/download">
+                                    Phantom
+                                </a> app, input our contract address
                                 HaP8r3ksG76PhQLTqR8FYBeNiQpejcFbQmiHbg787Ut1, tap on review order then swap!
                             </div>
                         </div>
@@ -194,7 +204,9 @@ const accordions =
                             data-bs-parent="#accordionSecond">
                             <div class="accordion-body py-4">
                                 Connect your wallet to
-                                <strong>Uniswap</strong> , input our contract address
+                                <a class="link-wall text-decoration-none" target="_blank"        href="https://phantom.app/download">
+                                    Phantom
+                                </a> , input our contract address
                                 0x576e2BeD8F7b46D34016198911Cdf9886f78bea7, set your slippage
                                 to 1.5%, and click the swap button!
                             </div>

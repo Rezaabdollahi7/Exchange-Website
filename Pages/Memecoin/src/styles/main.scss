@@ -12,6 +12,58 @@ $accent-color: #bb133e;
   }
 }
 
+@mixin smoothAppear($duration: 1s) {
+  opacity: 0;
+  animation: smoothAppear $duration ease-in-out forwards;
+}
+
+@keyframes smoothAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@mixin slideInLeft($duration: 1s) {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeft $duration ease-in-out forwards;
+}
+
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@mixin slideInRight($duration: 1s) {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInRight $duration ease-in-out forwards;
+}
+
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 // General Styles
 body {
   background-color: $primary-color;
@@ -24,18 +76,18 @@ body {
 #header {
   background-color: transparent;
   background-image: radial-gradient(at top center, #072149 0%, #06193600 45%);
-
+  @include smoothAppear(2s);
   .icons {
     .icon {
-      width: 70px;
-      height: 70px;
+      width: 55px;
+      height: 55px;
       @include hover-transform();
     }
   }
 
   .profile-pic img {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     border-radius: 50%;
     @include hover-transform(translateY(-1rem));
   }
@@ -58,7 +110,12 @@ body {
   padding: 3rem 0;
   background-color: transparent;
   background-image: linear-gradient(180deg, #061a35 0%, #061a35ed 100%);
-
+  .left-col{
+    @include slideInLeft(1s);
+  }
+  .right-col{
+    @include slideInRight(1s);
+  }
   .main-title {
     font-size: 35px;
     font-weight: 800;
@@ -387,8 +444,12 @@ $btn-border-color: #ffffff;
         color: $text-muted-color;
         font-weight: 400;
         font-size: 18px;
-        strong {
+        .link-wall {
           color: $accent-color;
+
+          &:hover{
+            color: #ff1d5e;
+          }
         }
       }
     }
