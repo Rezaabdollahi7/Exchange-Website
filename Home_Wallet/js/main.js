@@ -1,16 +1,4 @@
 import chart from "../../Common/chartMaker/chartMaker.js"
-import nav from "./Components/nav.js"
-import navigate from "./Components/navigate.js"
-import walletDetails from "./Components/walletDetails.js"
-import interactBtns from "./Components/interactBtns.js"
-import controlSegment from "./Components/controlSegment.js"
-
-const main = document.querySelector("#main");
-main.innerHTML += nav;
-main.innerHTML += navigate;
-main.innerHTML += walletDetails;
-main.innerHTML += interactBtns;
-main.innerHTML += controlSegment;
 
 const crypto = document.querySelector('#cryptoBtn');
 const nft = document.querySelector('#nftBtn');
