@@ -214,7 +214,7 @@ body {
 }
 .crypto-section .addresses .address-item.copied .address-text::after {
   content: "Copied";
-  color: #00ff00;
+  color: #00ff84;
   opacity: 1;
 }
 .crypto-section .addresses .address-text::after {
@@ -222,7 +222,7 @@ body {
   position: absolute;
   right: 10px;
   font-size: 0.9rem;
-  color: #e74c3c;
+  color: #bb133e;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -245,7 +245,7 @@ body {
 }
 
 .footer {
-  color: #ffffff;
+  color: #fff;
   max-width: 1140px;
   margin: 0 auto;
   background-color: transparent;
@@ -262,8 +262,8 @@ body {
   cursor: pointer;
 }
 .footer .btn-outline-light {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #fff;
+  border-color: #fff;
   border-width: 2px;
   transition: all 0.2s ease;
 }
@@ -391,14 +391,14 @@ body {
 }
 
 .weekly-spaces {
-  color: #ffffff;
+  color: #fff;
   background-image: linear-gradient(rgba(15, 30, 58, 0.9), rgba(15, 30, 58, 0.9)), url("../assets/images/American-BG.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
 }
 .weekly-spaces .section-title {
-  color: #ffffff;
+  color: #fff;
   font-size: 45px;
   font-weight: 800;
   text-transform: uppercase;
@@ -418,7 +418,7 @@ body {
 .weekly-spaces .host-card .host-img {
   width: 175px;
   height: 175px;
-  border: 3px solid #ffffff;
+  border: 3px solid #fff;
   transition: all 0.2s ease;
 }
 .weekly-spaces .host-card .host-img:hover {
@@ -429,7 +429,7 @@ body {
   font-size: 35px;
   font-weight: 700;
   margin-top: 1rem;
-  color: #ffffff;
+  color: #fff;
 }
 .weekly-spaces .host-card .host-details {
   font-size: 1rem;
@@ -482,7 +482,7 @@ body {
 .tokenomics-section {
   background-color: transparent;
   background-image: radial-gradient(at top center, #072149 0%, rgba(6, 25, 54, 0) 45%);
-  color: #ffffff;
+  color: #fff;
 }
 .tokenomics-section .background-video {
   z-index: -1;
@@ -540,7 +540,7 @@ body {
   cursor: pointer;
 }
 .tokenomics-section .donation-box {
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   padding: 8px 25px;
   border-radius: 5px;
   margin-top: 5rem;

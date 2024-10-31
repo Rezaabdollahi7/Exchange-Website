@@ -1,9 +1,23 @@
 // Variables
 $primary-color: #061936;
-$secondary-color: #fff;
+$white-color: #fff;
 $accent-color: #bb133e;
+$accent-color-50: #bb133e;
+$black-color: #000000;
+$muted-color: #e2e2e2;
+$gray-color: #dcdcdc;
+$white-color-50: #f2f2f2;
+$dark-gray: #333333;
+$highlight-color: #2bd8ae;
+$button-color: #ff1d5e;
+$donation-box-border: #00ff84;
+$subtitle-color: #c9d1e4;
+$card-bg-color: #1c2a48;
+$link-color: #ff4d4d;
+$link-hover-color: lighten($link-color, 20%);
+$bg-color: #0f1e3a;
+// ----------------------------------------------------------------------
 
-// Mixins
 @mixin hover-transform($transform: translateY(-0.5rem)) {
   transition: all 0.2s ease;
   &:hover {
@@ -26,13 +40,11 @@ $accent-color: #bb133e;
   }
 }
 
-
 @mixin slideInLeft($duration: 1s) {
   opacity: 0;
   transform: translateX(-100%);
   animation: slideInLeft $duration ease-in-out forwards;
 }
-
 
 @keyframes slideInLeft {
   from {
@@ -45,13 +57,11 @@ $accent-color: #bb133e;
   }
 }
 
-
 @mixin slideInRight($duration: 1s) {
   opacity: 0;
   transform: translateX(100%);
   animation: slideInRight $duration ease-in-out forwards;
 }
-
 
 @keyframes slideInRight {
   from {
@@ -64,15 +74,17 @@ $accent-color: #bb133e;
   }
 }
 
+// ----------------------------------------------------------------------
+
 // General Styles
 body {
   background-color: $primary-color;
-  color: $secondary-color;
+  color: $white-color;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
-
+// ----------------------------------------------------------------------
 #header {
   background-color: transparent;
   background-image: radial-gradient(at top center, #072149 0%, #06193600 45%);
@@ -105,15 +117,15 @@ body {
     }
   }
 }
-
+// ----------------------------------------------------------------------
 .main-content {
   padding: 3rem 0;
   background-color: transparent;
   background-image: linear-gradient(180deg, #061a35 0%, #061a35ed 100%);
-  .left-col{
+  .left-col {
     @include slideInLeft(1s);
   }
-  .right-col{
+  .right-col {
     @include slideInRight(1s);
   }
   .main-title {
@@ -125,7 +137,7 @@ body {
   .buttons {
     .btn {
       font-weight: 800;
-      color: $secondary-color;
+      color: $white-color;
       border-radius: 5px 5px 5px 5px;
 
       &-danger {
@@ -137,10 +149,10 @@ body {
       }
 
       &-outline-light {
-        border-color: $secondary-color;
-        color: $secondary-color;
+        border-color: $white-color;
+        color: $white-color;
         &:hover {
-          background-color: $secondary-color;
+          background-color: $white-color;
           color: $primary-color;
         }
       }
@@ -151,7 +163,7 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     max-width: 500px;
-    color: #e2e2e2;
+    color: $muted-color;
     font-weight: 600;
     line-height: 1.7em;
   }
@@ -193,9 +205,10 @@ body {
     margin-top: -9% !important;
   }
 }
+// ----------------------------------------------------------------------
 
 .crypto-section {
-  color: $secondary-color;
+  color: $white-color;
   padding: 50px 20px;
   text-align: center;
   position: relative;
@@ -216,7 +229,7 @@ body {
       }
 
       .title {
-        color: $secondary-color;
+        color: $white-color;
         font-size: 50px;
         font-weight: 800;
         text-transform: uppercase;
@@ -224,7 +237,7 @@ body {
       }
 
       .subtitle {
-        color: #e2e2e2;
+        color: $muted-color;
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 5px;
@@ -248,7 +261,7 @@ body {
 
       code {
         font-size: 18px;
-        color: $secondary-color;
+        color: $white-color;
       }
 
       &:nth-child(1) {
@@ -268,7 +281,7 @@ body {
 
       &.copied .address-text::after {
         content: "Copied";
-        color: #00ff00;
+        color: $donation-box-border;
         opacity: 1;
       }
     }
@@ -278,7 +291,7 @@ body {
       position: absolute;
       right: 10px;
       font-size: 0.9rem;
-      color: #e74c3c;
+      color: $accent-color-50;
       opacity: 0;
       transition: opacity 0.3s;
     }
@@ -308,15 +321,8 @@ body {
 }
 
 //--------------------- Footer ---------------------------
-// Variables
-$bg-color: #0f1e3a;
-$text-color: #ffffff;
-$text-muted-color: #e2e2e2;
-$btn-border-color: #ffffff;
-
-// Footer Styling
 .footer {
-  color: $text-color;
+  color: $white-color;
   max-width: 1140px;
   margin: 0 auto;
   background-color: transparent;
@@ -336,18 +342,18 @@ $btn-border-color: #ffffff;
   }
 
   .btn-outline-light {
-    color: $text-color;
-    border-color: $btn-border-color;
+    color: $white-color;
+    border-color: $white-color;
     border-width: 2px;
     @include hover-transform();
     &:hover {
-      background-color: lighten($btn-border-color, 20%);
+      background-color: lighten($white-color, 20%);
       color: $bg-color;
     }
   }
 
   .footer-email {
-    color: $text-muted-color;
+    color: $muted-color;
     font-size: 1.1rem;
   }
 
@@ -360,7 +366,7 @@ $btn-border-color: #ffffff;
   }
 
   .footer-disclaimer {
-    color: $text-muted-color;
+    color: $muted-color;
     font-size: 0.95rem;
     line-height: 1.5;
     max-width: 650px;
@@ -409,7 +415,7 @@ $btn-border-color: #ffffff;
 
       .accordion-header {
         .accordion-button {
-          color: $text-muted-color;
+          color: $muted-color;
           font-weight: 700;
           font-size: 1.2rem;
 
@@ -441,14 +447,14 @@ $btn-border-color: #ffffff;
         }
       }
       .accordion-body {
-        color: $text-muted-color;
+        color: $muted-color;
         font-weight: 400;
         font-size: 18px;
         .link-wall {
           color: $accent-color;
 
-          &:hover{
-            color: #ff1d5e;
+          &:hover {
+            color: $button-color;
           }
         }
       }
@@ -477,19 +483,8 @@ $btn-border-color: #ffffff;
 }
 
 // ------------------ weekly spaces -------
-
-// Variables
-$bg-color: #0f1e3a;
-$title-color: #ffffff;
-$subtitle-color: #c9d1e4;
-$card-bg-color: #1c2a48;
-$text-color: #ffffff;
-$link-color: #ff4d4d;
-$link-hover-color: lighten($link-color, 20%);
-
-// Weekly Spaces Section
 .weekly-spaces {
-  color: $text-color;
+  color: $white-color;
 
   background-image: linear-gradient(
       rgba(15, 30, 58, 0.9),
@@ -501,7 +496,7 @@ $link-hover-color: lighten($link-color, 20%);
   background-position: right;
 
   .section-title {
-    color: $title-color;
+    color: $white-color;
     font-size: 45px;
     font-weight: 800;
     text-transform: uppercase;
@@ -511,7 +506,7 @@ $link-hover-color: lighten($link-color, 20%);
   .section-subtitle {
     color: $subtitle-color;
     margin-bottom: 2rem;
-    color: #e2e2e2;
+    color: $muted-color;
     font-size: 25px;
     font-weight: 400;
   }
@@ -523,7 +518,7 @@ $link-hover-color: lighten($link-color, 20%);
     .host-img {
       width: 175px;
       height: 175px;
-      border: 3px solid $text-color;
+      border: 3px solid $white-color;
       @include hover-transform();
     }
 
@@ -531,7 +526,7 @@ $link-hover-color: lighten($link-color, 20%);
       font-size: 35px;
       font-weight: 700;
       margin-top: 1rem;
-      color: $title-color;
+      color: $white-color;
     }
 
     .host-details {
@@ -594,18 +589,11 @@ $link-hover-color: lighten($link-color, 20%);
 }
 
 // ------------------- tokenomics --------------
-// Variables
-$primary-color: #061936;
-$text-color: #ffffff;
-$highlight-color: #2bd8ae;
-$button-color: #ff1d5e;
-$donation-box-border: #00ff84;
 
-// Styles
 .tokenomics-section {
   background-color: transparent;
   background-image: radial-gradient(at top center, #072149 0%, #06193600 45%);
-  color: $text-color;
+  color: $white-color;
 
   .background-video {
     z-index: -1;
@@ -620,9 +608,9 @@ $donation-box-border: #00ff84;
   }
 
   .supply-box {
-    background-color: $text-muted-color;
+    background-color: $muted-color;
     padding: 10px 20px;
-    color: #333333;
+    color: $dark-gray;
     width: max-content;
     margin: 0 auto;
     border-radius: 6px;
@@ -663,7 +651,7 @@ $donation-box-border: #00ff84;
   }
 
   .donation-box {
-    border: 2px solid $btn-border-color;
+    border: 2px solid $white-color;
     padding: 8px 25px;
     border-radius: 5px;
     margin-top: 5rem;
@@ -699,8 +687,8 @@ $donation-box-border: #00ff84;
     padding: 12px 24px;
     font-size: 15px;
     line-height: 15px;
-    color: #061936;
-    background-color: #2bd8ae;
+    color: $primary-color;
+    background-color: $highlight-color;
     border-radius: 3px;
   }
 }
