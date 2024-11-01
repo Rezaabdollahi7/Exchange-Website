@@ -602,9 +602,34 @@ body {
     width: 130px;
     height: 40px;
   }
-  #tokenomics .swiper .swiper-slide {
+  #tokenomics .swiper .swiper-slide img {
     max-height: 250px;
+    max-width: 340px;
   }
+}
+.notification {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #0f1e3a;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border: 1px solid #e2e2e2;
+  z-index: 10;
+}
+.notification.show {
+  border: 1px solid #e2e2e2;
+  opacity: 1;
+}
+.notification .notification-icon {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,6 +8,7 @@ import { copyEvent } from "./events.js"
 import { tokenmics } from "./components/tokenmics.js"
 import { tokenmicsSwiper } from "./components/tokenmics.js"
 import { animateOnScroll } from "./components/tokenmics.js"
+import { notifAlert } from "./components/notif.js"
 
 let main = document.getElementById('memecoin-page')
 
@@ -23,3 +24,4 @@ document.addEventListener("DOMContentLoaded", () => {
     animateOnScroll(".donation-amount", 2000); 
 });
 copyEvent();
+notifAlert();

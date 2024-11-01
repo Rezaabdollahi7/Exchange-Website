@@ -1,7 +1,7 @@
 const header =
     `
     <!-- Header Section -->
-    <header id="header" class="header text-center pt-4">
+    <header id="header" class="header text-center pt-5">
         <div class="container">
             <div class="profile-pic mx-4 d-block d-lg-none my-5">
                 <img src="./assets/images/MAGA-Memecoin-Logo-300x300.png" alt="Profile Picture">
