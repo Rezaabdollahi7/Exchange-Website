@@ -1,5 +1,9 @@
 const header =
     `
+        <div id="notification" class="notification shadow ">
+            <img src="./assets/images/MAGA-Memecoin-Logo-300x300.png" alt="icon" class="notification-icon">
+            <span class="notification-text">0.053 Maga claim at Exthiu995h8bu...</span>
+        </div>
     <!-- Header Section -->
     <header id="header" class="header text-center pt-5">
         <div class="container">

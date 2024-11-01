@@ -19,70 +19,17 @@
 
 <body class="overflow-x-hidden">
 
-
-
-
-
-    <main id="memecoin-page">
-        <!-- Notification Container -->
-        <div id="notification" class="notification shadow ">
-            <img src="./assets/images/MAGA-Memecoin-Logo-300x300.png" alt="icon" class="notification-icon">
-            <span class="notification-text">0.053 Maga claim at Exthiu995h8bu...</span>
-        </div>
-
-    </main>
-
-
-
-
-
+    <main id="memecoin-page"></main>
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-    <script>
-        // تنظیم تابع برای انیمیشن افزایش عدد
-        function animateCountUp(element, target) {
-            let start = 0;
-            const duration = 1000; // مدت زمان 1 ثانیه
-            const increment = target / (duration / 10);
-
-            const updateCounter = () => {
-                start += increment;
-                if (start < target) {
-                    element.innerText = `$${Math.floor(start).toLocaleString()}`;
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    element.innerText = `$${target.toLocaleString()}`;
-                }
-            };
-
-            updateCounter();
-        }
-
-        // استفاده از Intersection Observer برای تشخیص اسکرول به المان
-        document.addEventListener("DOMContentLoaded", () => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const targetElement = entry.target;
-                        const targetValue = parseInt(targetElement.getAttribute("data-target"));
-                        animateCountUp(targetElement, targetValue);
-                        observer.unobserve(targetElement); // یکبار اجرا شود
-                    }
-                });
-            }, { threshold: 0.5 });
-
-            const donationAmount = document.querySelector(".donation-amount");
-            observer.observe(donationAmount);
-        });
-    </script>
-
+    <!-- main js -->
     <script src="./src/js/main.js" type="module"></script>
 
 </body>
