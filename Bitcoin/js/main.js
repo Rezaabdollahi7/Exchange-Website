@@ -1,3 +1,17 @@
+import nav from "./components/nav.js";
+import currency from "./components/currency.js";
+import interact from "./components/interact.js";
+import transactions from "./components/transactions.js";
+import popup from "./components/popup.js";
+
+const main = document.querySelector("#main");
+main.innerHTML += nav;
+main.innerHTML += currency;
+main.innerHTML += interact;
+main.innerHTML += transactions;
+main.innerHTML += popup;
+
+
 const more = document.querySelector('#more');
 const close_x = document.querySelector('#close');
 const pop_back = document.querySelector('.pop-up-back');
