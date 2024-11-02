@@ -109,43 +109,8 @@ function tokenmicsSwiper() {
     });
 }
 
-function animateOnScroll(selector, duration = 2000) {
-    const elements = document.querySelectorAll(selector);
-
-    // تابع داخلی برای انیمیشن افزایش عدد
-    function animateCountUp(element, target) {
-        let start = 0;
-        const increment = target / (duration / 10);
-
-        const updateCounter = () => {
-            start += increment;
-            if (start < target) {
-                element.innerText = `$${Math.floor(start).toLocaleString()}`;
-                requestAnimationFrame(updateCounter);
-            } else {
-                element.innerText = `$${target.toLocaleString()}`;
-            }
-        };
-
-        updateCounter();
-    }
-
-    // استفاده از Intersection Observer برای تشخیص اسکرول به عناصر
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const targetElement = entry.target;
-                const targetValue = parseInt(targetElement.getAttribute("data-target"));
-                animateCountUp(targetElement, targetValue);
-                observer.unobserve(targetElement); // یکبار اجرا شود
-            }
-        });
-    }, { threshold: 0.5 });
-
-    // مشاهده تمام عناصر مشخص شده با selector
-    elements.forEach(element => observer.observe(element));
-}
 
 
 
-export { tokenmics, tokenmicsSwiper, animateOnScroll }
+
+export { tokenmics, tokenmicsSwiper }

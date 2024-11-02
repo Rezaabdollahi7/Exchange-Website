@@ -1,4 +1,4 @@
-@import './mixins';
+@import "./mixins";
 
 // Variables
 $primary-color: #061936;
@@ -19,7 +19,6 @@ $link-color: #ff4d4d;
 $link-hover-color: lighten($link-color, 20%);
 $bg-color: #0f1e3a;
 // ----------------------------------------------------------------------
-
 
 // General Styles
 body {
@@ -638,38 +637,67 @@ body {
   }
 }
 
-@media (max-width:500px) {
-  #tokenomics{
-    .tokenomics-title{
+@media (max-width: 500px) {
+  #tokenomics {
+    .tokenomics-title {
       font-size: 24px;
     }
-    .supply-text{
+    .supply-text {
       font-size: 20px;
     }
-    .fee-structure-title{
+    .fee-structure-title {
       font-size: 18px;
     }
-    .donation-amount{
+    .donation-amount {
       font-size: 26px;
     }
-     .donation-box {
-      p{
+    .donation-box {
+      p {
         font-size: 16px;
       }
-     }
-     .verify-donation {
-      span{
+    }
+    .verify-donation {
+      span {
         font-size: 17px;
       }
-      img{
+      img {
         width: 130px;
         height: 40px;
       }
-     }
-     .swiper{
-      .swiper-slide{
-        max-height: 250px;
+    }
+    .swiper {
+      .swiper-slide {
+        img {
+          max-height: 250px;
+          max-width: 340px;
+        }
       }
-     }
+    }
+  }
+}
+// ----------- notif ---------------
+.notification {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: $bg-color;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border: 1px solid $muted-color;
+  z-index: 10;
+  &.show {
+    border: 1px solid $muted-color;
+    opacity: 1;
+  }
+
+  .notification-icon {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
   }
 }

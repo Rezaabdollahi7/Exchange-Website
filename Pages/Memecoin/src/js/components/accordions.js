@@ -101,22 +101,31 @@ const accordions =
             <!-- end first row -->
 
             <!-- swiper -->
-            <div class="row swiper-conatiner">
+            <div class="row swiper-conatiner mx-3">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide px-2">
                             <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide px-2">
                             <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide px-2">
                             <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide px-2">
                             <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide px-2">
+                            <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
+                        </div>
+                        <div class="swiper-slide px-2">
+                            <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
+                        </div>
+                        <div class="swiper-slide px-2">
+                            <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
+                        </div>
+                        <div class="swiper-slide px-2">
                             <img src="./assets/images/bingx-logo-150x44.png" alt="bingx">
                         </div>
                     </div>
@@ -250,7 +259,7 @@ function accordionSwiperinit() {
             350: {
                 centeredSlides: true,
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 50,
             },
             550: {
                 centeredSlides: false,

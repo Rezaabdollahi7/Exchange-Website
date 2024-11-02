@@ -1,7 +1,7 @@
 const slogan =
     `
     <!-- Main Content Section -->
-    <section id="slogan" class="main-content text-white mt-5 position-relative   w-100 overflow-hidden">
+    <section id="slogan" class="main-content text-white mt-3 lg:mt-5 position-relative   w-100 overflow-hidden">
         <video class="background-video position-absolute top-0 mt-1 " src="./assets/videos/USA-Flag-Waving.mp4" autoplay
             loop muted playsinline></video>
         <div class="container">
