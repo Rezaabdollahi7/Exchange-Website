@@ -156,7 +156,7 @@ body {
   padding: 50px 20px;
   text-align: center;
   position: relative;
-
+  margin-top: 5rem;
   .container {
     max-width: 950px;
     margin: 0 auto;
@@ -699,5 +699,95 @@ body {
     margin-right: 10px;
     width: 30px;
     height: 30px;
+  }
+}
+
+// -------------- Spinning -------------
+.roulette-wrapper .selector {
+  width: 3px;
+  background: grey;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  z-index: 2;
+}
+
+.roulette-wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 390px;
+  border: 2px solid #ff3366;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.wheel {
+  display: flex;
+  transition: transform 0s;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #333;
+  margin: 1px;
+  text-align: center;
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+.spin-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #ff3366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#resultModal {
+  .modal-content {
+    background: #182030;
+    color: white;
+    max-width: 460px;
+  }
+  .modal-body p,
+  .modal-body span,
+  .modal-body ul,
+  .modal-body strong,
+  .modal-body h3 {
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .modal-body {
+    padding: 1rem 2rem !important;
+  }
+  .modal-body,
+  .modal-footer {
+    border: 0 !important;
+  }
+  .connect-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .modal-footer button {
+    font-size: 1.3rem;
   }
 }
