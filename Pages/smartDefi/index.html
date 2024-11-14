@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CORE Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.2.0/dist/css/coreui.min.css" rel="stylesheet"
+        integrity="sha384-u3h5SFn5baVOWbh8UkOrAaLXttgSF0vXI15ODtCSxl0v/VKivnCN6iHCcvlyTL7L" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./dist/output.css">
 </head>
@@ -19,8 +22,8 @@
 <body>
     <nav class="navbar">
         <div class="search-container">
-            <input type="text" placeholder="Search SD tokens.." class="search-input">
             <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Search SD tokens.." class="search-input">
         </div>
         <div class="dropdown">
             <button class="btn network-btn dropdown-toggle" type="button" id="networkDropdown" data-bs-toggle="dropdown"
@@ -48,7 +51,60 @@
             Connect Wallet</button>
     </nav>
 
-    <div class="dashboard  container-fluid ">
+    <div class="sidebar sidebar-narrow-unfoldable border-end sidebar-dark">
+        <div class="sidebar-header  d-flex flex-column">
+            <img class="rounded-3" src="./assets/icons/asset 0.svg" width="35" alt="">
+            <div class="sidebar-brand">Smart defi</div>
+        </div>
+
+
+        <ul class="sidebar-nav mt-4">
+            <li class="nav-item d-flex feq-logo align-items-center">
+                <img class="rounded-5" src="./assets/asset 2.png" width="45" height="45" alt="">
+                <span class="ms-3 ">FEG TOKEN</span>
+            </li>
+
+
+            <li class="nav-item mt-5  home-item ">
+                <a class="nav-link " href="#">
+                    <img src="./assets/icons/home.png" alt="" width="32px" height="32px" class="ms-1 rounded-5">
+                    <span class=" ms-4">Home</span>
+                </a>
+            </li>
+
+            <li class="nav-item d-flex feq-logo align-items-center mt-3">
+                <img src="./assets/icons/search.svg" alt="" width="32px" height="32px" class="ms-2 rounded-5">
+                <span class="ms-4 ">TOKEN </span>
+            </li>
+
+
+            <li class="nav-item d-flex feq-logo align-items-center mt-3">
+                <img src="./assets/icons/sale.png" alt="" width="32px" height="32px" class="ms-2 rounded-5">
+                <span class="ms-4 ">PRESALE </span>
+            </li>
+
+            <li class="nav-item d-flex feq-logo align-items-center mt-3">
+                <img src="./assets/icons/launchpad.png" alt="" width="32px" height="32px" class="ms-2 rounded-5">
+                <span class="ms-4 ">LUNCHPAD </span>
+            </li>
+
+
+        </ul>
+
+        <div class="d-flex flex-column w-auto ">
+            <div class="item d-flex flex-column align-items-center">
+                <img src="./assets/icons/asset 43.svg" alt="" height="23" width="23">
+                <span>$626.80</span>
+            </div>
+            <div class="item d-flex flex-column align-items-center mt-4 mb-2">
+                <img src="./assets/icons/asset 44.svg" alt="" height="23" width="23">
+                <span>$66.80</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dashboard  container ">
 
         <div class="row">
             <section class="overview col-lg-9">
@@ -548,6 +604,11 @@
     <!-- bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- CORE UI -->
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.2.0/dist/js/coreui.bundle.min.js"
+        integrity="sha384-JdRP5GRWP6APhoVS1OM/pOKMWe7q9q8hpl+J2nhCfVJKoS+yzGtELC5REIYKrymn"
         crossorigin="anonymous"></script>
 
     <script src="./src/js/main.js"></script>

@@ -48,7 +48,8 @@ body {
   align-items: center;
   padding: 10px 20px;
   gap: 10px;
-
+  width: 90%;
+  margin: 0 auto;
   .search-container {
     position: relative;
     flex: 1;
@@ -523,5 +524,53 @@ $button-color: #0047ff;
   .item-volume,
   .item-marketcap {
     display: none;
+  }
+}
+
+// -----------------------
+
+.sidebar {
+  background-color: var(--color-background-secondary);
+
+  .feq-logo {
+    background-color: var(--color-background-primary);
+    height: 50px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: var(--color-background-white);
+      cursor: pointer;
+    }
+  }
+  .sidebar-brand{
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .home-item {
+    border-radius: 50px;
+    background-image: linear-gradient(
+      90deg,
+      var(--color-tertiary),
+      var(--color-secondary)
+    ) !important;
+
+    a {
+      padding: 4px;
+      height: 46px;
+      background-image: linear-gradient(
+        90deg,
+        var(--color-tertiary),
+        var(--color-secondary)
+      ) !important;
+      border-radius: 50px;
+      &:hover {
+        border-radius: 50px;
+        background-image: linear-gradient(
+          90deg,
+          var(--color-tertiary),
+          var(--color-secondary)
+        ) !important;
+      }
+    }
   }
 }
