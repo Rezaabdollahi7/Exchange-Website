@@ -154,6 +154,12 @@ body {
   border-radius: 10px;
   background-color: var(--color-background-secondary);
 }
+.dashboard .overview .smart-token-text {
+  background-color: var(--color-background-white);
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
 .dashboard .overview .stats {
   display: flex;
   justify-content: space-around;
@@ -357,6 +363,83 @@ body {
   width: 100%;
   height: 40px;
   color: #fff;
+}
+
+.table-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #ffffff;
+}
+.table-section .table-header,
+.table-section .table-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr;
+  padding: 10px 0px;
+  align-items: center;
+}
+.table-section .table-header {
+  background-color: var(--color-background-white);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #8a9aa5;
+  text-transform: uppercase;
+}
+.table-section .table-row {
+  border-bottom: 1px solid #2e3b47;
+}
+.table-section .table-row:last-child {
+  border-bottom: none;
+}
+.table-section .table-row .item-number {
+  color: #8a9aa5;
+  font-size: 0.9rem;
+}
+.table-section .table-row .item-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.table-section .table-row .item-info .item-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.table-section .table-row .item-info .item-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.table-section .table-row .item-info .item-subname {
+  font-size: 0.8rem;
+  color: #8a9aa5;
+}
+.table-section .table-row .item-price,
+.table-section .table-row .item-change,
+.table-section .table-row .item-volume,
+.table-section .table-row .item-marketcap {
+  font-size: 0.9rem;
+  text-align: left;
+}
+.table-section .table-row .item-price.negative,
+.table-section .table-row .item-change.negative {
+  color: var(--color-danger);
+}
+.table-section .table-row .item-price.positive,
+.table-section .table-row .item-change.positive {
+  color: #4caf50;
+}
+
+@media (max-width: 768px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr 2fr 2fr;
+  }
+  .item-volume,
+  .item-marketcap {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
