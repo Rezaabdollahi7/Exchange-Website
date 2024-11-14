@@ -8,17 +8,242 @@
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="search-container">
+            <input type="text" placeholder="Search SD tokens.." class="search-input">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <div class="dropdown">
+            <button class="btn network-btn dropdown-toggle" type="button" id="networkDropdown" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="./assets/icons/asset 3.svg" alt="BSC Icon"> BSC
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="networkDropdown">
+                <li><span class="dropdown-header">Mainnet</span></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-ethereum"></i> Ethereum Mainnet</a></li>
+                <li><a class="dropdown-item active" href="#"><img src="path/to/bnb-icon.png" alt="BNB Icon"> BNB Chain
+                        <i class="fas fa-check"></i></a></li>
+                <li><a class="dropdown-item" href="#"><img src="path/to/base-icon.png" alt="Base Icon"> Base</a></li>
+                <li><span class="dropdown-header">Testnet</span></li>
+                <li><a class="dropdown-item" href="#"><img src="path/to/bnb-testnet-icon.png" alt="BNB Testnet Icon">
+                        BNB
+                        Testnet</a></li>
+                <li><a class="dropdown-item" href="#"><img src="path/to/base-sepolia-icon.png" alt="Base Sepolia Icon">
+                        Base
+                        Sepolia</a></li>
+            </ul>
+        </div>
 
+        <button class="wallet-btn">
+            <img src="./assets/icons/asset 4.svg" alt="">
+            Connect Wallet</button>
+    </nav>
+
+    <div class="dashboard">
+        <section class="overview">
+            <h1>Dashboard</h1>
+            <div class="stats gap-2">
+                <div class="stat-item">
+                    <p>SmartDeFi™ 24h volume</p>
+                    <h2>$588.78k</h2>
+                </div>
+                <div class="stat-item">
+                    <p>SmartDeFi™ tokens launched</p>
+                    <h2>118</h2>
+                </div>
+                <div class="stat-item">
+                    <p>Total raised in presales</p>
+                    <h2>$509.85k</h2>
+                </div>
+                <div class="stat-item">
+                    <p>SmartDeFi™ holders</p>
+                    <h2>46.13k</h2>
+                </div>
+            </div>
+
+            <div class="container dashboard-section mx-0 px-0">
+                <div class="row mx-0 px-0">
+                    <!-- Top Gainers -->
+                    <div class="col-lg-6 col-md-12 mb-3">
+                        <div class="card list-card">
+                            <h4>SmartDeFi Top Gainers <i class="fas fa-info-circle"></i></h4>
+                            <div class="list-title d-flex justify-content-between align-items-center w-100">
+                                <span># Name</span>
+                                <span>Change 24h</span>
+                            </div>
+                            <div class="list-item">
+                                <span class="item-number">1</span>
+                                <img src="./assets/asset 9.png" alt="SmartDeFiDoge" class="item-icon">
+                                <div class="item-info">
+                                    <span class="item-name">SmartDeFiDoge</span>
+                                    <span class="item-subname">SmartDeFiDoge</span>
+                                </div>
+                                <span class="item-change positive">+3.84%</span>
+                            </div>
+                            <div class="list-item">
+                                <span class="item-number">2</span>
+                                <img src="./assets/asset 9.png" alt="SmartPEPE" class="item-icon">
+                                <div class="item-info">
+                                    <span class="item-name">SmartPEPE</span>
+                                    <span class="item-subname">SMARTPEPE</span>
+                                </div>
+                                <span class="item-change positive">+3.82%</span>
+                            </div>
+                            <div class="list-item">
+                                <span class="item-number">3</span>
+                                <img src="./assets/asset 9.png" alt="FEG Token" class="item-icon">
+                                <div class="item-info">
+                                    <span class="item-name">FEG Token</span>
+                                    <span class="item-subname">FEG</span>
+                                </div>
+                                <span class="item-change positive">+3.45%</span>
+                            </div>
+                            <div class="list-item">
+                                <span class="item-number">4</span>
+                                <img src="./assets/asset 9.png" alt="Volcano" class="item-icon">
+                                <div class="item-info">
+                                    <span class="item-name">Volcano</span>
+                                    <span class="item-subname">VSD</span>
+                                </div>
+                                <span class="item-change positive">+2.59%</span>
+                            </div>
+                            <div class="list-item">
+                                <span class="item-number">5</span>
+                                <img src="./assets/asset 9.png" alt="DICE" class="item-icon">
+                                <div class="item-info">
+                                    <span class="item-name">DICE</span>
+                                    <span class="item-subname">DICE</span>
+                                </div>
+                                <span class="item-change positive">+2.42%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New SD Listings -->
+                    <div class="col-lg-6 col-md-12 mb-3">
+                        <div class="card list-card">
+                            <h4>New SD listings <i class="fas fa-info-circle"></i></h4>
+                            <div class="list-item">
+                                <img src="./assets/asset 9.png" alt="10000" class="item-icon">
+                                <div class="item-info">
+                                    <span class="item-name">10000</span>
+                                    <span class="item-subname">QJ</span>
+                                </div>
+                                <span class="item-price negative">$68.01</span>
+                            </div>
+                            <div class="list-item">
+                                <img src="./assets/asset 9.png" alt="FEG Mirror" class="item-icon">
+                                <div class="item-info">
+                                    <span class="item-name">FEG Mirror</span>
+                                    <span class="item-subname">EGF</span>
+                                </div>
+                                <span class="item-price negative">$4,707</span>
+                            </div>
+                            <div class="list-item">
+                                <img src="./assets/asset 9.png" alt="lxl" class="item-icon">
+                                <div class="item-info">
+                                    <span class="item-name">lxl</span>
+                                    <span class="item-subname">lxl</span>
+                                </div>
+                                <span class="item-price negative">$0.68173</span>
+                            </div>
+                            <div class="list-item">
+                                <img src="./assets/asset 9.png" alt="fegxsc" class="item-icon">
+                                <div class="item-info">
+                                    <span class="item-name">fegxsc</span>
+                                    <span class="item-subname">xsc</span>
+                                </div>
+                                <span class="item-price positive">$12.05</span>
+                            </div>
+                            <div class="list-item">
+                                <img src="./assets/asset 9.png" alt="SOK Token" class="item-icon">
+                                <div class="item-info">
+                                    <span class="item-name">SOK Token</span>
+                                    <span class="item-subname">SOKO</span>
+                                </div>
+                                <span class="item-price positive">$0.01092</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <aside class=" profile-section">
+            <div class="feg-container d-flex justify-content-center align-items-center flex-column">
+
+                <div class="feq-header d-flex justify-content-between">
+                    <div class="feq-details d-flex flex-column">
+                        <div class="main-detail d-flex  gap-2 align-items-center">
+                            <div class="img-container">
+                                <img class="" src="./assets/asset 2.png" alt="" width="40">
+                            </div>
+                            <span>FEED EVERY GORILLA
+                                FEG</span>
+                        </div>
+
+                        <div class="links-container d-flex mt-3 gap-3">
+                            <a href="#" class="text-decoration-none ">
+                                <img class="" src="./assets/icons/asset 39.svg" alt="">
+                                Buy
+                            </a>
+                            <a href="#" class="text-decoration-none ">
+                                <img class="" src="./assets/icons/asset 40.svg" alt="">
+                                Stake
+                            </a>
+                            <a href="#" class="text-decoration-none ">
+                                <img class="" src="./assets/icons/asset 41.svg" alt="">
+                                Bridge
+                            </a>
+                        </div>
+                    </div>
+                    <div class="feg-img-container">
+                        <img src="./assets/asset 42.png" alt="" width="122">
+                    </div>
+                </div>
+
+                <div
+                    class="my-wallet-container d-flex justify-content-center align-items-start flex-column w-100 mt-2 py-4">
+                    <div class="wall-title d-flex gap-4 align-items-center">
+                        <div class="img-container">
+                            <img src="./assets/icons/asset 0.svg" alt="" width="22">
+                        </div>
+                        <h5>My wallet</h5>
+                    </div>
+
+                    <div class="wallet-input-container w-100 my-4 d-flex flex-column">
+                        <div class="add-wall d-flex justify-content-center align-items-center">
+                            <i class="fas fa-search search-icon "></i>
+                            <span>Wallet not connected..</span>
+                        </div>
+
+                        <button class="connect-btn w-100 border-0">Connect Wallet</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+    </div>
     <!-- bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        
+
     <script src="./src/js/main.js"></script>
 </body>
 

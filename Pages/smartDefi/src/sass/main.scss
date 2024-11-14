@@ -1,0 +1,429 @@
+:root {
+  --color-white: #fff;
+  --color-black: #fafafa;
+  --color-dirty-white: #b6bbc7;
+  --color-grey-dark: #515162;
+  --color-grey: #1e2532;
+  --color-grey-light: #cfcfcf;
+  --color-grey-lighter: #f0f0f0;
+  --color-purple: #7a4dff;
+  --color-blue-dark: #2a2646;
+  --color-blue-light: #36325f;
+  --color-primary: #1e2036;
+  --color-primary-light: #eff3fe;
+  --color-red: #dc3545;
+  --color-success: #33cc86;
+  --color-warning: #ffc107;
+  --color-danger: #ff4d79;
+  --color-disabled: #b2b2b9;
+  --color-gradient-light: #122bb1;
+  --color-gradient-dark: #0e0267;
+  --color-border: #4e4e50;
+  --color-background-dark: #0b1320;
+  --color-dark-primary: #121212;
+  --color-dark-secondary: #0b1320;
+  --color-background-primary: #0b1320;
+  --color-background-secondary: #111b2a;
+  --color-background-tertiary: #0b1320;
+  --color-header: #000012;
+  --color-background-white: #233f59;
+  --color-placeholder: #6c7274;
+  --color-logo: #fdff00;
+  --color-modal-background: #070707;
+  --color-gradient-green-light: #33cc86;
+  --color-gradient-green-dark: #00a364;
+  --color-tertiary: #a845d8;
+  --color-secondary: #b8068f;
+  --color-primary: #00cbff;
+  --color-blue-sd: #1d89ef;
+  --color-blue-sd-old: #398ef6;
+  --color-text-secondary: #a3a7ab;
+}
+body {
+  background-color: var(--color-background-primary);
+  color: white;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+
+  .search-container {
+    position: relative;
+    flex: 1;
+
+    .search-input {
+      width: 100%;
+      padding: 10px 10px 10px 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: #2e3b47; // رنگ پس‌زمینه فیلد جستجو
+      color: #ffffff;
+
+      &::placeholder {
+        color: #8a9aa5; // رنگ Placeholder
+      }
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #8a9aa5;
+    }
+  }
+
+  .wallet-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #6d34a0; // رنگ دکمه کیف پول
+    color: #ffffff;
+    font-weight: bold;
+    border: 0;
+    background: linear-gradient(
+      150deg,
+      #233f59 30%,
+      rgba(29, 137, 239, 0.52) 110%
+    );
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.dropdown {
+  background: linear-gradient(
+    150deg,
+    #233f59 30%,
+    rgba(29, 137, 239, 0.52) 110%
+  );
+  border-radius: 10px;
+
+  .network-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: #1b2b34; // رنگ پس‌زمینه منوی دراپ‌داون
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .dropdown-header {
+      color: #8a9aa5;
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      color: #ffffff;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      i {
+        margin-left: auto;
+        color: #8a9aa5; // رنگ آیکون تیک در گزینه انتخاب شده
+      }
+
+      &:hover {
+        background-color: #2e3b47;
+      }
+
+      &.active {
+        background-color: #2e3b47; // رنگ پس‌زمینه گزینه انتخاب‌شده
+      }
+    }
+  }
+}
+
+// ---------------------------
+// Variables
+$background-color: #1e1e2f;
+$text-color: #ffffff;
+$highlight-color: #ffdd57;
+$button-color: #0047ff;
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+
+  .overview,
+  .top-gainers,
+  .new-listings,
+  .wallet-panel {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color-background-secondary);
+  }
+
+  .overview {
+    // width: 100%;
+    .stats {
+      display: flex;
+      justify-content: space-around;
+    }
+    .stat-item {
+      text-align: center;
+      max-width: 240px;
+      min-width: 240px;
+      height: auto;
+      background-color: var(--color-background-primary);
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid var(--color-background-white);
+      z-index: 1;
+      p {
+        font-size: 12px;
+        color: var(--color-dirty-white);
+        text-align: start;
+      }
+      h2 {
+        color: transparent;
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 1rem;
+        text-align: end;
+        background-clip: text;
+        background-image: linear-gradient(
+          to right,
+          #e99b3d,
+          #e8d337 10%,
+          #e8d337
+        );
+      }
+    }
+    h1 {
+      font-size: 28px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-weight: 700;
+    }
+  }
+
+  .top-gainers,
+  .new-listings {
+    flex: 1;
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      tr {
+        td {
+          padding: 8px;
+        }
+        &:nth-child(odd) {
+          background-color: darken($background-color, 5%);
+        }
+      }
+    }
+  }
+}
+.dashboard-section {
+  padding: 20px;
+  .row {
+    padding: 0 !important;
+  }
+  .list-card {
+    background-color: #1b2b34;
+    border-radius: 8px;
+    padding: 20px;
+    color: #ffffff;
+
+    h4 {
+      font-size: 1.2rem;
+      color: #ffffff;
+      margin-bottom: 15px;
+      i {
+        color: #8a9aa5;
+        margin-left: 5px;
+      }
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #2e3b47;
+      height: 50px;
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .item-number {
+        width: 20px;
+        color: #8a9aa5;
+        font-size: 0.9rem;
+        margin-right: 10px;
+      }
+
+      .item-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+
+      .item-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .item-name {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+
+        .item-subname {
+          font-size: 0.8rem;
+          color: #8a9aa5;
+        }
+      }
+
+      .item-change,
+      .item-price {
+        font-size: 0.9rem;
+
+        &.positive {
+          color: #4caf50;
+        }
+
+        &.negative {
+          color: #f44336;
+        }
+      }
+    }
+
+    .list-title {
+      span {
+        font-size: 0.8rem;
+        color: var(--color-dirty-white);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-section {
+    .list-card {
+      h4 {
+        font-size: 1rem;
+      }
+
+      .list-item {
+        .item-number,
+        .item-change,
+        .item-price {
+          font-size: 0.8rem;
+        }
+
+        .item-info {
+          .item-name {
+            font-size: 0.9rem;
+          }
+
+          .item-subname {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}
+.profile-section {
+
+    .feq-header {
+      border-radius: 10px;
+      background-image: -webkit-linear-gradient(35deg, #111b2a 30%, #233f59);
+      background-image: linear-gradient(35deg, #111b2a 30%, #233f59);
+      border: 1px solid var(--color-background-white);
+
+      .feq-details {
+        padding: 10px;
+      }
+      .main-detail {
+        img {
+          border-radius: 100px;
+        }
+        span {
+          font-size: 18px;
+          font-weight: 700;
+          margin-left: 10px;
+        }
+      }
+
+      .links-container {
+        a {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          padding: 5px 12px;
+          color: var(--color-dirty-white);
+          border-radius: 10px;
+          background-color: var(--color-background-primary);
+          img {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  
+  .my-wallet-container {
+    background-color: var(--color-background-secondary);
+    border-radius: 10px;
+    padding: 20px 15px 15px;
+    h5 {
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 2.25rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .wallet-input-container {
+      background-color: var(--color-background-primary);
+      border-radius: 10px;
+      .add-wall {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
+    .connect-btn {
+      margin-top: 30px;
+      background: linear-gradient(to right, #1649ff, var(--color-primary));
+      border-radius: 10px;
+      font-weight: 500;
+      width: 100%;
+      height: 40px;
+      color: #fff;
+    }
+  }
+}
