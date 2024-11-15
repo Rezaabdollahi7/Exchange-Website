@@ -44,6 +44,7 @@
 body {
   background-color: var(--color-background-primary);
   color: white;
+  margin-left: 4rem;
 }
 
 .navbar {
@@ -51,8 +52,6 @@ body {
   align-items: center;
   padding: 10px 20px;
   gap: 10px;
-  width: 90%;
-  margin: 0 auto;
 }
 .navbar .search-container {
   position: relative;
@@ -502,6 +501,17 @@ body {
 .sidebar .home-item a:hover {
   border-radius: 50px;
   background-image: linear-gradient(90deg, var(--color-tertiary), var(--color-secondary)) !important;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1422px !important;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
