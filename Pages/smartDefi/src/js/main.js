@@ -23,3 +23,23 @@ document.addEventListener('DOMContentLoaded', function () {
         new bootstrap.Tooltip(tooltipTriggerEl);
     });
 });
+
+
+// فعال‌سازی همه Popoverها در صفحه
+document.addEventListener('DOMContentLoaded', function () {
+    // ذخیره کردن تمام Popover ها در متغیری برای مدیریت
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+    });
+
+    // بستن Popover زمانی که خارج از آن کلیک می‌شود
+    document.addEventListener('click', function (event) {
+        popoverList.forEach(function (popover) {
+            // اگر عنصر کلیک شده داخل Popover یا آیکون trigger نباشد، Popover را ببندید
+            if (!popover._element.contains(event.target) && !event.target.closest('[data-bs-toggle="popover"]')) {
+                popover.hide();
+            }
+        });
+    });
+});

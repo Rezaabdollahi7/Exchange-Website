@@ -226,7 +226,7 @@ $button-color: #0047ff;
       min-width: 220px;
       height: auto;
       background-color: var(--color-background-primary);
-      padding: 10px;
+      padding: 7px 10px 5px 10px;
       border-radius: 10px;
       border: 1px solid var(--color-background-white);
       z-index: 1;
@@ -248,6 +248,19 @@ $button-color: #0047ff;
           #e8d337 10%,
           #e8d337
         );
+      }
+      span {
+        float: right;
+        i {
+          color: var(--color-blue-sd);
+          font-size: 15px;
+          background-color: #000012;
+          margin-left: 5px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
     }
     h1 {
@@ -299,7 +312,7 @@ $button-color: #0047ff;
         background-color: #000012;
         margin-left: 5px;
 
-        &:hover{
+        &:hover {
           cursor: pointer;
         }
       }
@@ -613,5 +626,21 @@ $button-color: #0047ff;
   .container-xl,
   .container-xxl {
     max-width: 1422px !important;
+  }
+}
+// ---------------------
+.popover-body {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-background-white);
+  color: white;
+  font-weight: 500;
+
+  div {
+    div {
+      margin: 3px 0;
+      gap: 5px;
+    }
   }
 }

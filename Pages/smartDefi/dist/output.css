@@ -200,7 +200,7 @@ body {
   min-width: 220px;
   height: auto;
   background-color: var(--color-background-primary);
-  padding: 10px;
+  padding: 7px 10px 5px 10px;
   border-radius: 10px;
   border: 1px solid var(--color-background-white);
   z-index: 1;
@@ -218,6 +218,18 @@ body {
   text-align: end;
   background-clip: text;
   background-image: linear-gradient(to right, #e99b3d, #e8d337 10%, #e8d337);
+}
+.dashboard .overview .stat-item span {
+  float: right;
+}
+.dashboard .overview .stat-item span i {
+  color: var(--color-blue-sd);
+  font-size: 15px;
+  background-color: #000012;
+  margin-left: 5px;
+}
+.dashboard .overview .stat-item span i:hover {
+  cursor: pointer;
 }
 .dashboard .overview h1 {
   font-size: 28px;
@@ -517,6 +529,18 @@ body {
   .container-xxl {
     max-width: 1422px !important;
   }
+}
+.popover-body {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-background-white);
+  color: white;
+  font-weight: 500;
+}
+.popover-body div div {
+  margin: 3px 0;
+  gap: 5px;
 }
 
 /*# sourceMappingURL=output.css.map */
