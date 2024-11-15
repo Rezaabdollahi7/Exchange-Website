@@ -77,17 +77,29 @@ body {
   }
 
   .wallet-btn {
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #6d34a0; // رنگ دکمه کیف پول
     color: #ffffff;
     font-weight: bold;
     border: 0;
-    background: linear-gradient(
-      150deg,
-      #233f59 30%,
-      rgba(29, 137, 239, 0.52) 110%
-    );
+    border-radius: 5px;
+    padding: 1px;
+    background: linear-gradient(to right, #a845d8, #b8068f);
+    height: 42px;
+    width: 175px;
+    transition: all 0.2s ease;
+    &:hover {
+      filter: brightness(1.15);
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      text-decoration: none;
+      color: white;
+      height: 100%;
+      border-radius: 5px;
+      background-color: #171e29;
+    }
   }
 }
 
@@ -123,7 +135,7 @@ body {
   }
 
   .dropdown-menu {
-    background-color: #1b2b34; // رنگ پس‌زمینه منوی دراپ‌داون
+    background-color: var(--color-background-secondary);
     padding: 0;
     border-radius: 8px;
     overflow: hidden;
@@ -158,6 +170,19 @@ body {
       &.active {
         background-color: #2e3b47; // رنگ پس‌زمینه گزینه انتخاب‌شده
       }
+    }
+    .dropdown-item.active {
+      color: var(--color-primary);
+      position: relative;
+    }
+
+    .dropdown-item.active::after {
+      content: "\2713";
+      font-size: 1rem;
+      color: var(--color-primary) !important;
+      position: absolute;
+      right: 15px;
+      font-weight: bold;
     }
   }
 }
@@ -198,8 +223,8 @@ $button-color: #0047ff;
     }
     .stat-item {
       text-align: center;
-      max-width: 240px;
-      min-width: 240px;
+      max-width: 220px;
+      min-width: 220px;
       height: auto;
       background-color: var(--color-background-primary);
       padding: 10px;
@@ -542,7 +567,7 @@ $button-color: #0047ff;
       cursor: pointer;
     }
   }
-  .sidebar-brand{
+  .sidebar-brand {
     font-size: 0.8rem;
     font-weight: bold;
   }

@@ -25,30 +25,59 @@
             <i class="fas fa-search search-icon"></i>
             <input type="text" placeholder="Search SD tokens.." class="search-input">
         </div>
+
         <div class="dropdown">
             <button class="btn network-btn dropdown-toggle" type="button" id="networkDropdown" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                <img src="./assets/icons/asset 3.svg" alt="BSC Icon"> BSC
+                <img src="./assets/icons/asset 3.svg" alt="BSC Network Icon" class="selected-icon"> BSC
             </button>
-            <ul class="dropdown-menu" aria-labelledby="networkDropdown">
-                <li><span class="dropdown-header">Mainnet</span></li>
-                <li><a class="dropdown-item" href="#"><i class="fas fa-ethereum"></i> Ethereum Mainnet</a></li>
-                <li><a class="dropdown-item active" href="#"><img src="path/to/bnb-icon.png" alt="BNB Icon"> BNB Chain
-                        <i class="fas fa-check"></i></a></li>
-                <li><a class="dropdown-item" href="#"><img src="path/to/base-icon.png" alt="Base Icon"> Base</a></li>
-                <li><span class="dropdown-header">Testnet</span></li>
-                <li><a class="dropdown-item" href="#"><img src="path/to/bnb-testnet-icon.png" alt="BNB Testnet Icon">
-                        BNB
-                        Testnet</a></li>
-                <li><a class="dropdown-item" href="#"><img src="path/to/base-sepolia-icon.png" alt="Base Sepolia Icon">
+            <ul class="dropdown-menu py-2" aria-labelledby="networkDropdown">
+                <li><span class="px-4 dropdown-header">Mainnet</span></li>
+                <li><a class="px-4 dropdown-item" href="#" data-name="ETH"
+                        data-icon="./assets/icons/asset 44.svg">
+                        <img src="./assets/icons/asset 44.svg" width="27" height="27" alt="Ethereum Network Icon">
+                        Ethereum
+                        Mainnet
+                    </a>
+                </li>
+
+                <li><a class="px-4 dropdown-item active" href="#" data-name="BNB Chain"
+                        data-icon="./assets/icons/asset 3.svg">
+                        <img src="./assets/icons/asset 3.svg" width="27" height="27" alt="BNB Chain Network Icon"> BNB
+                        Chain
+                    </a>
+                </li>
+
+                <li><a class="px-4 dropdown-item" href="#" data-name="Base" data-icon="./assets/icons/asset 6.svg">
+                        <img src="./assets/icons/asset 6.svg" width="27" height="27" alt="Base Network Icon"> Base
+                    </a>
+                </li>
+
+                <li><span class="px-4 dropdown-header">Testnet</span></li>
+
+                <li><a class="px-4 dropdown-item" href="#" data-name="TBNB "
+                        data-icon="./assets/icons/asset 3.svg">
+                        <img src="./assets/icons/asset 3.svg" width="27" height="27" alt="BNB Testnet Icon"> BNB Testnet
+                    </a>
+                </li>
+
+                <li><a class="px-4 dropdown-item" href="#" data-name="TBASE"
+                        data-icon="./assets/icons/asset 6.svg">
+                        <img src="./assets/icons/asset 6.svg" width="27" height="27" alt="Base Sepolia Testnet Icon">
                         Base
-                        Sepolia</a></li>
+                        Sepolia
+                    </a>
+                </li>
             </ul>
         </div>
 
+
         <button class="wallet-btn">
-            <img src="./assets/icons/asset 4.svg" alt="">
-            Connect Wallet</button>
+            <a href="#">
+                <img src="./assets/icons/asset 4.svg" alt="">
+                Connect Wallet
+            </a>
+        </button>
     </nav>
 
     <div class="sidebar sidebar-narrow-unfoldable border-end sidebar-dark">
