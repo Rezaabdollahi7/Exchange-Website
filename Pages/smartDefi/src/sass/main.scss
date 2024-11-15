@@ -284,7 +284,7 @@ $button-color: #0047ff;
     padding: 0 !important;
   }
   .list-card {
-    background-color: #1b2b34;
+    background-color: var(--color-background-primary);
     border-radius: 8px;
     padding: 20px;
     color: #ffffff;
@@ -294,8 +294,14 @@ $button-color: #0047ff;
       color: #ffffff;
       margin-bottom: 15px;
       i {
-        color: #8a9aa5;
+        color: var(--color-blue-sd);
+        font-size: 15px;
+        background-color: #000012;
         margin-left: 5px;
+
+        &:hover{
+          cursor: pointer;
+        }
       }
     }
 

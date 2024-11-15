@@ -254,7 +254,7 @@ body {
   padding: 0 !important;
 }
 .dashboard-section .list-card {
-  background-color: #1b2b34;
+  background-color: var(--color-background-primary);
   border-radius: 8px;
   padding: 20px;
   color: #ffffff;
@@ -265,8 +265,13 @@ body {
   margin-bottom: 15px;
 }
 .dashboard-section .list-card h4 i {
-  color: #8a9aa5;
+  color: var(--color-blue-sd);
+  font-size: 15px;
+  background-color: #000012;
   margin-left: 5px;
+}
+.dashboard-section .list-card h4 i:hover {
+  cursor: pointer;
 }
 .dashboard-section .list-card .list-item {
   display: flex;

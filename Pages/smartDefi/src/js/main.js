@@ -15,3 +15,11 @@ document.querySelectorAll('.dropdown-item').forEach(item => {
         this.classList.add('active');
     });
 });
+
+// فعال‌سازی همه Tooltip‌ها در صفحه
+document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+});
