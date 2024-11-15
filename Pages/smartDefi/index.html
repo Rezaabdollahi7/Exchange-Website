@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar container p-1 mt-2">
         <div class="search-container">
             <i class="fas fa-search search-icon"></i>
             <input type="text" placeholder="Search SD tokens.." class="search-input">
@@ -129,8 +129,9 @@
         </div>
     </div>
 
-    <div class="dashboard container">
-        <div class="row">
+    <div class="dashboard container p-1 ps-3 mt-2">
+        <div class="row w-100">
+
             <section class="overview col-lg-9">
                 <h1>Dashboard</h1>
                 <div class="stats gap-2">
@@ -293,17 +294,19 @@
                     </div>
                 </div>
             </section>
+
             <aside class="profile-section col-lg-3 position-relative">
                 <div class="feg-container d-flex justify-content-center align-items-center flex-column w-100">
-                    <div class="feq-header d-flex justify-content-between">
+                    <!-- head section -->
+                    <div class="feq-header d-flex justify-content-between w-100 position-relative">
                         <div class="feq-details d-flex flex-column">
-                            <div class="main-detail d-flex gap-2 align-items-center">
+                            <div class="main-detail d-flex gap-1 align-items-center">
                                 <div class="img-container">
                                     <img class="" src="./assets/asset 2.png" alt="FEG Icon" width="40">
                                 </div>
-                                <span>FEED EVERY<br> GORILLA FEG</span>
+                                <span>FEED EVERY GORILLA <br> FEG</span>
                             </div>
-                            <div class="links-container d-flex mt-3 gap-3">
+                            <div class="links-container d-flex mt-3 gap-1">
                                 <a href="#" class="text-decoration-none ">
                                     <img class="" src="./assets/icons/asset 39.svg" alt="Buy Icon"> Buy
                                 </a>
@@ -315,10 +318,11 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="feg-img-container">
+                        <div class="feg-img-container position-absolute bottom-0 end-0 -z-1">
                             <img src="./assets/asset 42.png" alt="FEG Image" width="100">
                         </div>
                     </div>
+                    <!-- wallet add  -->
                     <div
                         class="my-wallet-container d-flex justify-content-center align-items-start flex-column w-100 mt-2 py-4">
                         <div class="wall-title d-flex gap-4 align-items-center">
@@ -335,6 +339,7 @@
                             <button class="connect-btn w-100 border-0">Connect Wallet</button>
                         </div>
                     </div>
+
                 </div>
             </aside>
         </div>
