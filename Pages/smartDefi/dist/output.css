@@ -183,9 +183,9 @@ body {
   font-weight: 700;
   font-size: 28px;
 }
-.navbar .navbar-brand {
+.navbar .navbar-brand h2 {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 32px;
 }
 .navbar .nav-item {
   font-weight: 500;
@@ -218,6 +218,9 @@ body {
   height: 1.5rem;
   opacity: 1;
 }
+.navbar .navbar-toggler i {
+  font-size: 30px;
+}
 
 .dashboard {
   display: flex;
@@ -241,7 +244,6 @@ body {
 }
 .dashboard .overview .stats {
   display: flex;
-  overflow-x: scroll;
   justify-content: space-around;
 }
 .dashboard .overview .stat-item {
@@ -388,6 +390,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .stats {
+    overflow-x: scroll;
+  }
   .dashboard-section .list-card h4 {
     font-size: 1rem;
   }
@@ -436,7 +441,6 @@ body {
   background-color: var(--color-background-secondary);
   border-radius: 10px;
   padding: 20px 15px 15px;
-  /* استایل‌های سفارشی برای مودال */
 }
 .profile-section .my-wallet-container h5 {
   font-weight: 700;
@@ -531,14 +535,14 @@ body {
 
 .table-section-wrapper {
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* برای تجربه بهتر اسکرول در موبایل */
+  -webkit-overflow-scrolling: touch;
   padding: 10px 0;
 }
 
 .table-section {
-  min-width: 800px; /* حداقل عرض جدول */
-  width: 100%; /* پر کردن فضای موجود */
-  margin: 20px auto; /* وسط‌چین کردن جدول */
+  min-width: 800px;
+  width: 100%;
+  margin: 20px auto;
   width: 100%;
   border-radius: 8px;
   overflow: hidden;

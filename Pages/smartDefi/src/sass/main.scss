@@ -66,7 +66,7 @@ body {
       color: #ffffff;
 
       &::placeholder {
-        color: #a3a7ab; // رنگ Placeholder
+        color: #a3a7ab; 
       }
     }
 
@@ -155,7 +155,7 @@ body {
 
         i {
           margin-left: auto;
-          color: #8a9aa5; // رنگ آیکون تیک در گزینه انتخاب شده
+          color: #8a9aa5; 
         }
 
         &:hover {
@@ -163,7 +163,7 @@ body {
         }
 
         &.active {
-          background-color: #2e3b47; // رنگ پس‌زمینه گزینه انتخاب‌شده
+          background-color: #2e3b47; 
         }
       }
       .dropdown-item.active {
@@ -193,7 +193,7 @@ body {
 .navbar {
   background-color: var(--color-background-secondary) !important;
 
-  .offcanvas{
+  .offcanvas {
     border: 1px solid rgba(128, 128, 128, 0.574);
   }
   .offcanvas-title {
@@ -201,8 +201,10 @@ body {
     font-size: 28px;
   }
   .navbar-brand {
-    font-weight: bold;
-    font-size: 1.2rem;
+    h2 {
+      font-weight: bold;
+      font-size: 32px;
+    }
   }
 
   .nav-item {
@@ -236,10 +238,14 @@ body {
     height: 1.5rem;
     opacity: 1;
   }
+  .navbar-toggler {
+    i {
+      font-size: 30px;
+    }
+  }
 }
 
 // ---------------------------
-// Variables
 $background-color: #1e1e2f;
 $text-color: #ffffff;
 $highlight-color: #ffdd57;
@@ -261,7 +267,7 @@ $button-color: #0047ff;
   }
 
   .overview {
-    // width: 100%;
+ 
     .smart-token-text {
       background-color: var(--color-background-white);
       border-radius: 10px;
@@ -270,8 +276,7 @@ $button-color: #0047ff;
     }
     .stats {
       display: flex;
-      // ! TODO -------
-      overflow-x: scroll;
+
       justify-content: space-around;
     }
     .stat-item {
@@ -436,6 +441,9 @@ $button-color: #0047ff;
 }
 
 @media (max-width: 768px) {
+  .stats {
+    overflow-x: scroll;
+  }
   .dashboard-section {
     .list-card {
       h4 {
@@ -462,6 +470,7 @@ $button-color: #0047ff;
     }
   }
 }
+
 .profile-section {
   .feq-header {
     border-radius: 10px;
@@ -539,7 +548,7 @@ $button-color: #0047ff;
         opacity: 1;
       }
     }
-    /* استایل‌های سفارشی برای مودال */
+
     .wallet-modal-content {
       background-color: #121212;
       color: #fff;
@@ -610,16 +619,16 @@ $button-color: #0047ff;
 
 .table-section-wrapper {
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* برای تجربه بهتر اسکرول در موبایل */
+  -webkit-overflow-scrolling: touch;
   padding: 10px 0;
 }
 
 .table-section {
-  min-width: 800px; /* حداقل عرض جدول */
-  width: 100%; /* پر کردن فضای موجود */
-  margin: 20px auto; /* وسط‌چین کردن جدول */
+  min-width: 800px;
+  width: 100%; 
+  margin: 20px auto;
   width: 100%;
-  // max-width: 1200px;
+
 
   border-radius: 8px;
   overflow: hidden;
@@ -691,7 +700,7 @@ $button-color: #0047ff;
 
     .item-price.positive,
     .item-change.positive {
-      color: #4caf50; // سبز برای مقادیر مثبت
+      color: #4caf50; 
     }
   }
 }
