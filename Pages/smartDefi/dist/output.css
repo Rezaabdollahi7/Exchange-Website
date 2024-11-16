@@ -535,6 +535,7 @@ body {
 .table-section .table-row .item-marketcap {
   font-size: 0.9rem;
   text-align: left;
+  font-weight: 600;
 }
 .table-section .table-row .item-price.negative,
 .table-section .table-row .item-change.negative {
