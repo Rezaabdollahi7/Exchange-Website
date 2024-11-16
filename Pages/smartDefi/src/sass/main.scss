@@ -474,6 +474,81 @@ $button-color: #0047ff;
       height: 40px;
       color: #fff;
     }
+    #walletModal {
+      .btn-close {
+        background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white"%3e%3cpath d="M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414"/%3e%3c/svg%3e');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        opacity: 1;
+      }
+    }
+    /* استایل‌های سفارشی برای مودال */
+    .wallet-modal-content {
+      background-color: #121212;
+      color: #fff;
+      max-width: 360px;
+      margin: auto auto;
+      border-radius: 30px;
+      border: 1px solid #80808054;
+    }
+
+    .modal-header {
+      border-bottom: 0;
+    }
+
+    .modal-footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      border: 0;
+    }
+
+    .wallet-option {
+      background: #1e1e1e;
+      padding: 7px 15px 5px 7px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .wallet-icon {
+      margin-right: 10px;
+    }
+
+    .wallet-tag {
+      background: #333;
+      color: #aaa;
+      background-color: var(--wui-color-accent-glass-015);
+      color: var(--wui-color-accent-glass-015);
+      padding: 3px 8px;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      border: none;
+    }
+
+    .wallet-tag.installed {
+      background-color: #4caf4f5a;
+      color: #1ade20;
+      font-weight: 700;
+    }
+    .wallet-tag.zero {
+      background-color: #2e3b47;
+      border-radius: 5px;
+      padding: 3px 5px;
+    }
+    .wallet-tag.qr-code {
+      background-color: rgba(65, 81, 226, 0.198);
+      color: #667dff;
+      font-weight: 700;
+    }
+    .modal-footer a {
+      color: #667dff;
+      text-decoration: none;
+    }
   }
 }
 

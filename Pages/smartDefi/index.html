@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartDefi</title>
+    <title>SmartDeFi™ - Next-Gen Multi-Chain Token Launchpad</title>
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
@@ -177,8 +177,8 @@
                     </div>
                     <div class="stat-item">
                         <p>Total raised in presales
-                            <span class="info-icon ms-auto" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top"
-                                data-bs-content='<div style="display: flex; flex-direction: column; ">
+                            <span class="info-icon ms-auto" data-bs-toggle="popover" data-bs-html="true"
+                                data-bs-placement="top" data-bs-content='<div style="display: flex; flex-direction: column; ">
                                                                         <div style="display: flex; align-items: center; gap: 5px;">
                                                                             <img src="./assets/icons/asset 3.svg" width="20" height="20" alt="Icon 1"> 2.7 ETH
                                                                         </div>
@@ -368,7 +368,7 @@
                                 <span class="item-volume">$376</span>
                                 <span class="item-marketcap">$2,671</span>
                             </div>
-                            <!-- سایر ردیف‌ها به همین صورت اضافه شوند -->
+
                         </div>
                     </div>
                 </div>
@@ -415,7 +415,59 @@
                                 <i class="fas fa-search search-icon "></i>
                                 <span>Wallet not connected..</span>
                             </div>
-                            <button class="connect-btn w-100 border-0">Connect Wallet</button>
+                            <button class="connect-btn w-100 border-0" data-bs-toggle="modal"
+                                data-bs-target="#walletModal">Connect Wallet</button>
+
+                        
+                            <div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="walletModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content wallet-modal-content">
+                                        <div class="modal-header d-flex justify-content-between align-items-center">
+                                            <img src="./assets/icons/question-50.png" alt="WalletConnect Icon"
+                                                class="wallet-icon rounded-3" width="20" height="20">
+                                            <h6 class="modal-title text-center" id="walletModalLabel">Connect Wallet
+                                            </h6>
+                                            <button type="button" class="btn-close m-0 " data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <a href="#" 
+                                                class="wallet-option textde  d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./assets/modern-wallet.webp" alt="WalletConnect Icon"
+                                                        class="wallet-icon rounded-3" width="40" height="40">
+                                                    <span>WalletConnect</span>
+                                                </div>
+                                                <button class="wallet-tag qr-code">QR CODE</button>
+                                            </a>
+                                            <a href="#" 
+                                                class="wallet-option textde  d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./assets/brave.png" alt="Brave Wallet Icon"
+                                                        class="wallet-icon rounded-3" width="40" height="40">
+                                                    <span>Brave Wallet</span>
+                                                </div>
+                                                <button class="wallet-tag installed">INSTALLED</button>
+                                            </a>
+                                            <a href="#" 
+                                                class="wallet-option textde  d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./assets/modern-wallet.webp" alt="WalletConnect Icon"
+                                                        class="wallet-icon rounded-3" width="40" height="40">
+                                                    <span>All Wallets</span>
+                                                </div>
+                                                <button class="wallet-tag zero">0</button>
+                                            </a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <p class="m-0 mx-auto fw-semibold">Haven't got a wallet? <a href="#">Get
+                                                    started</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
