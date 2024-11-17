@@ -1,0 +1,203 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b1320;
+}
+
+aside.side-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  height: 100%;
+  padding: 15px 15px 5px;
+  background-color: #111b2a;
+  transition: all ease 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+}
+aside.side-menu .menu-head {
+  transition: all ease 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+aside.side-menu .menu-head img {
+  transform: scale(1.2);
+}
+aside.side-menu .menu-head span {
+  transition: all ease 0.5s;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 5px;
+}
+aside.side-menu .feg {
+  transition: all ease 0.5s;
+  background-color: #0b1320;
+  border-radius: 30px;
+  padding: 2px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: 0px;
+}
+aside.side-menu .feg img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+aside.side-menu .feg span {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+aside.side-menu .feg:hover {
+  background-color: #233f59;
+}
+aside.side-menu .btn-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 10px;
+  width: 100% !important;
+}
+aside.side-menu .btn-list .btn-list__btn {
+  transition: all ease 0.5s;
+  background-color: #0b1320;
+  border-radius: 30px;
+  padding: 2px;
+  width: 90% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+aside.side-menu .btn-list .btn-list__btn .icon {
+  border-radius: 100%;
+  width: 41px;
+  height: 41px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  background-color: #0b1320;
+}
+aside.side-menu .btn-list .btn-list__btn .icon i {
+  color: #fff;
+  font-size: 1.8rem;
+}
+aside.side-menu .btn-list .btn-list__btn span {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  display: none;
+  width: 100%;
+  text-align: left;
+}
+aside.side-menu .btn-list .btn-list__btn:hover {
+  background-color: #233f59;
+}
+aside.side-menu .btn-list .btn-list__btn:first-child {
+  background: linear-gradient(90deg, #a845d8, #b8068f);
+}
+aside.side-menu .btn-list .btn-list__btn:last-child .icon {
+  background: linear-gradient(90deg, #e99b3d, #e8d337) !important;
+}
+aside.side-menu .btn-list .btn-list__btn:last-child .icon i {
+  color: #0b1320;
+}
+aside.side-menu .chain-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  height: 150px;
+}
+aside.side-menu .chain-price .chain {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: 5px;
+}
+aside.side-menu .chain-price .chain .img-around {
+  background-color: #0b1320;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  padding: 5px;
+  border-radius: 100%;
+}
+aside.side-menu .chain-price .chain span {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+aside.side-menu:hover {
+  width: 180px;
+  padding: 25px 15px 5px;
+}
+aside.side-menu:hover .menu-head {
+  flex-direction: row !important;
+}
+aside.side-menu:hover .menu-head span {
+  font-size: 1.6rem !important;
+}
+aside.side-menu:hover .feg {
+  padding: 4px !important;
+  padding-right: 10px !important;
+  width: 100% !important;
+}
+aside.side-menu:hover .feg span {
+  display: block !important;
+}
+aside.side-menu:hover .btn-list {
+  width: 100%;
+}
+aside.side-menu:hover .btn-list .btn-list__btn {
+  padding: 4px !important;
+  padding-right: 10px !important;
+  width: 100% !important;
+}
+aside.side-menu:hover .btn-list .btn-list__btn span {
+  display: block !important;
+}
+aside.side-menu:hover .chain-price {
+  width: 100%;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: flex-end !important;
+  gap: 20px !important;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+{
+    "volume24h" : "$588.78k",
+    "launched-tokens" : 118,
+    "presales" : "$509.85k",
+    "holders" : "46.13k",
+
+    "top-gainers" : [
+        {"item-number" : 1, "item-icon" : "./assets/asset 9.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "positive" : true},
+        {"item-number" : 2, "item-icon" : "./assets/asset 9.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "positive" : true},
+        {"item-number" : 3, "item-icon" : "./assets/asset 9.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "positive" : true},
+        {"item-number" : 4, "item-icon" : "./assets/asset 9.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "positive" : true},
+        {"item-number" : 5, "item-icon" : "./assets/asset 9.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "positive" : true}
+    ],
+
+    "new-sd" : [
+        {"item-icon" : "./assets/asset 9.png", "item-name" : "10000", "item-subname" : "QJ", "item-price" : "$68.01", "positive" : true},
+        {"item-icon" : "./assets/asset 9.png", "item-name" : "10000", "item-subname" : "QJ", "item-price" : "$68.01", "positive" : true},
+        {"item-icon" : "./assets/asset 9.png", "item-name" : "10000", "item-subname" : "QJ", "item-price" : "$68.01", "positive" : true},
+        {"item-icon" : "./assets/asset 9.png", "item-name" : "10000", "item-subname" : "QJ", "item-price" : "$68.01", "positive" : true},
+        {"item-icon" : "./assets/asset 9.png", "item-name" : "10000", "item-subname" : "QJ", "item-price" : "$68.01", "positive" : true}
+    ],
+
+    "explore" : [
+        {"item-number" : 1, "item-icon" : "./assets/asset 28.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "change-positive" : true, "item-price" : "$0.000059464", "price-positive" : false, "item-volume" : "$376", "item-market" : "$2,671"},
+        {"item-number" : 1, "item-icon" : "./assets/asset 28.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "change-positive" : true, "item-price" : "$0.000059464", "price-positive" : false, "item-volume" : "$376", "item-market" : "$2,671"},
+        {"item-number" : 1, "item-icon" : "./assets/asset 28.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "change-positive" : true, "item-price" : "$0.000059464", "price-positive" : false, "item-volume" : "$376", "item-market" : "$2,671"},
+        {"item-number" : 1, "item-icon" : "./assets/asset 28.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "change-positive" : true, "item-price" : "$0.000059464", "price-positive" : false, "item-volume" : "$376", "item-market" : "$2,671"},
+        {"item-number" : 1, "item-icon" : "./assets/asset 28.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "change-positive" : true, "item-price" : "$0.000059464", "price-positive" : false, "item-volume" : "$376", "item-market" : "$2,671"}
+        
+    ]
+}
