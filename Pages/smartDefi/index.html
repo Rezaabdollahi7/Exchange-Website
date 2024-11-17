@@ -210,7 +210,7 @@
                 <h1>Dashboard</h1>
                 <div class="stats gap-2">
 
-                    <div class="stat-item">
+                    <div class="stat-item" id="volume24h">
                         <p>SmartDeFi™ 24h volume
                             <span class="info-icon" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top"
                                 data-bs-content='<div style="display: flex; flex-direction: column; ">
@@ -230,7 +230,7 @@
                         <h2>$588.78k</h2>
                     </div>
 
-                    <div class="stat-item">
+                    <div class="stat-item" id="launched-tokens">
                         <p>SmartDeFi™ tokens launched
                             <span class="info-icon" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top"
                                 data-bs-content='<div style="display: flex; flex-direction: column; ">
@@ -249,7 +249,7 @@
                         </p>
                         <h2>118</h2>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item" id="presales">
                         <p>Total raised in presales
                             <span class="info-icon ms-auto" data-bs-toggle="popover" data-bs-html="true"
                                 data-bs-placement="top" data-bs-content='<div style="display: flex; flex-direction: column; ">
@@ -268,7 +268,7 @@
                         </p>
                         <h2>$509.85k</h2>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item" id="holders">
                         <p>SmartDeFi™ holders
                             <span class="info-icon" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top"
                                 data-bs-content='<div style="display: flex; flex-direction: column; ">
@@ -292,7 +292,7 @@
                 <div class="container dashboard-section mx-0 px-0">
                     <div class="row mx-0 px-0">
                         <div class="col-lg-6 col-md-12 mb-3 p-0 p-lg-3">
-                            <div class="card list-card">
+                            <div class="card list-card js-gainers">
                                 <h4>
                                     SmartDeFi Top Gainers
                                     <span class="info-icon" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -304,56 +304,10 @@
                                     <span># Name</span>
                                     <span>Change 24h</span>
                                 </div>
-
-                                <div class="list-item">
-                                    <span class="item-number">1</span>
-                                    <img src="./assets/asset 9.png" alt="SmartDeFiDoge" class="item-icon">
-                                    <div class="item-info">
-                                        <span class="item-name">SmartDeFiDoge</span>
-                                        <span class="item-subname">SmartDeFiDoge</span>
-                                    </div>
-                                    <span class="item-change positive">+3.84%</span>
-                                </div>
-                                <div class="list-item">
-                                    <span class="item-number">2</span>
-                                    <img src="./assets/asset 9.png" alt="SmartPEPE" class="item-icon">
-                                    <div class="item-info">
-                                        <span class="item-name">SmartPEPE</span>
-                                        <span class="item-subname">SMARTPEPE</span>
-                                    </div>
-                                    <span class="item-change positive">+3.82%</span>
-                                </div>
-                                <div class="list-item">
-                                    <span class="item-number">3</span>
-                                    <img src="./assets/asset 9.png" alt="FEG Token" class="item-icon">
-                                    <div class="item-info">
-                                        <span class="item-name">FEG Token</span>
-                                        <span class="item-subname">FEG</span>
-                                    </div>
-                                    <span class="item-change positive">+3.45%</span>
-                                </div>
-                                <div class="list-item">
-                                    <span class="item-number">4</span>
-                                    <img src="./assets/asset 9.png" alt="Volcano" class="item-icon">
-                                    <div class="item-info">
-                                        <span class="item-name">Volcano</span>
-                                        <span class="item-subname">VSD</span>
-                                    </div>
-                                    <span class="item-change positive">+2.59%</span>
-                                </div>
-                                <div class="list-item">
-                                    <span class="item-number">5</span>
-                                    <img src="./assets/asset 9.png" alt="DICE" class="item-icon">
-                                    <div class="item-info">
-                                        <span class="item-name">DICE</span>
-                                        <span class="item-subname">DICE</span>
-                                    </div>
-                                    <span class="item-change positive">+2.42%</span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 mb-3 p-0 p-lg-3">
-                            <div class="card list-card">
+                            <div class="card list-card js-new-sd">
                                 <h4>New SD listings <span class="info-icon" data-bs-toggle="tooltip"
                                         data-bs-placement="top"
                                         title="Newest SD listings with added main pair liqudidity">
@@ -364,7 +318,7 @@
                                     <span>Name</span>
                                     <span>Price</span>
                                 </div>
-                                <div class="list-item">
+                                <!-- <div class="list-item">
                                     <img src="./assets/asset 9.png" alt="10000" class="item-icon">
                                     <div class="item-info">
                                         <span class="item-name">10000</span>
@@ -403,7 +357,7 @@
                                         <span class="item-subname">SOKO</span>
                                     </div>
                                     <span class="item-price positive">$0.01092</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -424,7 +378,7 @@
 
                     <div class="row px-0 mx-0">
                         <div class="table-section-wrapper">
-                            <div class="table-section p-0">
+                            <div class="table-section p-0 js-explore">
                                 <div class="table-header px-2">
                                     <span>#</span>
                                     <span>Name</span>
@@ -432,137 +386,6 @@
                                     <span>Change 24h</span>
                                     <span>Volume 24h</span>
                                     <span>Market cap</span>
-                                </div>
-                                <div class="table-row">
-                                    <span class="item-number ms-2">1</span>
-                                    <div class="item-info">
-                                        <img src="./assets/asset 28.png" alt="smartDOGE" class="item-icon" width="30">
-                                        <div class="d-flex flex-column">
-                                            <span class="item-name">smartDOGE</span>
-                                            <span class="item-subname">sDOGE</span>
-                                        </div>
-                                    </div>
-                                    <span class="item-price negative">$0.000059464</span>
-                                    <span class="item-change negative">-40.99%</span>
-                                    <span class="item-volume">$376</span>
-                                    <span class="item-marketcap">$2,671</span>
-                                </div>
-                                <div class="table-row">
-
-                                    <span class="item-number ms-2">1</span>
-
-                                    <div class="item-info">
-
-                                        <img src="./assets/asset 28.png" alt="smartDOGE" class="item-icon" width="30">
-
-                                        <div class="d-flex flex-column">
-
-                                            <span class="item-name">smartDOGE</span>
-
-                                            <span class="item-subname">sDOGE</span>
-
-                                        </div>
-
-                                    </div>
-
-                                    <span class="item-price positive">$0.000059464</span>
-
-                                    <span class="item-change positive">23.99%</span>
-
-                                    <span class="item-volume">$376</span>
-
-                                    <span class="item-marketcap">$2,671</span>
-
-                                </div>
-
-
-
-                                <div class="table-row">
-
-                                    <span class="item-number ms-2">1</span>
-
-                                    <div class="item-info">
-
-                                        <img src="./assets/asset 28.png" alt="smartDOGE" class="item-icon" width="30">
-
-                                        <div class="d-flex flex-column">
-
-                                            <span class="item-name">smartDOGE</span>
-
-                                            <span class="item-subname">sDOGE</span>
-
-                                        </div>
-
-                                    </div>
-
-                                    <span class="item-price negative">$0.000059464</span>
-
-                                    <span class="item-change negative">-40.99%</span>
-
-                                    <span class="item-volume">$376</span>
-
-                                    <span class="item-marketcap">$2,671</span>
-
-                                </div>
-
-
-
-                                <div class="table-row">
-
-                                    <span class="item-number ms-2">1</span>
-
-                                    <div class="item-info">
-
-                                        <img src="./assets/asset 28.png" alt="smartDOGE" class="item-icon" width="30">
-
-                                        <div class="d-flex flex-column">
-
-                                            <span class="item-name">smartDOGE</span>
-
-                                            <span class="item-subname">sDOGE</span>
-
-                                        </div>
-
-                                    </div>
-
-                                    <span class="item-price positive">$0.000059464</span>
-
-                                    <span class="item-change positive">23.99%</span>
-
-                                    <span class="item-volume">$376</span>
-
-                                    <span class="item-marketcap">$2,671</span>
-
-                                </div>
-
-
-
-                                <div class="table-row">
-
-                                    <span class="item-number ms-2">1</span>
-
-                                    <div class="item-info">
-
-                                        <img src="./assets/asset 28.png" alt="smartDOGE" class="item-icon" width="30">
-
-                                        <div class="d-flex flex-column">
-
-                                            <span class="item-name">smartDOGE</span>
-
-                                            <span class="item-subname">sDOGE</span>
-
-                                        </div>
-
-                                    </div>
-
-                                    <span class="item-price negative">$0.000059464</span>
-
-                                    <span class="item-change negative">-40.99%</span>
-
-                                    <span class="item-volume">$376</span>
-
-                                    <span class="item-marketcap">$2,671</span>
-
                                 </div>
                             </div>
                         </div>
@@ -685,6 +508,10 @@
         integrity="sha384-JdRP5GRWP6APhoVS1OM/pOKMWe7q9q8hpl+J2nhCfVJKoS+yzGtELC5REIYKrymn"
         crossorigin="anonymous"></script>
 
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./src/js/data.js" type="module"></script>
     <script src="./src/js/main.js"></script>
 </body>
 
