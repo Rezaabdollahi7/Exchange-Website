@@ -1,31 +1,155 @@
 {
-    "volume24h" : "$588.78k",
-    "launched-tokens" : 118,
-    "presales" : "$509.85k",
-    "holders" : "46.13k",
+  "volume24h": "$588.78k",
+  "launched-tokens": 118,
+  "presales": "$509.85k",
+  "holders": "46.13k",
 
-    "top-gainers" : [
-        {"item-number" : 1, "item-icon" : "./assets/asset 9.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "positive" : true},
-        {"item-number" : 2, "item-icon" : "./assets/asset 9.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "positive" : true},
-        {"item-number" : 3, "item-icon" : "./assets/asset 9.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "positive" : true},
-        {"item-number" : 4, "item-icon" : "./assets/asset 9.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "positive" : true},
-        {"item-number" : 5, "item-icon" : "./assets/asset 9.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "positive" : true}
-    ],
+  "top-gainers": [
+    {
+      "item-number": 1,
+      "item-icon": "./assets/asset 30.png",
+      "item-name": "SmartDeFi",
+      "item-subname": "SDF",
+      "item-change": "+5.05%",
+      "positive": true
+    },
+    {
+      "item-number": 2,
+      "item-icon": "./assets/asset 22.png",
+      "item-name": "1000 SD",
+      "item-subname": "SD",
+      "item-change": "-3.84%",
+      "positive": false
+    },
+    {
+      "item-number": 3,
+      "item-icon": "./assets/asset 9.png",
+      "item-name": "SmartDeFiDoge",
+      "item-subname": "SmartDeFiDoge",
+      "item-change": "+3.84%",
+      "positive": true
+    },
+    {
+      "item-number": 4,
+      "item-icon": "./assets/asset 34.png",
+      "item-name": "ROX",
+      "item-subname": "ROX",
+      "item-change": "+7.21%",
+      "positive": true
+    },
+    {
+      "item-number": 5,
+      "item-icon": "./assets/asset 35.png",
+      "item-name": "To the moon",
+      "item-subname": "TTM",
+      "item-change": "-9.54%",
+      "positive": false
+    }
+  ],
 
-    "new-sd" : [
-        {"item-icon" : "./assets/asset 9.png", "item-name" : "10000", "item-subname" : "QJ", "item-price" : "$68.01", "positive" : true},
-        {"item-icon" : "./assets/asset 9.png", "item-name" : "10000", "item-subname" : "QJ", "item-price" : "$68.01", "positive" : true},
-        {"item-icon" : "./assets/asset 9.png", "item-name" : "10000", "item-subname" : "QJ", "item-price" : "$68.01", "positive" : true},
-        {"item-icon" : "./assets/asset 9.png", "item-name" : "10000", "item-subname" : "QJ", "item-price" : "$68.01", "positive" : true},
-        {"item-icon" : "./assets/asset 9.png", "item-name" : "10000", "item-subname" : "QJ", "item-price" : "$68.01", "positive" : true}
-    ],
+  "new-sd": [
+    {
+      "item-icon": "./assets/asset 12.png",
+      "item-name": "FEG Mirror",
+      "item-subname": "EGF",
+      "item-price": "$68.01",
+      "positive": false
+    },
+    {
+      "item-icon": "./assets/asset 19.png",
+      "item-name": "CLEVER PEPE",
+      "item-subname": "CLEVER PEPE",
+      "item-price": "$25.01",
+      "positive": true
+    },
+    {
+      "item-icon": "./assets/asset 9.png",
+      "item-name": "SMART PEPE",
+      "item-subname": "SMART PEPE",
+      "item-price": "$68.01",
+      "positive": true
+    },
+    {
+      "item-icon": "./assets/asset 27.png",
+      "item-name": "Bonk",
+      "item-subname": "BNK",
+      "item-price": "$68.01",
+      "positive": true
+    },
 
-    "explore" : [
-        {"item-number" : 1, "item-icon" : "./assets/asset 28.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "change-positive" : true, "item-price" : "$0.000059464", "price-positive" : false, "item-volume" : "$376", "item-market" : "$2,671"},
-        {"item-number" : 1, "item-icon" : "./assets/asset 28.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "change-positive" : true, "item-price" : "$0.000059464", "price-positive" : false, "item-volume" : "$376", "item-market" : "$2,671"},
-        {"item-number" : 1, "item-icon" : "./assets/asset 28.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "change-positive" : true, "item-price" : "$0.000059464", "price-positive" : false, "item-volume" : "$376", "item-market" : "$2,671"},
-        {"item-number" : 1, "item-icon" : "./assets/asset 28.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "change-positive" : true, "item-price" : "$0.000059464", "price-positive" : false, "item-volume" : "$376", "item-market" : "$2,671"},
-        {"item-number" : 1, "item-icon" : "./assets/asset 28.png", "item-name" : "SmartDeFiDoge", "item-subname" : "SmartDeFiDoge", "item-change" : "+3.84%", "change-positive" : true, "item-price" : "$0.000059464", "price-positive" : false, "item-volume" : "$376", "item-market" : "$2,671"}
-        
-    ]
+    {
+      "item-icon": "./assets/asset 24.png",
+      "item-name": "NUGSAU LIMITED",
+      "item-subname": "NUGS",
+      "item-price": "$5.06",
+      "positive": false
+    }
+  ],
+
+  "explore": [
+    {
+      "item-number": 1,
+      "item-icon": "./assets/asset 28.png",
+      "item-name": "SmartDeFiDoge",
+      "item-subname": "SmartDeFiDoge",
+      "item-change": "+3.84%",
+      "change-positive": true,
+      "item-price": "$0.000059464",
+      "price-positive": true,
+      "item-volume": "$376",
+      "item-market": "$2,671"
+    },
+
+    {
+      "item-number": 2,
+      "item-icon": "./assets/asset 2.png",
+      "item-name": "FEG Token",
+      "item-subname": "FEG",
+      "item-change": "+3.84%",
+      "change-positive": true,
+      "item-price": "$0.0021",
+      "price-positive": true,
+      "item-volume": "$542",
+      "item-market": "$2,971"
+    },
+
+    {
+      "item-number": 3,
+      "item-icon": "./assets/asset 10.png",
+      "item-name": "XPX",
+      "item-subname": "XPX",
+      "item-change": "+10.84%",
+      "change-positive": true,
+      "item-price": "$0.00063",
+      "price-positive": true,
+      "item-volume": "$376",
+      "item-market": "$22,671"
+    },
+
+    {
+      "item-number": 4,
+      "item-icon": "./assets/asset 8.png",
+      "item-name": "Volcano",
+      "item-subname": "VSD",
+      "item-change": "-5.2%",
+      "change-positive": false,
+      "item-price": "$0.007",
+      "price-positive": false,
+      "item-volume": "$376",
+      "item-market": "$2,671"
+    },
+
+    {
+      "item-number": 5,
+      "item-icon": "./assets/asset 25.png",
+      "item-name": "ExagTrader",
+      "item-subname": "EXT",
+      "item-change": "+3.84%",
+      "change-positive": false,
+      "item-price": "$0.000059464",
+      "price-positive": false,
+      "item-volume": "$376",
+      "item-market": "$2,671"
+    }
+  ]
 }
