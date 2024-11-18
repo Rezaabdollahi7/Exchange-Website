@@ -15,14 +15,14 @@ const slogan =
 
                 <!-- Right Column: Text -->
                 <div class="right-col col-md-6 px-4">
-                    <h1 class="main-title mb-4 ">MAGA Movement on the Blockchain.</h1>
-                    <div class="buttons mb-4 gap-3  d-flex flex-column d-sm-flex flex-sm-row  w-75 mx-auto mx-lg-0">
-                        <a href="#" class="btn btn-danger  px-4 py-2 fw-bold w-100 w-md-auto">Buy with Ethereum</a>
-                        <a href="#" class="btn btn-outline-light px-4 py-2 fw-bold w-100 w-md-auto">Buy with Solana</a>
+                    <h1 class="main-title mb-4 ">
+                        Welcome to our Election Day $TRUMP (MAGA) Airdrop!
+                    </h1>
+                    <div class="buttons mb-4 gap-3  d-flex flex-column d-sm-flex flex-sm-row  w-50 mx-auto mx-lg-0">
+                        <a href="#" class="btn btn-danger  px-4 py-2 fw-bold w-100 w-md-auto">Connect Wallet</a>
                     </div>
                     <p class="description ">
-                        Pioneer of Political Finance (Politifi). We’ve raised more funds for U.S. Veterans and Child
-                        Trafficking Prevention than any other cryptocurrency on the market.
+                        Today, we’re celebrating the spirit of democracy by giving our community an exciting opportunity to receive free $TRUMP (MAGA) tokens. This exclusive airdrop is a tribute to those energized by the election season and the future of crypto. Join us and claim your share while supplies last! This is your chance to be part of the movement—don’t miss out! Make Crypto Great Again!
                     </p>
                 </div>
             </div>
