@@ -471,7 +471,8 @@ $button-color: #0047ff;
   }
 }
 
-.profile-section {
+.profile-section , .dashboard {
+  
   .feq-header {
     border-radius: 10px;
     background-image: -webkit-linear-gradient(35deg, #111b2a 30%, #233f59);

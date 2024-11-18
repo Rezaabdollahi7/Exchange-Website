@@ -408,24 +408,24 @@ body {
     font-size: 0.75rem;
   }
 }
-.profile-section .feq-header {
+.profile-section .feq-header, .dashboard .feq-header {
   border-radius: 10px;
   background-image: -webkit-linear-gradient(35deg, #111b2a 30%, #233f59);
   background-image: linear-gradient(35deg, #111b2a 30%, #233f59);
   border: 1px solid var(--color-background-white);
 }
-.profile-section .feq-header .feq-details {
+.profile-section .feq-header .feq-details, .dashboard .feq-header .feq-details {
   padding: 10px;
 }
-.profile-section .feq-header .main-detail img {
+.profile-section .feq-header .main-detail img, .dashboard .feq-header .main-detail img {
   border-radius: 100px;
 }
-.profile-section .feq-header .main-detail span {
+.profile-section .feq-header .main-detail span, .dashboard .feq-header .main-detail span {
   font-size: 18px;
   font-weight: 700;
   margin-left: 10px;
 }
-.profile-section .feq-header .links-container a {
+.profile-section .feq-header .links-container a, .dashboard .feq-header .links-container a {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -434,30 +434,30 @@ body {
   border-radius: 10px;
   background-color: var(--color-background-primary);
 }
-.profile-section .feq-header .links-container a img {
+.profile-section .feq-header .links-container a img, .dashboard .feq-header .links-container a img {
   margin-right: 5px;
 }
-.profile-section .my-wallet-container {
+.profile-section .my-wallet-container, .dashboard .my-wallet-container {
   background-color: var(--color-background-secondary);
   border-radius: 10px;
   padding: 20px 15px 15px;
 }
-.profile-section .my-wallet-container h5 {
+.profile-section .my-wallet-container h5, .dashboard .my-wallet-container h5 {
   font-weight: 700;
   font-size: 21px;
   line-height: 2.25rem;
   padding: 0;
   margin: 0;
 }
-.profile-section .my-wallet-container .wallet-input-container {
+.profile-section .my-wallet-container .wallet-input-container, .dashboard .my-wallet-container .wallet-input-container {
   background-color: var(--color-background-primary);
   border-radius: 10px;
 }
-.profile-section .my-wallet-container .wallet-input-container .add-wall {
+.profile-section .my-wallet-container .wallet-input-container .add-wall, .dashboard .my-wallet-container .wallet-input-container .add-wall {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.profile-section .my-wallet-container .connect-btn {
+.profile-section .my-wallet-container .connect-btn, .dashboard .my-wallet-container .connect-btn {
   margin-top: 30px;
   background: linear-gradient(to right, #1649ff, var(--color-primary));
   border-radius: 10px;
@@ -466,7 +466,7 @@ body {
   height: 40px;
   color: #fff;
 }
-.profile-section .my-wallet-container #walletModal .btn-close {
+.profile-section .my-wallet-container #walletModal .btn-close, .dashboard .my-wallet-container #walletModal .btn-close {
   background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white"%3e%3cpath d="M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414"/%3e%3c/svg%3e');
   background-repeat: no-repeat;
   background-position: center;
@@ -475,7 +475,7 @@ body {
   height: 1.5rem;
   opacity: 1;
 }
-.profile-section .my-wallet-container .wallet-modal-content {
+.profile-section .my-wallet-container .wallet-modal-content, .dashboard .my-wallet-container .wallet-modal-content {
   background-color: #121212;
   color: #fff;
   max-width: 360px;
@@ -483,16 +483,16 @@ body {
   border-radius: 30px;
   border: 1px solid rgba(128, 128, 128, 0.3294117647);
 }
-.profile-section .my-wallet-container .modal-header {
+.profile-section .my-wallet-container .modal-header, .dashboard .my-wallet-container .modal-header {
   border-bottom: 0;
 }
-.profile-section .my-wallet-container .modal-footer {
+.profile-section .my-wallet-container .modal-footer, .dashboard .my-wallet-container .modal-footer {
   text-align: center;
   font-size: 0.9rem;
   color: #aaa;
   border: 0;
 }
-.profile-section .my-wallet-container .wallet-option {
+.profile-section .my-wallet-container .wallet-option, .dashboard .my-wallet-container .wallet-option {
   background: #1e1e1e;
   padding: 7px 15px 5px 7px;
   border-radius: 8px;
@@ -500,10 +500,10 @@ body {
   text-decoration: none;
   color: white;
 }
-.profile-section .my-wallet-container .wallet-icon {
+.profile-section .my-wallet-container .wallet-icon, .dashboard .my-wallet-container .wallet-icon {
   margin-right: 10px;
 }
-.profile-section .my-wallet-container .wallet-tag {
+.profile-section .my-wallet-container .wallet-tag, .dashboard .my-wallet-container .wallet-tag {
   background: #333;
   color: #aaa;
   background-color: var(--wui-color-accent-glass-015);
@@ -513,22 +513,22 @@ body {
   font-size: 0.8rem;
   border: none;
 }
-.profile-section .my-wallet-container .wallet-tag.installed {
+.profile-section .my-wallet-container .wallet-tag.installed, .dashboard .my-wallet-container .wallet-tag.installed {
   background-color: rgba(76, 175, 79, 0.3529411765);
   color: #1ade20;
   font-weight: 700;
 }
-.profile-section .my-wallet-container .wallet-tag.zero {
+.profile-section .my-wallet-container .wallet-tag.zero, .dashboard .my-wallet-container .wallet-tag.zero {
   background-color: #2e3b47;
   border-radius: 5px;
   padding: 3px 5px;
 }
-.profile-section .my-wallet-container .wallet-tag.qr-code {
+.profile-section .my-wallet-container .wallet-tag.qr-code, .dashboard .my-wallet-container .wallet-tag.qr-code {
   background-color: rgba(65, 81, 226, 0.198);
   color: #667dff;
   font-weight: 700;
 }
-.profile-section .my-wallet-container .modal-footer a {
+.profile-section .my-wallet-container .modal-footer a, .dashboard .my-wallet-container .modal-footer a {
   color: #667dff;
   text-decoration: none;
 }
