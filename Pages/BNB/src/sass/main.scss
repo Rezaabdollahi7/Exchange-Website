@@ -1,3 +1,4 @@
+// -------------------- Variables ---------------
 $black-100: #000000;
 $gray-100: #6d6d6d;
 $gray-200: #8c8f9b;
@@ -17,21 +18,57 @@ $dark-300: #1e2026;
 $gray-800: #373943;
 $gray-900: #4b4b4b;
 
-// ---------------------------
+// -------------------- Mixins ---------------
 
 @mixin flex($direction: row, $justify: center, $align: center) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 @mixin border-radius($radius: 4px) {
-    border-radius: $radius;
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+// -------------------- Styles ---------------
+// Fonts Import
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..900&family=Zen+Dots&display=swap");
+
+// Font Variables
+$font-zen: "Zen Dots", sans-serif;
+$font-space: "Space Grotesk", sans-serif;
+
+// Font Mixins
+@mixin zen-dots($weight: 400) {
+  font-family: $font-zen;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+@mixin space-grotesk($weight: 500) {
+  font-family: $font-space;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+// Utility Classes
+.font-zen {
+  @include zen-dots();
+}
+
+.font-space {
+  @include space-grotesk();
 }
 
 body {
   background-color: $dark-100;
+  @include zen-dots(500)
+}
+
+p{
+    @include space-grotesk()
 }
