@@ -1,4 +1,37 @@
-body{
-    background-color: #14151a;
+$black-100: #000000;
+$gray-100: #6d6d6d;
+$gray-200: #8c8f9b;
+$blue-100: #1284b8;
+$red-100: #bd3a33;
+$gray-300: #c4c5cb;
+$dark-100: #14151a;
+$gray-400: #e1e2e5;
+$gray-500: #efefef;
+$green-100: #18dc7e;
+$dark-200: #181a1e;
+$gray-600: #f4f5f5;
+$gray-700: #f7f7f8;
+$yellow-100: #ffe900;
+$white-100: #ffffff;
+$dark-300: #1e2026;
+$gray-800: #373943;
+$gray-900: #4b4b4b;
+
+// ---------------------------
+
+@mixin flex($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 }
 
+@mixin border-radius($radius: 4px) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+body {
+  background-color: $dark-100;
+}
