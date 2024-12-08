@@ -216,3 +216,18 @@ body {
     }
   }
 }
+
+.social-Links {
+  border-top: 1px solid rgba(128, 128, 128, 0.388);
+
+  .svg-icon {
+    color: $gray-200;
+    width: 20px;
+    height: 20px;
+    @include hover-transition();
+    &:hover{
+        color: $gray-300;
+        cursor: pointer;
+    }
+  }
+}

@@ -138,5 +138,18 @@ body {
     margin-bottom: 1.5rem;
   }
 }
+.social-Links {
+  border-top: 1px solid rgba(128, 128, 128, 0.388);
+}
+.social-Links .svg-icon {
+  color: #8c8f9b;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.social-Links .svg-icon:hover {
+  color: #c4c5cb;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=output.css.map */
