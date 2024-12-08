@@ -18,6 +18,13 @@ $dark-300: #1e2026;
 $gray-800: #373943;
 $gray-900: #4b4b4b;
 
+$footer-text: rgb(140, 143, 155);
+$footer-font-size: 14px;
+$footer-heading-size: 16px;
+$footer-line-height: 1.8;
+$footer-link-padding: 4px 0;
+$transition-duration: 0.2s;
+
 // -------------------- Mixins ---------------
 
 @mixin flex($direction: row, $justify: center, $align: center) {
@@ -135,6 +142,77 @@ body {
           background-color: $dark-200;
         }
       }
+    }
+  }
+}
+
+// ----   Footer ----------
+
+// Mixins
+@mixin hover-transition {
+  transition: all $transition-duration ease-in-out;
+}
+
+// Footer Styles
+.footer {
+  font-size: $footer-font-size;
+  line-height: $footer-line-height;
+  @include space-grotesk(500);
+
+  .main-container {
+    border-top: 1px solid rgba(128, 128, 128, 0.388);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.388);
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
+  &__heading {
+    color: $white-100;
+    font-size: $footer-heading-size;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    color: $footer-text;
+    text-decoration: none;
+    display: block;
+    padding: $footer-link-padding;
+    @include hover-transition;
+    margin-top: 0.6rem;
+    &:hover {
+      color: $white-100;
+      text-decoration: none;
+      transform: translateX(2px);
+    }
+  }
+  .copyright-wrapper {
+    p {
+      color: $footer-text;
+    }
+  }
+}
+
+// Media Queries
+@media (max-width: 991.98px) {
+  .footer {
+    &__heading {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    &__list {
+      margin-bottom: 1.5rem;
     }
   }
 }

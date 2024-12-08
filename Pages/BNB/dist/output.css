@@ -84,4 +84,59 @@ body {
   background-color: #181a1e;
 }
 
+.footer {
+  font-size: 14px;
+  line-height: 1.8;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.footer .main-container {
+  border-top: 1px solid rgba(128, 128, 128, 0.388);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.388);
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+.footer__heading {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__link {
+  color: rgb(140, 143, 155);
+  text-decoration: none;
+  display: block;
+  padding: 4px 0;
+  transition: all 0.2s ease-in-out;
+  margin-top: 0.6rem;
+}
+.footer__link:hover {
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateX(2px);
+}
+.footer .copyright-wrapper p {
+  color: rgb(140, 143, 155);
+}
+
+@media (max-width: 991.98px) {
+  .footer__heading {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer__list {
+    margin-bottom: 1.5rem;
+  }
+}
+
 /*# sourceMappingURL=output.css.map */
