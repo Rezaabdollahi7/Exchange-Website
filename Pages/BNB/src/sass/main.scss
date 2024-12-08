@@ -66,9 +66,75 @@ $font-space: "Space Grotesk", sans-serif;
 
 body {
   background-color: $dark-100;
-  @include zen-dots(500)
+  @include space-grotesk(500);
 }
 
-p{
-    @include space-grotesk()
+@mixin button(
+  $color,
+  $background-color,
+  $padding: 10px 20px,
+  $font-size: 16px,
+  $border-radius: 10px,
+  $font-weight: 400
+) {
+  display: inline-block;
+  color: $color;
+  background-color: $background-color;
+  padding: $padding;
+  font-size: $font-size;
+  $font-weight: $font-weight;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($background-color, 10%);
+  }
+}
+
+.navbar {
+  .nav-item {
+    .connect-btn {
+      @include button($dark-300, $gray-700, 10px 20px, 0.875rem, 8px);
+      outline: transparent solid 2px;
+      outline-offset: 2px;
+      line-height: 1rem;
+    }
+
+    .test-btn {
+      @include button($white-100, $dark-300, 16px, 0.875rem, 96px);
+      outline: transparent solid 2px;
+      outline-offset: 2px;
+      line-height: 1rem;
+      margin-right: 16px;
+      border: 1px solid rgb(55, 57, 67);
+      height: 40px;
+    }
+    .dropdown-svg {
+      width: 16px;
+      height: 16px;
+      color: $green-100;
+    }
+  }
+  .dropdown {
+    border-right: 1px solid $gray-800;
+  }
+
+  .dropdown-menu {
+    background-color: $dark-300;
+    margin: 10px 20px 0 0;
+    li {
+      text-align: center;
+      a {
+        padding: 0;
+        color: $gray-400;
+        &:hover {
+          background-color: $dark-200;
+        }
+      }
+    }
+  }
 }

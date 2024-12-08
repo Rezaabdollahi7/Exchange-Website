@@ -14,16 +14,74 @@
 
 body {
   background-color: #14151a;
-  font-family: "Zen Dots", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-p {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+.navbar .nav-item .connect-btn {
+  display: inline-block;
+  color: #1e2026;
+  background-color: #f7f7f8;
+  padding: 10px 20px;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  line-height: 1rem;
+}
+.navbar .nav-item .connect-btn:hover {
+  background-color: #dcdce0;
+}
+.navbar .nav-item .test-btn {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #1e2026;
+  padding: 16px;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 96px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  line-height: 1rem;
+  margin-right: 16px;
+  border: 1px solid rgb(55, 57, 67);
+  height: 40px;
+}
+.navbar .nav-item .test-btn:hover {
+  background-color: #08080a;
+}
+.navbar .nav-item .dropdown-svg {
+  width: 16px;
+  height: 16px;
+  color: #18dc7e;
+}
+.navbar .dropdown {
+  border-right: 1px solid #373943;
+}
+.navbar .dropdown-menu {
+  background-color: #1e2026;
+  margin: 10px 20px 0 0;
+}
+.navbar .dropdown-menu li {
+  text-align: center;
+}
+.navbar .dropdown-menu li a {
+  padding: 0;
+  color: #e1e2e5;
+}
+.navbar .dropdown-menu li a:hover {
+  background-color: #181a1e;
 }
 
 /*# sourceMappingURL=output.css.map */
