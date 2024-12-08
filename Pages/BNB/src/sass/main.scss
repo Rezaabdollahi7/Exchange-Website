@@ -24,6 +24,7 @@ $footer-heading-size: 16px;
 $footer-line-height: 1.8;
 $footer-link-padding: 4px 0;
 $transition-duration: 0.2s;
+$transition: all 0.3s ease;
 
 // -------------------- Mixins ---------------
 
@@ -217,6 +218,7 @@ body {
   }
 }
 
+// --------- Social --------
 .social-Links {
   border-top: 1px solid rgba(128, 128, 128, 0.388);
 
@@ -225,9 +227,135 @@ body {
     width: 20px;
     height: 20px;
     @include hover-transition();
-    &:hover{
-        color: $gray-300;
-        cursor: pointer;
+    &:hover {
+      color: $gray-300;
+      cursor: pointer;
+    }
+  }
+}
+
+// --------- Token Recovery ---
+
+.token-recovery {
+  color: $white-100;
+  padding: 4rem 2rem;
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    @include space-grotesk(500);
+  }
+
+  &__container {
+    border: 1px solid rgba(128, 128, 128, 0.388);
+    border-radius: 1rem;
+    padding: 2rem 3rem 0 3rem;
+    position: relative;
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    svg {
+      margin-left: 1%;
+    }
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  &__step-number {
+    background: $gray-900;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+
+  &__step-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  &__learn-more {
+    display: inline-block;
+    margin: 2rem 0;
+    text-decoration: none;
+    transition: $transition;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    min-width: 72px;
+    padding-inline: 16px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(247, 247, 248);
+    color: rgb(247, 247, 248);
+    width: fit-content;
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    white-space: pre-line;
+    text-align: center;
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: $white-100;
+    }
+  }
+
+  &__image {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// Responsive styles
+@media (max-width: 991.98px) {
+  .token-recovery {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .token-recovery {
+    padding: 2rem 1rem;
+
+    svg {
+      margin-left: 3.5%;
+    }
+    &__title {
+      font-size: 1.3rem;
+    }
+
+    &__container {
+      padding: 2rem 1.5rem;
+    }
+
+    &__step-number {
+      width: 2.5rem;
+      height: 2.5rem;
     }
   }
 }
