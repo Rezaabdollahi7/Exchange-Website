@@ -71,18 +71,25 @@ body {
   border-right: 1px solid #373943;
 }
 .navbar .dropdown-menu {
-  background-color: #1e2026;
+  background-color: #373943;
   margin: 10px 20px 0 0;
+  min-width: 8rem;
+}
+.navbar .dropdown-menu:hover {
+  background-color: #5c5f6a;
 }
 .navbar .dropdown-menu li {
   text-align: center;
 }
 .navbar .dropdown-menu li a {
   padding: 0;
-  color: #e1e2e5;
+  color: #c4c5cb;
 }
 .navbar .dropdown-menu li a:hover {
-  background-color: #181a1e;
+  background-color: #5c5f6a;
+}
+.navbar .dropdown-menu li a:focus {
+  background-color: #5c5f6a;
 }
 
 .footer {

@@ -43,9 +43,9 @@ $transition: all 0.3s ease;
 
 // -------------------- Styles ---------------
 // Fonts Import
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 // Font Variables
 $font-zen: "Zen Dots", sans-serif;
@@ -134,15 +134,22 @@ body {
   }
 
   .dropdown-menu {
-    background-color: $dark-300;
+    background-color: $gray-800;
     margin: 10px 20px 0 0;
+    min-width: 8rem;
+    &:hover {
+      background-color: #5c5f6a;
+    }
     li {
       text-align: center;
       a {
         padding: 0;
-        color: $gray-400;
+        color: $gray-300;
         &:hover {
-          background-color: $dark-200;
+          background-color: #5c5f6a;
+        }
+        &:focus {
+          background-color: #5c5f6a;
         }
       }
     }
@@ -383,7 +390,7 @@ body {
     line-height: 1.5rem;
     color: $gray-300;
     text-align: center;
-    @include space-grotesk(500)
+    @include space-grotesk(500);
   }
   &__table-title {
     font-size: 1.5rem;
