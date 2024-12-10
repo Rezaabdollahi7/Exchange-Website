@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..900&family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 .font-zen {
   font-family: "Zen Dots", sans-serif;
   font-weight: 400;
@@ -280,6 +281,10 @@ body {
   line-height: 1.5rem;
   color: #c4c5cb;
   text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 .token-recovery-tool__table-title {
   font-size: 1.5rem;
