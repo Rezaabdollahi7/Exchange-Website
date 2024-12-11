@@ -428,7 +428,7 @@ body {
       padding-bottom: 0px;
       height: 48px;
     }
-    .wallet-container {
+    .tokens-container {
       display: flex;
       flex-direction: column;
       -webkit-box-align: center;
@@ -452,9 +452,28 @@ body {
         gap: 8px;
       }
     }
+    #token-table {
+      .token-row {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+    }
+    .status.active {
+      color: $green-100;
+    }
+    .status.inactive {
+      color: $red-100;
+    }
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 700px) {
   .token-recovery-tool {
     &__title {
@@ -465,7 +484,7 @@ body {
       text-align: left;
       font-size: 0.875rem;
     }
-    thead {
+    thead.hidden {
       display: none;
     }
   }

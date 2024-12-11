@@ -330,7 +330,7 @@ body {
   padding-bottom: 0px;
   height: 48px;
 }
-.token-recovery-tool__table__container .wallet-container {
+.token-recovery-tool__table__container .tokens-container {
   display: flex;
   flex-direction: column;
   -webkit-box-align: center;
@@ -342,7 +342,7 @@ body {
   padding-top: 68px;
   padding-bottom: 90px;
 }
-.token-recovery-tool__table__container .wallet-container button {
+.token-recovery-tool__table__container .tokens-container button {
   border: 0;
   padding: 20px;
   line-height: 1rem;
@@ -354,7 +354,24 @@ body {
   height: 40px;
   gap: 8px;
 }
+.token-recovery-tool__table__container #token-table .token-row {
+  animation: fadeIn 0.5s ease-in-out;
+}
+.token-recovery-tool__table__container .status.active {
+  color: #18dc7e;
+}
+.token-recovery-tool__table__container .status.inactive {
+  color: #bd3a33;
+}
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 700px) {
   .token-recovery-tool__title {
     font-size: 2rem;
@@ -364,7 +381,7 @@ body {
     text-align: left;
     font-size: 0.875rem;
   }
-  .token-recovery-tool thead {
+  .token-recovery-tool thead.hidden {
     display: none;
   }
 }
