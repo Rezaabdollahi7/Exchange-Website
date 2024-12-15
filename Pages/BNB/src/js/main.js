@@ -1,16 +1,16 @@
 const tokens = [
-    { name: "Bitcoin", amount: 1.5, status: "active" },
-    { name: "Ripple", amount: 1000, status: "inactive" },
-    { name: "Ethereum", amount: 10, status: "active" },
-    { name: "Binance Coin", amount: 5, status: "active" },
-    { name: "Cardano", amount: 200, status: "inactive" }
+    { name: "Bitcoin", amount: 500000, status: "Waiting for recovery", image: "./assets/images/asset 43.svg" },
+    { name: "Ripple", amount: 17193000, status: "Waiting for recovery", image: "./assets/images/asset 43.svg" },
+    { name: "Ethereum", amount: 1000000, status: "Waiting for recovery", image: "./assets/images/asset 43.svg" },
+    { name: "Binance Coin", amount: 5000000, status: "Waiting for recovery", image: "./assets/images/asset 43.svg" },
+    { name: "Cardano", amount: 200000000, status: "Waiting for recovery", image: "./assets/images/asset 43.svg" }
 ];
 
 function loadTokens() {
     const tableBody = document.getElementById("token-table");
     tableBody.innerHTML = "";
     const tableHead = document.getElementById("token-table-th");
-    tableHead.classList.remove('hidden')
+    tableHead.classList.remove('hidden');
 
     // You can comment/uncomment this block to either use the static data or fetch data from the server
     // Fetch data from the server
@@ -24,10 +24,15 @@ function loadTokens() {
                 row.classList.add('token-row');
                 const statusClass = token.status === "active" ? "active" : "inactive";
                 row.innerHTML = `
-                    <td>${token.name}</td>
-                    <td>${token.amount}</td>
+                    <td>
+                        <div class="token-cell">
+                            <img src="${token.image}" alt="${token.name} logo" class="token-image">
+                            <span>${token.name}</span>
+                        </div>
+                    </td>
+                    <td>${token.amount.toLocaleString()}</td>
                     <td><span class="status ${statusClass}">${token.status.charAt(0).toUpperCase() + token.status.slice(1)}</span></td>
-                    <td><button type="button" class="btn btn-primary">Buy</button></td>
+                    <td><button type="button" class="btn recover-btn">Recover Now!</button></td>
                 `;
                 tableBody.appendChild(row);
             });
@@ -41,16 +46,20 @@ function loadTokens() {
                 row.classList.add('token-row');
                 const statusClass = token.status === "active" ? "active" : "inactive";
                 row.innerHTML = `
-                    <td>${token.name}</td>
-                    <td>${token.amount}</td>
+                    <td>
+                        <div class="token-cell">
+                            <img src="${token.image}" alt="${token.name} logo" class="token-image">
+                            <span>${token.name}</span>
+                        </div>
+                    </td>
+                    <td>${token.amount.toLocaleString()}</td>
                     <td><span class="status ${statusClass}">${token.status.charAt(0).toUpperCase() + token.status.slice(1)}</span></td>
-                    <td><button type="button" class="btn btn-primary">Buy</button></td>
+                    <td><button type="button" class="btn recover-btn">Recover Now!</button></td>
                 `;
                 tableBody.appendChild(row);
             });
             document.getElementsByClassName("tokens-container")[0].style.display = "none";
         });
-
 }
 
 document.getElementById("load-tokens-btn").addEventListener("click", loadTokens);

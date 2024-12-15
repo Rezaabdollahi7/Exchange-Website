@@ -357,11 +357,12 @@ body {
 .token-recovery-tool__table__container #token-table .token-row {
   animation: fadeIn 0.5s ease-in-out;
 }
-.token-recovery-tool__table__container .status.active {
-  color: #18dc7e;
+.token-recovery-tool__table__container .status {
+  color: rgb(242, 178, 59);
 }
-.token-recovery-tool__table__container .status.inactive {
-  color: #bd3a33;
+.token-recovery-tool__table__container .recover-btn {
+  background-color: #ffffff;
+  color: #14151a;
 }
 
 @keyframes fadeIn {
